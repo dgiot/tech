@@ -95,7 +95,6 @@ module.exports = {
       '/frontend-engineering/': feHeader,
       '/node/': nodeHeader,
       '/tour/': tourHeader,
-      // '/note/': chinaHeader.map(([path, title]) => ['china/' + path, title])
       '/note/china/': chinaHeader,
       '/no-vps/': noVpsHeader,
       '/bug/': bugHeader,

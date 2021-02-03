@@ -94,11 +94,11 @@
   <figcaption>加我微信拉你进入面试交流群</figcaption>
 </figure>
 
-欢迎关注公众号【全栈成长之路】，定时推送 Node 原创及全栈成长文章
+欢迎关注公众号【】，定时推送 Node 原创及全栈成长文章
 
 <figure>
   <img width="240" src="https://shanyue.tech/qrcode.jpg" alt="欢迎关注">
-  <figcaption>欢迎关注全栈成长之路</figcaption>
+  <figcaption>欢迎关注</figcaption>
 </figure>
 
 ---

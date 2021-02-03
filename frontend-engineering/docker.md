@@ -4,7 +4,7 @@ Docker 变得越来越流行，它可以轻便灵活地隔离环境，进行扩�
 
 对于前端而言，在 CI 环境中使用也更容易集成开发，测试与部署。比如可以为流水线(Pipeline)设置 Lint/Test/Security/Audit/Deploy/Artifact 等任务，更好地把控项目质量。
 
-现在无论是前端，后端还是运维，都很强调 `devops` 的理念，接下来我将会写一系列关于 `devops` 在前端中应用的文章。你可以在我的博客 <https://github.com/shfshanyue/blog> 中或者我的公众号 【全栈成长之路】中订阅更多文章。
+现在无论是前端，后端还是运维，都很强调 `devops` 的理念，接下来我将会写一系列关于 `devops` 在前端中应用的文章。你可以在我的博客 <https://github.com/shfshanyue/blog> 中或者我的公众号 【】中订阅更多文章。
 
 这里将介绍如何使用 Docker 部署前端应用，千里之行，始于足下。始于足下的意思就是，先让它能够跑起来。
 

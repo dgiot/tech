@@ -1,9 +1,17 @@
+/*
+ * @Author: your name
+ * @Date: 2021-02-03 15:20:02
+ * @LastEditTime: 2021-02-03 17:26:25
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \blog\.vuepress\dir.header.js
+ */
 const posts = require('../frontend-engineering/meta')
 const nodePosts = require('../node/meta')
 const tourPosts = require('../tour/meta')
 const chinaPosts = require('../note/china/meta')
 const noVpsPosts = require('../no-vps/meta')
-const bugPosts = require('../bug/meta')
+const bugPosts = require('../test/meta')
 const codePosts = require('../code/meta')
 const lifePosts = require('../life/meta')
 const growthPosts = require('../growth/meta')

@@ -1,0 +1,35 @@
+name: deploy to Github
+
+
+on:
+  push:
+  schedule:
+    - cron: '0 23 * * *' # https://help.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows#scheduled-events-schedule
+
+
+jobs:
+
+  Cloudbase: 
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Use Node  
+        uses: actions/setup-node@v1
+        with:
+          node-version: "10.x"
+      - name: Use yarn
+        run: npm install -g yarn
+      - name: install
+        run: yarn
+      - name: build
+        run: yarn build
+      - name: Deploy static to Tencent CloudBase
+        id: deployStatic
+        uses: TencentCloudBase/cloudbase-action@v1.1.1
+        with:
+          secretId: ${{ secrets.SECRET_ID }}
+          secretKey: ${{ secrets.SECRET_KEY }}
+          envId: ${{ secrets.ENV_ID }}
+          staticSrcPath: .vuepress/dist

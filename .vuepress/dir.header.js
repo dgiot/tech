@@ -6,16 +6,7 @@
  * @Description: In User Settings Edit
  * @FilePath: \blog\.vuepress\dir.header.js
  */
-const posts = require('../frontend-engineering/meta')
-const nodePosts = require('../node/meta')
 const tourPosts = require('../tour/meta')
-const chinaPosts = require('../note/china/meta')
-const noVpsPosts = require('../no-vps/meta')
-const bugPosts = require('../test/meta')
-const codePosts = require('../code/meta')
-const lifePosts = require('../life/meta')
-const growthPosts = require('../growth/meta')
-const webPosts = require('../web-performance/meta')
 
 // {
 //   sideTitle,
@@ -41,14 +32,5 @@ function getHeader (posts) {
 }
 
 module.exports = {
-  fe: getHeader(posts),
-  node: getHeader(nodePosts),
   tour: getHeader(tourPosts),
-  china: getHeader(chinaPosts),
-  noVps: getHeader(noVpsPosts),
-  bug: getHeader(bugPosts),
-  code: getHeader(codePosts),
-  life: getHeader(lifePosts),
-  growth: getHeader(growthPosts),
-  web: getHeader(webPosts)
 }

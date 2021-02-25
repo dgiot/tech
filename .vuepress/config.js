@@ -1,16 +1,7 @@
 const _ = require('lodash')
 const path = require('path')
-const op = require('./op.header')
-const k8s = require('./k8s.header')
-const postsHeader = require('./post.header')
-const { fe: feHeader, node: nodeHeader, tour: tourHeader,
-  china: chinaHeader,
-  noVps: noVpsHeader,
-  bug: bugHeader,
-  code: codeHeader,
-  life: lifeHeader,
-  growth: growthHeader,
-  web: webHeader
+const {
+  tour: tourHeader,
 } = require('./dir.header')
 
 function getFrontMatter (path, metaFilePath) {
@@ -60,24 +51,14 @@ module.exports = {
     nav: [
       {
         text: '用户手册', items: [
-          { text: '实例', link: '/test/' },
+          { text: '产品简介', link: '/tour/' },
         ]
       },
       {
         text: '项目部署', items: [
-          { text: '数蛙科技', link: 'http://www.iotn2n.com/' },
+          { text: '数据库', link: '/test/' },
         ]
-      },
-      {
-        text: '技术博客', items: [
-          { text: '数蛙科技', link: 'http://tech.iotn2n.com/' },
-        ]
-      },
-      {
-        text: '友情链接', items: [
-          { text: '数蛙科技', link: 'http://www.iotn2n.com/' },
-        ]
-      },
+      }
     ],
     sidebar: {
       '/record/': [
@@ -89,19 +70,7 @@ module.exports = {
         ['2016', 'Pre 2016'],
         ['2015', 'Pre 2015']
       ],
-      '/op/': op,
-      '/k8s/': k8s,
-      '/post/': postsHeader,
-      '/frontend-engineering/': feHeader,
-      '/node/': nodeHeader,
       '/tour/': tourHeader,
-      '/note/china/': chinaHeader,
-      '/no-vps/': noVpsHeader,
-      '/bug/': bugHeader,
-      '/code/': codeHeader,
-      '/life/': lifeHeader,
-      '/growth/': growthHeader,
-      '/web-performance/': webHeader
     },
 
     lastUpdated: 'Last Updated'

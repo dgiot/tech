@@ -53,23 +53,9 @@ module.exports = {
         text: '用户手册', items: [
           { text: '产品简介', link: '/tour/' },
         ]
-      },
-      {
-        text: '项目部署', items: [
-          { text: '数据库', link: '/test/' },
-        ]
       }
     ],
     sidebar: {
-      '/record/': [
-        '',
-        '2019',
-        ['pre-2019', 'Pre 2019'],
-        '2018',
-        ['2017', 'Pre 2017'],
-        ['2016', 'Pre 2016'],
-        ['2015', 'Pre 2015']
-      ],
       '/tour/': tourHeader,
     },
 

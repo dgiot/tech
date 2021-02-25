@@ -1,7 +1,8 @@
 const _ = require('lodash')
 const path = require('path')
 const {
-  tour: tourHeader,
+  cloud: cloudHeader,
+  edge: edgeHeader,
 } = require('./dir.header')
 
 function getFrontMatter (path, metaFilePath) {
@@ -33,10 +34,6 @@ module.exports = {
       }
     }
   },
-  
-  
-  
-  
   base: '/',
   title: '数蛙技术团队',
   description: '数蛙科技是一家致力于提供物联网垂直领域应用使能平台及解决方案的创新型公司。',
@@ -50,13 +47,15 @@ module.exports = {
     sidebarDepth: 2,
     nav: [
       {
-        text: '用户手册', items: [
-          { text: '产品简介', link: '/tour/' },
+        text: '文档', items: [
+          { text: 'DGIOT CLOUD', link: '/cloud/' },
+          { text: 'DGIOT EDGE', link: '/edge/' },
         ]
       }
     ],
     sidebar: {
-      '/tour/': tourHeader,
+      '/cloud/': cloudHeader,
+      '/edge/': edgeHeader,
     },
 
     lastUpdated: 'Last Updated'
@@ -81,26 +80,9 @@ module.exports = {
         name: 'archive',
         async additionalPages () {
           return [
-            // {
-            //   path: '/post/',
-            //   frontmatter: {
-            //     archive: true
-            //   }
-            // },
-            // {
-            //   path: '/',
-            //   frontmatter: {
-            //     home: true
-            //   }
-            // }
           ]
         },
         extendPageData ($page) {
-          extendMetaByPath($page, 'frontend-enginerring')
-          extendMetaByPath($page, 'node')
-          extendMetaByPath($page, 'post')
-          extendMetaByPath($page, 'note/china')
-
           if ($page.frontmatter.keywords) {
             const meta = $page.frontmatter.meta
             $page.frontmatter.meta = meta ? [

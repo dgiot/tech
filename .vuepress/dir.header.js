@@ -6,8 +6,8 @@
  * @Description: In User Settings Edit
  * @FilePath: \blog\.vuepress\dir.header.js
  */
-const tourPosts = require('../tour/meta')
-
+const cloudPosts = require('../cloud/meta')
+const edgePosts = require('../edge/meta')
 // {
 //   sideTitle,
 //   path,
@@ -32,5 +32,6 @@ function getHeader (posts) {
 }
 
 module.exports = {
-  tour: getHeader(tourPosts),
+  cloud: getHeader(cloudPosts),
+  edge: getHeader(edgePosts),
 }

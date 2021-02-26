@@ -4,13 +4,13 @@ const zh_cloudHeader = require('../manual/cloud/meta.header')
 const zh_edgeHeader = require('../manual/edge/meta.header')
 const zh_productHeader = require('../product/meta.header')
 const zh_developHeader = require('../develop/meta.header')
-const zh_blogHeader = require('../blog/meta.header')
+const zh_swblogHeader = require('../swblog/meta.header')
 
 const en_cloudHeader = require('../en/manual/cloud/meta.header')
 const en_edgeHeader = require('../en/manual/edge/meta.header')
 const en_productHeader = require('../en/product/meta.header')
 const en_developHeader = require('../en/develop/meta.header')
-const en_blogHeader = require('../en/blog/meta.header')
+const en_swblogHeader = require('../en/swblog/meta.header')
 module.exports = {
   configureWebpack: {
     resolve: {
@@ -72,7 +72,7 @@ module.exports = {
           },
           {
             text: '博客', items: [
-              {text: 'DGIOT BLOG', link: '/blog/'}
+              {text: 'DGIOT BLOG', link: '/swblog/'}
             ]
           }
         ],
@@ -81,7 +81,7 @@ module.exports = {
           '/manual/edge/': zh_edgeHeader,
           '/product/': zh_productHeader,
           '/develop/': zh_developHeader,
-          '/blog/': zh_blogHeader,
+          '/swblog/': zh_swblogHeader,
         },
       },
       '/en/': {
@@ -108,13 +108,13 @@ module.exports = {
           ]
         },
         {
-          text: 'Developer\'s Guide', items: [
+          text: 'Developer Guide', items: [
             {text: 'DGIOT DEVELIOP', link: '/en/develop/'}
           ]
         },
         {
-          text: 'blog', items: [
-            {text: 'DGIOT BLOG', link: '/en/blog/'}
+          text: 'swblog', items: [
+            {text: 'DGIOT BLOG', link: '/en/swblog/'}
           ]
         }
       ],
@@ -123,7 +123,7 @@ module.exports = {
         '/en/manual/edge/': en_edgeHeader,
         '/en/product/': en_productHeader,
         '/en/develop/': en_developHeader,
-        '/en/blog/': en_blogHeader,
+        '/en/swblog/': en_swblogHeader,
       },
     }
     },

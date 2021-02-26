@@ -1,38 +1,16 @@
 const _ = require('lodash')
 const path = require('path')
-const zh_cloudHeader = require('../zh/manual/cloud/meta.header')
-const zh_edgeHeader = require('../zh/manual/edge/meta.header')
-const zh_productHeader = require('../zh/product/meta.header')
-const zh_developHeader = require('../zh/develop/meta.header')
-const zh_blogHeader = require('../zh/blog/meta.header')
+const zh_cloudHeader = require('../manual/cloud/meta.header')
+const zh_edgeHeader = require('../manual/edge/meta.header')
+const zh_productHeader = require('../product/meta.header')
+const zh_developHeader = require('../develop/meta.header')
+const zh_blogHeader = require('../blog/meta.header')
 
 const en_cloudHeader = require('../en/manual/cloud/meta.header')
 const en_edgeHeader = require('../en/manual/edge/meta.header')
 const en_productHeader = require('../en/product/meta.header')
 const en_developHeader = require('../en/develop/meta.header')
 const en_blogHeader = require('../en/blog/meta.header')
-
-function getFrontMatter (path, metaFilePath) {
-  const posts = require(metaFilePath)
-  const postsByPath = _.keyBy(posts, 'path')
-  const p = path.split(/\.|\//)[2]
-  return _.get(postsByPath, p)
-}
-
-// 根据 meta.json 扩展 frontmatter
-// 知识库：所有相关博客维护在一个文件夹，并由 meta.json 书写 frontmatter
-function extendMetaByPath (page, path) {
-  if (page.path.includes(`/${path}`)) {
-    const fm = getFrontMatter(page.path, `../${path}/meta`)
-    if (fm) {
-      page.frontmatter = {
-        ...fm,
-        ...page.frontmatter
-      }
-    }
-  }
-}
-
 module.exports = {
   configureWebpack: {
     resolve: {
@@ -41,7 +19,6 @@ module.exports = {
       }
     }
   },
-  base: '/',
   locales: {
     // 键名是该语言所属的子路径
     // 作为特例，默认语言可以使用 '/' 作为其路径。
@@ -59,7 +36,7 @@ module.exports = {
   head: [
     ['link', { rel: 'shortcut icon', href: '/favicon.ico', type: 'image/x-icon' }],
     ['meta', { name: 'baidu-site-verification', content: 'ZAdkE6LA10'}],
-    ['meta', { name: 'google-site-verification', content: '_rNB9Nt0ukzWmMfhXSSxCHUAeeMs24OiuhGm4QjdwXA'}] 
+    ['meta', { name: 'google-site-verification', content: '_rNB9Nt0ukzWmMfhXSSxCHUAeeMs24OiuhGm4QjdwXA'}]
   ],
   themeConfig: {
     repo: 'dgiot',
@@ -79,31 +56,32 @@ module.exports = {
         nav: [
           {
             text: '用户手册', items: [
-              {text: 'DGIOT CLOUD', link: '/zh/manual/cloud/'},
-              {text: 'DGIOT EDGE', link: '/zh/manual/edge/'},
+              {text: '数蛙工业数据云平台', link: '/manual/cloud/'},
+              {text: '数蛙工业边缘网关', link: '/manual/edge/'},
             ]
           },
           {
             text: '产品手册', items: [
-              {text: 'DGIOT PRODUCT', link: '/zh/product/'},
+              {text: 'DGIOT PRODUCT', link: '/product/'},
             ]
           },
           {
             text: '开发指南', items: [
-              {text: 'DGIOT DEVELIOP', link: '/zh/develop/'}
+              {text: 'DGIOT DEVELIOP', link: '/develop/'}
             ]
           },
           {
             text: '博客', items: [
-              {text: 'DGIOT BLOG', link: '/zh/blog/'}
+              {text: 'DGIOT BLOG', link: '/blog/'}
             ]
           }
         ],
         sidebar: {
-          '/zh/manual/cloud/': zh_cloudHeader,
-          '/zh/manual/edge/': zh_edgeHeader,
-          '/zh/develop/': zh_developHeader,
-          '/zh/blog/': zh_blogHeader,
+          '/manual/cloud/': zh_cloudHeader,
+          '/manual/edge/': zh_edgeHeader,
+          '/product/': zh_productHeader,
+          '/develop/': zh_developHeader,
+          '/blog/': zh_blogHeader,
         },
       },
       '/en/': {
@@ -119,23 +97,23 @@ module.exports = {
       algolia: {},
       nav: [
         {
-          text: '用户手册', items: [
+          text: 'user manual', items: [
             {text: 'DGIOT CLOUD', link: '/en/manual/cloud/'},
             {text: 'DGIOT EDGE', link: '/en/manual/edge/'},
           ]
         },
         {
-          text: '产品手册', items: [
+          text: 'product manual', items: [
             {text: 'DGIOT PRODUCT', link: '/en/product/'},
           ]
         },
         {
-          text: '开发指南', items: [
+          text: 'Developer\'s Guide', items: [
             {text: 'DGIOT DEVELIOP', link: '/en/develop/'}
           ]
         },
         {
-          text: '博客', items: [
+          text: 'blog', items: [
             {text: 'DGIOT BLOG', link: '/en/blog/'}
           ]
         }
@@ -165,7 +143,7 @@ module.exports = {
       {
         'ga': 'UA-102193749-2'
       }
-    ], 
+    ],
     (options, ctx) => {
       return {
         name: 'archive',

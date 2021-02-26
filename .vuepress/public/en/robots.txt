@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://tech.iotn2n.com/sitemap.xml

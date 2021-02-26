@@ -1,8 +1,16 @@
 const _ = require('lodash')
 const path = require('path')
 const {
-  cloud: cloudHeader,
-  edge: edgeHeader,
+  zh_cloud: zh_cloudHeader,
+  zh_edge: zh_edgeHeader,
+  zh_product: zh_productHeader,
+  zh_develop: zh_developHeader,
+  zh_blog: zh_blogHeader,
+  en_cloud: en_cloudHeader,
+  en_edge: en_edgeHeader,
+  en_product: en_productHeader,
+  en_develop: en_developHeader,
+  en_blog: en_blogHeader,
 } = require('./dir.header')
 
 function getFrontMatter (path, metaFilePath) {
@@ -34,9 +42,20 @@ module.exports = {
       }
     }
   },
-  base: '/',
-  title: '数蛙技术团队',
-  description: '数蛙科技是一家致力于提供物联网垂直领域应用使能平台及解决方案的创新型公司。',
+  locales: {
+    // 键名是该语言所属的子路径
+    // 作为特例，默认语言可以使用 '/' 作为其路径。
+    '/': {
+      lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
+      title: '数蛙技术团队',
+      description: '数蛙科技是一家致力于提供物联网垂直领域应用使能平台及解决方案的创新型公司。'
+    },
+    '/en/': {
+      lang: 'en-US',
+      title: 'DGIOT',
+      description: 'Digital frog technology is an innovative company dedicated to providing application enabling platform and solutions in the vertical field of Internet of things'
+    }
+  },
   head: [
     ['link', { rel: 'shortcut icon', href: '/favicon.ico', type: 'image/x-icon' }],
     ['meta', { name: 'baidu-site-verification', content: 'ZAdkE6LA10'}],
@@ -45,19 +64,92 @@ module.exports = {
   themeConfig: {
     repo: 'dgiot',
     sidebarDepth: 2,
-    nav: [
-      {
-        text: '文档', items: [
-          { text: 'DGIOT CLOUD', link: '/cloud/' },
-          { text: 'DGIOT EDGE', link: '/edge/' },
-        ]
-      }
-    ],
-    sidebar: {
-      '/cloud/': cloudHeader,
-      '/edge/': edgeHeader,
+    locales: {
+      '/': {
+        selectText: '选择语言',
+        label: '简体中文',
+        editLinkText: '在 GitHub 上编辑此页',
+        serviceWorker: {
+          updatePopup: {
+            message: "发现新内容可用.",
+            buttonText: "刷新"
+          }
+        },
+        algolia: {},
+        nav: [
+          {
+            text: '用户手册', items: [
+              {text: 'DGIOT CLOUD', link: '/zh/manual/cloud/'},
+              {text: 'DGIOT EDGE', link: '/zh/manual/edge/'},
+            ]
+          },
+          {
+            text: '产品手册', items: [
+              {text: 'DGIOT PRODUCT', link: '/zh/product/'},
+            ]
+          },
+          {
+            text: '开发指南', items: [
+              {text: 'DGIOT DEVELIOP', link: '/zh/develop/'}
+            ]
+          },
+          {
+            text: '博客', items: [
+              {text: 'DGIOT BLOG', link: '/zh/blog/'}
+            ]
+          }
+        ],
+        sidebar: {
+          '/zh/manual/cloud/': zh_cloudHeader,
+          '/zh/manual/edge/': zh_edgeHeader,
+          '/zh/product/': zh_productHeader,
+          '/zh/develop/': zh_developHeader,
+          '/zh/blog/': zh_blogHeader,
+        },
+      },
+      '/en/': {
+      selectText: 'Languages',
+      label: 'English',
+      editLinkText: 'Edit this page on GitHub',
+      serviceWorker: {
+        updatePopup: {
+          message: "New content is available.",
+          buttonText: "Refresh"
+        }
+      },
+      algolia: {},
+      nav: [
+        {
+          text: '用户手册', items: [
+            {text: 'DGIOT CLOUD', link: '/en/manual/cloud/'},
+            {text: 'DGIOT EDGE', link: '/en/manual/edge/'},
+          ]
+        },
+        {
+          text: '产品手册', items: [
+            {text: 'DGIOT PRODUCT', link: '/en/product/'},
+          ]
+        },
+        {
+          text: '开发指南', items: [
+            {text: 'DGIOT DEVELIOP', link: '/en/develop/'}
+          ]
+        },
+        {
+          text: '博客', items: [
+            {text: 'DGIOT BLOG', link: '/en/blog/'}
+          ]
+        }
+      ],
+      sidebar: {
+        '/en/manual/cloud/': en_cloudHeader,
+        '/en/manual/edge/': en_edgeHeader,
+        '/en/product/': en_productHeader,
+        '/en/develop/': en_developHeader,
+        '/en/blog/': en_blogHeader,
+      },
+    }
     },
-
     lastUpdated: 'Last Updated'
   },
   plugins: [

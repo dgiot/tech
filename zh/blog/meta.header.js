@@ -1,4 +1,4 @@
-[
+module.exports = [
   {
     "title": "DGIOT BLOG",
     "sideTitle": "产品介绍",

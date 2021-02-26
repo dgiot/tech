@@ -1,17 +1,16 @@
 const _ = require('lodash')
 const path = require('path')
-const {
-  zh_cloud: zh_cloudHeader,
-  zh_edge: zh_edgeHeader,
-  zh_product: zh_productHeader,
-  zh_develop: zh_developHeader,
-  zh_blog: zh_blogHeader,
-  en_cloud: en_cloudHeader,
-  en_edge: en_edgeHeader,
-  en_product: en_productHeader,
-  en_develop: en_developHeader,
-  en_blog: en_blogHeader,
-} = require('./dir.header')
+const zh_cloudHeader = require('../zh/manual/cloud/meta.header')
+const zh_edgeHeader = require('../zh/manual/edge/meta.header')
+const zh_productHeader = require('../zh/product/meta.header')
+const zh_developHeader = require('../zh/develop/meta.header')
+const zh_blogHeader = require('../zh/blog/meta.header')
+
+const en_cloudHeader = require('../en/manual/cloud/meta.header')
+const en_edgeHeader = require('../en/manual/edge/meta.header')
+const en_productHeader = require('../en/product/meta.header')
+const en_developHeader = require('../en/develop/meta.header')
+const en_blogHeader = require('../en/blog/meta.header')
 
 function getFrontMatter (path, metaFilePath) {
   const posts = require(metaFilePath)
@@ -42,6 +41,7 @@ module.exports = {
       }
     }
   },
+  base: '/',
   locales: {
     // 键名是该语言所属的子路径
     // 作为特例，默认语言可以使用 '/' 作为其路径。
@@ -102,7 +102,6 @@ module.exports = {
         sidebar: {
           '/zh/manual/cloud/': zh_cloudHeader,
           '/zh/manual/edge/': zh_edgeHeader,
-          '/zh/product/': zh_productHeader,
           '/zh/develop/': zh_developHeader,
           '/zh/blog/': zh_blogHeader,
         },

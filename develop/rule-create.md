@@ -39,23 +39,23 @@ nc 命令在部分 Linux 操作系统上有问题，无法与 EMQ X 发起的 HT
         qos = 1
    ```
 
-   ![image](/assets/images/webhook-rulesql-1.png)
+   ![webhook-rulesql-1.de175023.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/webhook-rulesql-1.de175023.png)
 
 2. 关联动作:
 
    在 “响应动作” 界面选择 “添加”，然后在 “动作” 下拉框里选择 “发送数据到 Web 服务”。
 
-  ![image](/assets/images/webhook-action-1.png)
+ ![webhook-action-1.5ed62278.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/webhook-action-1.5ed62278.png)
 
 3. 给动作关联资源:
 
    现在资源下拉框为空，可以点击右上角的 “新建资源” 来创建一个 WebHook 资源:
 
-   ![image](/assets/images/webhook-action-2.png)
+![webhook-action-2.fd8b412e.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/webhook-action-2.fd8b412e.png)
 
    选择 “WebHook 资源”:
 
-   ![image](/assets/images/webhook-resource-1.png)
+  ![webhook-resource-1.f8953501.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/webhook-resource-1.f8953501.png)
 
 4. 填写资源配置:
 
@@ -65,19 +65,19 @@ nc 命令在部分 Linux 操作系统上有问题，无法与 EMQ X 发起的 HT
 
    点击 “测试连接” 按钮，确保连接测试成功，最后点击 “新建” 按钮:
 
-   ![image](/assets/images/webhook-resource-2.png)
+  ![webhook-resource-2.e5af1d6a.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/webhook-resource-2.e5af1d6a.png)
 
 5. 返回响应动作界面，点击 “确认”。
 
-   ![image](/assets/images/webhook-action-3.png)
+   ![webhook-action-3.f1b98e50.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/webhook-action-3.f1b98e50.png)
 
 6. 返回规则创建界面，点击 “新建”。
 
-   ![image](/assets/images/webhook-rule-create.png)
+  ![webhook-rule-create.d82d2e01.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/webhook-rule-create.d82d2e01.png)
 
    规则已经创建完成，规则列表里展示出了新创建的规则:
 
-   ![image](/assets/images/webhook-rulelist-1.png)
+  ![webhook-rulelist-1.0ac59394.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/webhook-rulelist-1.0ac59394.png)
 
 7. 发一条消息:
 

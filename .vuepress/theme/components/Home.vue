@@ -3,12 +3,6 @@
     <main class="main-page">
       <h3>系列文章</h3>
       <hr>
-      <ul>
-        <li><a href="https://github.com/shfshanyue/graphql-guide">使用 GraphQL 构建 web 应用</a></li>
-        <li><a href="https://github.com/shfshanyue/op-note">个人服务器运维指南</a></li>
-        <li><a href="https://github.com/shfshanyue/learn-k8s">k8s与微服务实践</a></li>
-        <li><a href="https://github.com/shfshanyue/Daily-Question">全栈之路，日拱一卒</a></li>
-      </ul>
       <h3>最新文章</h3>
       <hr>
       <div v-for="post in recentPosts" class="archive-post" :key="post.path + ':recent'">
@@ -43,31 +37,6 @@
     <aside class="aside-page">
       <Bar/>
       <h3>友情链接</h3>
-      <hr>
-      <ul class="friend-link">
-        <li>
-          <a href="https://github.com/LuckyWinty/blog">winty 的博客</a>
-        </li>
-        <li>
-          <a href="http://www.inode.club">程序员成长指北</a>
-        </li>
-        <li>
-          <a href="https://biaochenxuying.cn/">夜尽天明的个人博客网站</a>
-        </li>
-        <li>
-          <a href="https://liuxiangyang.space">刘向洋，记录工作记录生活</a>
-        </li>
-        <li>
-          <a href="https://ouyang.wang">Ouyang's Blog</a>
-        </li>
-        <li>
-          <a href="http://www.javadaily.cn">Java 日知录</a>
-        </li>
-        <li>
-          <a href="https://blog.yinuxy.com/">YINUXY | 理想的生活就是生活的理想</a>
-        </li>
-      </ul>
-      <hr>
       <h3>找到我</h3>
       <ul>
         <li>微信(shanyue94)</li>

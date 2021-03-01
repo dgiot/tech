@@ -1,39 +1,16 @@
 const _ = require('lodash')
 const path = require('path')
-const op = require('./op.header')
-const k8s = require('./k8s.header')
-const postsHeader = require('./post.header')
-const { fe: feHeader, node: nodeHeader, tour: tourHeader,
-  china: chinaHeader,
-  noVps: noVpsHeader,
-  bug: bugHeader,
-  code: codeHeader,
-  life: lifeHeader,
-  growth: growthHeader,
-  web: webHeader
-} = require('./dir.header')
+const zh_cloudHeader = require('../manual/cloud/meta.header')
+const zh_edgeHeader = require('../manual/edge/meta.header')
+const zh_productHeader = require('../product/meta.header')
+const zh_developHeader = require('../develop/meta.header')
+const zh_swblogHeader = require('../swblog/meta.header')
 
-function getFrontMatter (path, metaFilePath) {
-  const posts = require(metaFilePath)
-  const postsByPath = _.keyBy(posts, 'path')
-  const p = path.split(/\.|\//)[2]
-  return _.get(postsByPath, p)
-}
-
-// 根据 meta.json 扩展 frontmatter
-// 知识库：所有相关博客维护在一个文件夹，并由 meta.json 书写 frontmatter
-function extendMetaByPath (page, path) {
-  if (page.path.includes(`/${path}`)) {
-    const fm = getFrontMatter(page.path, `../${path}/meta`)
-    if (fm) {
-      page.frontmatter = {
-        ...fm,
-        ...page.frontmatter
-      }
-    }
-  }
-}
-
+const en_cloudHeader = require('../en/manual/cloud/meta.header')
+const en_edgeHeader = require('../en/manual/edge/meta.header')
+const en_productHeader = require('../en/product/meta.header')
+const en_developHeader = require('../en/develop/meta.header')
+const en_swblogHeader = require('../en/swblog/meta.header')
 module.exports = {
   configureWebpack: {
     resolve: {
@@ -42,68 +19,114 @@ module.exports = {
       }
     }
   },
-  
-  
-  
-  
-  base: '/',
-  title: '数蛙技术团队',
-  description: '数蛙科技是一家致力于提供物联网垂直领域应用使能平台及解决方案的创新型公司。',
+  locales: {
+    // 键名是该语言所属的子路径
+    // 作为特例，默认语言可以使用 '/' 作为其路径。
+    '/': {
+      lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
+      title: '数蛙技术团队',
+      description: '数蛙科技是一家致力于提供物联网垂直领域应用使能平台及解决方案的创新型公司。'
+    },
+    '/en/': {
+      lang: 'en-US',
+      title: 'DGIOT',
+      description: 'Digital frog technology is an innovative company dedicated to providing application enabling platform and solutions in the vertical field of Internet of things'
+    }
+  },
   head: [
     ['link', { rel: 'shortcut icon', href: '/favicon.ico', type: 'image/x-icon' }],
     ['meta', { name: 'baidu-site-verification', content: 'ZAdkE6LA10'}],
-    ['meta', { name: 'google-site-verification', content: '_rNB9Nt0ukzWmMfhXSSxCHUAeeMs24OiuhGm4QjdwXA'}] 
+    ['meta', { name: 'google-site-verification', content: '_rNB9Nt0ukzWmMfhXSSxCHUAeeMs24OiuhGm4QjdwXA'}]
   ],
   themeConfig: {
     repo: 'dgiot',
     sidebarDepth: 2,
-    nav: [
-      {
-        text: '用户手册', items: [
-          { text: '实例', link: '/test/' },
-        ]
+    locales: {
+      '/': {
+        selectText: '选择语言',
+        label: '简体中文',
+        editLinkText: '在 GitHub 上编辑此页',
+        serviceWorker: {
+          updatePopup: {
+            message: "发现新内容可用.",
+            buttonText: "刷新"
+          }
+        },
+        algolia: {},
+        nav: [
+          {
+            text: '用户手册', items: [
+              {text: '数蛙工业数据云平台', link: '/manual/cloud/'},
+              {text: '数蛙工业边缘网关', link: '/manual/edge/'},
+            ]
+          },
+          {
+            text: '产品手册', items: [
+              {text: 'DGIOT PRODUCT', link: '/product/'},
+            ]
+          },
+          {
+            text: '开发指南', items: [
+              {text: 'DGIOT DEVELIOP', link: '/develop/'}
+            ]
+          },
+          {
+            text: '博客', items: [
+              {text: 'DGIOT BLOG', link: '/swblog/'}
+            ]
+          }
+        ],
+        sidebar: {
+          '/manual/cloud/': zh_cloudHeader,
+          '/manual/edge/': zh_edgeHeader,
+          '/product/': zh_productHeader,
+          '/develop/': zh_developHeader,
+          '/swblog/': zh_swblogHeader,
+        },
       },
-      {
-        text: '项目部署', items: [
-          { text: '数蛙科技', link: 'http://www.iotn2n.com/' },
-        ]
+      '/en/': {
+      selectText: 'Languages',
+      label: 'English',
+      editLinkText: 'Edit this page on GitHub',
+      serviceWorker: {
+        updatePopup: {
+          message: "New content is available.",
+          buttonText: "Refresh"
+        }
       },
-      {
-        text: '技术博客', items: [
-          { text: '数蛙科技', link: 'http://tech.iotn2n.com/' },
-        ]
-      },
-      {
-        text: '友情链接', items: [
-          { text: '数蛙科技', link: 'http://www.iotn2n.com/' },
-        ]
-      },
-    ],
-    sidebar: {
-      '/record/': [
-        '',
-        '2019',
-        ['pre-2019', 'Pre 2019'],
-        '2018',
-        ['2017', 'Pre 2017'],
-        ['2016', 'Pre 2016'],
-        ['2015', 'Pre 2015']
+      algolia: {},
+      nav: [
+        {
+          text: 'user manual', items: [
+            {text: 'DGIOT CLOUD', link: '/en/manual/cloud/'},
+            {text: 'DGIOT EDGE', link: '/en/manual/edge/'},
+          ]
+        },
+        {
+          text: 'product manual', items: [
+            {text: 'DGIOT PRODUCT', link: '/en/product/'},
+          ]
+        },
+        {
+          text: 'Developer Guide', items: [
+            {text: 'DGIOT DEVELIOP', link: '/en/develop/'}
+          ]
+        },
+        {
+          text: 'swblog', items: [
+            {text: 'DGIOT BLOG', link: '/en/swblog/'}
+          ]
+        }
       ],
-      '/op/': op,
-      '/k8s/': k8s,
-      '/post/': postsHeader,
-      '/frontend-engineering/': feHeader,
-      '/node/': nodeHeader,
-      '/tour/': tourHeader,
-      '/note/china/': chinaHeader,
-      '/no-vps/': noVpsHeader,
-      '/bug/': bugHeader,
-      '/code/': codeHeader,
-      '/life/': lifeHeader,
-      '/growth/': growthHeader,
-      '/web-performance/': webHeader
+      sidebar: {
+        '/en/manual/cloud/': en_cloudHeader,
+        '/en/manual/edge/': en_edgeHeader,
+        '/en/product/': en_productHeader,
+        '/en/develop/': en_developHeader,
+        '/en/swblog/': en_swblogHeader,
+      },
+    }
     },
-
     lastUpdated: 'Last Updated'
   },
   plugins: [
@@ -120,32 +143,15 @@ module.exports = {
       {
         'ga': 'UA-102193749-2'
       }
-    ], 
+    ],
     (options, ctx) => {
       return {
         name: 'archive',
         async additionalPages () {
           return [
-            // {
-            //   path: '/post/',
-            //   frontmatter: {
-            //     archive: true
-            //   }
-            // },
-            // {
-            //   path: '/',
-            //   frontmatter: {
-            //     home: true
-            //   }
-            // }
           ]
         },
         extendPageData ($page) {
-          extendMetaByPath($page, 'frontend-enginerring')
-          extendMetaByPath($page, 'node')
-          extendMetaByPath($page, 'post')
-          extendMetaByPath($page, 'note/china')
-
           if ($page.frontmatter.keywords) {
             const meta = $page.frontmatter.meta
             $page.frontmatter.meta = meta ? [

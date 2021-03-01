@@ -1,6 +1,6 @@
 module.exports = [
   {
-    "title": "DGIOT CLOUD",
+    "title": "产品介绍",
     "sideTitle": "产品介绍",
     "path": "product_presentation",
     "category": "工业数据云平台"
@@ -12,13 +12,24 @@ module.exports = [
     "category": "工业数据云平台"
   },
   {
+    "title": '扩展编程',
+    "collapsable": true,
+    "children": [
+      ['introduction', '简介'],
+      ['exhook', '钩子扩展'],
+      ['exproto', '协议接入'],
+      ['lua', 'lua']
+    ],
+    "category": "工业数据云平台"
+  },
+  {
     "title": '规则引擎',
     "collapsable": true,
     "children": [
       ['rule-engine', '规则引擎'],
       ['rule-create', '创建规则'],
       ['rule-example', '检查 (调试)'],
-      ['bridge_emqx', '桥接数据到 RPC 服务']
+      ['backend_mysql', '存储到mysql数据库']
     ],
     "category": "工业数据云平台"
   },

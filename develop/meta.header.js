@@ -1,17 +1,5 @@
 module.exports = [
   {
-    "title": "产品介绍",
-    "sideTitle": "产品介绍",
-    "path": "product_presentation",
-    "category": "工业数据云平台"
-  },
-  {
-    "title": "模块管理",
-    "sideTitle": "产品介绍",
-    "path": "product_presentation",
-    "category": "工业数据云平台"
-  },
-  {
     "title": '扩展编程',
     "collapsable": true,
     "children": [

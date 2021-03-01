@@ -69,4 +69,47 @@ module.exports = [
     ],
     "category": "工业数据云平台"
   },
+  {
+    "title": '报警管理',
+    "collapsable": true,
+    "children": [
+      ['Alarm_notification', '报警通知'],
+      ['Alarm_contact', '报警联系人']
+    ],
+    "category": "工业数据云平台"
+  },
+  {
+    "title": '组态编辑器',
+    "collapsable": true,
+    "children": [
+      ['Overview_configuration_editor', '组态编辑器概述'],
+      ['Top_Toolbar', '顶部工具栏'],
+      ['Page_management', '页面管理'],
+      ['Component_library', '元件库'],
+      ['canvas', '画布'],
+      ['Component_configuration', '元件配置'],
+      ['Quick_operation', '快捷操作']
+    ],
+    "category": "工业数据云平台"
+  },
+  {
+    "title": '扩展功能',
+    "collapsable": true,
+    "children": [
+      ['Function_Center', '功能中心'],
+      ['Independent_configuration', '独立组态'],
+      ['Timed_task', '定时任务'],
+      ['Independent_trigger', '独立触发器'],
+      ['Transparent_transmission_management', '透传管理']
+    ],
+    "category": "工业数据云平台"
+  },
+  {
+    "title": '手机APP',
+    "collapsable": true,
+    "children": [
+      ['Project_list', '手机端简介'],
+    ],
+    "category": "工业数据云平台"
+  },
 ]

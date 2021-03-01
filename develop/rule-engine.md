@@ -1394,12 +1394,12 @@ Dashboard 界面提供了 SQL 语句测试功能，通过给定的 SQL 语句和
 
 1.  在创建规则界面，输入 **规则SQL**，并启用 **SQL 测试** 开关:
 
-    ![image](/assets/images/sql-test-1@2x.png)
+    ![sql-test-1@2x.7f6fdc2d.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/sql-test-1%402x.7f6fdc2d.png)
 
 2.  修改模拟事件的字段，或者使用默认的配置，点击 **测试** 按钮:
 
-    ![image](/assets/images/sql-test-2@2x.png)
+    ![sql-test-2@2x.efe87e20.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/sql-test-2%402x.efe87e20.png)
 
 3.  SQL 处理后的结果将在 **测试输出** 文本框里展示:
 
-    ![image](/assets/images/sql-test-3@2x.png)
+    ![sql-test-3@2x.0b6301b0.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/sql-test-3%402x.0b6301b0.png)

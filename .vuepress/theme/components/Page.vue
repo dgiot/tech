@@ -2,7 +2,8 @@
   <main class="page">
     <slot name="top" />
 
-    <div :class="{ 'theme-default-content': true, lock: isLock }">
+    <!-- <div :class="{ 'theme-default-content': true, lock: isLock }"> -->
+      <div :class="{ 'theme-default-content': true }">
       <Content />
       <div class="content-lock" v-if="isLock">
         <p>扫码关注公众号<span></span>，并发送 <span v-text="code"></span></p>
@@ -83,8 +84,8 @@ export default {
   },
   computed: {
     isLock () {
-      return this.lock ? Math.random() > 0.01 : false
-      /* return false */
+      // return this.lock ? Math.random() > 0.01 : false
+     return false 
     }
   },
   components: { PageEdit, PageNav },

@@ -1,10 +1,10 @@
 const _ = require('lodash')
 const path = require('path')
-const zh_cloudHeader = require('../manual/cloud/meta.header')
-const zh_edgeHeader = require('../manual/edge/meta.header')
-const zh_productHeader = require('../product/meta.header')
-const zh_developHeader = require('../develop/meta.header')
-const zh_blogHeader = require('../blog/meta.header')
+const zh_cloudHeader = require('../zh/manual/cloud/meta.header')
+const zh_edgeHeader = require('../zh/manual/edge/meta.header')
+const zh_productHeader = require('../zh/product/meta.header')
+const zh_developHeader = require('../zh/develop/meta.header')
+const zh_blogHeader = require('../zh/blog/meta.header')
 
 const en_cloudHeader = require('../en/manual/cloud/meta.header')
 const en_edgeHeader = require('../en/manual/edge/meta.header')
@@ -56,32 +56,32 @@ module.exports = {
         nav: [
           {
             text: '用户手册', items: [
-              {text: '数蛙工业数据云平台', link: '/manual/cloud/'},
-              {text: '数蛙工业边缘网关', link: '/manual/edge/'},
+              {text: '数蛙工业数据云平台', link: '/zh/manual/cloud/'},
+              {text: '数蛙工业边缘网关', link: '/zh/manual/edge/'},
             ]
           },
           {
             text: '产品手册', items: [
-              {text: 'DGIOT PRODUCT', link: '/product/'},
+              {text: 'DGIOT PRODUCT', link: '/zh/product/'},
             ]
           },
           {
             text: '开发指南', items: [
-              {text: 'DGIOT DEVELIOP', link: '/develop/'}
+              {text: 'DGIOT DEVELIOP', link: '/zh/develop/'}
             ]
           },
           {
             text: '博客', items: [
-              {text: 'DGIOT BLOG', link: '/blog/'}
+              {text: 'DGIOT BLOG', link: '/zh/blog/'}
             ]
           }
         ],
         sidebar: {
-          '/manual/cloud/': zh_cloudHeader,
-          '/manual/edge/': zh_edgeHeader,
-          '/product/': zh_productHeader,
-          '/develop/': zh_developHeader,
-          '/blog/': zh_blogHeader,
+          '/zh/manual/cloud/': zh_cloudHeader,
+          '/zh/manual/edge/': zh_edgeHeader,
+          '/zh/product/': zh_productHeader,
+          '/zh/develop/': zh_developHeader,
+          '/zh/blog/': zh_blogHeader,
         },
       },
       '/en/': {

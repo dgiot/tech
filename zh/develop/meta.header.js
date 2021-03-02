@@ -84,5 +84,47 @@ module.exports = [
       ['modules/delayed_publish', 'MQTT 消息延迟发布']
     ],
     "category": "工业数据云平台"
+  },
+  {
+    "title": '规则引擎',
+    "collapsable": true,
+    "children": [
+      ['rule/rule-engine', '规则引擎'],
+      ['rule/rule-create', '创建规则'],
+      ['rule/rule-example', '检查 (调试)'],
+      ['rule/backend_mysql', '保存数据到 MySQL'],
+      ['rule/backend_pgsql', '保存数据到 PostgreSQL'],
+      ['rule/backend_mongodb', '保存数据到 MongoDB'],
+      ['rule/backend_redis', '保存数据到 Redis'],
+      ['rule/backend_cassandra', '保存数据到 Cassandra'],
+      ['rule/backend_dynamodb', '保存数据到 DynamoDB'],
+      ['rule/backend_clickhouse', '保存数据到 ClickHouse'],
+      ['rule/backend_opentsdb', '保存数据到 OpenTSDB'],
+      ['rule/backend_influxdb', '保存数据到 InfluxDB'],
+      ['rule/backend_timescaledb', '保存数据到 TimescaleDB'],
+      ['rule/backend_oracle', '保存数据到 Oracle DB'],
+      ['rule/backend_sqlserver', '保存数据到 SQLServer'],
+      ['rule/backend_dolphindb', '保存数据到 DolphinDB'],
+      ['rule/backend_tdengine', '保存数据到 TDengine'],
+      ['rule/bridge_kafka', '桥接数据到 Kafka'],
+      ['rule/bridge_pulsar', '桥接数据到 Pulsar'],
+      ['rule/bridge_rabbitmq', '桥接数据到 RabbitMQ'],
+      ['rule/bridge_rocketmq', '桥接数据到 RocketMQ'],
+      ['rule/bridge_mqtt', '桥接数据到 MQTT Broker'],
+      ['rule/bridge_emqx', '桥接数据到 EMQ X'],
+    ],
+    "category": "工业数据云平台"
+  },
+  {
+    "title": '离线消息',
+    "collapsable": true,
+    "children": [
+      ['rule/offline_msg_to_redis', '离线消息保存到 Redis'],
+      ['rule/offline_msg_to_mysql', '离线消息保存到 MySQL'],
+      ['rule/offline_msg_to_pgsql', '离线消息保存到 PostgreSQL'],
+      ['rule/offline_msg_to_cassandra', '离线消息保存到 Cassandra'],
+      ['rule/offline_msg_to_mongodb', '离线消息保存到 MongoDB']
+    ],
+    "category": "工业数据云平台"
   }
 ]

@@ -13,6 +13,29 @@ category:
 ref:
 ---
 
+# DGIOT物联网平台简介
+
+   DGIOT物联网平台通过持续整合业界领先的CMP、DMP、AEP、BAP的相关技术成果和架构思想，为工业物联网用户提供快速的一站式
+   服务的完整平台，为应用开发者提供简单易学的开发者平台。
+   
+   根据各类参与者所提供的服务类型，按照Machina Research的分类方法，物联网平台可分为
+   - 连接管理平台CMP（Connectivity Management Platform）-
+   - 设备管理平台DMP（Device Management Platform）
+   - 应用使能平台AEP（Application Enablement Platform）
+   - 业务分析平台BAP（Business Analytics Platform）
+
+  ![IOTARCH.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/IOTARCH.png)
+  
+   数蛙科技秉持全社会分工合作的理念，开放合作的态度来快速消化全球急剧增长的工业互联需求，通过数据科技共赢生态框架，让广
+   大开发者既可以通过实战快速成长，又能消化真实客户的工业互联网需求，同时还能获得比较丰厚的项目收入。
+  
+  ![dgiot_busseness.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/dgiot_busseness.png)
+   
+   这部分主要介绍DGIOT CMP相关的技术和思想、EMQ X是一个非常优秀的消息服务器，我从2015年开始持续关注EMQ的技术发展，
+   也在持续将相关技术融入到DGIOT中来，前期我们先主要采用EMQ的技术文档，后续补充数据科技近几年在电力行业、低功耗领域、
+   工业互联网等方面的一些技术成果，也期望有兴趣的开发者也可以一起来参与编写CMP层的通道插件，希望能提供一个更加完善的
+   CMP层技术框架。
+   
 # EMQ X 消息服务器简介
 
 *EMQ X* (Erlang/Enterprise/Elastic MQTT Broker) 是基于 Erlang/OTP 平台开发的开源物联网 MQTT 消息服务器。

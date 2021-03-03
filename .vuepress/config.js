@@ -67,7 +67,9 @@ module.exports = {
           },
           {
             text: '开发指南', items: [
-              {text: 'DGIOT DEVELIOP', link: '/zh/develop/'}
+              {text: '设备接入', link: '/zh/develop/'},
+              {text: '设备管理', link: '/zh/develop/'},
+              {text: '数据计算', link: '/zh/develop/'}
             ]
           },
           {
@@ -109,7 +111,9 @@ module.exports = {
         },
         {
           text: 'Developer Guide', items: [
-            {text: 'DGIOT DEVELIOP', link: '/en/develop/'}
+            {text: 'CMP DEVELIOP', link: '/en/develop/'},
+            {text: 'DMP DEVELIOP', link: '/en/develop/'},
+            {text: 'BMP DEVELIOP', link: '/en/develop/'}
           ]
         },
         {

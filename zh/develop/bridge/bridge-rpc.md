@@ -2,7 +2,7 @@
 
 EMQ X 桥接转发 MQTT 消息到远程 EMQ X:
 
-![image](./assets/bridge_rpc.png)
+![bridge_rpc.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/bridge/assets/bridge_rpc.png)
 
 rpc bridge 桥接插件配置文件: etc/plugins/emqx_bridge_mqtt.conf
 

@@ -1924,7 +1924,7 @@ MQTT 消息中的数据。
 例如 `payload` 为 `{"data": {"temperature": 23.9}}`, 你可以通过占位符 `["$payload",
 "data", "temperature"]` 来获取其中的 `23.9`。
 
-![image](./assets/backends_3.png)
+![backends_3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/backend/assets/backends_3.png)
 
 考虑到 Json 还有数组这一数据类型的情况, 我们引入了 `$0` 与 `$<pos_integer>`, `$0` 表示获取数组内所有元素,
 `$<pos_integer>` 表示获取数组内第 `<pos_integer>` 个元素。
@@ -1932,14 +1932,14 @@ MQTT 消息中的数据。
 一个简单例子, `["$payload", "$0", "temp"]` 将从 `[{"temp": 20}, {"temp": 21}]`
 中取得 `[20, 21]`, 而 `["$payload", "$1", "temp"]` 将只取得 `20`。
 
-![image](./assets/backends_4.png)
+![backends_4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/backend/assets/backends_4.png)
 
-![image](./assets/backends_5.png)
+![backends_5.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/backend/assets/backends_5.png)
 
 值得注意的是, 当你使用 `$0` 时，我们希望你取得的数据个数都是相等的。因为我们需要将这些数组转换为多条记录写入 InfluxDB,
 而当你一个字段取得了 3 份数据, 另一个字段却取得了 2 份数据, 我们将无从判断应当怎样为你组合这些数据。
 
-![image](./assets/backends_6.png)
+![backends_6.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/backend/assets/backends_6.png)
 
 **Example**
 

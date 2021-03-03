@@ -6,19 +6,19 @@ EMQ X 的主题重写功能支持根据用户配置的规则在客户端订阅�
 
 打开 [EMQ X Dashboard](http://127.0.0.1:18083/#/modules)，点击左侧的 “模块” 选项卡，选择添加：
 
-![image-20200927213049265](./assets/modules.png)
+![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/modules.png)
 
 选择 MQTT 主题重写模块
 
-![image-20200927213049265](./assets/topic_rewrite_1.png)
+![topic_rewrite_1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/topic_rewrite_1.png)
 
 配置相关参数
 
-![image-20200927213049265](./assets/topic_rewrite_2.png)
+![topic_rewrite_2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/topic_rewrite_2.png)
 
 点击添加后，模块添加完成
 
-![image-20200927213049265](./assets/topic_rewrite_3.png)
+![topic_rewrite_3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/topic_rewrite_3.png)
 
 ## 主题重写规则
 

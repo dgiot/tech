@@ -2,7 +2,7 @@
 
 EMQ X 桥接转发 MQTT 消息到 MQTT Broker，支持桥接至常见 MQTT 云服务:
 
-![image](./assets/bridge_mqtt.png)
+![bridge_mqtt.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/bridge/assets/bridge_mqtt.png)
 
 mqtt bridge 桥接插件配置文件: etc/plugins/emqx_bridge_mqtt.conf。
 

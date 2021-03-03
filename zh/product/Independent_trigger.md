@@ -17,6 +17,3 @@ tag:
 - 在功能中心，可以开通独立触发器。
 - **独立触发器**与上一段**报警通知**的区别在于：独立触发器支持对单个变量设置报警，比如温度和湿度两个变量，可以将温度的报警和湿度的报警通知分别推送给不同的联系人
 
-![image](/assets/images/Independent_trigger_1.png)
-
-![image](/assets/images/Independent_trigger_2.png)

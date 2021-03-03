@@ -75,7 +75,7 @@ select * from msg_ref;
 ```
 完成后，可以看到一张空的 `msg_ref` 已创建成功：
 
-![Create DolphinDB Table](./assets/rule-engine/dolphin_create_tab.jpg)
+![dolphin_create_tab.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/dolphin_create_tab.jpg)
 
 至此，DolphinDB 的配置已经完成了。
 
@@ -97,13 +97,13 @@ select * from msg_ref;
 SELECT * FROM "t/#"
 ```
 
-![image](./assets/rule-engine/rule_sql.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/rule_sql.png)
 
 关联动作:
 
 在 “响应动作” 界面选择 “添加”，然后在 “动作” 下拉框里选择 “保存数据到 DolphinDB”。
 
-![image](./assets/rule-engine/dolphin_action_1.jpg)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/dolphin_action_1.jpg)
 
 填写动作参数:
 
@@ -121,21 +121,21 @@ insert into st_msg values('${clientid}', '${topic}', ${qos}, '${payload}')
 
 服务器地址填写对应上文部署的 DolphinDB 的服务器，用户名为 `admin` 密码为 `123456`
 
-![image](./assets/rule-engine/dolphin_res_1.jpg)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/dolphin_res_1.jpg)
 
 点击 “确定” 按钮。
 
 返回响应动作界面，点击 “确定”。
 
-![image](./assets/rule-engine/dolphin_action_2.jpg)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/dolphin_action_2.jpg)
 
 返回规则创建界面，点击 “创建”。
 
-![image](./assets/rule-engine/dolphin_action_3.jpg)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/dolphin_action_3.jpg)
 
 在规则列表里，点击 “查看” 按钮或规则 ID 连接，可以预览刚才创建的规则:
 
-![image](./assets/rule-engine/dolphin_overview.jpg)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/dolphin_overview.jpg)
 
 规则已经创建完成，现在发一条数据:
 
@@ -147,4 +147,4 @@ Payload: "hello"
 
 然后检查持久化的 `msg_dfs` 表，新的数据是否添加成功:
 
-![image](./assets/rule-engine/dolphin_result.jpg)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/dolphin_result.jpg)

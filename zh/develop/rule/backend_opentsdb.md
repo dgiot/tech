@@ -22,13 +22,13 @@ FROM
     "#"
 ```
 
-![image](./assets/rule-engine/opentsdb-rulesql-0@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/opentsdb-rulesql-0@2x.png)
 
 关联动作:
 
 在 “响应动作” 界面选择 “添加”，然后在 “动作” 下拉框里选择 “保存数据到 OpenTSDB”。
 
-![image](./assets/rule-engine/opentsdb-action-0@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/opentsdb-action-0@2x.png)
 
 填写动作参数:
 
@@ -46,7 +46,7 @@ FROM
 
 6). 关联资源。现在资源下拉框为空，可以点击右上角的 “新建资源” 来创建一个 OpenTSDB 资源:
 
-![image](./assets/rule-engine/opentsdb-action-1@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/opentsdb-action-1@2x.png)
 
 选择 “OpenTSDB 资源”:
 
@@ -56,15 +56,15 @@ FROM
 
 最后点击 “新建” 按钮。
 
-![image](./assets/rule-engine/opentsdb-resource-1@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/opentsdb-resource-1@2x.png)
 
 返回响应动作界面，点击 “确认”。
 
-![image](./assets/rule-engine/opentsdb-action-2@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/opentsdb-action-2@2x.png)
 
 返回规则创建界面，点击 “新建”。
 
-![image](./assets/rule-engine/opentsdb-rulesql-1@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/opentsdb-rulesql-1@2x.png)
 
 规则已经创建完成，现在发一条消息:
 
@@ -148,5 +148,5 @@ Postman-Token: 69af0565-27f8-41e5-b0cd-d7c7f5b7a037
 
 在规则列表里，可以看到刚才创建的规则的命中次数已经增加了 1:
 
-![image](./assets/rule-engine/opentsdb-rulelist-1@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/opentsdb-rulelist-1@2x.png)
 

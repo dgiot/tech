@@ -51,13 +51,13 @@ CREATE TABLE t_mqtt_msg (
 SELECT * FROM "t/#"
 ```
 
-![image](./assets/rule-engine/rule_sql.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/rule_sql.png)
 
 关联动作:
 
 在 “响应动作” 界面选择 “添加”，然后在 “动作” 下拉框里选择 “保存数据到 PostgreSQL”。
 
-![image](./assets/rule-engine/pgsql-action-0@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/pgsql-action-0@2x.png)
 
 填写动作参数:
 
@@ -65,7 +65,7 @@ SELECT * FROM "t/#"
 
 1). 关联资源的 ID。现在资源下拉框为空，可以点击右上角的 “新建资源” 来创建一个 PostgreSQL 资源:
 
-![image](./assets/rule-engine/pgsql-resource-0@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/pgsql-resource-0@2x.png)
 
 选择 “PostgreSQL 资源”。
 
@@ -75,7 +75,7 @@ SELECT * FROM "t/#"
 
 最后点击 “新建” 按钮。
 
-![image](./assets/rule-engine/pgsql-resource-1@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/pgsql-resource-1@2x.png)
 
 返回响应动作界面，点击 “确认”。
 
@@ -88,11 +88,11 @@ insert into t_mqtt_msg(msgid, topic, qos, payload, arrived) values (${id}, ${top
 
 插入数据之前，SQL 模板里的 ${key} 占位符会被替换为相应的值。
 
-![image](./assets/rule-engine/pgsql-action-2@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/pgsql-action-2@2x.png)
 
 返回规则创建界面，点击 “创建”。
 
-![image](./assets/rule-engine/pgsql-rulesql-2@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/pgsql-rulesql-2@2x.png)
 
 规则已经创建完成，现在发一条数据:
 
@@ -104,8 +104,8 @@ Payload: "hello1"
 
 然后检查 PostgreSQL 表，新的 record 是否添加成功:
 
-![image](./assets/rule-engine/pgsql-result-1@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/pgsql-result-1@2x.png)
 
 在规则列表里，可以看到刚才创建的规则的命中次数已经增加了 1:
 
-![image](./assets/rule-engine/pgsql-rulelist-1@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/pgsql-rulelist-1@2x.png)

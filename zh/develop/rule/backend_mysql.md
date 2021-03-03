@@ -38,7 +38,7 @@ INDEX topic_index(`id`, `topic`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8MB4;
 ```
 
-![image](./assets/rule-engine/mysql_init_1@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/mysql_init_1@2x.png)
 
 创建规则:
 
@@ -50,13 +50,13 @@ INDEX topic_index(`id`, `topic`)
 SELECT * FROM "t/#"
 ```
 
-![image](./assets/rule-engine/rule_sql.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/rule_sql.png)
 
 关联动作:
 
 在 “响应动作” 界面选择 “添加”，然后在 “动作” 下拉框里选择 “保存数据到 MySQL”。
 
-![image](./assets/rule-engine/rule_action_1@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/rule_action_1@2x.png)
 
 填写动作参数:
 
@@ -69,7 +69,7 @@ SELECT * FROM "t/#"
 insert into t_mqtt_msg(msgid, topic, qos, payload, arrived) values (${id}, ${topic}, ${qos}, ${payload}, FROM_UNIXTIME(${timestamp}/1000))
 ```
 
-![image](./assets/rule-engine/rule_action_2@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/rule_action_2@2x.png)
 
 2). 关联资源的 ID。现在资源下拉框为空，可以点击右上角的 “新建资源” 来创建一个 MySQL 资源:
 
@@ -77,21 +77,21 @@ insert into t_mqtt_msg(msgid, topic, qos, payload, arrived) values (${id}, ${top
 
 数据库名填写 “mqtt”，用户名填写 “root”，密码填写 “123456”
 
-![image](./assets/rule-engine/rule_action_3@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/rule_action_3@2x.png)
 
 点击 “新建” 按钮。
 
 返回响应动作界面，点击 “确认”。
 
-![image](./assets/rule-engine/rule_action_4@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/rule_action_4@2x.png)
 
 返回规则创建界面，点击 “创建”。
 
-![image](./assets/rule-engine/rule_overview_1@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/rule_overview_1@2x.png)
 
 在规则列表里，点击 “查看” 按钮或规则 ID 连接，可以预览刚才创建的规则:
 
-![image](./assets/rule-engine/rule_overview_2@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/rule_overview_2@2x.png)
 
 规则已经创建完成，现在发一条数据:
 
@@ -103,4 +103,4 @@ Payload: "hello"
 
 然后检查 MySQL 表，新的 record 是否添加成功:
 
-![image](./assets/rule-engine/mysql_result_1@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/mysql_result_1@2x.png)

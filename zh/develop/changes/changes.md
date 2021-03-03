@@ -6094,7 +6094,6 @@ etc/emqttd.conf配置示例:
 
 ### 发布订阅流程
 
-<!-- ![image](./_static/images/publish.png) -->
 
 ## 1.1.3 版本
 

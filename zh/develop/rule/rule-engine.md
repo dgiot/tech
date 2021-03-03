@@ -17,7 +17,7 @@ ref:
 
 EMQ X Rule Engine (以下简称规则引擎) 用于配置 EMQ X 消息流与设备事件的处理、响应规则。规则引擎不仅提供了清晰、灵活的 "配置式" 的业务集成方案，简化了业务开发流程，提升用户易用性，降低业务系统与 EMQ X 的耦合度；也为 EMQ X 的私有功能定制提供了一个更优秀的基础架构。
 
-![image-20190506171815028](../assets/image-20190506171815028.jpg)
+![image-20190506171815028.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/image-20190506171815028.jpg)
 
 
 EMQ X 在 **消息发布或事件触发** 时将触发规则引擎，满足触发条件的规则将执行各自的 SQL 语句筛选并处理消息和事件的上下文信息。
@@ -75,7 +75,7 @@ SELECT clientid, connected_at FROM "$events/client_connected" WHERE username = '
 
 如图所示是一条简单的规则，该条规则用于处理 **消息发布** 时的数据，将全部主题消息的 `msg` 字段，消息 `topic` 、`qos` 筛选出来，发送到 Web Server 与 /uplink 主题：
 
-![image-20190604103907875](../assets/image-20190604103907875.png)
+![image-20190604103907875.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/image-20190604103907875.png)
 
 ## 规则引擎典型应用场景举例
 
@@ -1394,12 +1394,12 @@ Dashboard 界面提供了 SQL 语句测试功能，通过给定的 SQL 语句和
 
 1.  在创建规则界面，输入 **规则SQL**，并启用 **SQL 测试** 开关:
 
-    ![image](../assets/sql-test-1@2x.png)
+    ![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/sql-test-1@2x.png)
 
 2.  修改模拟事件的字段，或者使用默认的配置，点击 **测试** 按钮:
 
-    ![image](../assets/sql-test-2@2x.png)
+    ![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/sql-test-2@2x.png)
 
 3.  SQL 处理后的结果将在 **测试输出** 文本框里展示:
 
-    ![image](../assets/sql-test-3@2x.png)
+    ![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/sql-test-3@2x.png)

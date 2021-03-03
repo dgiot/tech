@@ -21,11 +21,11 @@ tag:
 ## 从组态编辑器中对比两者的区别
 - **独立组态**： 可勾选同个项目中不同的设备，关联变量。适用于单个工程项目
 
-![image](/assets/images/independent_configuration_1.png)
+
 
 - **模板组态**：设备关联同一模板，无需勾选设备，直接关联模板的从机和变量
 
-![image](/assets/images/independent_configuration_2.png)
+
 
 ## 如何选择组态类型，可简单理解为
 - **模板相同——模板组态**

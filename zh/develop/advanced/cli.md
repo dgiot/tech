@@ -1191,7 +1191,7 @@ resource_type(name='backend_mysql', provider='emqx_backend_mysql', title ='MySQL
 
 ### 规则状态和统计指标
 
-![image](../assets/rule_metrics.png)
+![rule_metrics.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/rule_metrics.png)
 
 - 已命中: 规则命中(规则 SQL 匹配成功)的次数，
 - 命中速度: 规则命中的速度(次/秒)
@@ -1200,14 +1200,14 @@ resource_type(name='backend_mysql', provider='emqx_backend_mysql', title ='MySQL
 
 ### 动作状态和统计指标
 
-![image](../assets/action_metrics.png)
+![action_metrics.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/action_metrics.png)
 
 - 成功: 动作执行成功次数
 - 失败: 动作执行失败次数
 
 ### 资源状态和告警
 
-![image](../assets/resource_status.png)
+![resource_status.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/resource_status.png)
 
 - 可用: 资源可用
 - 不可用: 资源不可用(比如数据库连接断开)

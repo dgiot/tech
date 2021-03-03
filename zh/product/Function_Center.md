@@ -19,4 +19,3 @@ tag:
  - 中性运行需提交定制申请，联系销售
  - 扩展功能开通后不可关闭
  
- ![image](/assets/images/Function_Center_1.png)

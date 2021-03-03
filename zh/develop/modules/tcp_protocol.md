@@ -26,30 +26,30 @@ EMQ X 提供 **emqx-tcp** 模块作为一个靠近端侧的一个接入模块，
 
 打开 [EMQ X Dashboard](http://127.0.0.1:18083/#/modules)，点击左侧的 “模块” 选项卡，选择添加：
 
-![image-20200927213049265](./assets/modules.png)
+![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/modules.png)
 
 选择 TCP 私有协议接入网关:
 
-![image-20200927213049265](./assets/proto_tcp1.png)
+![proto_tcp1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/proto_tcp1.png)
 
 配置相关基础参数:
 
-![image-20200927213049265](./assets/proto_tcp2.png)
+![proto_tcp2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/proto_tcp2.png)
 
 添加监听端口:
 
-![image-20200927213049265](./assets/proto_tcp3.png)
+![proto_tcp3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/proto_tcp3.png)
 
 配置监听参数:
 
-![image-20200927213049265](./assets/proto_tcp4.png)
+![proto_tcp4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/proto_tcp4.png)
 
 点击确认到配置参数页面:
 
-![image-20200927213049265](./assets/proto_tcp5.png)
+![proto_tcp5.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/proto_tcp5.png)
 
 点击添加后，模块添加完成:
-![image-20200927213049265](./assets/proto_tcp6.png)
+![proto_tcp6.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/proto_tcp6.png)
 
 ### 配置参数
 

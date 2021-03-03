@@ -33,7 +33,7 @@ EMQ X 集群可作为物联网接入服务（IoT Hub）部署，目前 EMQ 在�
 
 典型部署架构：
 
-![](./_assets/deploy_1.png)
+![deploy_1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/tutorial/_assets/deploy_1.png)
 
 
 
@@ -120,11 +120,11 @@ EMQ X 节点集群使用的 TCP 端口:
 
 6. 在 LB 上创建 MQTT TCP 监听器:
 
-![image](./_assets/deploy_2.png)
+![deploy_2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/tutorial/_assets/deploy_2.png)
 
 或创建 SSL 监听器，并终结 SSL 在 LB :
 
-![image](./_assets/deploy_3.png)
+![deploy_3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/tutorial/_assets/deploy_3.png)
 
 7. MQTT 客户端连接 LB 公网地址测试。
 
@@ -152,11 +152,11 @@ EMQ X 节点集群使用的 TCP 端口:
 
 7. 在 ELB 上创建 MQTT TCP 监听器:
 
-![image](./_assets/deploy_4-20200225175403693.png)
+![deploy_4-20200225175403693.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/tutorial/_assets/deploy_4-20200225175403693.png)
 
 或创建 SSL 监听器，并终结 SSL 在 LB :
 
-![image](./_assets/deploy_5.png)
+![deploy_5.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/tutorial/_assets/deploy_5.png)
 
 8. MQTT 客户端连接 LB 公网地址测试。
 

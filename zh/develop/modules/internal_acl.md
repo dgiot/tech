@@ -6,11 +6,11 @@
 
 内置访问控制模块默认启动，可以通过dashboard页面进行停止和更新。
 
-![image-20200927213049265](./assets/modules.png)
+![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/modules.png)
 
 配置相关参数
 
-![image-20200927213049265](./assets/acl_file3.png)
+![acl_file3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/acl_file3.png)
 
 ## 定义 ACL
 

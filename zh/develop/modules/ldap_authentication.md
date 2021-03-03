@@ -5,19 +5,19 @@ LDAP 认证/访问控制使用外部 OpenLDAP 服务器作为认证数据源，�
 
 打开 [EMQ X Dashboard](http://127.0.0.1:18083/#/modules)，点击左侧的 “模块” 选项卡，选择添加：
 
-![image-20200928161310952](./assets/modules.png)
+![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/modules.png)
 
 选择 LDAP 认证/访问控制模块
 
-![image-20200928144927769](./assets/auth_ldap1.png)
+![auth_ldap1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_ldap1.png)
 
 配置OpenLDAP相关参数
 
-![image-20200928144945076](./assets/auth_ldap2.png)
+![auth_ldap2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_ldap2.png)
 
 最后点击“添加”按钮，模块即可添加成功：
 
-![image-20200928145033628](./assets/auth_ldap3.png)
+![auth_ldap3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_ldap3.png)
 
 ## LDAP Schema
 

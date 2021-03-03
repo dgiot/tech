@@ -35,13 +35,13 @@ $ ./bin/kafka-topics.sh --zookeeper localhost:2181 --replication-factor 1 --part
 SELECT * FROM "t/#"
 ```
 
-![image](./assets/rule-engine/rule_sql.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/rule_sql.png)
 
 关联动作:
 
 在 “响应动作” 界面选择 “添加”，然后在 “动作” 下拉框里选择 “桥接数据到 Kafka”。
 
-![image](./assets/rule-engine/kafka-action-0@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/kafka-action-0@2x.png)
 
 填写动作参数:
 
@@ -51,7 +51,7 @@ SELECT * FROM "t/#"
 
 2). 关联资源。现在资源下拉框为空，可以点击右上角的 “新建资源” 来创建一个 Kafka 资源:
 
-![image](./assets/rule-engine/kafka-resource-0@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/kafka-resource-0@2x.png)
 
 选择 Kafka 资源”。
 
@@ -61,15 +61,15 @@ SELECT * FROM "t/#"
 
 最后点击 “新建” 按钮。
 
-![image](./assets/rule-engine/kafka-resource-2@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/kafka-resource-2@2x.png)
 
 返回响应动作界面，点击 “确认”。
 
-![image](./assets/rule-engine/kafka-action-1@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/kafka-action-1@2x.png)
 
 返回规则创建界面，点击 “新建”。
 
-![image](./assets/rule-engine/kafka-rulesql-1@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/kafka-rulesql-1@2x.png)
 
 规则已经创建完成，现在发一条数据:
 
@@ -87,8 +87,8 @@ Payload: "hello"
 $ ./bin/kafka-console-consumer.sh --bootstrap-server 127.0.0.1:9092  --topic testTopic --from-beginning
 ```
 
-![image](./assets/rule-engine/kafka-consumer.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/kafka-consumer.png)
 
 在规则列表里，可以看到刚才创建的规则的命中次数已经增加了 1:
 
-![image](./assets/rule-engine/kafka-rulelist-0@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/kafka-rulelist-0@2x.png)

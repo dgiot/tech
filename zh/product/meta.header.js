@@ -103,13 +103,5 @@ module.exports = [
       ['Transparent_transmission_management', '透传管理']
     ],
     "category": "工业数据云平台"
-  },
-  {
-    "title": '手机APP',
-    "collapsable": true,
-    "children": [
-      ['Project_list', '手机端简介'],
-    ],
-    "category": "工业数据云平台"
-  },
+  }
 ]

@@ -35,16 +35,16 @@ $ ./bin/kafka-topics.sh --zookeeper localhost:2181 --replication-factor 1 --part
 
 打开 [EMQ X Dashboard](http://127.0.0.1:18083/#/modules)，点击左侧的 “模块” 选项卡，选择添加：
 
-![image-20200927213049265](./assets/modules.png)
+![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/modules.png)
 
 选择 Kafka 消费组模块:
 
-![](./assets/kafka_consumer1.png)
+![kafka_consumer1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/kafka_consumer1.png)
 
 
 填写相关参数:
 
-![](./assets/kafka_consumer3.png)
+![kafka_consumer3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/kafka_consumer3.png)
 
 1). Kafka 服务器地址
 
@@ -64,11 +64,11 @@ $ ./bin/kafka-topics.sh --zookeeper localhost:2181 --replication-factor 1 --part
 
 点击添加后，模块添加完成:
 
-![](./assets/kafka_consumer4.png)
+![kafka_consumer4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/kafka_consumer4.png)
 
 资源已经创建完成，现在用Dashboard的websocket工具订阅MQTT的主题 "TestTopic":
 
-![](./assets/kafka_consumer5.png)
+![kafka_consumer6.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/kafka_consumer6.png)
 
 使用kafka 命令行 生产一条消息:
 
@@ -76,8 +76,8 @@ $ ./bin/kafka-topics.sh --zookeeper localhost:2181 --replication-factor 1 --part
 ./bin/kafka-console-producer.sh --broker-list localhost:9092 --topic TestTopic
 ```
 
-![](./assets/kafka_consumer6.png)
+![kafka_consumer6.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/kafka_consumer6.png)
 
 Dashboard的websocket工具接收到了Kafka 生产的消息"hello-kafka":
 
-![](./assets/kafka_consumer7.png)
+![kafka_consumer7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/kafka_consumer7.png)

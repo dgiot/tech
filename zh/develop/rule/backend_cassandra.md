@@ -53,13 +53,13 @@ CREATE TABLE t_mqtt_msg (
 SELECT * FROM "t/#"
 ```
 
-![image](./assets/rule-engine/rule_sql.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/rule_sql.png)
 
 关联动作:
 
 在 “响应动作” 界面选择 “添加”，然后在 “动作” 下拉框里选择 “保存数据到 Cassandra”。
 
-![image](./assets/rule-engine/cass-action-0@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/cass-action-0@2x.png)
 
 填写动作参数:
 
@@ -67,14 +67,14 @@ SELECT * FROM "t/#"
 
 1). 关联资源的 ID。初始状况下，资源下拉框为空，现点击右上角的 “新建资源” 来创建一个 Cassandra 资源。
 
-![image](./assets/rule-engine/cass-resoure-0.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/cass-resoure-0.png)
 
 填写资源配置:
 
 Keysapce 填写 “test”，用户名填写 “root”，密码填写 “public” 其他配置保持默认值，然后点击 “测试连接”
 按钮，确保连接测试成功。
 
-![image](./assets/rule-engine/cass-resoure-1.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/cass-resoure-1.png)
 
 点击 “新建” 按钮，完成资源的创建。
 
@@ -87,11 +87,11 @@ insert into t_mqtt_msg(msgid, topic, qos, payload, arrived) values (${id}, ${top
 
 插入数据之前，SQL 模板里的 ${key} 占位符会被替换为相应的值。
 
-![image](./assets/rule-engine/cass-resoure-2.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/cass-resoure-2.png)
 
 在点击 “新建” 完成规则创建
 
-![image](./assets/rule-engine/cass-rule-overview.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/cass-rule-overview.png)
 
 现在发送一条数据，测试该规则:
 
@@ -103,8 +103,8 @@ Payload: "hello"
 
 然后检查 Cassandra 表，可以看到该消息已成功保存:
 
-![image](./assets/rule-engine/cass-rule-result@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/cass-rule-result@2x.png)
 
 在规则列表里，可以看到刚才创建的规则的命中次数已经增加了 1:
 
-![image](./assets/rule-engine/cass-rule-result@3x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/cass-rule-result@3x.png)

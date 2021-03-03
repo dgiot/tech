@@ -7,7 +7,7 @@ EMQ X 的上下线系统消息通知功能在客户端连接成功或者客户�
 
 打开 [EMQ X Dashboard](http://127.0.0.1:18083/#/modules)，点击左侧的 “模块” 选项卡：
 
-![image-20200927213049265](./assets/modules.png)
+![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/modules.png)
 
 ## 上下线消息通知格式
 

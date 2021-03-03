@@ -142,7 +142,7 @@ EMQ X 企业版支持存储订阅关系、MQTT 消息、设备状态到
 Redis、MySQL、PostgreSQL、MongoDB、Cassandra、TimescaleDB、InfluxDB、DynamoDB、OpenTDSB
 数据库:
 
-![image](./assets/overview_4.png)
+![overview_4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/introduction/assets/overview_4.png)
 
 数据存储相关配置，详见"数据存储"章节。
 
@@ -151,7 +151,7 @@ Redis、MySQL、PostgreSQL、MongoDB、Cassandra、TimescaleDB、InfluxDB、Dyna
 EMQ X 企业版支持直接转发 MQTT 消息到 RabbitMQ、Kafka、Pulsar、RocketMQ、MQTT
 Broker，可作为百万级的物联网接入服务器(IoT Hub):
 
-![image](./assets/overview_5.png)
+![overview_5.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/introduction/assets/overview_5.png)
 
 ### 规则引擎
 
@@ -162,7 +162,7 @@ Kafka、Pulsar、RocketMQ、RabbitMQ、MQTT Broker；保存数据到
 MySQL、PostgreSQL、Redis、MongoDB、DynamoDB、Cassandra、InfluxDB、OpenTSDB、TimescaleDB；发送数据到
 WebServer:
 
-![image](./assets/overview_6.png)
+![overview_6.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/introduction/assets/overview_6.png)
 
 规则引擎相关配置，详见"规则引擎"章节。
 
@@ -174,7 +174,7 @@ Avro 和 Protobuf 是依赖 Schema 的数据格式，编码后的数据为二进
 。解码后的数据可直接被规则引擎和其他插件使用。用户自定义的
 (3rd-party) 编解码服务通过 HTTP 或 TCP 回调的方式，进行更加贴近业务需求的编解码。
 
-![image](./assets/overview_7.png)
+![overview_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/introduction/assets/overview_7.png)
 
 编解码相关配置，详见"编解码"章节。
 

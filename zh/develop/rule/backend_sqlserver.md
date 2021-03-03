@@ -54,13 +54,13 @@ FileUsage   = 1
 SELECT * FROM "t/#"
 ```
 
-![image](./assets/rule-engine/sqlserver1.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/sqlserver1.png)
 
 关联动作:
 
 在 “响应动作” 界面选择 “添加”，然后在 “动作” 下拉框里选择 “保存数据到 SQLServer”。
 
-![image](./assets/rule-engine/sqlserver2.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/sqlserver2.png)
 
 填写动作参数:
 
@@ -73,28 +73,28 @@ SELECT * FROM "t/#"
 insert into t_mqtt_msg(msgid, topic, qos, payload) values ('${id}', '${topic}', ${qos}, '${payload}')
 ```
 
-![image](./assets/rule-engine/sqlserver4.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/sqlserver4.png)
 
 1). 关联资源的 ID。现在资源下拉框为空，可以点击右上角的 “新建资源” 来创建一个 SQLServer 资源:
 
 填写资源配置:
 数据库名填写 “mqtt”，用户名填写 “sa”，密码填写 “mqtt_public”
 
-![image](./assets/rule-engine/sqlserver3.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/sqlserver3.png)
 
 点击 “新建” 按钮。
 
 返回响应动作界面，点击 “确认”。
 
-![image](./assets/rule-engine/sqlserver5.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/sqlserver5.png)
 
 返回规则创建界面，点击 “创建”。
 
-![image](./assets/rule-engine/sqlserver6.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/sqlserver6.png)
 
 在规则列表里，点击 “查看” 按钮或规则 ID 连接，可以预览刚才创建的规则:
 
-![image](./assets/rule-engine/sqlserver7.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/sqlserver7.png)
 
 规则已经创建完成，现在发一条数据:
 
@@ -106,4 +106,4 @@ Payload: "hello"
 
 然后检查 SQLServer 表，新的 record 是否添加成功:
 
-![image](./assets/rule-engine/sqlserver8.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/sqlserver8.png)

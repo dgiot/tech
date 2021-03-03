@@ -177,7 +177,7 @@ auth.mysql.password_hash = sha256,salt
 
 PostgreSQL 认证功能逻辑图：
 
-![image-20200217154254202](./assets/image-20200217154254202.png)
+![image-20200217154254202.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/advanced/assets/image-20200217154254202.png)
 
 
 ::: tip 
@@ -195,7 +195,7 @@ PostgreSQL 认证功能逻辑图：
   - 匿名认证开启时，允许客户端接入
   - 匿名认证关闭时，禁止客户端接入
 
-![_images/guide_2.png](./assets/guide_2.png)
+![guide_2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/advanced/assets/guide_2.png)
 
 <!-- replace -->
 

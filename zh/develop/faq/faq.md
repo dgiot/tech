@@ -74,7 +74,7 @@ EMQ X 公司主要提供[三个产品](https://www.emqx.io/products)，主要体
 
 EMQ X 是一个开源的 MQTT 消息服务器，并且 MQTT 是一个 TCP 协议栈上位于应用层的协议；而 NB-IoT 和 LoRAWAN 在 TCP 协议层处于物理层，负责物理信号的传输。因此两者在 TCP 协议栈的不同层次上，实现不同的功能。
 
-
+d
 
 
 ## MQTT 协议与 HTTP 协议相比，有何优点和弱点?

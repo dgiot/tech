@@ -90,11 +90,11 @@ EMQ X Enterprise 需要 License 文件才能正常启动，请联系销售人员
 
 - 访问 `https://emqx.io`，在 EMQ X Enterprise 下载页面，点击 **Get FREE Trial License**。
 
-    ![](./static/WX20200210-153301@2x.png)
+   ![WX20200210-153301@2x.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/getting-started/static/WX20200210-153301%402x.png)
 
 - 注册登陆并申请 License 文件试用，下载 License 文件。
 
-    ![](./static/WX20200210-153822@2x.png)
+   ![WX20200210-153822@2x.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/getting-started/static/WX20200210-153822%402x.png)
 
 ### 放置 License
 

@@ -6,23 +6,23 @@
 
 打开 [EMQ X Dashboard](http://127.0.0.1:18083/#/modules)，点击左侧的 “模块” 选项卡，选择添加：
 
-![image-20200928161310952](./assets/modules.png)
+![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/modules.png)
 
 点击"选择",然后选择 JWT 认证模块
 
-![image-20200928141305205](./assets/auth_jwt1.png)
+![auth_jwt1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_jwt1.png)
 
 需要配置JWT密钥，认证源，公钥（可选）等基本连接参数表。
 
-![image-20200928141327836](./assets/auth_jwt2.png)
+![auth_jwt2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_jwt2.png)
 
 如果需要添加自定义验证字段，可参考如下配置：
 
-![image-20200928141558866](./assets/auth_jwt3.png)
+![auth_jwt3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_jwt3.png)
 
 最后点击“添加”按钮模块即可添加成功。
 
-![image-20200928141558866](./assets/auth_jwt4.png)
+![auth_jwt4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_jwt4.png)
 
 ## 认证原理
 

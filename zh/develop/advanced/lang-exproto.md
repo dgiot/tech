@@ -28,7 +28,7 @@ ref:
 
 与 `emqx-extension-hook` 不同的是，`emqx-exproto` 提供的是完全不同的回调和函数接口以实现协议接入的处理：
 
-![ExProto - Arch](./assets/exproto-arch.jpg)
+![exproto-arch.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/advanced/assets/exproto-arch.jpg)
 
 `emqx-exproto` 会提供函数接口供 Python/Java 侧调用；也设计了回调函数去通知 Python/Java 侧 `emqx-exproto` 有新的事件产生。
 

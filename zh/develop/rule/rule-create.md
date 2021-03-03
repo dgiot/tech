@@ -26,23 +26,23 @@ nc 命令在部分 Linux 操作系统上有问题，无法与 EMQ X 发起的 HT
         qos = 1
    ```
 
-   ![image](../assets/webhook-rulesql-1.png)
+   ![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/webhook-rulesql-1.png)
 
 2. 关联动作:
 
    在 “响应动作” 界面选择 “添加”，然后在 “动作” 下拉框里选择 “发送数据到 Web 服务”。
 
-  ![image](../assets/webhook-action-1.png)
+  ![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/webhook-action-1.png)
 
 3. 给动作关联资源:
 
    现在资源下拉框为空，可以点击右上角的 “新建资源” 来创建一个 WebHook 资源:
 
-   ![image](../assets/webhook-action-2.png)
+   ![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/webhook-action-2.png)
 
    选择 “WebHook 资源”:
 
-   ![image](../assets/webhook-resource-1.png)
+   ![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/webhook-resource-1.png)
 
 4. 填写资源配置:
 
@@ -52,19 +52,19 @@ nc 命令在部分 Linux 操作系统上有问题，无法与 EMQ X 发起的 HT
 
    点击 “测试连接” 按钮，确保连接测试成功，最后点击 “新建” 按钮:
 
-   ![image](../assets/webhook-resource-2.png)
+   ![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/webhook-resource-2.png)
 
 5. 返回响应动作界面，点击 “确认”。
 
-   ![image](../assets/webhook-action-3.png)
+   ![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/webhook-action-3.png)
 
 6. 返回规则创建界面，点击 “新建”。
 
-   ![image](../assets/webhook-rule-create.png)
+   ![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/webhook-rule-create.png)
 
    规则已经创建完成，规则列表里展示出了新创建的规则:
 
-   ![image](../assets/webhook-rulelist-1.png)
+   ![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/webhook-rulelist-1.png)
 
 7. 发一条消息:
 
@@ -76,7 +76,7 @@ nc 命令在部分 Linux 操作系统上有问题，无法与 EMQ X 发起的 HT
 
   然后检查 Web 服务是否收到消息:
 
-  ![image](../assets/webhook-result-1.png)
+  ![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/webhook-result-1.png)
 
 ## 通过 CLI 创建简单规则
 ### 创建 Inspect 规则 

@@ -2,7 +2,7 @@
 
 EMQ X 桥接转发 MQTT 消息到 RocketMQ 集群:
 
-![image](./assets/bridge_rocket.png)
+![bridge_rocket.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/bridge/assets/bridge_rocket.png)
 
 RocketMQ 桥接插件配置文件: etc/plugins/emqx_bridge_rocket.conf。
 

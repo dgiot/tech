@@ -35,7 +35,7 @@ CREATE TABLE t_mqtt_msg (
 );
 ```
 
-![image-20200729163951206](./assets/rule-engine/image-20200729163951206.png)
+![image-20200729163951206.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/image-20200729163951206.png)
 
 
 创建规则:
@@ -48,7 +48,7 @@ CREATE TABLE t_mqtt_msg (
 SELECT * FROM "t/#"
 ```
 
-![image](./assets/rule-engine/rule_sql.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/rule_sql.png)
 
 后续动作创建操作可以根据你的 EMQ X 版本灵活选择。
 
@@ -70,7 +70,7 @@ SELECT * FROM "t/#"
 insert into test.t_mqtt_msg(ts, msgid, topic, qos, payload) values (now, '${id}', '${topic}', ${qos}, '${payload}')
 ```
 
-![image-20200729164158454](./assets/rule-engine/image-20200729164158454.png)
+![image-20200729164158454.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/image-20200729164158454.png)
 
 2). 关联资源的 ID。现在资源下拉框为空，可以点击右上角的 “新建资源” 来创建一个 TDengine资源:
 
@@ -78,13 +78,13 @@ insert into test.t_mqtt_msg(ts, msgid, topic, qos, payload) values (now, '${id}'
 
 用户名填写 “root”，密码填写缺省密码 “taosdata”，**TDengine 不在资源中配置数据库名，请在 SQL 中自行配置。**
 
-![image-20200729165651951](./assets/rule-engine/image-20200729165651951.png)
+![image-20200729165651951.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/image-20200729165651951.png)
 
 点击 “新建” 按钮。
 
 返回响应动作界面，点击 “确认”。
 
-![image-20200729174211581](./assets/rule-engine/image-20200729174211581.png)
+![image-20200729174211581.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/image-20200729174211581.png)
 
 返回规则创建界面，点击 “创建”。
 
@@ -120,13 +120,13 @@ insert into test.t_mqtt_msg(ts, msgid, topic, qos, payload) values (now, '${id}'
 **还需添加 Authorization 请求头作为认证信息**，请求头的值为 Basic + TDengine {username}:{password} 经过Base64 编码之后的字符串, 例如默认的 root:taosdata 编码后为 `cm9vdDp0YW9zZGF0YQ==`，
 填入的值为 `Basic cm9vdDp0YW9zZGF0YQ==`。
 
-![image-20200730093728092](./assets/rule-engine/tdengine-webhook.png)
+![tdengine-webhook.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/tdengine-webhook.png)
 
 点击 “新建” 按钮。
 
 返回响应动作界面，点击 “确认”。
 
-![image-20200730093457366](./assets/rule-engine/image-20200730093457366.png)
+![image-20200730093457366.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/image-20200730093457366.png)
 
 返回规则创建界面，点击 “创建”。
 
@@ -135,7 +135,7 @@ insert into test.t_mqtt_msg(ts, msgid, topic, qos, payload) values (now, '${id}'
 
 在规则列表里，点击 “查看” 按钮或规则 ID 连接，可以预览刚才创建的规则:
 
-![image-20200729165826748](./assets/rule-engine/image-20200729165826748.png)
+![image-20200729165826748.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/image-20200729165826748.png)
 
 规则已经创建完成，现在发一条数据:
 
@@ -151,4 +151,4 @@ Payload: "hello"
 select * from t_mqtt_msg;
 ```
 
-![image-20200729174914518](./assets/rule-engine/image-20200729174914518.png)
+![image-20200729174914518.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/image-20200729174914518.png)

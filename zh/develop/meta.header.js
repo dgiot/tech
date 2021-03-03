@@ -3,8 +3,8 @@ module.exports = [
         "title": '产品概览',
         "collapsable": true,
         "children": [
-            ['./', 'EMQ X 消息服务器简介'],
-            ['introduction/checklist', 'EMQ X 消息服务器功能列表']
+            ['./', 'DGIOT CMP 简介'],
+            ['introduction/checklist', 'DGIOT CMP 功能列表']
         ],
         "category": "工业数据云平台"
     },
@@ -110,7 +110,8 @@ module.exports = [
                     ['rule/backend_sqlserver', '保存数据到 SQLServer'],
                     ['rule/backend_dolphindb', '保存数据到 DolphinDB'],
                     ['rule/backend_tdengine', '保存数据到 TDengine']
-                ]
+                ],
+                "category": "工业数据云平台"
             },
             {
                 "title": '数据桥接',
@@ -138,150 +139,154 @@ module.exports = [
                 "category": "工业数据云平台"
             },
             {
-            "title": '获取订阅关系',
-            "collapsable": true,
-            "children": [
-              ['rule/get_subs_from_redis', '从 Redis 中获取订阅关系'],
-              ['rule/get_subs_from_mysql', '从 MySQL 中获取订阅关系'],
-              ['rule/offline_msg_to_pgsql', '离线消息保存到 PostgreSQL'],
-              ['rule/get_subs_from_pgsql', '从 PostgreSQL 中获取订阅关系'],
-              ['rule/get_subs_from_cassandra', '从 Cassandra 中获取订阅关系'],
-              ['rule/get_subs_from_mongodb', '从 MongoDB 中获取订阅关系']
-            ]
-          },
-          {
-            "title": '编解码',
-            "collapsable": true,
-            "path": "rule/schema-registry"
-          }
+                "title": '获取订阅关系',
+                "collapsable": true,
+                "children": [
+                    ['rule/get_subs_from_redis', '从 Redis 中获取订阅关系'],
+                    ['rule/get_subs_from_mysql', '从 MySQL 中获取订阅关系'],
+                    ['rule/offline_msg_to_pgsql', '离线消息保存到 PostgreSQL'],
+                    ['rule/get_subs_from_pgsql', '从 PostgreSQL 中获取订阅关系'],
+                    ['rule/get_subs_from_cassandra', '从 Cassandra 中获取订阅关系'],
+                    ['rule/get_subs_from_mongodb', '从 MongoDB 中获取订阅关系']
+                ],
+                "category": "工业数据云平台"
+            },
+            {
+                "title": '编解码',
+                "collapsable": true,
+                "path": "rule/schema-registry",
+                "category": "工业数据云平台"
+            }
         ],
         "category": "工业数据云平台"
     },
-  {
-    "title": '插件管理',
-    "collapsable": true,
-    "children": [
-      ['advanced/plugins', '插件介绍'],
-      {
-        "title": '数据存储插件',
+    {
+        "title": '插件管理',
         "collapsable": true,
         "children": [
-          ['backend/backend', '数据存储设计'],
-          ['backend/backends', 'EMQ X 规则引擎数据存储']
-        ]
-      },
-      {
-        "title": '消息桥接插件',
+            ['advanced/plugins', '插件介绍'],
+            {
+                "title": '数据存储插件',
+                "collapsable": true,
+                "children": [
+                    ['backend/backend', '数据存储设计'],
+                    ['backend/backends', 'EMQ X 规则引擎数据存储']
+                ],
+                "category": "工业数据云平台"
+            },
+            {
+                "title": '消息桥接插件',
+                "collapsable": true,
+                "children": [
+                    ['bridge/bridge', '消息桥接简介'],
+                    ['bridge/bridge-mqtt', 'MQTT 桥接'],
+                    ['bridge/bridge-rpc', 'RPC 桥接'],
+                    ['bridge/bridge-kafka', 'Kafka 桥接'],
+                    ['bridge/bridge-rabbitmq', 'RabbitMQ 桥接'],
+                    ['bridge/bridge-pulsar', 'Pulsar 桥接'],
+                    ['bridge/bridge-rocketmq', 'RocketMQ 桥接']
+                ],
+                "category": "工业数据云平台"
+            },
+        ],
+        "category": "工业数据云平台"
+    },
+    {
+        "title": '运维操作',
         "collapsable": true,
         "children": [
-          ['bridge/bridge', '消息桥接简介'],
-          ['bridge/bridge-mqtt', 'MQTT 桥接'],
-          ['bridge/bridge-rpc', 'RPC 桥接'],
-          ['bridge/bridge-kafka', 'Kafka 桥接'],
-          ['bridge/bridge-rabbitmq', 'RabbitMQ 桥接'],
-          ['bridge/bridge-pulsar', 'Pulsar 桥接'],
-          ['bridge/bridge-rocketmq', 'RocketMQ 桥接']
-        ]
-      },
-    ],
-    "category": "工业数据云平台"
-  },
-  {
-    "title": '运维操作',
-    "collapsable": true,
-    "children": [
-      ['tutorial/tune', '系统调优'],
-      ['tutorial/deploy', '生产部署'],
-      ['tutorial/prometheus', 'Prometheus 监控告警'],
-      ['tutorial/benchmark', '性能测试']
-    ],
-    "category": "工业数据云平台"
-  },
-  {
-    "title": 'HTTP API',
-    "collapsable": true,
-    "path": "advanced/http-api",
-    "category": "工业数据云平台"
-  },
-  {
-    "title": '参数配置',
-    "collapsable": true,
-    "path": "configuration/configuration",
-    "category": "工业数据云平台"
-  },
-  {
-    "title": '命令行接口',
-    "collapsable": true,
-    "children": [
-      ['advanced/cli', '命令行']
-    ],
-    "category": "工业数据云平台"
-  },
-  {
-    "title": '版本热升级',
-    "collapsable": true,
-    "path": "advanced/relup",
-    "category": "工业数据云平台"
-  },
-  {
-    "title": 'FAQ 常见问题解答',
-    "collapsable": true,
-    "children": [
-      ['faq/faq', '入门概念'],
-      ['faq/use-guide', '使用教程'],
-      ['faq/deployment', '安装部署'],
-      ['faq/error', '常见错误'],
-      ['faq/enterprise', '商业服务'],
-      ['faq/tags', 'FAQ 标签']
-    ],
-    "category": "工业数据云平台"
-  },
-  {
-    "title": 'SDK & Tools',
-    "collapsable": true,
-    "children": [
-      ['development/client', 'MQTT Client Library'],
-      ['development/c', 'MQTT C Client Library'],
-      ['development/java', 'MQTT Java Client Library'],
-      ['development/go', 'MQTT Go Client Library'],
-      ['development/erlang', 'MQTT Erlang Client Library'],
-      ['development/javascript', 'MQTT JavaScript Client Library'],
-      ['development/python', 'MQTT Python Client Library'],
-      ['development/wechat-miniprogram', 'MQTT 微信小程序接入'],
-      ['development/resource', '其他资源']
-    ],
-    "category": "工业数据云平台"
-  },
-  {
-    "title": '协议介绍',
-    "collapsable": true,
-    "children": [
-      ['development/protocol', 'MQTT 协议'],
-      ['modules/lwm2m_protocol', 'LwM2M 网关'],
-      ['modules/mqtt_sn_protocol', 'MQTT-SN 网关'],
-      ['modules/tcp_protocol', 'TCP 网关'],
-      ['modules/jt808_protocol', 'JT/T808 网关'],
-      ['modules/coap_protocol', 'CoAP 网关'],
-      ['modules/stomp_protocol', 'Stomp 网关']
-    ],
-    "category": "工业数据云平台"
-  },
-  {
-    "title": '版本发布',
-    "collapsable": true,
-    "children": [
-      ['changes/changes-ee', '变更日志'],
-      ['changes/upgrade', '升级指南']
-    ],
-    "category": "工业数据云平台"
-  },
-  {
-    "title": '相关资料',
-    "collapsable": true,
-    "children": [
-      ['design/design', '架构设计'],
-      ['awesome/awesome', '资源']
-    ],
-    "category": "工业数据云平台"
-  },
+            ['tutorial/tune', '系统调优'],
+            ['tutorial/deploy', '生产部署'],
+            ['tutorial/prometheus', 'Prometheus 监控告警'],
+            ['tutorial/benchmark', '性能测试']
+        ],
+        "category": "工业数据云平台"
+    },
+    {
+        "title": 'HTTP API',
+        "collapsable": true,
+        "path": "advanced/http-api",
+        "category": "工业数据云平台"
+    },
+    {
+        "title": '参数配置',
+        "collapsable": true,
+        "path": "configuration/configuration",
+        "category": "工业数据云平台"
+    },
+    {
+        "title": '命令行接口',
+        "collapsable": true,
+        "children": [
+            ['advanced/cli', '命令行']
+        ],
+        "category": "工业数据云平台"
+    },
+    {
+        "title": '版本热升级',
+        "collapsable": true,
+        "path": "advanced/relup",
+        "category": "工业数据云平台"
+    },
+    {
+        "title": 'FAQ 常见问题解答',
+        "collapsable": true,
+        "children": [
+            ['faq/faq', '入门概念'],
+            ['faq/use-guide', '使用教程'],
+            ['faq/deployment', '安装部署'],
+            ['faq/error', '常见错误'],
+            ['faq/enterprise', '商业服务'],
+            ['faq/tags', 'FAQ 标签']
+        ],
+        "category": "工业数据云平台"
+    },
+    {
+        "title": 'SDK & Tools',
+        "collapsable": true,
+        "children": [
+            ['development/client', 'MQTT Client Library'],
+            ['development/c', 'MQTT C Client Library'],
+            ['development/java', 'MQTT Java Client Library'],
+            ['development/go', 'MQTT Go Client Library'],
+            ['development/erlang', 'MQTT Erlang Client Library'],
+            ['development/javascript', 'MQTT JavaScript Client Library'],
+            ['development/python', 'MQTT Python Client Library'],
+            ['development/wechat-miniprogram', 'MQTT 微信小程序接入'],
+            ['development/resource', '其他资源']
+        ],
+        "category": "工业数据云平台"
+    },
+    {
+        "title": '协议介绍',
+        "collapsable": true,
+        "children": [
+            ['development/protocol', 'MQTT 协议'],
+            ['modules/lwm2m_protocol', 'LwM2M 网关'],
+            ['modules/mqtt_sn_protocol', 'MQTT-SN 网关'],
+            ['modules/tcp_protocol', 'TCP 网关'],
+            ['modules/jt808_protocol', 'JT/T808 网关'],
+            ['modules/coap_protocol', 'CoAP 网关'],
+            ['modules/stomp_protocol', 'Stomp 网关']
+        ],
+        "category": "工业数据云平台"
+    },
+    {
+        "title": '版本发布',
+        "collapsable": true,
+        "children": [
+            ['changes/changes-ee', '变更日志'],
+            ['changes/upgrade', '升级指南']
+        ],
+        "category": "工业数据云平台"
+    },
+    {
+        "title": '相关资料',
+        "collapsable": true,
+        "children": [
+            ['design/design', '架构设计'],
+            ['awesome/awesome', '资源']
+        ],
+        "category": "工业数据云平台"
+    },
 ]

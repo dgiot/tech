@@ -23,6 +23,7 @@ ref:
    - 设备管理平台DMP（Device Management Platform）
    - 应用使能平台AEP（Application Enablement Platform）
    - 业务分析平台BAP（Business Analytics Platform）
+  
 
   ![IOTARCH.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/IOTARCH.png)
   
@@ -35,6 +36,9 @@ ref:
    也在持续将相关技术融入到DGIOT中来，前期我们先主要采用EMQ的技术文档，后续补充数据科技近几年在电力行业、低功耗领域、
    工业互联网等方面的一些技术成果，也期望有兴趣的开发者也可以一起来参与编写CMP层的通道插件，希望能提供一个更加完善的
    CMP层技术框架。
+   
+   CMP层的主要使命是完成物联网数据从非结构化到结构化的转换，已经异构结构化数据之间的转换、同时也承担这些数据的消息路由，
+   EMQ在这方面做得非常棒，值得我们学习和参考。
    
 # EMQ X 消息服务器简介
 

@@ -3,7 +3,9 @@ const path = require('path')
 const zh_cloudHeader = require('../zh/manual/cloud/meta.header')
 const zh_edgeHeader = require('../zh/manual/edge/meta.header')
 const zh_productHeader = require('../zh/product/meta.header')
-const zh_developHeader = require('../zh/develop/meta.header')
+const zh_backendHeader = require('../zh/backend/meta.header')
+const zh_frontendHeader = require('../zh/frontend/meta.header')
+const zh_dataanalysisHeader = require('../zh/dataanalysis/meta.header')
 const zh_blogHeader = require('../zh/blog/meta.header')
 
 const en_cloudHeader = require('../en/manual/cloud/meta.header')
@@ -67,9 +69,9 @@ module.exports = {
           },
           {
             text: '开发指南', items: [
-              {text: '设备接入', link: '/zh/develop/'},
-              {text: '设备管理', link: '/zh/develop/'},
-              {text: '数据计算', link: '/zh/develop/'}
+              {text: '服务架构', link: '/zh/backend/'},
+              {text: '交互技术', link: '/zh/frontend/'},
+              {text: '数据分析', link: '/zh/dataanalysis/'}
             ]
           },
           {
@@ -82,7 +84,9 @@ module.exports = {
           '/zh/manual/cloud/': zh_cloudHeader,
           '/zh/manual/edge/': zh_edgeHeader,
           '/zh/product/': zh_productHeader,
-          '/zh/develop/': zh_developHeader,
+          '/zh/backend/': zh_backendHeader,
+          '/zh/frontend/': zh_frontendHeader,
+          '/zh/dataanalysis/': zh_dataanalysisHeader,
           '/zh/blog/': zh_blogHeader,
         },
       },

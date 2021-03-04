@@ -2,8 +2,13 @@ module.exports = [
     {
         "title": '数据分析',
         "collapsable": true,
+        "path": "./",
+        "category": "工业数据云平台"
+    },
+    {
+        "title": 'TDengine',
+        "collapsable": true,
         "children": [
-            ['./', '数据分析'],
             ['tdengine/00.index/docs', 'TDengine文档'],
             ['tdengine/01.evaluation/docs', 'TDengine 介绍'],
             ['tdengine/02.getting-started/docs', '立即开始'],

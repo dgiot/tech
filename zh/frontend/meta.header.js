@@ -1,9 +1,38 @@
 module.exports = [
     {
+        "title": '交互技术',
+        "collapsable": true,
+        "path": "./",
+        "category": "工业数据云平台"
+    },
+    {
+        "title": 'Web前端',
+        "collapsable": true,
+        "path": "./",
+        "category": "工业数据云平台"
+    },
+    {
+        "title": '安卓App',
+        "collapsable": true,
+        "path": "./",
+        "category": "工业数据云平台"
+    },
+    {
+        "title": '苹果App',
+        "collapsable": true,
+        "path": "./",
+        "category": "工业数据云平台"
+    },
+    {
+        "title": '微信小程序',
+        "collapsable": true,
+        "path": "./",
+        "category": "工业数据云平台"
+    },
+    {
         "title": 'Parse-Server',
         "collapsable": true,
         "children": [
-            ['./', '介绍'],
             ['parse/get-started', '开始'],
             ['parse/Object', '对象Objects'],
             ['parse/Query', '查询Queries'],

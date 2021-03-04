@@ -63,8 +63,8 @@ module.exports = {
             ]
           },
           {
-            text: '产品手册', items: [
-              {text: 'DGIOT PRODUCT', link: '/zh/product/'},
+            text: '产品说明', items: [
+              {text: '数字孪生', link: '/zh/product/'}
             ]
           },
           {

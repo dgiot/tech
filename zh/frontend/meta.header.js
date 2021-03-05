@@ -8,25 +8,33 @@ module.exports = [
     {
         "title": 'Web前端',
         "collapsable": true,
-        "path": "./",
+        "children": [
+            ['web/', '开始']
+        ],
         "category": "工业数据云平台"
     },
     {
         "title": '安卓App',
         "collapsable": true,
-        "path": "./",
+        "children": [
+            ['androidapp/', '开始']
+        ],
         "category": "工业数据云平台"
     },
     {
         "title": '苹果App',
         "collapsable": true,
-        "path": "./",
+        "children": [
+            ['iosapp/', '开始']
+        ],
         "category": "工业数据云平台"
     },
     {
         "title": '微信小程序',
         "collapsable": true,
-        "path": "./",
+        "children": [
+            ['wechat/', '开始']
+        ],
         "category": "工业数据云平台"
     },
     {

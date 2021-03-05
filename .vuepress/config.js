@@ -2,7 +2,8 @@ const _ = require('lodash')
 const path = require('path')
 const zh_cloudHeader = require('../zh/manual/cloud/meta.header')
 const zh_edgeHeader = require('../zh/manual/edge/meta.header')
-const zh_productHeader = require('../zh/product/meta.header')
+const zh_productdgiiHeader = require('../zh/product/dgii/meta.header')
+const zh_productdgiotHeader = require('../zh/product/dgiot/meta.header')
 const zh_backendHeader = require('../zh/backend/meta.header')
 const zh_frontendHeader = require('../zh/frontend/meta.header')
 const zh_dataanalysisHeader = require('../zh/dataanalysis/meta.header')
@@ -64,7 +65,8 @@ module.exports = {
           },
           {
             text: '产品说明', items: [
-              {text: '数字孪生', link: '/zh/product/'}
+              {text: '一站式物联网平台', link: '/zh/product/dgiot/'},
+              {text: '工业互联网平台', link: '/zh/product/dgii/'}
             ]
           },
           {
@@ -83,7 +85,8 @@ module.exports = {
         sidebar: {
           '/zh/manual/cloud/': zh_cloudHeader,
           '/zh/manual/edge/': zh_edgeHeader,
-          '/zh/product/': zh_productHeader,
+          '/zh/product/dgiot/': zh_productdgiotHeader,
+          '/zh/product/dgii/': zh_productdgiiHeader,
           '/zh/backend/': zh_backendHeader,
           '/zh/frontend/': zh_frontendHeader,
           '/zh/dataanalysis/': zh_dataanalysisHeader,

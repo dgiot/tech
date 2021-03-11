@@ -19,7 +19,7 @@ module.exports = [
     "collapsable": true,
     "children": [
       ['modbus/', '学习计划'],
-      ['modbus/modbus', '学习计划']
+      ['modbus/modbus', 'modbus基础']
     ],
     "category": "工业数据云平台"
   }

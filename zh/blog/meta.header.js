@@ -13,5 +13,14 @@ module.exports = [
       ['add_device_by_mqtt/Rule-engine', '规则引擎']
     ],
     "category": "工业数据云平台"
+  },
+  {
+    "title": 'modbus学习进阶',
+    "collapsable": true,
+    "children": [
+      ['modbus/', '学习计划'],
+      ['modbus/modbus', '学习计划']
+    ],
+    "category": "工业数据云平台"
   }
 ]

@@ -35,5 +35,5 @@ ref:
 +   ECS业务服务器调用基于HTTPS协议的API接口Pub，给Topic发送指令，将数据发送到物联网平台。
 +   物联网平台通过MQTT协议，使用Publish发送数据（指定Topic和Payload）到设备端。
 
-物联网平台还提供了设备管理、规则引擎、监控运维等能力。了解更多信息，请参见[产品功能](https://www.alibabacloud.com/help/zh/doc-detail/195820.htm#concept-2009931 "物联网平台主要提供了设备接入、设备管理、规则引擎等能力，为各类IoT场景和行业开发者赋能。")和[产品架构](https://www.alibabacloud.com/help/zh/doc-detail/30523.htm#concept-txj-mnp-tdb "设备连接物联网平台，与物联网平台进行数据通信。物联网平台可将设备数据流转到其他阿里云产品中进行存储和处理。这是构建物联网应用的基础。")。
+物联网平台还提供了设备管理、规则引擎、监控运维等能力。了解更多信息，请参见[产品功能](product_functions.md)和[产品架构](product_architecture.md)
 

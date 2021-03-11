@@ -16,7 +16,18 @@ module.exports = [
     "title": '设备接入',
     "collapsable": true,
     "children": [
-      ['cmp/', '创建产品']
+      ['cmp/', '创建产品'],
+      ['cmp/single_creation_device', '创建单个设备'],
+      ['cmp/batch_creation_device', '批量创建设备'],
+      ['cmp/manage_device', '管理设备'],
+      ['cmp/get_sdk', '下载设备端SDK'],
+      ['cmp/equipment_safety_certification', '设备安全认证'],
+      ['cmp/one_device_by_one_key', '一机一密'],
+      ['cmp/one_product_by_one_key', '一型一密'],
+      ['cmp/device_certificate', '设备证书'],
+      ['cmp/push_device_certificate', '将证书烧录至设备'],
+      ['cmp/get_device_certificate_from_cloud', '设备从云端获取证书'],
+      ['cmp/what_is_topic', '什么是Topic'],
     ],
     "category": "一站式物联网平台"
   }

@@ -78,7 +78,7 @@ module.exports = {
           },
           {
             text: '博客', items: [
-              {text: 'DGIOT BLOG', link: '/zh/blog/'}
+              {text: '案例学习', link: '/zh/blog/'}
             ]
           }
         ],
@@ -142,14 +142,14 @@ module.exports = {
   },
   plugins: [
     [ 'feed', {
-        
+
     }],
     [
       'sitemap', {
         hostname: 'https://tech.iotn2n.com'
       },
     ],
-    [ 
+    [
       '@vuepress/google-analytics',
       {
         'ga': 'UA-102193749-2'

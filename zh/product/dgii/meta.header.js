@@ -78,11 +78,11 @@ module.exports = [
             ['application_function/', '什么是应用功能'],
             ['application_function/factory_calendar', '工厂日历'],
             ['application_function/OEE', 'OEE'],
-            ['digital_factory/Operating_cockpit', '经营驾驶舱'],
-            ['digital_factory/production_process_traceabilit', '生产过程追溯'],
-            ['digital_factory/integrated_configuration_page', '集成组态页面'],
-            ['digital_factory/product_management', '产品管理'],
-            ['digital_factory/order_management', '订单管理']
+            ['application_function/Operating_cockpit', '经营驾驶舱'],
+            ['application_function/production_process_traceabilit', '生产过程追溯'],
+            ['application_function/integrated_configuration_page', '集成组态页面'],
+            ['application_function/product_management', '产品管理'],
+            ['application_function/order_management', '订单管理']
         ],
         "category": "工业数据云平台"
     },
@@ -90,11 +90,11 @@ module.exports = [
         "title": '行业级平台',
         "collapsable": true,
         "children": [
-            ['industry_level platform/', '行业级平台'],
-            ['digital_factory/preapplication_management', '预装应用管理'],
-            ['digital_factory/application_management', '应用管理'],
-            ['digital_factory/docker_management', '镜像管理'],
-            ['digital_factory/', '集群管理']
+            ['industry_level_platform/', '行业级平台'],
+            ['industry_level_platform/preapplication_management', '预装应用管理'],
+            ['industry_level_platform/application_management', '应用管理'],
+            ['industry_level_platform/docker_management', '镜像管理'],
+            ['industry_level_platform/cluster_management', '集群管理']
         ],
         "category": "工业数据云平台"
     },

@@ -15,7 +15,25 @@ module.exports = [
     "category": "工业数据云平台"
   },
   {
-    "title": 'modbus学习进阶',
+    "title": 'modbus设备接入数蛙平台',
+    "collapsable": true,
+    "children": [
+      ['modbus/', '学习计划'],
+      ['modbus/modbus', 'modbus基础']
+    ],
+    "category": "工业数据云平台"
+  },
+  {
+    "title": 'OPC-DA设备接入数蛙平台',
+    "collapsable": true,
+    "children": [
+      ['modbus/', '学习计划'],
+      ['modbus/modbus', 'modbus基础']
+    ],
+    "category": "工业数据云平台"
+  },
+  {
+    "title": 'OPC-UA设备接入数蛙平台',
     "collapsable": true,
     "children": [
       ['modbus/', '学习计划'],

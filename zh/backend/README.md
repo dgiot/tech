@@ -13,16 +13,44 @@ category:
 ref:
 ---
 
-# DGIOT物联网平台简介
+#需求
 
-   DGIOT物联网平台通过持续整合业界领先的CMP、DMP、AEP、BAP的相关技术成果和架构思想，为工业物联网用户提供快速的一站式
-   服务的完整平台，为应用开发者提供简单易学的开发者平台。
+**华盛顿州雷德蒙德-2019年7月30日-** 微软公司今天宣布了[IoT Signals](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/IoT-Signals-Microsoft-072019.pdf)，这是一份旨在提供IoT领域全球概览的新研究报告。微软对企业组织中的3,000多家IoT决策者进行了调查，目的是向业界提供有关IoT生态系统的整体，市场级别的视图，包括IoT的采用率，相关技术趋势，挑战和收益。
+
+该报告表明，物联网的采用正在迅速增长，并且受访者认为，从现在起两年后，其公司收入的30％将归功于物联网。然而，该行业面临巨大的物联网技能差距，以及复杂性和安全性挑战，如果不解决，可能会损害物联网的业务收益。
+
+“物联网正在改变每个行业的业务，并推动突破性创新，” Azure物联网负责人Sam George说。“我们的研究表明，要释放物联网的全部潜力，行业需要应对关键挑战，例如技能短缺，安全问题和解决方案复杂性。微软在简化和保护物联网方面处于领先地位，以便使地球上的每个企业都能受益。”
+
+物联网信号的主要发现：
+
+- 85％的受访者参与了IoT的应用，其中四分之三的受访者都在规划IoT项目。
+- 在物联网采用者中，有88％的人认为物联网对于企业成功至关重要。
+- 物联网采用者认为，从现在起两年后，他们将看到30％的投资回报率，包括节省成本和提高效率。
+- 几乎所有的IoT采用者（97％）在实施IoT时都存在安全隐患，但这并不妨碍采用。
+- 38％的物联网采用者认为将物联网用作进一步扩大物联网采用的障碍的复杂性和技术挑战。
+- 缺乏人才和培训给一半的物联网采用者带来了挑战，并且47％的人表示可用的熟练工人不足。
+- 受访者认为，未来两年物联网成功的关键技术驱动因素是人工智能，边缘计算和5G。
+- 将近三分之一的项目（占30％）在概念验证阶段失败，通常是因为实施成本高昂或底线收益尚不清楚。
+
+物联网设备的激增使公司能够将云智能带到边缘，从而创建适应性强并响应其环境的解决方案。“根据IDC的全球全球DataSphere IoT设备和数据预测，IDC预计到2025年将有416亿台联网的IoT设备-在预测期内以8.9％的速度增长，” 5G物联网集团副总裁Carrie MacGillivray说和IDC的流动性。
+
+“随着市场的不断成熟，物联网越来越成为一种结构，使从“物”到人员和流程的信息交换成为可能。数据成为共同点，因为它是从网络的最远和最远的边缘进行捕获，处理和使用的，从而为行业，政府和个人的生活创造价值。”
+
+在各行各业中，包括星巴克，雪佛龙，布勒公司，Steelcase，蒂森克虏伯等在内的全球和企业领先客户正在通过物联网和智能边缘解决方案改变其业务。微软与BCG集团合作，确定了IoT成功的七个关键要素：业务战略，领导力和组织，技术路线图，人才，运营和核心业务流程，合作伙伴关系和安全性。
+
+为了进一步推动客户和合作伙伴的成功发展，微软计划在2022年之前向物联网，智能边缘技术和生态系统投资50亿美元。在过去的一年中，微软增加了100多种新功能和服务，并发布了70项新的物联网合作伙伴公告，超过一万个IoT和智能边缘合作伙伴的生态系统可为客户提供帮助，无论他们在IoT旅途中处于何处。
+
+# 定义
+
+   物联网平台是物联网架构中的核心部分，它连接现实世界和虚拟世界，以实现对象之间的通信，管理数据流，支持应用程序开发并为连接的物联网设备提供基本分析。
    
-   根据各类参与者所提供的服务类型，按照Machina Research的分类方法，物联网平台可分为
-   - 连接管理平台CMP（Connectivity Management Platform）-
-   - 设备管理平台DMP（Device Management Platform）
-   - 应用使能平台AEP（Application Enablement Platform）
-   - 业务分析平台BAP（Business Analytics Platform）
+   定义了五种类型的物联网平台：
+   
+   1. 连接平台(CMP)：提供覆盖功能和解决方案，用于连接IoT设备，管理和协调连接以及为已连接的IoT设备提供通信服务。
+   2. 设备管理平台(DMP)：处理预配任务，以确保已连接的设备被部署，配置并通过常规的固件/软件更新保持最新。
+   3. IaaS /云后端平台：为物联网应用程序和服务的数据管理提供可扩展的企业级后端。
+   4. 应用程序启用平台（AEP）：使开发人员能够快速创建，测试和部署IoT应用程序或服务。
+   5. 先进的分析平台(BMP)：提供复杂的分析工具，包括机器学习技术和流分析功能，以从IoT数据中提取可行的见解。
   
 
   ![IOTARCH.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/IOTARCH.png)
@@ -32,106 +60,15 @@ ref:
   
   ![dgiot_busseness.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/dgiot_busseness.png)
    
-   这部分主要介绍DGIOT CMP相关的技术和思想、EMQ X是一个非常优秀的消息服务器，我从2015年开始持续关注EMQ的技术发展，
-   也在持续将相关技术融入到DGIOT中来，前期我们先主要采用EMQ的技术文档，后续补充数据科技近几年在电力行业、低功耗领域、
-   工业互联网等方面的一些技术成果，也期望有兴趣的开发者也可以一起来参与编写CMP层的通道插件，希望能提供一个更加完善的
-   CMP层技术框架。
+ 精准开源，生态共赢，数蛙一站式物联网平台是完整解决方案，
+   - CMP集成EMP的服务架构；
+   - DMP吸收阿里的数据建模；
+   - AMP采纳Facebook多租户；
+   - BMP整合Tdengine的时序数据；
+   - 边缘侧具有桌面版网关和边缘工具集；
+   - 协议栈支持主流通讯协议和行业协议；
    
-   CMP层的主要使命是完成物联网数据从非结构化到结构化的转换，已经异构结构化数据之间的转换、同时也承担这些数据的消息路由，
-   EMQ在这方面做得非常棒，值得我们学习和参考。
-   
-# EMQ X 消息服务器简介
+   数蛙团队将逐步开源贴近需求的代码和技术文档，希望帮助广大的初级程序员可以独立承接日益增长的物联网项目，在实战中快速加入物联网工程师队伍。
 
-*EMQ X* (Erlang/Enterprise/Elastic MQTT Broker) 是基于 Erlang/OTP 平台开发的开源物联网 MQTT 消息服务器。
-
-Erlang/OTP是出色的软实时 (Soft-Realtime)、低延时 (Low-Latency)、分布式 (Distributed)的语言平台。
-
-MQTT 是轻量的 (Lightweight)、发布订阅模式 (PubSub) 的物联网消息协议。
-
-EMQ X 设计目标是实现高可靠，并支持承载海量物联网终端的MQTT连接，支持在海量物联网设备间低延时消息路由:
-
-1. 稳定承载大规模的 MQTT 客户端连接，单服务器节点支持50万到100万连接。
-2. 分布式节点集群，快速低延时的消息路由，单集群支持1000万规模的路由。
-3. 消息服务器内扩展，支持定制多种认证方式、高效存储消息到后端数据库。
-4. 完整物联网协议支持，MQTT、MQTT-SN、CoAP、LwM2M、WebSocket 或私有协议支持。
-
-
-**建议您在使用前仔细阅读一遍下面列出的文档，未列出的其他文档可以按需选择查看：**
-
-## 开始使用
-  - [安装](getting-started/install.md)：不同操作系统与安装包类型的下载、安装步骤。
-  - [启动 EMQ X](getting-started/start.md)：启动 EMQ X 并查看启动状态。
-  - [Dashboard](getting-started/dashboard.md)：通过 Dashboard 管理 EMQ X 及在线设备。
-
-## 认证鉴权
-  - [认证简介](advanced/auth.md)：选择内置插件、外部数据库、JWT 或者 HTTP 服务作为认证数据源，验证客户端连接合法性。
-  - [发布订阅 ACL](advanced/acl.md)：选择内置插件、外部数据库、或者 HTTP 服务作为 ACL 数据源，验证客户端发布订阅权限。
-  - [内置 ACL](modules/internal_acl.md)：内置 ACL 可能会影响到重要功能，使用前请详细了解。
-
-## FAQ 常见问题解答
-
-[FAQ 常见问题解答](faq/faq.md)定期收集整理 EMQ X 用户常见问题和经常遇到的错误，如 Topic 数量限制、开源版/企业版区别，企业服务收费等；开源版如何存储数据等。
-
-
-## 社区交流
- - [资源](awesome/awesome.md)：社区交流，包含社区热门教程、项目展示等资源。
-
-## HTTP API
-
-HTTP API 是物联网平台开发与 EMQ X 运维中频繁使用的功能，HTTP API 可以实现与外部系统的集成，例如查询并管理客户端信息、代理订阅、发布消息和创建规则等。
-
-  - [HTTP API](advanced/http-api.md)：包含 HTTP API 接入点、接入认证方式。
-  - [基本信息](advanced/http-api.md#endpoint-brokers)：获取 EMQ X 版本、运行状态等基本信息。
-  - [节点](advanced/http-api.md#endpoint-nodes)：获取 EMQ X 节点信息。
-  - [客户端](advanced/http-api.md#endpoint-clients)：查看在线客户端信息，支持踢出客户端。
-  - [订阅信息](advanced/http-api.md#endpoint-subscriptions)：查看订阅主题列表与订阅关系。
-  - [路由](advanced/http-api.md#endpoint-routes)：查看已订阅的主题。
-  - [消息发布](advanced/http-api.md#endpoint-publish)：通过 HTTP 调用 EMQ X 发布 MQTT 消息，应用程序与客户端通信可靠的方式。
-  - [主题订阅](advanced/http-api.md#endpoint-subscribe)：动态管理客户端订阅列表，无需客户端主动发起订阅/取消订阅。
-  - [插件](advanced/http-api.md#endpoint-plugins)：插件的状态管理，启动、停止操作。
-
-其他更多 API 请通过左侧目录查看。
-
-## 规则引擎
-
-规则引擎实现了消息数据与通过规则引擎能够筛选、处理、转发/存储消息到外部数据源，包括关系数据库、消息队列、Web 服务等等。
-
-  - [规则引擎](rule/rule-engine.md)：规则引擎的概念、基础使用方式。
-  - [创建规则](rule/rule-create.md)：如何创建一条规则。
-  - [使用示例](rule/rule-example.md#发送数据到-web-服务)：规则引擎使用各类数据源的教程。
-
-## 数据存储
-
-EMQ X 企业版特有功能，数据存储将客户端上下线状态，订阅关系，离线消息、消息内容，消息抵达后发送的消息回执等操作记录到各种数据库中。数据存储包含运行时数据与消息数据，能够在服务崩溃、客户端异常离线后仍然保留数据。
-
-  - [数据存储](backend/backend.md)：基本概念与使用场景。
-  - [数据存储配置](backend/backend.md#redis-数据存储)：使用不同的数据源进行数据存储。
-
-## 消息桥接
-
-EMQ X 企业版桥接转发 MQTT 消息到 Kafka、RabbitMQ、Pulsar、RocketMQ、MQTT Broker 或其他 EMQ X 节点。
-
-  - [MQTT 桥接](bridge/bridge.md#mqtt-桥接)：实现跨地域、跨集群部署。
-  - [RPC 桥接](bridge/bridge.md#rpc-桥接)
-  - [Kafka 桥接](bridge/bridge.md#kafka-桥接)
-  - [RabbitMQ 桥接](bridge/bridge.md#rabbitmq-桥接)
-  - [Pulsar 桥接](bridge/bridge.md#pulsar-桥接)
-  - [RocketMQ 桥接](bridge/bridge.md#rocketmq-桥接)
-
-
-## 运维部署
-
-包含官方使用指南、最佳实践等信息。
-
- - [设备管理](tutorial/device-management.md)
- - [系统调优](tutorial/tune.md)
- - [生产部署](tutorial/deploy.md)
- - [Prometheus 监控告警](tutorial/prometheus.md)
- - [性能测试](tutorial/benchmark.md)
-
-## 协议介绍
- - [MQTT 协议](development/protocol.md)
- - [MQTT-SN 协议](development/protocol.md#mqtt-sn-协议)
- - [LwM2M 协议](development/protocol.md#lwm2m-协议)
- - [私有 TCP 协议](development/protocol.md#私有-tcp-协议)
+  
 

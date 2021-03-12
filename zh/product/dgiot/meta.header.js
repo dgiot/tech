@@ -60,6 +60,50 @@ module.exports = [
                     ['cmp/sub_topic', '自动订阅Topic说明']
                 ],
                 "category": "一站式物联网平台"
+            },
+            {
+                "title": 'Mqtt协议接入',
+                "collapsable": true,
+                "children": [
+                    ['cmp/what_is_mqtt', 'MQTT协议规范'],
+                    ['cmp/mqtt-tcp_connect', '自定义Topic'],
+                    ['cmp/mqtt_dynamically_registering', '基于MQTT通道的设备动态注册'],
+                    ['cmp/mqtt-websocket_connect', 'MQTT-WebSocket连接通信'],
+                    ['cmp/mqtt-tls_connect', 'MQTT连接签名示例'],
+                    ['cmp/mqtt-ipv6', '基于IPv6的MQTT连接通信'],
+                ],
+                "category": "一站式物联网平台"
+            },
+            {
+                "title": 'CoAP协议接入',
+                "collapsable": true,
+                "children": [
+                    ['cmp/what_is_coap', 'CoAP协议规范'],
+                    ['cmp/coap_connect', 'CoAP连接通信']
+                ],
+                "category": "一站式物联网平台"
+            },
+            {
+                "title": 'HTTP协议接入',
+                "collapsable": true,
+                "children": [
+                    ['cmp/what_is_http', 'HTTP协议规范'],
+                    ['cmp/http_connect', 'HTTP连接通信']
+                ],
+                "category": "一站式物联网平台"
+            },
+            {
+                "title": 'NB-IoT设备接入',
+                "collapsable": true,
+                "children": [
+                    ['cmp/what_is_nb_iot', '概述'],
+                    ['cmp/what_is_aep', '在电信平台开发设备和添加应用'],
+                    ['cmp/add_device_for_aep', '在物联网平台创建产品'],
+                    ['cmp/add_device_for_iotcloud', '使用云网关创建设备'],
+                    ['cmp/transfer_model', '转换物模型格式'],
+                    ['cmp/iotcloud_to_aep', '测试物联网平台与电信AEP平台下行通信'],
+                ],
+                "category": "一站式物联网平台"
             }
         ],
         "category": "一站式物联网平台"

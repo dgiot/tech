@@ -41,6 +41,7 @@ module.exports = [
         "title": 'Parse-Server',
         "collapsable": true,
         "children": [
+            ['parse/parse', '简介'],
             ['parse/get-started', '开始'],
             ['parse/Object', '对象Objects'],
             ['parse/Query', '查询Queries'],

@@ -34,21 +34,20 @@ category: 操作指南
 
 
 ## 2. 在grafana添加Panel
-
-![908e41fe-0a2f-0539-55b0-bbd295b7f989.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/908e41fe-0a2f-0539-55b0-bbd295b7f989.png)
-  
+   ![uid.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/uid.png)
   +  增删查改面板
 
    grafana里面添加或者减少指标，需要通过面板（panel）的增删查改来实现。点击页面上方的Add panel即可添加新的面板。一个面板对应一个或者几个有一定联系的指标。
    
-   ![4cf0e293-5461-d67b-c676-62d2a72f9fa8.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/4cf0e293-5461-d67b-c676-62d2a72f9fa8.png)
+   ![panel.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/panel.png)
    
    也可以通过复制粘贴已有的面板，来获得新的面板。如下图，鼠标放置在标题(Panel Title)区域，点击向下的箭头，再在more选项里选择copy即可复制已有面板。
-   ![8d65805b-c3d1-0994-24d2-494913690b05.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/8d65805b-c3d1-0994-24d2-494913690b05.png)
+   
+   ![panel_example.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/panel_example.png)
    
    创建新的面板后，便是修改其配置了。通过点击上图的Edit按钮，进入面板编辑页面。
    
-   ![289b268b-cf45-7bbe-04ae-3ef219643416.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/289b268b-cf45-7bbe-04ae-3ef219643416.png)
+   ![panel_edit.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/panel_edit.png)
    
    面板一般有三个参数需要设置:
 
@@ -68,14 +67,14 @@ category: 操作指南
    
    在网站首页，点击任务报告，进入报告配置界面。
    
-   ![063bd2e2-6d22-6e65-1683-890666da144e.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/063bd2e2-6d22-6e65-1683-890666da144e.png)
+   ![web_workbench.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/web_workbench.png)
    
    点击报告配置，进入配置信息页面，有新增、扫描和保存配置按钮。
    
    新增按钮可以添加grafana不包含的配置信息，如说明性信息。
    
-   ![ad09da1c-1052-ec63-7b5f-d6e4405032f1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/ad09da1c-1052-ec63-7b5f-d6e4405032f1.png)
+   ![web_increase.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/web_increase.png)
    
    扫描按钮可以获得grafana里面包含的所有配置信息。如下图，uid选择不同的仪表盘；job是选择服务器；而搜索框可以输入查询条件，提高查询速度与精度。我们添加配置时，要先确定我们需要的数据是哪个仪表盘的，通过uid选择确定。然后，确定这一份报告需要用哪几个服务器的数据。注意，一份报告的数据可能会对应多个服务器。在job里选择需要的服务器，即可得到该仪表盘、该服务器下的所有配置信息。点击命名方式为“JOB_Legend”的配置信息，可以同时添加多个，点添加按钮即可添加成功。接下来，通过job选择需要的其他服务器，反复上述操作，直到所需配置信息全部配置成功。最后，点击添加按钮。
    
-   ![e5003c17-7d72-91ce-fbdb-87d67fbc3541.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/e5003c17-7d72-91ce-fbdb-87d67fbc3541.png)
+   ![scan.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/scan.png)

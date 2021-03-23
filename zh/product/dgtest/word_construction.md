@@ -1,48 +1,46 @@
 ---
 icon: creative
-category: 产品定价
+category: 云压测
 ---
-|  名词 | 描述  |
-| ------------ | ------------ |
-|   |   |
-|项目|所有资源的集合，所有为项目添加的设备、模板、报警、定时任务、报警联系人等都是资源（角色、子用户除外）。【注】所有的资源都不允许跨项目转移。
-|产品|设备的集合，通常指一组具有相同功能的设备。物联网平台为每个产品颁发全局唯一的ProductKey。
-|设备|归属于某个产品下的具体设备。物联网平台为设备颁发产品内唯一的证书DeviceName。设备可以直接连接物联网平台，也可以作为子设备通过网关连接物联网平台。
-|分组|物联网平台支持建立设备分组，分组中可包含不同产品下的设备。通过设备组来进行跨产品管理设备。
-|网关|能够直接连接物联网平台的设备，且具有子设备管理功能，能够代理子设备连接云端。
-|子设备|本质上也是设备。子设备不能直接连接物联网平台，只能通过网关连接。
-|设备证书|设备证书指ProductKey、DeviceName、DeviceSecret的组合。<br> * ProductKey：是物联网平台为产品颁发的全局唯一标识。该参数很重要，在设备认证以及通信中都会用到，因此需要您保管好。 <br> * DeviceName：在注册设备时，自定义的或系统生成的设备名称，具备产品维度内的唯一性。该参数很重要，在设备认证以及通信中都会用到，因此需要您保管好。<br> * DeviceSecret：物联网平台为设备颁发的设备密钥，和DeviceName成对出现。该参数很重要，在设备认证时会用到，因此需要您保管好并且不能泄露。
-|ProductSecret| 由物联网平台颁发的产品密钥，通常与ProductKey成对出现，可用于一型一密的认证方案。该参数很重要，需要您保管好，不能泄露。
-|Topic| Topic是UTF-8字符串，是发布（Pub）/订阅（Sub）消息的传输中介。可以向Topic发布或者订阅消息。
-|Topic类| 同一产品下不同设备的Topic集合，用${productkey}和${deviceName}通配一个唯一的设备，一个Topic类对一个ProductKey下所有设备通用。
-|发布| 操作Topic的权限类型，对应的英文名称为Pub。可以往此类Topic中发布消息。
-|订阅| 操作Topic的权限类型，对应的英文名称为Sub。可以从此类Topic中订阅消息。
-|RRPC| 全称：Revert-RPC。RPC（Remote Procedure Call）采用客户机/服务器模式，用户不需要了解底层技术协议，即可远程请求服务。RRPC则可以实现由服务端请求设备端，并能够使设备端响应的功能。
-|标签| 标签分为产品标签、设备标签和分组标签。<br> * 产品标签：描述同一个产品下，所有设备所具有的共性信息。<br> * 设备标签：通常根据设备的特性为设备添加的特有标记，您可以自定义标签内容。<br> * 分组标签：描述同一个分组下，所有设备所具有的共性信息。
-|物模型| 是对设备在云端的功能描述，包括设备的属性、服务和事件。物联网平台通过定义一种物的描述语言来描述物模型，称之为TSL（即 Thing Specification Language），采用JSON格式，您可以根据TSL组装上报设备的数据。
-|属性| 设备的功能模型之一，一般用于描述设备运行时的状态，如环境监测设备所读取的当前环境温度等。属性支持GET和SET请求方式。应用系统可发起对属性的读取和设置请求。
-|期望属性值| 通过期望属性值功能，设置您希望的设备属性值。若设备在线，将实时更新属性值；若设备离线，期望属性值将缓存在云端。设备上线后，获取期望属性值，并更新属性值。
-|服务| 设备的功能模型之一，设备可被外部调用的能力或方法，可设置输入参数和输出参数。相比于属性，服务可通过一条指令实现更复杂的业务逻辑，如执行某项特定的任务。
-|事件| 设备的功能模型之一，设备运行时的事件。事件一般包含需要被外部感知和处理的通知信息，可包含多个输出参数。例如，某项任务完成的信息，或者设备发生故障或告警时的温度等，事件可以被订阅和推送。
-|数据解析脚本| 针对采用透传格式/自定义数据格式的设备，需要在云端编写数据解析脚本，将设备上报的二进制数据或自定义的JSON数据，转换为物联网平台支持的JSON数据格式；将平台下发的JSON格式数据，转换为设备支持的格式。
-|设备影子| 是一个JSON文档，用于存储设备或者应用的当前状态信息。每个设备都会在云端有唯一的设备影子。无论该设备是否连接到Internet，您都可以使用设备影子通过MQTT协议或HTTP协议获取和设置设备的状态。
-|规则引擎| 通过创建、配置规则，以实现服务端订阅、数据流转和场景联动。
-|服务端订阅| 服务端订阅产品下所有类型的消息：设备上报消息、设备状态变化通知、网关发现子设备上报消息、设备生命周期变更消息和设备拓扑关系变更消息。目前支持两种方式实现服务端订阅：<br> * AMQP：Advanced Message Queuing Protocol，高级消息队列协议。服务端通过AMQP协议接入云端，接收云端推送的消息。<br> * MNS：将消息流转到指定消息服务（MNS）队列中，您的服务端从MNS队列中接收消息。
-|数据流转| 物联网平台规则引擎的数据流转功能，可将Topic中的数据转发至其他Topic或其他云服务进行存储或处理
-|场景联动| 场景联动是一种开发自动化业务逻辑的可视化编程方式。您可以通过可视化的方式定义设备之间联动规则，并将规则部署至云端或者边缘端。
-|一机一密| 每个设备烧录其唯一的设备证书（ProductKey、DeviceName和DeviceSecret）。当设备与物联网平台建立连接时，物联网平台对其携带的设备证书信息进行认证
-|一型一密| 同一产品下所有设备可以烧录相同产品证书（即ProductKey和ProductSecret）。设备发送激活请求时，物联网平台其携带的产品证书信息进行认证，认证通过，下发该设备接入所需信息。设备再携带这些信息与物联网平台建立连接。
-|协议和驱动| 指的是终端设备的型号或者协议。西门子S7-1200型号，传感器Modbus协议
-|边缘计算|由联网模块进行数据采集和解析，然后按照一定的规律上报云端。适合高频（秒级）采集应用场景，本地高频采集完后上报给云端，云端做数据的存储和展示。
-|云端轮询|<br>①云端做主机，去轮询终端设备，联网模块只做数据透传。适合低频（分钟级）采集场景；<br>②对于按键状态上报等场景，可以按Modbus RTU扩展指令主动上报，需要用户自主开发。下载协议
-|从机|与通讯设备连接的终端，比如一个DTU下面连接了一个温湿度传感器，则该传感器为从机
-|IP|从机的IP地址	端口	终端设备与联网模块通讯交流的出口	变量	需要监控的变量。可以是开关、数字量、模拟量等
-|寄存器地址| 给有特定功能的内存单元取一个别名，这个别名就是我们经常说的寄存器，一个寄存器地址对应一个变量
-|数据类型|  数据传输的属性。常见的数据类型有： <br> 4字节无符号整数(AB CD)：123456 为 0x0001 0xE240 <br>4字节无符号整数(CD AB)：123456 为 0xE240 0x0001 <br>4节有符号整数(AB CD)： 123456为 0xFFFE 0x1DC0 <br> 4字节有符号整数(CD AB)： 123456为 0x1DC0 0xFFFE <br>4字节浮点型(AB CD)：12.3 为 0x4144 0xCCCD4字节浮点型(CD AB)： 12.3 为 0xCCCD 0x4144
-|采集公式| 云端根据采集上来的数据进行计算。例：温度采集数值为260℃，需要显示26。则填写：%s/10（%s为占位符
-|控制公式| 云端计算后下发给设备。例：给设备发送43，但是设备实际需要接收430。则写：%s*10（%s为占位符）
-|设备二维码| 设备的二维码可以被子用户扫码添加设备
-|MAC| 设备的校验	
-|同步| 把云端的配置（变量的类型、寄存器、采集规则等）下发给设备
-|状态| 设备的状态一共分为7种（在线、离线、升级中、配置中、同步中、云组态报警、云监测报警）在线：设备有电、有网且与云端连接成功离线：设备与云端连接不成功。可能是没电、没网、或者IP地址/端口配置错误。升级中：云监测固件升级功能，若设备正在进行固件升级会显示此状态。同步中：云端下发配置给设备时，会显示此状态。云组态报警：当所监测的数据点数据超出阈值时，会显示此状态。例如：温湿度采集，当温湿度超出规定报警阈值时进行报警。云监测报警：当通讯设备出现故障时会显示此状态。例如设备突然接收不到信号等。
-|角色| 角色拥有上级用户所分配的菜单权限，下面三种子用户类型的权限都是通过关联角色获得的系统用户：拥有上级用户的全部项目及设备，可以创建子用户管理员：通常分配上级用户的指定项目设备，可以创建子用户普通用户：通常分配上级用户的指定项目及设备，不能创建子用户子用户	通过创建子用户可以实现分级管理，每种子用户类型有不同的权限，每个子用户都可关联不同的项目和设备。
+
+# Promethus         
+          
+![Promethus.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/Promethus.png)
+
+# 名词解释
+
+| 模块| 名词 | 描述  |
+| ------------ | ------------ |------------ |
+|Prometheus|Alert|一条Alert是Prometheus一条警报规则的输出（处于着火状态的警报输出）。一条Alert产生后，由Prometheus发送给Alertmanager。|
+|Prometheus|Alertmanager|Alertmanager接收Alerts，将它们聚合成组、去重，应用沉默、节流，然后发送通知到邮件, Pagerduty, Slack等。|
+|Prometheus|Bridge|Bridge是一个组件，它从Client library采样，同时把这些数据暴露给一个非Prometheus的监控系统。比如：可以把Python, Go, and Java客户端的metrics暴露给Graphite。|
+|Prometheus|Client library|Client library是一个用某种语言(比如：Go, Java, Python, Ruby等)写的库。Client library可以直接在你的代码中使用；可以写一个定制化的收集器，从其它系统pull metrics，同时暴露这些metrics给Prometheus。|
+|Prometheus|Collector|Collector是Exporter的一部分，它代表一组metrics。It may be a single metric if it is part of direct instrumentation, or many metrics if it is pulling metrics from another system|
+|Prometheus|Direct instrumentation|Direct instrumentation is instrumentation added inline as part the source code of a program.|
+|Prometheus|Endpoint|一个能够被抓取metrics的源，通常相当于一个进程。|
+|Prometheus|Exporter|Exporter是一个给Prometheus暴露metrics的二进制程序，用于把非Prometheus格式的metrics转为Prometheus格式的metrics。|
+|Prometheus|Endpoint|一个能够被抓取metrics的源，通常相当于一个进程。|
+|Prometheus|Instance|Instance是一个标识job中target的一个标签。|
+|Prometheus|Job|一组有相同目的的目标，叫做作业。比如监控一组用于高可用和可伸缩的进程。|
+|Prometheus|Notification|Notification代表由一个或多个alerts组成的警报组。Alertmanager发送Notification给邮件, Pagerduty, Slack等。|
+|Prometheus|Promdash|Promdash是Prometheus自带的dashboard。生产上建议使用Grafana。|
+|Prometheus|Prometheus|Prometheus一般是指Prometheus系统的核心二进制文件。有时也指Prometheus监控系统本身。|
+|Prometheus|PromQL|PromQL是Prometheus查询语言。它支持aggregation, slicing and dicing, prediction and joins。|
+|Prometheus|Pushgateway|The Pushgateway会保存批量任务最近push的metrics。Prometheus能够从Pushgateway抓取这些metrics。|
+|Prometheus|Remote Read|Remote Read是Prometheus提供的一个功能，它支持Prometheus从其它的系统(长期存储系统)读取时间序列数据(作为查询的一部分)。|
+|Prometheus|Remote Read Adapter|不是所有的系统原生的支持远端读操作。Remote Read Adapter位于远端系统和Prometheus之间，转换时间序列请求和响应。|
+|Prometheus|Remote Read Endpoint|Remote Read Endpoint是远端系统的endpoint，Prometheus与这个endpoint通信。|
+|Prometheus|Remote Write|Remote Write是Prometheus提供的功能，它支持把收集到的metrics远程写入到远端系统(长期存储系统)。|
+|Prometheus|Remote Write Adapter|不是所有的系统都原生支持Prometheus远程写操作。Remote Write Adapter是一个适配器，位于Prometheus与远端系统之间，把Prometheus的metrics转化为远端系统能够理解的数据格式。|
+|Prometheus|Remote Write Endpoint|A remote write endpoint is what Prometheus talks to when doing a remote write。|
+|Prometheus|Silence|Silence是Alertmanager提供的功能，用于阻止特定的alerts。这些alerts的标签与Silence设定的标签相匹配。|
+|Prometheus|Target|A target is the definition of an object to scrape. For example, what labels to apply, any authentication required to connect, or other information that defines how the scrape will occur。|
+|Grafana|DataSource|Grafana支持许多不同的时间序列数据（数据源）存储后端。每个数据源都有一个特定的查询编辑器。官方支持以下数据源：Graphite、infloxdb、opensdb、prometheus、elasticsearch、cloudwatch。每个数据源的查询语言和功能明显不同。您可以将来自多个数据源的数据组合到一个仪表板上，但每个面板都要绑定到属于特定组织的特定数据源。|
+|Grafana|Organization|grafana支持多个组织，以支持各种部署模型，包括使用单个grafana实例为多个可能不受信任的组织提供服务。|
+|Grafana|User|用户是grafana中的命名帐户。用户可以属于一个或多个组织，并且可以通过角色分配不同级别的权限。Grafana支持各种各样的内部和外部方法，供用户进行身份验证。这些包括来自自己的集成数据库、来自外部SQL Server或来自外部LDAP服务器。|
+|Grafana|Row|行是仪表板中的逻辑分隔符，用于将面板分组在一起。行总是12“单位”宽。这些单位根据浏览器的水平分辨率自动缩放。通过设置面板自身的宽度，可以控制一行中面板的相对宽度。我们使用了一个单元抽象，这样Grafana在无论是小屏幕还是大屏幕 看起来都很舒服。|
+|Grafana|Panel|面板是Grafana中的基本可视化构建块。每个面板都提供一个查询编辑器（取决于面板中选择的数据源），通过使用查询编辑器，您可以提取显示在面板上的完美可视化效果。有各种各样的样式和格式选项，每个面板开源，让您创建完美的图片。面板可以在仪表板上拖放和重新排列。它们也可以调整大小。当前有四种面板类型：graph、singlestat、dashlist、table和text。|
+|Grafana|Query Editor|查询编辑器公开数据源的功能，并允许您查询它包含的度量。使用查询编辑器在时间序列数据库中生成一个或多个查询（针对一个或多个序列）。该面板将立即更新，允许您实时有效地探索数据，并为该特定面板构建一个完美的查询。您可以在查询本身的查询编辑器中使用模板变量。这提供了一种基于仪表板上选择的模板变量动态探索数据的强大方法。Grafana允许您在查询编辑器中按查询所在的行引用查询。如果向图形中添加第二个查询，只需键入a即可引用第一个查询。这为构建复合查询提供了一种简单方便的方法。|
+|Grafana|Dashboard|仪表盘就是一切的归宿。仪表板可以看作是一组组织并排列成一行或多行的一个或多个面板。仪表板的时间段可以由仪表板右上角的仪表板时间选择器控制。仪表盘可以利用模板化使其更具动态性和互动性。仪表板可以利用注释在面板之间显示事件数据。这有助于将面板中的时间序列数据与其他事件关联起来。仪表板（或特定面板）可以通过多种方式轻松共享。您可以向登录您的Grafana的人发送链接。您可以使用快照功能将当前查看的所有数据编码为静态和交互式JSON文档；这比通过电子邮件发送屏幕截图要好得多！可以标记仪表板，仪表板选择器提供对特定组织中所有仪表板的快速、可搜索访问。|
+
+

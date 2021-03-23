@@ -3,7 +3,7 @@ icon: creative
 category: 操作指南
 ---
 
-# 整体流程图
+# 整体流程
 
 ![zeta_test.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/zeta_test.png)
 
@@ -63,3 +63,19 @@ category: 操作指南
   + grafana各参数内部关系 
  
    grafana重要的几个概念是：job,panel和metrics,legend。通过上述操作流程，我们其实可以看出，一个job通过增删查改拥有多个panel，一个panel通过增删查改拥有多个metrics，一个metrics对应一个legend。但是，每一个job里面的panel不能重复，每一个panel里面的metrics不能重复。即参数命名方式“JOB_Legend”是唯一确定的变量。如“master_memory_min”表示的是master服务器的memory_min这个变量，不会产生歧义。
+   
+   ## 3. 在压测平台中修改报告配置
+   
+   在网站首页，点击任务报告，进入报告配置界面。
+   
+   ![063bd2e2-6d22-6e65-1683-890666da144e.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/063bd2e2-6d22-6e65-1683-890666da144e.png)
+   
+   点击报告配置，进入配置信息页面，有新增、扫描和保存配置按钮。
+   
+   新增按钮可以添加grafana不包含的配置信息，如说明性信息。
+   
+   ![ad09da1c-1052-ec63-7b5f-d6e4405032f1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/ad09da1c-1052-ec63-7b5f-d6e4405032f1.png)
+   
+   扫描按钮可以获得grafana里面包含的所有配置信息。如下图，uid选择不同的仪表盘；job是选择服务器；而搜索框可以输入查询条件，提高查询速度与精度。我们添加配置时，要先确定我们需要的数据是哪个仪表盘的，通过uid选择确定。然后，确定这一份报告需要用哪几个服务器的数据。注意，一份报告的数据可能会对应多个服务器。在job里选择需要的服务器，即可得到该仪表盘、该服务器下的所有配置信息。点击命名方式为“JOB_Legend”的配置信息，可以同时添加多个，点添加按钮即可添加成功。接下来，通过job选择需要的其他服务器，反复上述操作，直到所需配置信息全部配置成功。最后，点击添加按钮。
+   
+   ![e5003c17-7d72-91ce-fbdb-87d67fbc3541.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/e5003c17-7d72-91ce-fbdb-87d67fbc3541.png)

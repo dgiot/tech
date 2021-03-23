@@ -9,7 +9,7 @@ module.exports = [
             ['word_construction', '名词解释'],
             ['product_advantage', '产品优势'],
             ['application_scenarios', '应用场景'],
-            ['user_manua', '操作指南']
+            ['user_manual', '操作指南']
         ],
         "category": "一站式物联网云压测平台"
     }

@@ -3,12 +3,12 @@ icon: creative
 category: 操作指南
 ---
 
-# zeta报告平台使用文档
-##整体流程图
+# 整体流程图
+
 ![zeta_test.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/zeta_test.png)
-##grafana配置指标
-![908e41fe-0a2f-0539-55b0-bbd295b7f989.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/908e41fe-0a2f-0539-55b0-bbd295b7f989.png)
-  
+
+## 1. 在Prometheus内添加job
+
   如上图，grafana主页包含了服务器名，CPU占有率等各种指标，接下来是如何得到上面这种配置的步骤。
   +  添加新的job
   ```
@@ -31,8 +31,12 @@ category: 操作指南
   kill -9  14505
   nohup ./prometheus &
   ```  
-    
 
+
+## 2. 在grafana添加Panel
+
+![908e41fe-0a2f-0539-55b0-bbd295b7f989.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/908e41fe-0a2f-0539-55b0-bbd295b7f989.png)
+  
   +  增删查改面板
 
    grafana里面添加或者减少指标，需要通过面板（panel）的增删查改来实现。点击页面上方的Add panel即可添加新的面板。一个面板对应一个或者几个有一定联系的指标。

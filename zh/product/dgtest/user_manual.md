@@ -7,7 +7,7 @@ category: 操作指南
 
 ![zeta_test.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/zeta_test.png)
 
-如上图，四个exporter自身会产生类似于发包数的统计值metrics。然后task_work这个任务以时间顺序将统计值暴露。promethues以一定的时间间隔去读取该统计值，存储为时序数据。Grafana从promethues得到job和metrics数据，并分别以仪表盘(dashboard)与面板(penel)的形式展示。生成报告时，report系统从grafana中以“Job_Metrics”和“Job_Panel”形式将值提取出来，替换报告模板中的特殊字符生成报告。
+如上图，四个exporter自身会产生类似于发包数的统计值metrics。然后task_work这个任务以时间顺序将统计值暴露。promethues以一定的时间间隔去读取该统计值，存储为时序数据。Grafana从promethues得到job和metrics数据，并分别以仪表盘(dashboard)与面板(penel)的形式展示。生成报告时，report系统从grafana中以“Job_Metrics”和“Job_Panel”形式将值提取出来，形成特定格式的json文件，模板传参替换报告模板的指定文本，生成报告。
 
 ## 1. 在Prometheus内添加job
   

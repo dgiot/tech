@@ -8,7 +8,7 @@ category: 云压测
           
 ![Promethus.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/Promethus.png)
 
-## 名词解释
+## Promethus名词解释
 
 | 模块| 名词 | 描述  |
 | ------------ | ------------ |------------ |
@@ -36,6 +36,11 @@ category: 云压测
 |Prometheus|Remote Write Endpoint|A remote write endpoint is what Prometheus talks to when doing a remote write。|
 |Prometheus|Silence|Silence是Alertmanager提供的功能，用于阻止特定的alerts。这些alerts的标签与Silence设定的标签相匹配。|
 |Prometheus|Target|A target is the definition of an object to scrape. For example, what labels to apply, any authentication required to connect, or other information that defines how the scrape will occur。|
+
+## Grafana名词解释
+
+| 模块| 名词 | 描述  |
+| ------------ | ------------ |------------ |
 |Grafana|DataSource|Grafana支持许多不同的时间序列数据（数据源）存储后端。每个数据源都有一个特定的查询编辑器。官方支持以下数据源：Graphite、infloxdb、opensdb、prometheus、elasticsearch、cloudwatch。每个数据源的查询语言和功能明显不同。您可以将来自多个数据源的数据组合到一个仪表板上，但每个面板都要绑定到属于特定组织的特定数据源。|
 |Grafana|Organization|grafana支持多个组织，以支持各种部署模型，包括使用单个grafana实例为多个可能不受信任的组织提供服务。|
 |Grafana|User|用户是grafana中的命名帐户。用户可以属于一个或多个组织，并且可以通过角色分配不同级别的权限。Grafana支持各种各样的内部和外部方法，供用户进行身份验证。这些包括来自自己的集成数据库、来自外部SQL Server或来自外部LDAP服务器。|
@@ -43,5 +48,12 @@ category: 云压测
 |Grafana|Panel|面板是Grafana中的基本可视化构建块。每个面板都提供一个查询编辑器（取决于面板中选择的数据源），通过使用查询编辑器，您可以提取显示在面板上的完美可视化效果。有各种各样的样式和格式选项，每个面板开源，让您创建完美的图片。面板可以在仪表板上拖放和重新排列。它们也可以调整大小。当前有四种面板类型：graph、singlestat、dashlist、table和text。|
 |Grafana|Query Editor|查询编辑器公开数据源的功能，并允许您查询它包含的度量。使用查询编辑器在时间序列数据库中生成一个或多个查询（针对一个或多个序列）。该面板将立即更新，允许您实时有效地探索数据，并为该特定面板构建一个完美的查询。您可以在查询本身的查询编辑器中使用模板变量。这提供了一种基于仪表板上选择的模板变量动态探索数据的强大方法。Grafana允许您在查询编辑器中按查询所在的行引用查询。如果向图形中添加第二个查询，只需键入a即可引用第一个查询。这为构建复合查询提供了一种简单方便的方法。|
 |Grafana|Dashboard|仪表盘就是一切的归宿。仪表板可以看作是一组组织并排列成一行或多行的一个或多个面板。仪表板的时间段可以由仪表板右上角的仪表板时间选择器控制。仪表盘可以利用模板化使其更具动态性和互动性。仪表板可以利用注释在面板之间显示事件数据。这有助于将面板中的时间序列数据与其他事件关联起来。仪表板（或特定面板）可以通过多种方式轻松共享。您可以向登录您的Grafana的人发送链接。您可以使用快照功能将当前查看的所有数据编码为静态和交互式JSON文档；这比通过电子邮件发送屏幕截图要好得多！可以标记仪表板，仪表板选择器提供对特定组织中所有仪表板的快速、可搜索访问。|
+
+## DGTEST名词解释
+| 模块| 名词 | 描述  |
+| ------------ | ------------ |------------ |
+|DGTEST|Report|用户最终得到的word压测报告文件，包含压测的业务场景、压测过程数据与图表。|
+|DGTEST|Report Label|统计指标或者图标与word报告中标签关系，{{job_metrics}} 例如，job为zeta_server，metrics为CPU_max，则实际标签为  {{zeta_server_CPU_max}}，通过统计标签与word文件动态映射数据|
+|DGTEST|Report templates|用户根据业务需求定制的word模板后,把需要动态替换的图片或者文件替换成DGTEST_LAB后形成的模板文件。|
 
 

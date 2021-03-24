@@ -38,6 +38,14 @@ module.exports = [
         "category": "工业数据云平台"
     },
     {
+        "title": 'konva',
+        "collapsable": true,
+        "children": [
+            ['konva/', '开始']
+        ],
+        "category": "工业数据云平台"
+    },
+    {
         "title": 'Parse-Server',
         "collapsable": true,
         "children": [

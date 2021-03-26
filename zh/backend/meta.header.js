@@ -3,8 +3,9 @@ module.exports = [
         "title": '产品概览',
         "collapsable": true,
         "children": [
-            ['./', 'DGIOT CMP 简介'],
-            ['dgiot/tenant/', '多租户']
+            ['./', '简介'],
+            ['dgiot/tenant/', '多租户'],
+            ['dgiot/plugin/', '插件机制']
         ],
         "category": "工业数据云平台"
     },

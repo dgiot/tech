@@ -73,19 +73,19 @@ ref:
    |                |            |                      |           |                     |                 |
    |         +------+------+     |            +------+------+       |              +------+------+          |
    |         |             |     |           |             |        |              |             |          |
-   |       Layer         Layer   |         Group         Group      |            Group         Group        | 
+   |       Layer         Layer   |         Group         Device     |            Group         Device       | 
    |         |             |     |           |             |        |              |             |          |
-   |   +-----+-----+     Shape   |      +-----+-----+     Device    |         +-----+-----+     Device      |
+   |   +-----+-----+     Shape   |      +-----+-----+     Thing     |         +-----+-----+     Thing       |
    |   |           |             |      |           |               |         |           |                 | 
    | Group       Group           |     Device       Device          |      Device       Device              |
    |   |           |             |       |           |              |        |           |                  |
    |   +       +---+---+         |       +       +---+-------+      |        +       +---+-------+          |
    |   |       |       |         |       |       |           |      |        |       |           |          |
    |Shape   Group    Shape       |     Thing   SubDevice    Thing   |    Thing   SubDevice    Thing         |
-   |           |                 |                 |                |       |                               |
-   |           +                 |                 +                |       +                               |
-   |           |                 |                 |                |       |                               |
-   |         Shape               |               Thing              |     Thing                             |
+   |           |                 |                 |                |               |                       |
+   |           +                 |                 +                |               +                       |
+   |           |                 |                 |                |               |                       |
+   |         Shape               |               Thing              |             Thing                     |
    ----------------------------------------------------------------------------------------------------------  
    | konva.findone(Id)  <-----> mqtt < -----> parse.get_object(Id) <---> channel <-----> modbus/plc/opc/ip  |
    ----------------------------------------------------------------------------------------------------------

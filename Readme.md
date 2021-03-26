@@ -39,7 +39,9 @@ ref:
 
 ### 平台开发用户痛点
 - 物联网平台的开发，设计到众多角色
-![](http://typecho.iotn2n.com/usr/uploads/2021/03/3961262252.png)
+
+<img src="http://typecho.iotn2n.com/usr/uploads/2021/03/3961262252.png" width ="400" alt="图片名称" align=center>
+
 - 各种开发团队中的角色，产生众多的沟通工作
 ![](http://typecho.iotn2n.com/usr/uploads/2021/03/3385234631.png)
 - 由于覆盖前端、后台、中台等多种技术栈，所以需要多语言的混合编程，掌握技术平台和中间件

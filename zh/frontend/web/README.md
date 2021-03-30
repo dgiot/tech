@@ -18,18 +18,17 @@ ref: dgiot_dashboard 接入说明文档
 
 dgiot_dashboard 是由[数蛙开源团队](https://github.com/dgiot/)开源的权限管理系统
 
-# 功能
+# 项目预览
 
-## 设备云
+![2f74abc6-b7ee-211e-3ead-b18910017316.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/web/2f74abc6-b7ee-211e-3ead-b18910017316.png)
+![38309b31-738e-e8d9-8c37-0f4f55ea01dd.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/web/38309b31-738e-e8d9-8c37-0f4f55ea01dd.png)
+![193c1133-885c-6293-1c55-2d6f62175927.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/web/193c1133-885c-6293-1c55-2d6f62175927.png)
+![7ceb3c3b-df00-32e3-2267-779dfb1572c8.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/web/7ceb3c3b-df00-32e3-2267-779dfb1572c8.png)![fd2d1f89-d602-1bb0-8d44-fddd71ea6caf.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/web/fd2d1f89-d602-1bb0-8d44-fddd71ea6caf.png)
+![6bb0f339-1667-2c6e-ff93-b534543dd223.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/web/6bb0f339-1667-2c6e-ff93-b534543dd223.png)
 
-设备云是本系统的重点部分。
+# 平台访问地址
 
-## 多租户
-
-## 云函数
-
-## 系统
-
-## 云组态
-
-## 工具集
+  
+| 地址 | 账号 | 密码 | 权限 |
+| --- | --- | --- | --- |
+| [http://prod.iotn2n.com](http://prod.iotn2n.com) | dgiot_admin | dgiot_admin|开发者|

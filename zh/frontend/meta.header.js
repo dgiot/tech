@@ -17,7 +17,19 @@ module.exports = [
         "title": 'Web前端',
         "collapsable": true,
         "children": [
-            ['web/', '开始']
+            {
+              "title": 'dgiot_dashboard',
+              "collapsable": true,
+              "children": [
+                  ['web/', '开始'],
+                  ['web/dgiot_dashboard/Controller', '总控台'],
+                  ['web/dgiot_dashboard/ConfigurationMenu', '菜单配置'],
+                  ['web/dgiot_dashboard/AccessConfiguration', '权限配置'],
+                  ['web/dgiot_dashboard/UserPermissions', '用户权限'],
+                  ['web/dgiot_dashboard/RoleAuthorization', '角色权限'],
+              ],
+              "category": "一站式物联网平台"
+          },
         ],
         "category": "工业数据云平台"
     },

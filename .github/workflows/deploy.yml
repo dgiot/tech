@@ -34,7 +34,6 @@ jobs:
           envId: ${{ secrets.ENV_ID }}
           staticSrcPath: .vuepress/dist
 
-jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:

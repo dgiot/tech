@@ -6,6 +6,14 @@ module.exports = [
         "category": "工业数据云平台"
     },
     {
+        "title": '云组态',
+        "collapsable": true,
+        "children": [
+            ['dgiottopo/', '开始']
+        ],
+        "category": "工业数据云平台"
+    },
+    {
         "title": 'Web前端',
         "collapsable": true,
         "children": [
@@ -34,6 +42,17 @@ module.exports = [
         "collapsable": true,
         "children": [
             ['wechat/', '开始']
+        ],
+        "category": "工业数据云平台"
+    },
+    {
+        "title": 'Konva',
+        "collapsable": true,
+        "children": [
+            ['konva/overview', '概述'],
+            ['konva/how_it_works', '设计概要'],
+            ['konva/tools', '配套工具'],
+            ['konva/support', '技术支持'],
         ],
         "category": "工业数据云平台"
     },

@@ -13,19 +13,25 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-      - name: Checkout
+      - name: Checkout 🛎️
         uses: actions/checkout@v2
-      - name: Use Node  
+      - name: Use Node ☊
         uses: actions/setup-node@v1
         with:
           node-version: "10.x"
-      - name: Use yarn
+      - name: Use yarn 🧶
         run: npm install -g yarn
-      - name: install
+      - name: install 🔥
         run: yarn
-      - name: build
+      - name: build 🔧 
         run: yarn build
-      - name: Deploy static to Tencent CloudBase
+      - name: Deploy static to github pagese🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: .vuepress/dist # The folder the action should deploy.
+      - name: Deploy static to Tencent CloudBase ☁️
         id: deployStatic
         uses: TencentCloudBase/cloudbase-action@v1.1.1
         with:
@@ -33,22 +39,3 @@ jobs:
           secretKey: ${{ secrets.SECRET_KEY }}
           envId: ${{ secrets.ENV_ID }}
           staticSrcPath: .vuepress/dist
-
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
-        with:
-          persist-credentials: false
- 
-      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
-        run: |
-          yarn install
-          yarn run build
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: .vuepress/dist # The folder the action should deploy.

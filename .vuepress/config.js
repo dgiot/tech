@@ -152,6 +152,12 @@ module.exports = {
     [ 'feed', {
 
     }],
+    [ 'flowchart', {
+
+    }],
+    [ 'vuepress-plugin-mermaidjs', {
+
+    }],
     [
       'sitemap', {
         hostname: 'https://tech.iotn2n.com'

@@ -18,12 +18,16 @@
   },
   "homepage": "https://github.com/shfshanyue/blog#readme",
   "devDependencies": {
+    "@mr-hope/vuepress-plugin-copy-code": "^1.12.5",
+    "@mr-hope/vuepress-plugin-git": "^1.12.1",
     "@vuepress/plugin-google-analytics": "^1.7.1",
     "npm-check-updates": "^10.2.2",
     "vuepress": "^1.7.1",
+    "vuepress-plugin-add-this": "^1.13.3",
     "vuepress-plugin-feed": "^0.1.9",
     "vuepress-plugin-flowchart": "^1.4.3",
-    "vuepress-plugin-mermaidjs": "^1.8.1"
+    "vuepress-plugin-mermaidjs": "^1.8.1",
+    "vuepress-plugin-photo-swipe": "^1.13.3"
   },
   "dependencies": {
     "@types/graphql": "^14.5.0",

@@ -39,11 +39,26 @@ module.exports = {
     }
   },
   head: [
-    ['link', { rel: 'shortcut icon', href: '/favicon.ico', type: 'image/x-icon' }],
-    ['meta', { name: 'referrer', content: 'never'}],
-    ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js' }],
-    ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js' }],
-    ['link', { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css' }]
+    ['link', {
+      rel: 'shortcut icon',
+      href: '/favicon.ico',
+      type: 'image/x-icon'
+    }],
+    ['meta', {
+      name: 'referrer',
+      content: 'never'
+    }],
+    ['script', {
+      src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js'
+    }],
+    ['script', {
+      src: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js'
+    }],
+    ['link', {
+      rel: 'stylesheet',
+      type: 'text/css',
+      href: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css'
+    }]
   ],
   themeConfig: {
     repo: 'dgiot',
@@ -60,32 +75,60 @@ module.exports = {
           }
         },
         algolia: {},
-        nav: [
-          {
-            text: '用户手册', items: [
-              {text: '数蛙工业数据云平台', link: '/zh/manual/cloud/'},
-              {text: '数蛙工业边缘网关', link: '/zh/manual/edge/'},
+        nav: [{
+            text: '用户手册',
+            items: [{
+                text: '数蛙工业数据云平台',
+                link: '/zh/manual/cloud/'
+              },
+              {
+                text: '数蛙工业边缘网关',
+                link: '/zh/manual/edge/'
+              },
             ]
           },
           {
-            text: '产品说明', items: [
-              {text: '一站式物联网平台', link: '/zh/product/dgiot/'},
-              {text: '工业互联网平台', link: '/zh/product/dgii/'},
-              {text: '一站式云压测平台', link: '/zh/product/dgtest/'},
-              {text: '数蛙工业物联网Saas平台开发与部署',link:'/zh/product/dgenv/'},
+            text: '产品说明',
+            items: [{
+                text: '一站式物联网平台',
+                link: '/zh/product/dgiot/'
+              },
+              {
+                text: '工业互联网平台',
+                link: '/zh/product/dgii/'
+              },
+              {
+                text: '一站式云压测平台',
+                link: '/zh/product/dgtest/'
+              },
+              {
+                text: '数蛙工业物联网Saas平台开发与部署',
+                link: '/zh/product/dgenv/'
+              },
             ]
           },
           {
-            text: '开发指南', items: [
-              {text: '服务架构', link: '/zh/backend/'},
-              {text: '交互技术', link: '/zh/frontend/'},
-              {text: '数据分析', link: '/zh/dataanalysis/'}
+            text: '开发指南',
+            items: [{
+                text: '服务架构',
+                link: '/zh/backend/'
+              },
+              {
+                text: '交互技术',
+                link: '/zh/frontend/'
+              },
+              {
+                text: '数据分析',
+                link: '/zh/dataanalysis/'
+              }
             ]
           },
           {
-            text: '博客', items: [
-              {text: '案例学习', link: '/zh/blog/'}
-            ]
+            text: '博客',
+            items: [{
+              text: '案例学习',
+              link: '/zh/blog/'
+            }]
           }
         ],
         sidebar: {
@@ -102,62 +145,95 @@ module.exports = {
         },
       },
       '/en/': {
-      selectText: 'Languages',
-      label: 'English',
-      editLinkText: 'Edit this page on GitHub',
-      serviceWorker: {
-        updatePopup: {
-          message: "New content is available.",
-          buttonText: "Refresh"
-        }
-      },
-      algolia: {},
-      nav: [
-        {
-          text: 'user manual', items: [
-            {text: 'DGIOT CLOUD', link: '/en/manual/cloud/'},
-            {text: 'DGIOT EDGE', link: '/en/manual/edge/'},
-          ]
+        selectText: 'Languages',
+        label: 'English',
+        editLinkText: 'Edit this page on GitHub',
+        serviceWorker: {
+          updatePopup: {
+            message: "New content is available.",
+            buttonText: "Refresh"
+          }
         },
-        {
-          text: 'product manual', items: [
-            {text: 'DGIOT PRODUCT', link: '/en/product/'},
-          ]
+        algolia: {},
+        nav: [{
+            text: 'user manual',
+            items: [{
+                text: 'DGIOT CLOUD',
+                link: '/en/manual/cloud/'
+              },
+              {
+                text: 'DGIOT EDGE',
+                link: '/en/manual/edge/'
+              },
+            ]
+          },
+          {
+            text: 'product manual',
+            items: [{
+              text: 'DGIOT PRODUCT',
+              link: '/en/product/'
+            }, ]
+          },
+          {
+            text: 'Developer Guide',
+            items: [{
+                text: 'CMP DEVELIOP',
+                link: '/en/develop/'
+              },
+              {
+                text: 'DMP DEVELIOP',
+                link: '/en/develop/'
+              },
+              {
+                text: 'BMP DEVELIOP',
+                link: '/en/develop/'
+              }
+            ]
+          },
+          {
+            text: 'blog',
+            items: [{
+              text: 'DGIOT BLOG',
+              link: '/en/blog/'
+            }]
+          }
+        ],
+        sidebar: {
+          '/en/manual/cloud/': en_cloudHeader,
+          '/en/manual/edge/': en_edgeHeader,
+          '/en/product/': en_productHeader,
+          '/en/develop/': en_developHeader,
+          '/en/blog/': en_blogHeader,
         },
-        {
-          text: 'Developer Guide', items: [
-            {text: 'CMP DEVELIOP', link: '/en/develop/'},
-            {text: 'DMP DEVELIOP', link: '/en/develop/'},
-            {text: 'BMP DEVELIOP', link: '/en/develop/'}
-          ]
-        },
-        {
-          text: 'blog', items: [
-            {text: 'DGIOT BLOG', link: '/en/blog/'}
-          ]
-        }
-      ],
-      sidebar: {
-        '/en/manual/cloud/': en_cloudHeader,
-        '/en/manual/edge/': en_edgeHeader,
-        '/en/product/': en_productHeader,
-        '/en/develop/': en_developHeader,
-        '/en/blog/': en_blogHeader,
-      },
-    }
+      }
     },
     lastUpdated: 'Last Updated'
   },
   plugins: [
-    [ 'feed', {
-
+    [
+      "@mr-hope/sitemap",
+      {
+        // 你的选项
+      },
+    ],
+    ["add-this", {
+      pubid: "ra-60642249a725a5ee"
     }],
-    [ 'flowchart', {
-
-    }],
-    [ 'vuepress-plugin-mermaidjs', {
-
-    }],
+    [
+      "@mr-hope/git",
+      {},
+    ],
+    [
+      "photo-swipe",
+      {},
+    ],
+    [
+      "@mr-hope/copy-code",
+      {},
+    ],
+    ['feed', {}],
+    ['flowchart', {}],
+    ['vuepress-plugin-mermaidjs', {}],
     [
       'sitemap', {
         hostname: 'https://tech.iotn2n.com'
@@ -172,11 +248,10 @@ module.exports = {
     (options, ctx) => {
       return {
         name: 'archive',
-        async additionalPages () {
-          return [
-          ]
+        async additionalPages() {
+          return []
         },
-        extendPageData ($page) {
+        extendPageData($page) {
           if ($page.frontmatter.keywords) {
             const meta = $page.frontmatter.meta
             $page.frontmatter.meta = meta ? [
@@ -185,12 +260,10 @@ module.exports = {
                 name: 'keywords',
                 content: $page.frontmatter.keywords
               }
-            ] : [
-              {
-                name: 'keywords',
-                content: $page.frontmatter.keywords
-              }
-            ]
+            ] : [{
+              name: 'keywords',
+              content: $page.frontmatter.keywords
+            }]
           }
           // if (/^\/(code)\/.+?$/.test($page.path)) {
           //   $page.frontmatter.sidebar = 'auto'

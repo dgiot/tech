@@ -1,5 +1,3 @@
-## 总控台
-
 ### 总控台介绍
 
 总控台展示了管理的项目和应用以及设备相关信息，更加直观的
@@ -20,4 +18,8 @@ Alice->John: Hello John, how are you?
 loop every minute
     John-->Alice: Great!
 end
+```
+
+```javascript
+alert('1')
 ```

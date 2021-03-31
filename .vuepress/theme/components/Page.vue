@@ -64,7 +64,28 @@ export default {
       code: ''
     }
   },
+  methods: {
+        createEditLink (repo, docsRepo, docsDir, docsBranch, path) {
+        },
+
+        // 图片放大方法，用代码给img标签添加a标签
+        setPictureZoom () {
+            let img = document.querySelectorAll('p > img')
+            for (let i = 0; i < img.length; i++) {
+                if (img[i]) {
+                    let a = document.createElement("a");
+                    let parent = img[i].parentNode
+                    parent.appendChild(a)
+                    let src = img[i].getAttribute('src')
+                    a.setAttribute('data-fancybox', '')
+                    a.setAttribute('href', src)
+                    a.appendChild(img[i])
+                }
+            }
+        }
+    },
   async mounted () {
+    this.setPictureZoom()
     const code = getCode()
     this.code = code
     if (!localStorage.token) {
@@ -88,6 +109,9 @@ export default {
      return false 
     }
   },
+  updated () {
+        this.setPictureZoom()
+    },
   components: { PageEdit, PageNav },
   props: ['sidebarItems']
 }

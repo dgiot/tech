@@ -4,24 +4,38 @@
 
 #### vscode 配置（建议使用）
 
-vscode 下载地址[https://code.visualstudio.com/](https://code.visualstudio.com/)
+ vscode 下载地址[https://code.visualstudio.com/](https://code.visualstudio.com/)
 
 
-##### 必备插件安装（建议 vscode 只保留以下插件，防止自动格式化、自动修复失效）
-• [eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)（必须安装）
-• [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) （必须安装）
-• [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) 代码自动格式化（必须安装）
-• [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) vue 开发必备（必须安装）
-• [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport) import 引入自动补全（推荐安装）
-• [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost) 查看你引入的依赖模块大小（推荐安装）
-• [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag) 自动补全 html 标签（推荐安装）
-• [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) 自动重命名 html 标签（推荐安装）
-• [vscode-element-helper](https://marketplace.visualstudio.com/items?itemName=ElemeFE.vscode-element-helper) element 开发必备（推荐安装）
-• [docthis](https://marketplace.visualstudio.com/items?itemName=oouo-diogo-perdigao.docthis) 注释插件（可不安装）
-• [One Monokai Theme](https://marketplace.visualstudio.com/items?itemName=azemoh.one-monokai) vscode 主题包（可不安装）
-• [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory) 查看 git 提交历史（可不安装）
-• [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) 打包项目可直接预览（可不安装）
-• [Svg Preview](https://marketplace.visualstudio.com/items?itemName=SimonSiefke.svg-preview) svg 查看器（可不安装）
+##### 必备插件安装
+
+  • [eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)（必须安装）
+
+  • [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) （必须安装）
+
+  • [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) 代码自动格式化（必须安装）
+
+  • [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) vue 开发必备（必须安装）
+
+  • [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport) import 引入自动补全（推荐安装）
+
+  • [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost) 查看你引入的依赖模块大小（推荐安装）
+
+  • [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag) 自动补全 html 标签（推荐安装）
+
+  • [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) 自动重命名 html 标签（推荐安装）
+
+  • [vscode-element-helper](https://marketplace.visualstudio.com/items?itemName=ElemeFE.vscode-element-helper) element 开发必备（推荐安装）
+
+  • [docthis](https://marketplace.visualstudio.com/items?itemName=oouo-diogo-perdigao.docthis) 注释插件（可不安装）
+
+  • [One Monokai Theme](https://marketplace.visualstudio.com/items?itemName=azemoh.one-monokai) vscode 主题包（可不安装）
+
+  • [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory) 查看 git 提交历史（可不安装）
+
+  • [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) 打包项目可直接预览（可不安装）
+
+  • [Svg Preview](https://marketplace.visualstudio.com/items?itemName=SimonSiefke.svg-preview) svg 查看器（可不安装）
 
 ##### vscode/setting.js配置
 

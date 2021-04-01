@@ -17,7 +17,8 @@ module.exports = {
   ],
 
   scopes: [
-    { name: '不归类' },
+    { name: '' },
+    { name: 'page' },
     { name: 'route' },
     { name: 'component' },
     { name: 'utils' },

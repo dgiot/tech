@@ -18,16 +18,16 @@ module.exports = [
         "collapsable": true,
         "children": [
             {
-              "title": 'dgiot_dashboard',
+              "title": '开发',
               "collapsable": true,
               "children": [
-                  ['web/', '开始'],
-                  ['web/dgiot_dashboard/DevelopmentToolsAndConfigurations', '开发工具和配置'],
-                  ['web/dgiot_dashboard/Controller', '总控台'],
-                  ['web/dgiot_dashboard/ConfigurationMenu', '菜单配置'],
-                  ['web/dgiot_dashboard/AccessConfiguration', '权限配置'],
-                  ['web/dgiot_dashboard/UserPermissions', '用户权限'],
-                  ['web/dgiot_dashboard/RoleAuthorization', '角色权限'],
+                  ['web/', '预览'],
+                  ['web/dgiot_dashboard/developmentTools', '开发工具和配置'],
+                  ['web/dgiot_dashboard/start', '如何开始'],
+                  ['web/dgiot_dashboard/config', '全局配置'],
+                  ['web/dgiot_dashboard/interface_alignment', '后端接口联调'],
+                  ['web/dgiot_dashboard/alert', '注意事项'],
+                  ['web/dgiot_dashboard/deploy', '构建发布'],
               ],
               "category": "一站式物联网平台"
           },

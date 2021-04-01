@@ -1,4 +1,4 @@
-## 如何开始
+## 项目简介
 
 ### 启动流程
 
@@ -12,3 +12,15 @@
 - 持有 token 后，会通过/userInfo 接口获取用户信息(包含：用户名、头像、roles、ability)
 - 根据全局配置，选择前端导出路由或者后端导出路由，根据用户 roles 和 ability 过滤，放入 vue router
 - 打开/index 页面
+
+## 安装
+```
+# 克隆项目
+git clone https://hub.fastgit.org/dgiot/dgiot_dashboard.git
+# 进入项目目录
+cd dgiot_dashboard
+# 安装依赖
+cnpm i
+# 本地开发 启动项目
+npm run serve
+```

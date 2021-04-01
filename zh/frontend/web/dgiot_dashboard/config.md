@@ -1,6 +1,6 @@
-### 全局配置
+## 全局配置
 
-#### vue/cli 配置
+### vue/cli 配置
 
 位置[src/config/cli.config.js](https://github.com/dgiot/dgiot_dashboard/blob/master/src/config/cli.config.js)
 
@@ -34,7 +34,8 @@ module.exports = {
 }
 ```
 
-##### 网络配置
+### 网络配置
+
 位置[src/config/net.config.js](https://github.com/dgiot/dgiot_dashboard/blob/master/src/config/net.config.js)
 
 ```javascript
@@ -70,8 +71,11 @@ module.exports = {
   },
 }
 ```
-##### 通用配置
+
+### 通用配置
+
 位置[src/config/setting.config.js](https://github.com/dgiot/dgiot_dashboard/blob/master/src/config/setting.config.js)
+
 ```javascript
 /*
  * @Author: h7ml
@@ -144,12 +148,14 @@ module.exports = {
   templateFolder: 'project',
   webpackBarName: '杭州数蛙科技有限公司',
   dateTime: new Date(),
-  webpackBanner:
-    ' build: 杭州数蛙科技有限公司 \n copyright: dgiot_dashboard \n time: ',
+  webpackBanner: ' build: 杭州数蛙科技有限公司 \n copyright: dgiot_dashboard \n time: ',
 }
 ```
-##### 主题配置
+
+### 主题配置
+
 位置[src/config/theme.config.js](https://github.com/dgiot/dgiot_dashboard/blob/master/src/config/theme.config.js)
+
 ```javascript
 /**
  * @description 导出主题配置，注意事项：此配置下的项修改后需清理浏览器缓存！！！
@@ -187,8 +193,11 @@ module.exports = {
   showThemeSetting: false,
 }
 ```
-##### 常用封装
+
+### 常用封装
+
 位置[src/vab/plugins/vab.js](https://github.com/dgiot/dgiot_dashboard/blob/master/src/vab/plugins/vab.js)
+
 ```javascript
 import { loadingText, messageDuration } from '@/config'
 import { Loading, Message, MessageBox, Notification } from 'element-ui'
@@ -275,12 +284,7 @@ Vue.prototype.$baseColorfullLoading = (index, text) => {
  * @param {*} dangerouslyUseHTMLString
  * @param {*} customClass
  */
-Vue.prototype.$baseMessage = (
-  message,
-  type,
-  dangerouslyUseHTMLString,
-  customClass
-) => {
+Vue.prototype.$baseMessage = (message, type, dangerouslyUseHTMLString, customClass) => {
   Message({
     showClose: true,
     message,
@@ -386,8 +390,11 @@ Vue.prototype.$baseTableHeight = (formType) => {
  */
 Vue.prototype.$baseEventBus = new Vue()
 ```
-##### 常用正则校验
+
+### 常用正则校验
+
 位置[src/utils/validate.js](https://github.com/dgiot/dgiot_dashboard/blob/master/src/utils/validate.js)
+
 ```javascript
 /**
  * @description 判读是否为外链

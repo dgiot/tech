@@ -22,6 +22,7 @@ module.exports = [
               "collapsable": true,
               "children": [
                   ['web/', '开始'],
+                  ['web/dgiot_dashboard/DevelopmentToolsAndConfigurations', '开发工具和配置'],
                   ['web/dgiot_dashboard/Controller', '总控台'],
                   ['web/dgiot_dashboard/ConfigurationMenu', '菜单配置'],
                   ['web/dgiot_dashboard/AccessConfiguration', '权限配置'],

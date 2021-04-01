@@ -1,25 +1,5 @@
 ### 总控台介绍
 
-总控台展示了管理的项目和应用以及设备相关信息，更加直观的
+![c0e02993-7043-3dba-9ee2-8e88a1fc8cc2.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/web/c0e02993-7043-3dba-9ee2-8e88a1fc8cc2.png)
 
-@flowstart
-para=>parallel: parallel tasks
-process=>operation: Process
-e=>end: End
-
-para(path1, bottom)->process->e
-para(path2)->e
-@flowend
-
-
-```mermaid
-sequenceDiagram
-Alice->John: Hello John, how are you?
-loop every minute
-    John-->Alice: Great!
-end
-```
-
-```javascript
-alert('1')
-```
+总控台展示了管理的项目和应用以及设备相关信息

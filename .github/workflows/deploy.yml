@@ -25,7 +25,7 @@ jobs:
         run: yarn
       - name: build 🔧 
         run: yarn build
-      - name: Deploy static to github pagese🚀
+      - name: Deploy static to github pagese 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}

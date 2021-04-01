@@ -210,12 +210,6 @@ module.exports = {
     lastUpdated: 'Last Updated'
   },
   plugins: [
-    [
-      "@mr-hope/sitemap",
-      {
-        // 你的选项
-      },
-    ],
     ["add-this", {
       pubid: "ra-60642249a725a5ee"
     }],

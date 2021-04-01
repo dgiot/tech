@@ -1,5 +1,20 @@
-### 总控台介绍
+### 安装命令[npm run clear](https://github.com/dgiot/dgiot_dashboard/blob/master/package.json#L19)
 
-![c0e02993-7043-3dba-9ee2-8e88a1fc8cc2.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/web/c0e02993-7043-3dba-9ee2-8e88a1fc8cc2.png)
+```
+# 项目根目录
+npm run clear
+```
 
-总控台展示了管理的项目和应用以及设备相关信息
+### 运行命令
+
+```
+# 项目根目录
+cnpm run dev
+```
+
+### 打包命令
+
+```
+# 项目根目录
+cnpm run build
+```

@@ -1,8 +1,10 @@
 module.exports = [
   {
-    "title": "DGIOT EDGE",
-    "sideTitle": "产品介绍",
-    "path": "product_presentation",
-    "category": "工业数据边缘网关"
+    "title": '桌面网关一键部署',
+    "collapsable": true,
+    "children": [
+      ['edge/', '一键部署']
+    ],
+    "category": "桌面网关一键部署"
   }
 ]

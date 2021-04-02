@@ -1,18 +1,11 @@
 module.exports = [
   {
-    "title": "产品介绍",
-    "path": "product_presentation",
-    "category": "工业数据云平台",
-    "collapsable": false,
-  },
-  {
-    "title": '快速入门',
-    "collapsable": false,
+    "title": 'Saas平台开发与部署',
+    "collapsable": true,
     "children": [
-      ['create_free_trial', '创建免费试用部署'],
-      ['create_free_trial', '创建账号']
+      ['cloud/', '一键部署']
+      ['cloud/plug_in', '插件插入']
     ],
-    "path": "create_free_trial",
-    "category": "工业数据云平台"
-  },
+    "category": "数蛙工业物联网Saas平台开发与部署"
+  }
 ]

@@ -35,13 +35,7 @@ module.exports = [
             "title": '开发指南',
             "collapsable": true,
             "children": [
-                ['web/', '预览'],
-                ['web/dgiot_dashboard/developmentTools', '开发工具和配置'],
-                ['web/dgiot_dashboard/start', '如何开始'],
-                ['web/dgiot_dashboard/config', '全局配置'],
-                ['web/dgiot_dashboard/interface_alignment', '后端接口联调'],
-                ['web/dgiot_dashboard/alert', '注意事项'],
-                ['web/dgiot_dashboard/deploy', '构建发布'],
+                ['web/development', '开发指南'],
             ],
             "category": "一站式物联网平台"
         },

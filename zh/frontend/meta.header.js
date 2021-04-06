@@ -18,7 +18,7 @@ module.exports = [
         "collapsable": true,
         "children": [
             {
-              "title": '开发',
+              "title": '快速入门',
               "collapsable": true,
               "children": [
                   ['web/', '预览'],
@@ -31,6 +31,20 @@ module.exports = [
               ],
               "category": "一站式物联网平台"
           },
+          {
+            "title": '开发指南',
+            "collapsable": true,
+            "children": [
+                ['web/', '预览'],
+                ['web/dgiot_dashboard/developmentTools', '开发工具和配置'],
+                ['web/dgiot_dashboard/start', '如何开始'],
+                ['web/dgiot_dashboard/config', '全局配置'],
+                ['web/dgiot_dashboard/interface_alignment', '后端接口联调'],
+                ['web/dgiot_dashboard/alert', '注意事项'],
+                ['web/dgiot_dashboard/deploy', '构建发布'],
+            ],
+            "category": "一站式物联网平台"
+        },
         ],
         "category": "工业数据云平台"
     },

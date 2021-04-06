@@ -10,6 +10,15 @@ module.exports = [
     "collapsable": true,
     "children": [
       {
+        "title": '电表设备接入',
+        "collapsable": true,
+        "children": [
+          ['meter/', '学习计划'],
+          ['meter/meter', '电表基础']
+        ],
+        "category": "工业数据云平台"
+      },
+      {
         "title": 'Mqtt设备接入',
         "collapsable": true,
         "children": [

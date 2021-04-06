@@ -5,7 +5,8 @@ module.exports = [
         "children": [
             ['./', '简介'],
             ['dgiot/tenant/', '多租户'],
-            ['dgiot/plugin/', '插件机制']
+            ['dgiot/plugin/', '插件机制'],
+            ['dgiot/erlang/', '编程规范']
         ],
         "category": "工业数据云平台"
     },

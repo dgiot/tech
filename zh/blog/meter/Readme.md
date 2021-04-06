@@ -13,14 +13,14 @@
  
  3. [创建虚拟DTU](virtual_dtu)
  
- 4. [奇迹物联DTU](http://www.amaziot.com/cp/qt/)
+ 4. [学习电表协议](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/DL645-2007%E5%A4%9A%E5%8A%9F%E8%83%BD%E7%94%B5%E8%83%BD%E8%A1%A8%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE.pdf)
+  
+ 5. [了解物理DTU](http://www.amaziot.com/cp/qt/)
  
- 5. [电表协议](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/DL645-2007%E5%A4%9A%E5%8A%9F%E8%83%BD%E7%94%B5%E8%83%BD%E8%A1%A8%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE.pdf)
+ 6. [开发通道插件](meter_channel)
  
- 6. [开发通道](meter_channel)
+ 7. 设计数据模型 
  
- 7. 数据模型 
- 
- 8. 应用开发
+ 8. 开发应用软件
  
  

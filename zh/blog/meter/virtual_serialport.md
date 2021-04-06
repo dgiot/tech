@@ -7,7 +7,7 @@
  
  + 选中D:\virtual_serialport\vspdxp_install.exe 选择管理员运行,提示安装成功
  
- ##. 配对串口
+ ## 配对串口
  
  + 选中D:\virtual_serialport\vspdconfig.exe 选择管理员运行 选择virtual ports 在Manage ports中 点击addpair
  生成一对串口,例如COM1和COM2 

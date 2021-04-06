@@ -17,9 +17,9 @@
   
  5. [了解物理DTU](http://www.amaziot.com/cp/qt/)
  
- 6. [开发通道插件](meter_channel)
- 
- 7. 设计数据模型 
+ 6. [设计数据模型](Digital_Twin) 
+  
+ 7. [开发通道插件](meter_channel)
  
  8. 开发应用软件
  

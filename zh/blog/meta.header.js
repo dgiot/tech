@@ -16,7 +16,10 @@ module.exports = [
           ['meter/', '教程概述'],
           ['meter/virtual_serialport', '虚拟串口'],
           ['meter/virtual_meter', '虚拟电表'],
-          ['meter/virtual_dtu', '虚拟DTU']
+          ['meter/virtual_dtu', '虚拟DTU'],
+          ['meter/Digital_Twin', '数字孪生'],
+          ['meter/meter_channel', '通道开发'],
+          ['meter/iot_app', '应用开发']
         ],
         "category": "工业数据云平台"
       },

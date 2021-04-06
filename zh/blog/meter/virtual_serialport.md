@@ -1,7 +1,7 @@
 
 # 操作步骤
  
- ##. 部署软件
+ ## 部署软件
  
  [点击下载](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/virtual_serialport.zip),解压到D盘根目录,目录结构如下D:\virtual_serialport
  

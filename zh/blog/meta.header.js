@@ -10,11 +10,13 @@ module.exports = [
     "collapsable": true,
     "children": [
       {
-        "title": '电表设备接入',
+        "title": '电力集抄教程',
         "collapsable": true,
         "children": [
-          ['meter/', '学习计划'],
-          ['meter/meter', '电表基础']
+          ['meter/', '教程概述'],
+          ['meter/virtual_serialport', '虚拟串口'],
+          ['meter/virtual_meter', '虚拟电表'],
+          ['meter/virtual_dtu', '虚拟DTU']
         ],
         "category": "工业数据云平台"
       },

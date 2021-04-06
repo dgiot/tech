@@ -34,9 +34,9 @@ const zh_nav = [{
   ]
 },
 {
-  text: '博客',
+  text: '实战教程',
   items: [{
-    text: '案例学习',
+    text: '实战教程',
     link: '/zh/blog/'
   }]
 }

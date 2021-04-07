@@ -13,8 +13,7 @@ category: frontend web
 ref: dgiot_dashboard 接入说明文档
 ---
 
-
-您的服务端可以使用api，通过HTTP/2通道，接收物联网平台推送的设备消息。本文档为web端功能的开发指南，介绍了web版本的开发方法。
+您的服务端可以使用 api，通过 HTTP/2 通道，接收物联网平台推送的设备消息。本文档为 web 端功能的开发指南，介绍了 web 版本的开发方法。
 
 # 相关信息
 
@@ -28,14 +27,14 @@ ref: dgiot_dashboard 接入说明文档
 - [Device 设备](./detail/Device)
 - [Product 产品](./detail/Product)
 - [Menu 菜单](./detail/Menu)
-- [_User 用户](./detail/_User)
+- [\_User 用户](./detail/_User)
 - [Instruct 指令](./detail/Instruct)
 - [Timescale 时序管理](./detail/Timescale)
 - [Dict 字典](./detail/Dict)
 - [Notification 通知管理](./detail/Notification)
 - [App 应用管理](./detail/App)
-- [_Session 会话管理](./detail/_Session)
-- [_Installation 部署管理](./detail/_Installation)
+- [\_Session 会话管理](./detail/_Session)
+- [\_Installation 部署管理](./detail/_Installation)
 - [Permission 权限管理](./detail/Permission)
 - [Project 项目管理](./detail/Project)
 - [Channel 通道管理](./detail/Channel)

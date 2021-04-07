@@ -75,7 +75,43 @@ DTU1(Device1)    DTU2(Device)           DTU3(Device)        <--tcp-->  tcp_serve
  在正式动手之前，请先体会一下心得和理解用户场景
  
  # 用户权限
+ 角色（Role）是资源的拥有者以及传递者。
+ 用户（User）是角色的实例化。
+ ##如何创建角色
+  第一步
+  
+  点击“多租户”进入多租户页面，再点击“角色管理”进入角色管理页面，最后点击已有角色后的“+”图标添加新角色。
+  ![role_manage1.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/role_manage1.png)
+  
+  第二步
+  
+  为新角色设置相应的角色名，部门，岗位，备注（角色名与备注必填）
+  ![role_manage2.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/role_manage2.png)
+  第三步
+    
+  为新角色分配对应的权限，分配对应的菜单。
+   ![role_manage3.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/role_manage3.png)
+   完成后即创建完成。
+ ##如何创建用户
+ 用户的权限资源均来自于角色，即权限资源先分配给角色，然后用户关联该角色。
  
+ 第一步
+ 
+ 点击“多租户”进入多租户页面，再点击“用户管理”进入用户管理页面，最后点击已有角色后的“+”图标添加新用户。
+ ![user_manage1.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/user_manage1.png)
+ 
+ 第二步
+ 
+ 为新用户设置相应的姓名，手机号，邮箱，账号，密码，选择对应部门。
+ ![user_manage2.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/user_manage2.png)
+ 
+ 第三步
+ 
+ 用新建的用户登录。
+ ![user_manage3.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/user_manage3.png)
+ 可以看到之前分配的菜单界面
+ ![user_manage4.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/user_manage4.png)
+
  # 产品设备
  
  

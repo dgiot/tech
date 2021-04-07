@@ -20,7 +20,7 @@ ref: dgiot_dashboard 接入说明文档
 - [服务端地址](http://prod.iotn2n.com/)
 - [swagger 文档地址](http://prod.iotn2n.com/swagger/)
 
-# 功能列表
+# 接口列表
 
 - [_Role 角色](./detail/_Role)
 - [Crond 任务](./detail/Crond)

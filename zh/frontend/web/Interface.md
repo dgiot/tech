@@ -17,7 +17,7 @@ ref: dgiot_dashboard 接入说明文档
 
 本项目接口请求使用了 axios，并在此基础上进行了二次封装
 
-已封装部分接口至[shuwa_parse](https://github1s.com/dgiot/dgiot_dashboard/blob/master/src/api/shuwa_parse/index.js)
+已封装接口至[shuwa_parse](https://github1s.com/dgiot/dgiot_dashboard/blob/master/src/api/shuwa_parse/index.js)
 
 ## shuwa_parse 接口说明
 

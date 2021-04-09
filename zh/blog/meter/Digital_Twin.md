@@ -77,7 +77,7 @@ DTU1(Device1)    DTU2(Device)           DTU3(Device)        <--tcp-->  tcp_serve
  # 用户权限
  角色（Role）是资源的拥有者以及传递者。
  用户（User）是角色的实例化。
- ##如何创建角色
+ ## 如何创建角色
   第一步
   
   点击“多租户”进入多租户页面，再点击“角色管理”进入角色管理页面，最后点击已有角色后的“+”图标添加新角色。
@@ -92,7 +92,7 @@ DTU1(Device1)    DTU2(Device)           DTU3(Device)        <--tcp-->  tcp_serve
   为新角色分配对应的权限，分配对应的菜单。
    ![role_manage3.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/role_manage3.png)
    完成后即创建完成。
- ##如何创建用户
+ ## 如何创建用户
  用户的权限资源均来自于角色，即权限资源先分配给角色，然后用户关联该角色。
  
  第一步
@@ -112,7 +112,7 @@ DTU1(Device1)    DTU2(Device)           DTU3(Device)        <--tcp-->  tcp_serve
  可以看到之前分配的菜单界面
  ![user_manage4.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/user_manage4.png)
 
- ##名词解释
+ ## 名词解释
 |术语|描述|
 |---|---|
 |角色（Role）|资源权限的拥有者以及传递者|
@@ -123,7 +123,7 @@ DTU1(Device1)    DTU2(Device)           DTU3(Device)        <--tcp-->  tcp_serve
  使用物联网平台的第一步是在控制台创建产品。产品是设备的集合，通常是一组具有相同功能定义的设备集合。例如，产品指同一个型号的产品，设备就是该型号下的某个设备。
   - 产品：设备的集合，指一组具有相同功能的设备。在这个界面，你可以给其配置物模型、物接入与物存储。物模型是对设备在云端的功能描述，包括设备的属性、服务和事件。物联网平台通过定义一种物的描述语言来描述物模型，称之为TSL（即Thing Specification Language ），采用JSON格式，我们根据TSL组装上报设备的数据。在产品界面，我们可以运行或编辑组态。
   - 设备：归属于某个产品下的具体设备。设备可以直接连接物联网平台，也可以作为子设备通过网关连接物联网平台。在这个界面，你可以对设备进行增删查改等编辑操作，并可组态展示设备的当前状态。
- ##如何创建产品
+ ## 如何创建产品
  登录平台控制台。
  在左侧导航栏，选择设备云 > 产品管理 >创建产品，单击创建产品。
  按照页面提示填写信息，然后单击确认。
@@ -140,7 +140,7 @@ DTU1(Device1)    DTU2(Device)           DTU3(Device)        <--tcp-->  tcp_serve
 |连网方式|直连设备和网关设备的连网方式|
 |产品描述|可输入文字，用来描述产品信息|
 
-##后续操作
+## 后续操作
 在“产品管理”控制台下，可以进行产品开发，设备管理等操作。
 - 产品管理
 
@@ -151,7 +151,7 @@ DTU1(Device1)    DTU2(Device)           DTU3(Device)        <--tcp-->  tcp_serve
 
 - 设备管理
 单击产品详情页的设备开发页签，跟随界面提示进行设备创建、功能开发、连接验证，完成设备开发，接入物联网平台。
-##添加物模型
+## 添加物模型
 + 自定义属性添加
 ![product_manage5.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/product_manage5.png)
 填写名称，标识符，取值范围，数据类型，单位等值

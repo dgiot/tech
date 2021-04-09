@@ -196,7 +196,8 @@ DTU1(Device1)    DTU2(Device)           DTU3(Device)        <--tcp-->  tcp_serve
 注：每次添加通道后，需重启对应的通道，即禁用通道后再启用
 ![product_manage12.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/product_manage12.png)
 
-##如何添加设备
+## 如何添加设备
+
 左侧导航栏选择设备管理，点击设备添加；<br>
 依次填写名称，设备编号，资产编号，型号，品牌，选择对应的产品等
 ![product_manage14.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/product_manage14.png)<br>

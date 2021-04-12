@@ -1,17 +1,15 @@
 const plugins = [
   [
-    [
-      'vuepress-plugin-comment',
-      {
-        choosen: 'valine', 
-        // options选项中的所有参数，会传给Valine的配置
-        options: {
-          el: '#valine-vuepress-comment',
-          appId: '5jxwjQ8Jwc9TQWHhjkDqj8YH-gzGzoHsz',
-          appKey: '6vhT5FYGsRvWh9rQt18gsXrd'
-        }
+    'vuepress-plugin-comment',
+    {
+      choosen: 'valine',
+      // options选项中的所有参数，会传给Valine的配置
+      options: {
+        el: '#valine-vuepress-comment',
+        appId: '5jxwjQ8Jwc9TQWHhjkDqj8YH-gzGzoHsz',
+        appKey: '6vhT5FYGsRvWh9rQt18gsXrd'
       }
-    ]
+    }
   ],
   ["add-this", {
     pubid: "ra-60642249a725a5ee"

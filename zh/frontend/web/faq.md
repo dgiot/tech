@@ -13,5 +13,20 @@ category: frontend web
 ref: dgiot_dashboard web前端相关问题答疑
 ---
 
+# 这里总结归纳了相关平台答疑问题
 
-test
+- 1. ## 项目如何打包?
+
+[项目打包命令](./dgiot_dashboard/deploy.md#%E6%89%93%E5%8C%85%E5%91%BD%E4%BB%A4)
+
+- 2. ## dgiot_dashboard 项目编译后的文件位置应该放在哪里?
+
+```markdown
+### windows
+
+> D:\msys64\home\you name \dgiot_server_build\dgiot\lib\shuwa_web_manager\priv\www
+
+### linux
+
+> /data/shuwa_iot/lib/shuwa_web_manager-4.0.0/priv/www
+```

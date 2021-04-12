@@ -7,7 +7,7 @@ const plugins = [
       options: {
         el: '#valine-vuepress-comment',
         appId: '5jxwjQ8Jwc9TQWHhjkDqj8YH-gzGzoHsz',
-        appKey: '6vhT5FYGsRvWh9rQt18gsXrd'
+        appKey: 'SPMRtyvp7XIyQsnibvXoesBw'
       }
     }
   ],

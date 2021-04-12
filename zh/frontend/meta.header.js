@@ -38,6 +38,8 @@ module.exports = [
                 ['web/development', '总览'],
                 ['web/Interface', '接口'],
                 ['web/page', '页面']
+                ['web/term', '术语']
+                ['web/faq', '答疑']
                 // ['web/detail/_Role', '_Role 角色'],
                 // ['web/detail/Crond', '_Crond 任务'],
                 // ['web/detail/Device', 'Device 设备'],

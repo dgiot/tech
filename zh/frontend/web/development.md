@@ -79,7 +79,7 @@ ref: dgiot_dashboard 接入说明文档
 
 ### 20. [Rule 规则引擎](./detail/Rule)
 
-### 21. [Stsyem 系统管理](./detail/Stsyem)
+### 21. [System 系统管理](./detail/System)
 
 ### 22. [EXPROTO 拓展编程](./detail/EXPROTO)
 

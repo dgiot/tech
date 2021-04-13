@@ -33,6 +33,16 @@ module.exports = [
         "category": "工业数据云平台"
       },
       {
+         "title": '水泵性能曲线测量案例',
+         "collapsable": true,
+         "children": [
+           ['pump/', '案例：水泵性能曲线'],
+           ['pump/study', '平台配置'],
+           ['pump/dtu', 'dtu配置'],
+         ],
+         "category": "工业数据云平台"
+      },
+      {
         "title": 'modbus设备接入',
         "collapsable": true,
         "children": [

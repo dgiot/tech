@@ -25,15 +25,17 @@ ref:
    - 业务分析平台BAP（Business Analytics Platform）
   
 
-  ![IOTARCH.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/IOTARCH.png)
+   ![dgiot_func.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/dgiot_func.png)
   
    数蛙科技秉持全社会分工合作的理念，开放合作的态度来快速消化全球急剧增长的工业互联需求，通过数据科技共赢生态框架，让广
    大开发者既可以通过实战快速成长，又能消化真实客户的工业互联网需求，同时还能获得比较丰厚的项目收入。
   
+ 
+  
   ![dgiot_busseness.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/dgiot_busseness.png)
    
    精准开源，生态共赢，数蛙一站式物联网平台是完整解决方案，
-   - CMP集成EMP的服务架构；
+   - CMP集成EMQ的服务架构；
    - DMP吸收阿里的数据建模；
    - AMP采纳Facebook多租户；
    - BMP整合Tdengine的时序数据；

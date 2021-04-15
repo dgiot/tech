@@ -4,6 +4,8 @@ module.exports = [
         "collapsable": true,
         "children": [
             ['./', '简介'],
+            ['dgiot/ddd/', '架构设计'],
+            ['dgiot/ddd/threemodes', '三种模式'],
             ['dgiot/tenant/', '多租户'],
             ['dgiot/plugin/', '插件机制'],
             ['dgiot/erlang/', '编程规范']

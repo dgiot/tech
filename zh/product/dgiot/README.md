@@ -25,14 +25,14 @@ ref:
  - 网络的协议类型，较互联网碎片化严重，存在大量私有协议类型，导致接入调试的工作量非常繁琐；
  - 产业的联调，从各种类型的传感器、网关、基站、物联网平台、时序数据库、大数据展现平台等，每个环节都必须需要联调与大量的连通性测试、安全性测试、压力测试、业务模拟测试等工作；
  - 物联网几乎覆盖所有的行业，所以各个领域都有自己的业务类型和流程，对接的第三方平台也非常多，各种对接和适配，都需要繁重的测试工作；
-![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/tech_1.png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/tech_1.png)
 ### 平台开发用户痛点
 - 物联网平台的开发，设计到众多角色
-![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/tech_2.png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/tech_2.png)
 - 各种开发团队中的角色，产生众多的沟通工作
-![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/tech_3.png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/tech_3.png)
 - 由于覆盖前端、后台、中台等多种技术栈，所以需要多语言的混合编程，掌握技术平台和中间件
-![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/tech_4.png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/tech_4.png)
 ### 平台测试运维用户痛点
 - 运营质量无法预测
   传统的监控工具只能监控基础资源，无法透视业务质量，当设备数量和种类增加时，无法预测平台的服务质量，只有出现问题后，临时被动应对。无法评估平台的未来承载和服务能力；
@@ -45,7 +45,7 @@ ref:
 ## 数蛙一站式物联网开源平台
 数蛙的DG-IoT开源平台，就是针对上述各种物联网平台开发及运营用户的痛点，结合多年在移动互联网和物联网领域积累的丰富平台开发经验。推出了DG-IoT的开源平台。平台高度兼容目前最受欢迎的主流物联网平台（Amazon、阿里物联网平台）的设计架构及所有接口API，主打私有化部署，并可保证数据的私密性安全性。
 ### DG-IoT开源平台的特点及优势
-![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/tech_5.png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/tech_5.png)
 ### 与技术型的开源平台比较，DG-IoT更贴近应用的快速赋能
 
 |技术性开源 | 需求型开源 |

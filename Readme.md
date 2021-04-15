@@ -25,7 +25,7 @@ ref:
 	- 设备云
 提供了包含物联网连接管理和设备管理的PaaS平台的所有功能；
 	- [多租户](https://tech.iotn2n.com/zh/backend/dgiot/tenant/#多租户模型 "多租户功能说明")
-	- 云组态
+	- [云组态](https://tech.iotn2n.com/zh/frontend/dgiottopo/)
 	- 云函数
 	- 云压测
 包含如下的核心功能：

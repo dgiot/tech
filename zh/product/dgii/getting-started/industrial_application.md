@@ -17,5 +17,5 @@ ref:
 
   智能制造系统集成商如何使用阿里云工业互联网集成工作台交付数字工厂项目？参考如下路径
   
-  ![p81786.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgii/p81786.png)
+  ![p81786.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgii/p81786.png)
   

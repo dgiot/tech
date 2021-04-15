@@ -170,7 +170,7 @@ taos> select avg(f1), max(f2), min(f3) from test.t10 interval(10s);
 - TDengine-client-2.0.10.0-Windows-x64.exe(2.8M)
 - TDengine-client-2.0.10.0-Windows-x86.exe(2.8M)
 
-报警模块的Linux安装包如下（请参考[报警模块的使用方法](https://github.com/taosdata/TDengine/blob/master/alert/README_cn.md)）：
+报警模块的Linux安装包如下（请参考[报警模块的使用方法](https://github.com/taosdata/shuwa_tech/zh/dataanalysis/tdengine/blob/master/alert/README_cn.md)）：
 
 - TDengine-alert-2.0.10.0-Linux-x64.tar.gz (8.1M)
 

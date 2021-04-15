@@ -3,7 +3,7 @@
  
  1. 获取软件
  
- [点击下载](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/meter_v2.7.1.zip),解压到D盘根目录,目录结构如下D:\meter_v2.7.1
+ [点击下载](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/meter_v2.7.1.zip),解压到D盘根目录,目录结构如下D:\meter_v2.7.1
  
  2. 注册OCX
   + win7
@@ -30,7 +30,7 @@
   
   选中 D:\meter_v2.7.1\645MeterV2.7.1.exe 软件，右击鼠标，选择以管理员启动软件界面
  
-  ![meter_demo.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/meter_demo.png)
+  ![meter_demo.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/meter_demo.png)
 
   4、打开串口
     选择上一步创建的成对串口 com1,波特率:115200,校验位：无，数据位：8 停止位:1

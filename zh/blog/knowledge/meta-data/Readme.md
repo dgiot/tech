@@ -1,11 +1,11 @@
 
 **背景**  据说，英语中元数据meta一词最早出现于1968年，其是对希腊语前缀"meta-"的粗略翻译，用于表明更抽象层次的事物。尽管元数据一词只有几十年的历史，然而几千年的图书馆管理员们一直在工作中使用着元数据，只不过我们先所谓的“元数据”是历史上被称为"图书馆目录信息"。图书目录中的信息解决了一个十分关键的问题，就是如何帮助用户在图书馆快速地、准确地找到想要的资料。
 
-![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/meta-data/1.png)图为爱尔兰最古老的都柏林圣三一学院图书馆
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/knowledge/meta-data/1.png)图为爱尔兰最古老的都柏林圣三一学院图书馆
 
 图书目录中依然延续至今的信息片段：书名、作者或整理、主题、简介和篇幅。但如今其含有更多的信息，如出版社、出版时间、定价、条形码和上架建议等等。
 
-![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/meta-data/2.png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/knowledge/meta-data/2.png)
 
 如今的图书目录采用更多的信息片段。每本著作都有唯一的编码号码（图书馆的书一般带有手写或机打标签），根据某种编码方案（如杜威十进制分类法等）设计的纯数字或字母数字混编字符串，来帮助图书馆用户在书架上准确地快速地找到著作。
 
@@ -128,7 +128,7 @@
 
 笔者这里以集中式元数据架构为例讲解，通过对数据源系统的元数据信息采集，发送Kafka消息系统进行解耦合，再使用Antlr4开发各版SQL解析器，对元数据信息新增、修改和删除操作进行标准化集中整合存储。在元数据集中存储的基础上或过程中，可提供元数据服务与应用，如数据资产目录、数据地图、集成IDE、统一SQL多处理引擎、字段级血缘关系、影响度分析、下线分析、版本管理和数据价值分析等（这些元数据应用可根据产品经理设计理念进行优化组合，笔者这里拉平排列各功能应用，为了方便讲解各元数据应用模块）。这里就包括了元数据采集、整合、存储、分析、应用等阶段的生命周期。
 
-![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/meta-data/3.png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/knowledge/meta-data/3.png)
 
 3
 
@@ -140,15 +140,15 @@
 
 数据资产地图包括数据资产目录和血缘关系等。通过对元数据的标准化、加工整合形成数据资产地图。数据资产地图一般可支持全文搜索和模糊查询表信息检索、也支持按照关系查找或按主题域层级查找。一般采集Elasticsearch做元数据信息检索和Neo4J做血缘关系的数据地图。如图：
 
-![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/meta-data/4.png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/knowledge/meta-data/4.png)
 
 检索表的元数据信息包括分层信息、分层数据库数量、每层功能描述、数据库表数量、总计存储大小、存储类型、实际表存储位置，表基本信息包括主题分类、所属主题、主题描述、表名称、表数据功能简介、表类型、表创建人、表更新人、创建时间、更新时间、数据更新人、数据更新时间、表预估数据量、表文件大小、表文件个数、表文件存储格式、表压缩格式、数据质量评分、数据热度、更新频率、大致更新完成时间等等。
 
-![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/meta-data/5.png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/knowledge/meta-data/5.png)
 
 还包含指标业务元数据信息如下：  
 
-![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/meta-data/6.png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/mknowledge/eta-data/6.png)
 
 元数据信息也要包括归档和已销毁的数据记录的元数据信息。归档元数据信息便于数据分析师查找，快速恢复，重新使用挖掘出数据价值。已销毁元数据信息便于数据安全管理。
 
@@ -168,11 +168,11 @@
 
 在传统的ETL工具如Informatica、DataStage和开源Kettle中都有相应血缘关系，以informatica ETL工具的表级血缘关系和字段级血缘举例，如图：
 
-![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/meta-data/7.png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/knowledge/meta-data/7.png)
 
 （上图：表级血缘关系）  
 
-![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/meta-data/8.png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/knowledge/meta-data/8.png)
 
 （上图：字段级血缘关系，也称mapping）  
 
@@ -180,7 +180,7 @@
 
 大数据时代，大部分企业数据仓库都使用Hive作为数仓存储和ETL数据加工，如果是单一Hive处理引擎，可使用Hive Hook直接解析字段级血缘关系和表级别血缘关系。如果多种计算引擎就使用上述笔者给出技术架构图，通过对不同存储和计算引擎监听动作，使用Antlr4开发各版本SQL解析工具，动态识别元数据信息变更、删除和新增实时或准实时生成集群血缘关系、系统血缘关系、表级血缘关系和字段血缘关系。通过从语法树遍历解析后存储Neo4j图数据
 
-![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/meta-data/9.png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/knowledge/meta-data/9.png)
 
 **3.4**
 

@@ -32,7 +32,7 @@ ref: dgiot_dashboard web前端相关问题答疑
 ```
 
 - 3. 物词典是什么？
-  ![dict.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/web/dict/dict.png)
+  ![dict.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/frontend/web/dict/dict.png)
 [关于物词典](./dgiot_dashboard/dict)
 - 4. 如何创建物词典模板？
 [关于物词典](./dgiot_dashboard/dict)

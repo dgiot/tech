@@ -34,12 +34,12 @@ ref: dgiot_dashboard 接入说明文档
 
 通俗点的理解是每个用户都对应着一个或多个角色，角色控制着接口（api）能否调用，控制着菜单（Menu）是否有权限访问，如下图
 
-![eb752dad-b413-db56-b760-fd53be312c9b.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/web/Role/eb752dad-b413-db56-b760-fd53be312c9b.png)
+![eb752dad-b413-db56-b760-fd53be312c9b.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/frontend/web/Role/eb752dad-b413-db56-b760-fd53be312c9b.png)
 
 角色中可以挂载多个用户（user）方便管理调度
 
 而角色是属于部门下的，每个部门可以挂载多个角色
-![431add77-98e1-9060-0570-c14bf08a859e.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/web/Role/431add77-98e1-9060-0570-c14bf08a859e.png)
+![431add77-98e1-9060-0570-c14bf08a859e.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/frontend/web/Role/431add77-98e1-9060-0570-c14bf08a859e.png)
 
 ### 2. [Crond 任务](./detail/Crond)
 

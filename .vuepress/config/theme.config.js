@@ -6,7 +6,8 @@ const zh_productdgtestHeader = require('../../zh/product/dgtest/meta.header')
 const zh_backendHeader = require('../../zh/backend/meta.header')
 const zh_frontendHeader = require('../../zh/frontend/meta.header')
 const zh_dataanalysisHeader = require('../../zh/dataanalysis/meta.header')
-const zh_blogHeader = require('../../zh/blog/meta.header')
+const zh_knowledgeHeader = require('../../zh/blog/knowledge/meta.header')
+const zh_studyHeader = require('../../zh/blog/study/meta.header')
 
 const en_cloudHeader = require('../../en/manual/cloud/meta.header')
 const en_edgeHeader = require('../../en/manual/edge/meta.header')
@@ -40,7 +41,8 @@ const themeConfig = {
         '/zh/backend/': zh_backendHeader,
         '/zh/frontend/': zh_frontendHeader,
         '/zh/dataanalysis/': zh_dataanalysisHeader,
-        '/zh/blog/': zh_blogHeader,
+        '/zh/blog/knowledge/': zh_knowledgeHeader,
+        '/zh/blog/study/': zh_studyHeader,
       },
     },
     '/en/': {

@@ -5,7 +5,7 @@
 了解整个框架的工作流程，会对我们以后开发有很大的帮助，以下是框架访问一个网页的工作流程，逻辑代码[src/vab/plugins/permissions.js](https://github.com/dgiot/dgiot_dashboard/blob/master/src/vab/plugins/permissions.js)
 
 
-![80ec9251-6122-d2d5-957b-77cd2fc5d111.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/web/80ec9251-6122-d2d5-957b-77cd2fc5d111.png)
+![80ec9251-6122-d2d5-957b-77cd2fc5d111.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/frontend/web/80ec9251-6122-d2d5-957b-77cd2fc5d111.png)
 
 - 网站启动后，会加载全局配置
 - 用户访问一个页面(如：/index)后，会验证是否有 token，没有会跳转到/login 页面

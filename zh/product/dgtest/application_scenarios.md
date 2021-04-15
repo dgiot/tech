@@ -7,13 +7,13 @@ category: 产品定价
 
 ## zetag压测场景描述
 
-![zeta1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/zeta1.png)
+![zeta1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/zeta1.png)
 
 ## zetag压测网络架构
 
-![zeta2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/zeta2.png)
+![zeta2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/zeta2.png)
 
-![zeta3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/zeta3.png)
+![zeta3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/zeta3.png)
 
 ## Zetag压测结果
 
@@ -24,8 +24,8 @@ category: 产品定价
 |最大值：17171432|	请求返回200数 | 	120116 / 200000|
 |合计：10324032|	请求返回404数 | 	79884 / 200000 |
 
-![zeta4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/zeta4.png)
+![zeta4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/zeta4.png)
 
 # 3000万 电表集抄压测
 
-![meter1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/meter1.png)
+![meter1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/meter1.png)

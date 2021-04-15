@@ -4,7 +4,7 @@ TDengine 提供了遵循 JDBC 标准（3.0）API 规范的 `taos-jdbcdriver` 实
 
 `taos-jdbcdriver` 的实现包括 2 种形式： JDBC-JNI 和 JDBC-RESTful（taos-jdbcdriver-2.0.18 开始支持 JDBC-RESTful）。 JDBC-JNI 通过调用客户端 libtaos.so（或 taos.dll ）的本地方法实现， JDBC-RESTful 则在内部封装了 RESTful 接口实现。
 
-![tdengine-jdbc-connector.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/tdengine/images/tdengine-jdbc-connector.png)
+![tdengine-jdbc-connector.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/dataanalysis/tdengine/images/tdengine-jdbc-connector.png)
 
 上图显示了 3 种 Java 应用使用连接器访问 TDengine 的方式：
 
@@ -127,7 +127,7 @@ TDengine 的 JDBC URL 规范格式为：
 url中的配置参数如下：
 * user：登录 TDengine 用户名，默认值 root。
 * password：用户登录密码，默认值 taosdata。
-* cfgdir：客户端配置文件目录路径，Linux OS 上默认值 /etc/taos ，Windows OS 上默认值 C:/TDengine/cfg。
+* cfgdir：客户端配置文件目录路径，Linux OS 上默认值 /etc/taos ，Windows OS 上默认值 C:/shuwa_tech/zh/dataanalysis/tdengine/cfg。
 * charset：客户端使用的字符集，默认值为系统字符集。
 * locale：客户端语言环境，默认值系统当前 locale。
 * timezone：客户端使用的时区，默认值为系统当前时区。
@@ -157,7 +157,7 @@ public Connection getConn() throws Exception{
 properties 中的配置参数如下：
 * TSDBDriver.PROPERTY_KEY_USER：登录 TDengine 用户名，默认值 root。
 * TSDBDriver.PROPERTY_KEY_PASSWORD：用户登录密码，默认值 taosdata。
-* TSDBDriver.PROPERTY_KEY_CONFIG_DIR：客户端配置文件目录路径，Linux OS 上默认值 /etc/taos ，Windows OS 上默认值 C:/TDengine/cfg。
+* TSDBDriver.PROPERTY_KEY_CONFIG_DIR：客户端配置文件目录路径，Linux OS 上默认值 /etc/taos ，Windows OS 上默认值 C:/shuwa_tech/zh/dataanalysis/tdengine/cfg。
 * TSDBDriver.PROPERTY_KEY_CHARSET：客户端使用的字符集，默认值为系统字符集。
 * TSDBDriver.PROPERTY_KEY_LOCALE：客户端语言环境，默认值系统当前 locale。
 * TSDBDriver.PROPERTY_KEY_TIME_ZONE：客户端使用的时区，默认值为系统当前时区。
@@ -203,7 +203,7 @@ secondEp              cluster_node2:6030
 以上示例，jdbc 会使用客户端的配置文件，建立到 hostname 为 cluster_node1、端口为 6030、数据库名为 test 的连接。当集群中 firstEp 节点失效时，JDBC 会尝试使用 secondEp 连接集群。
 TDengine 中，只要保证 firstEp 和 secondEp 中一个节点有效，就可以正常建立到集群的连接。
 
-> 注意：这里的配置文件指的是调用 JDBC Connector 的应用程序所在机器上的配置文件，Linux OS 上默认值 /etc/taos/taos.cfg ，Windows OS 上默认值 C://TDengine/cfg/taos.cfg。
+> 注意：这里的配置文件指的是调用 JDBC Connector 的应用程序所在机器上的配置文件，Linux OS 上默认值 /etc/taos/taos.cfg ，Windows OS 上默认值 C://shuwa_tech/zh/dataanalysis/tdengine/cfg/taos.cfg。
 
 #### 配置参数的优先级
 
@@ -479,12 +479,12 @@ TDengine 目前支持时间戳、数字、字符、布尔类型，与 Java 对�
 [4]: https://www.taosdata.com/blog/2019/12/03/jdbcdriver%e6%89%be%e4%b8%8d%e5%88%b0%e5%8a%a8%e6%80%81%e9%93%be%e6%8e%a5%e5%ba%93/
 [5]: https://github.com/brettwooldridge/HikariCP
 [6]: https://github.com/alibaba/druid
-[7]: https://github.com/taosdata/TDengine/issues
+[7]: https://github.com/taosdata/shuwa_tech/zh/dataanalysis/tdengine/issues
 [8]: https://search.maven.org/artifact/com.taosdata.jdbc/taos-jdbcdriver
 [9]: https://mvnrepository.com/artifact/com.taosdata.jdbc/taos-jdbcdriver
 [10]: https://maven.aliyun.com/mvn/search
-[11]: https://github.com/taosdata/TDengine/tree/develop/tests/examples/JDBC/SpringJdbcTemplate
-[12]: https://github.com/taosdata/TDengine/tree/develop/tests/examples/JDBC/springbootdemo
+[11]: https://github.com/taosdata/shuwa_tech/zh/dataanalysis/tdengine/tree/develop/tests/examples/JDBC/SpringJdbcTemplate
+[12]: https://github.com/taosdata/shuwa_tech/zh/dataanalysis/tdengine/tree/develop/tests/examples/JDBC/springbootdemo
 [13]: https://www.taosdata.com/cn/documentation/administrator/#client
 [14]: https://www.taosdata.com/cn/all-downloads/#TDengine-Windows-Client
 [15]: https://www.taosdata.com/cn/getting-started/#%E5%AE%A2%E6%88%B7%E7%AB%AF

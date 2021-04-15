@@ -7,7 +7,7 @@ Modbus在工业环境下很流行，因为它是公开发布而免版税的。�
 
 Modbus支持连接到同一网络的许多设备之间进行通信，例如，一个测量温度和湿度并将结果发送给服务器的系统中，Modbus通常用于在监控和数据采集(SCADA)系统中将计算机或服务器与远程终端单元(RTU)连接。许多数据类型是根据梯形逻辑(一种通过基于继电器逻辑电路图的图形来代表程序的一种编程语言)的行业用法机及其在驱动继电器中的用途来命名的: 单位物理输出称为线圈，单位物理输入称为离散输入或触点。
 
-![Devices-Communicate-Using-Modbus-Common-Language.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/modbus/Devices-Communicate-Using-Modbus-Common-Language.jpg)
+![Devices-Communicate-Using-Modbus-Common-Language.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/modbus/Devices-Communicate-Using-Modbus-Common-Language.jpg)
 
 Modbus协议在RS232，RS422和RS485之上运行。有针对Modbus帧的基于IP链路层定义的 Modbus/TCP规范。Modbus协议基于Request(请求)/Response(响应)模型。
 
@@ -20,9 +20,9 @@ Modbus协议在RS232，RS422和RS485之上运行。有针对Modbus帧的基于IP
 - Modbus TCP
 - Modbus Plus
 
-更详细请下载[Modbus协议文档完整版本](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/modbus/Modbus_book.pdf)
+更详细请下载[Modbus协议文档完整版本](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/modbus/Modbus_book.pdf)
 
-![Modbus-Different-Types.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/modbus/Modbus-Different-Types.jpg)
+![Modbus-Different-Types.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/modbus/Modbus-Different-Types.jpg)
 
 Modicon发布了基于主从架构的多点网络的Modbus通信接口。Modbus节点之间的通信通过发送请求和读取响应类型消息来实现。
 
@@ -40,7 +40,7 @@ Modbus通过多种类型的物理介质进行通信，例如：
 
 - 以太网
 
-![Modbus-Communication-Physical-Media.gif](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/modbus/Modbus-Communication-Physical-Media.gif)
+![Modbus-Communication-Physical-Media.gif](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/modbus/Modbus-Communication-Physical-Media.gif)
 
 最初的Modbus接口在RS-232串行通信上运行，但是大多数后来的Modbus实现使用RS-485，因为它允许：
 
@@ -50,11 +50,11 @@ Modbus通过多种类型的物理介质进行通信，例如：
 
 - 单个多点网络中可能有多个设备。
 
-![Modbus-Communication-over-Serial-RS485-Benefits-.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/modbus/Modbus-Communication-over-Serial-RS485-Benefits-.jpg)
+![Modbus-Communication-over-Serial-RS485-Benefits-.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/modbus/Modbus-Communication-over-Serial-RS485-Benefits-.jpg)
 
 使用两线制通过串行RS-485物理介质进行主从Modbus通信 发送 并接收连接。
 
-![Modbus-Communication-over-Serial-RS-485-Physical-Media.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/modbus/Modbus-Communication-over-Serial-RS-485-Physical-Media.jpg)
+![Modbus-Communication-over-Serial-RS-485-Physical-Media.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/modbus/Modbus-Communication-over-Serial-RS-485-Physical-Media.jpg)
 
 在简单的接口（如RS232或RS485）上，Modbus消息以纯格式通过网络发送，并且该网络将专用于Modbus通信。
 
@@ -62,7 +62,7 @@ Modbus通过多种类型的物理介质进行通信，例如：
 
 因此，在这种情况下，Modbus和其他类型的混合协议可以同时存在于同一物理接口上。
 
-![Modbus-Devices-Compliance-with-Ethernet-Physical-Interface.gif](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/modbus/Modbus-Devices-Compliance-with-Ethernet-Physical-Interface.gif)
+![Modbus-Devices-Compliance-with-Ethernet-Physical-Interface.gif](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/modbus/Modbus-Devices-Compliance-with-Ethernet-Physical-Interface.gif)
 
 # Modbus4j
 
@@ -110,7 +110,7 @@ GitHub：https://github.com/infiniteautomation/modbus4j
 </dependency>
 ```
 Modbus效果演示视频
-<video src="http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/modbus/gateway-modbus.mp4" width="800px" height="600px" controls="controls"></video>
+<video src="http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/modbus/gateway-modbus.mp4" width="800px" height="600px" controls="controls"></video>
 
 
 

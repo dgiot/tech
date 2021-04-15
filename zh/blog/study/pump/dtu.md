@@ -13,11 +13,11 @@
 
 不需要网线时，我们只需要知道其入网的ip值，在浏览器中搜索即可。
 
-![dtu_edit.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/pump/dtu_edit.png)
+![dtu_edit.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/pump/dtu_edit.png)
 
 在```串口及网络设置```里面更改远程网络参数设置里面的服务器地址。这个地址就是我们平台的服务器地址。
 
-![dtu_link.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/pump/dtu_link.png)
+![dtu_link.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/pump/dtu_link.png)
 
 如果想设置dtu连入的wifi，可进入```以太网功能设置```界面，设置好wifi的帐号和密码。dtu就会连入这个wifi。
 

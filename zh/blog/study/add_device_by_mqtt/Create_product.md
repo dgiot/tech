@@ -19,16 +19,16 @@ tag:
 #### 2、顶部导航栏选择产品，点击创建产品
 **配置参数**</br>
 (1)依次填写名称，分组，选择分类和应用，节点，联网方式，确定回到上一页</br>
-![product_1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/product_1.png)
+![product_1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/product_1.png)
 (2) 选择刚刚创建的产品，点击配置</br>
-![product_2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/product_2.png)
+![product_2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/product_2.png)
 (3)添加物模型</br>
  - 自定义属性添加</br>
-![product_3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/product_3.png)
+![product_3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/product_3.png)
 填写名称，标识符，取值范围，数据类型，单位</br>
-![product_4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/product_4.png)
+![product_4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/product_4.png)
  - 标准属性添加，选择符合产品的分类，点击添加</br>
-![product_5.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/product_5.png)
+![product_5.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/product_5.png)
  自动添加相关属性
  ![image.png](https://i.loli.net/2021/01/28/cdvbRT5pVXOjiYB.png)
  

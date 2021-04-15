@@ -3,35 +3,35 @@
 绘制性能曲线，有```Q-H```（流量-扬程）、```Q-N```（流量-功率）、```Q-n```（流量-效率）三根曲线，蕴含有流量```Q```、扬程```H```、功率```N```和效率```n```四个变量。其中扬程```H```是根据进出口压力```f```得到的，
 效率```n```由流量、扬程和压力计算得到。故，只需要流量```Q```、功率```N```、进出口压力```f```这四个变量参数即可。
 
-![xnqx.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/pump/xnqx.png)
+![xnqx.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/pump/xnqx.png)
 
 ## Step 1:配置好通道
 
-![channel.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/pump/channel.png)
+![channel.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/pump/channel.png)
 
 通过登录我们的平台，进入到```通道```界面。点击```创建通道```，依次创建三个通道，分别是```指令任务通道```、```数蛙水泵控制器采集通道```和```TD资源通道```。
 
-![channel_create.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/pump/channel_create.png)
+![channel_create.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/pump/channel_create.png)
 
 ```指令任务通道```是给dtu下达采集任务指令，用于物接入。需要设置的有```开始时间```、```结束时间```、```采集频率```和```池子大小```这几个参数。其中```池子大小```改为1即可。
 
-![channel_task.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/pump/channel_task.png)
+![channel_task.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/pump/channel_task.png)
 
 ```数蛙水泵控制器采集通道```是和dtu进行连接通讯，用于物接入。需要设置的有```端口```，```登录报文帧头```和```池子大小```这几个参数。其中，```端口```和```登录报文帧头```要与连接的dtu保持一致。```池子大小```也改为1。
 
 dtu如何设置与我们平台通讯，可转到[dtu配置页面](dtu.md)。
 
-![channel_dtu.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/pump/channel_dtu.png)
+![channel_dtu.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/pump/channel_dtu.png)
 
 ```TD资源通道```用于存储dtu传输的时序数据，用于物存储。其中设置好```服务器地址```、```端口```、```用户```、```密码```和```池子大小```这几个参数。
 
-![channel_td.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/pump/channel_td.png)
+![channel_td.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/pump/channel_td.png)
 
 ## Step 2：配置好分组
 
 配置好三个通道后，接下来是配置好分组。```分组```是将同用这三个通道的产品设备划为同一组。点击```新建```，新建成功后，在```物接入```处```选择通道```，将刚刚设置的指令任务通道和数蛙水泵控制器采集通道添加进去。
 
-![group.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/pump/group.png)
+![group.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/pump/group.png)
 
 同理，在物存储处添加```TD资源通道```。
 
@@ -41,17 +41,17 @@ dtu如何设置与我们平台通讯，可转到[dtu配置页面](dtu.md)。
 
 在产品页面，选择刚刚生成好的产品，在其右侧，点击```配置```， 即可进入产品的编辑页面。
 
-![product.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/pump/product.png)
+![product.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/pump/product.png)
 
 ### 物模型
 
 在物模型处我们配置不同的物模型，每个物模型分别与不同的传感器检测参数对应。
 
-![model.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/pump/model.png)
+![model.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/pump/model.png)
 
 点击```编辑```或者```新增自定义属性```，即可对物模型进行编辑。
 
-![object_model.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/pump/object_model.png)
+![object_model.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/pump/object_model.png)
 
 其中每一个空格的含义如下：
 
@@ -86,11 +86,11 @@ dtu如何设置与我们平台通讯，可转到[dtu配置页面](dtu.md)。
 
 进入指令设置界面的途径：点击```设备```，在设备列表中找到使用的设备，点击```查看```，在功能列表中找到```设备指令```。
 
-![instruct.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/pump/instruct.png)
+![instruct.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/pump/instruct.png)
 
 在这个页面，你可以新增或者删除指令。也可以编辑、启用或者禁用指令。
 
-![instruct_edit.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/pump/instruct_edit.png)
+![instruct_edit.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/pump/instruct_edit.png)
 
 各项含义如下表：
 
@@ -115,7 +115,7 @@ dtu如何设置与我们平台通讯，可转到[dtu配置页面](dtu.md)。
 
 我们通过依次进入```分组```-```编辑组态```或```设备```-```视图```或```产品```-```编辑组态```来进入组态的编辑与查看界面。
 
-![show.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/pump/show.png)
+![show.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/pump/show.png)
 
 组态过程：
 

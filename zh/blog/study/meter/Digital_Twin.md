@@ -81,16 +81,16 @@ DTU1(Device1)    DTU2(Device)           DTU3(Device)        <--tcp-->  tcp_serve
   第一步
   
   点击“多租户”进入多租户页面，再点击“角色管理”进入角色管理页面，最后点击已有角色后的“+”图标添加新角色。
-  ![role_manage1.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/role_manage1.png)
+  ![role_manage1.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/role_manage1.png)
   
   第二步
   
   为新角色设置相应的角色名，部门，岗位，备注（角色名与备注必填）
-  ![role_manage2.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/role_manage2.png)
+  ![role_manage2.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/role_manage2.png)
   第三步
     
   为新角色分配对应的权限，分配对应的菜单。
-   ![role_manage3.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/role_manage3.png)
+   ![role_manage3.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/role_manage3.png)
    完成后即创建完成。
  ## 如何创建用户
  用户的权限资源均来自于角色，即权限资源先分配给角色，然后用户关联该角色。
@@ -98,19 +98,19 @@ DTU1(Device1)    DTU2(Device)           DTU3(Device)        <--tcp-->  tcp_serve
  第一步
  
  点击“多租户”进入多租户页面，再点击“用户管理”进入用户管理页面，最后点击已有角色后的“+”图标添加新用户。
- ![user_manage1.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/user_manage1.png)
+ ![user_manage1.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/user_manage1.png)
  
  第二步
  
  为新用户设置相应的姓名，手机号，邮箱，账号，密码，选择对应部门。
- ![user_manage2.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/user_manage2.png)
+ ![user_manage2.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/user_manage2.png)
  
  第三步
  
  用新建的用户登录。
- ![user_manage3.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/user_manage3.png)
+ ![user_manage3.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/user_manage3.png)
  可以看到之前分配的菜单界面
- ![user_manage4.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/user_manage4.png)
+ ![user_manage4.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/user_manage4.png)
 
  ## 名词解释
 |术语|描述|
@@ -127,8 +127,8 @@ DTU1(Device1)    DTU2(Device)           DTU3(Device)        <--tcp-->  tcp_serve
  登录平台控制台。
  在左侧导航栏，选择设备云 > 产品管理 >创建产品，单击创建产品。
  按照页面提示填写信息，然后单击确认。
- ![product_manage1.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/product_manage1.png)
- ![product_manage2.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/product_manage2.png)
+ ![product_manage1.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/product_manage1.png)
+ ![product_manage2.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/product_manage2.png)
  
 |参数|描述|
 |---|---|  
@@ -145,17 +145,17 @@ DTU1(Device1)    DTU2(Device)           DTU3(Device)        <--tcp-->  tcp_serve
 - 产品管理
 
 选择“产品管理”，在产品列表,操作栏中，单击“配置”，进入“产品详情”页。单击相应页签，查看产品信息、Topic类列表，设置自定义Topic、物模型、物解析、物接入、物存储等。
-![product_manage3.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/product_manage3.png)
+![product_manage3.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/product_manage3.png)
 
-![product_manage4.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/product_manage4.png)
+![product_manage4.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/product_manage4.png)
 
 - 设备管理
 单击产品详情页的设备开发页签，跟随界面提示进行设备创建、功能开发、连接验证，完成设备开发，接入物联网平台。
 ## 添加物模型
 + 自定义属性添加
-![product_manage5.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/product_manage5.png)
+![product_manage5.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/product_manage5.png)
 填写名称，标识符，取值范围，数据类型，单位等值
-![product_manage6.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/product_manage6.png)
+![product_manage6.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/product_manage6.png)
 
 其中各项含义见下表
 
@@ -179,29 +179,29 @@ DTU1(Device1)    DTU2(Device)           DTU3(Device)        <--tcp-->  tcp_serve
 + 标准属性的添加
 
 点击“新增标准属性”
-![product_manage7.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/product_manage7.png)
-![product_manage8.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/product_manage8.png)
+![product_manage7.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/product_manage7.png)
+![product_manage8.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/product_manage8.png)
 自动添加相关属性
-![product_manage9.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/product_manage9.png)
+![product_manage9.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/product_manage9.png)
 
 + 添加物接入
 
 选择物接入，选择通道<br>
 注：每次添加通道后，需重启对应的通道，即禁用通道后再启用
-![product_manage10.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/product_manage10.png)
-![product_manage11.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/product_manage11.png)
+![product_manage10.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/product_manage10.png)
+![product_manage11.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/product_manage11.png)
 
 + 物存储
 选择物存储，选择通道<br>
 注：每次添加通道后，需重启对应的通道，即禁用通道后再启用
-![product_manage12.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/product_manage12.png)
+![product_manage12.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/product_manage12.png)
 
 ## 如何添加设备
 
 左侧导航栏选择设备管理，点击设备添加；<br>
 依次填写名称，设备编号，资产编号，型号，品牌，选择对应的产品等
-![product_manage14.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/product_manage14.png)<br>
-![product_manage13.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/meter/product_manage13.png)
+![product_manage14.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/product_manage14.png)<br>
+![product_manage13.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/product_manage13.png)
 
  
    

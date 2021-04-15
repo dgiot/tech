@@ -60,7 +60,7 @@ TDengine的Grafana插件在安装包的/usr/local/taos/connector/grafanaplugin�
 
 #### 导入 Dashboard
 
-在 Grafana 插件目录 /usr/local/taos/connector/grafana/tdengine/dashboard/ 下提供了一个 `tdengine-grafana.json` 可导入的 dashboard。
+在 Grafana 插件目录 /usr/local/taos/connector/grafana/shuwa_tech/zh/dataanalysis/tdengine/dashboard/ 下提供了一个 `tdengine-grafana.json` 可导入的 dashboard。
 
 点击左侧 `Import` 按钮，并上传 `tdengine-grafana.json` 文件：
 

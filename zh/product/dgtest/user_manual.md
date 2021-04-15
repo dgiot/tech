@@ -5,7 +5,7 @@ category: 操作指南
 
 # 整体流程
 
-![zeta_test.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/zeta_test.png)
+![zeta_test.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/shuwa_tech/zh/product/dgtest/1.png)
 
 如上图，四个exporter自身会产生类似于发包数的统计值metrics。然后task_work这个任务以时间顺序将统计值暴露。promethues以一定的时间间隔去读取该统计值，存储为时序数据。Grafana从promethues得到job和metrics数据，并分别以仪表盘(dashboard)与面板(penel)的形式展示。生成报告时，report系统从grafana中以“Job_Legend”和“Job_Panel”形式将值提取出来，形成特定格式的json文件，模板传参分别替换报告模板中的指定文本和图片占位符，生成报告。
 
@@ -34,35 +34,35 @@ category: 操作指南
   ```  
 ## 2. 在grafana添加数据源
 
-![data_sources.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/data_sources.png)
+![data_sources.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/data_sources.png)
 
 在grafana首页，点击设置图标，再点击Data Sources进入数据源设置界面。我们可以添加选择所需要的数据源，数据源本质是ip和端口值。
 
 ## 3. 查看该数据源下的job和metrics
 
-![promethues_targets.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/promethues_targets.png)
+![promethues_targets.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/promethues_targets.png)
 
 将grafana的端口值改为9090，即可进入promethues界面。点击targets，我们可以看到我们第一步添加成功的job。注意job和Instance值是一一对应的，但job值不会改变，而instance会随着服务器的改变而改变，故我们以job为标签。点击instance对应的ip加端口，得到下面的页面，我们可以看到该job下metrics的查询语句以及值。
 
-![job_metrics.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/job_metrics.png)
+![job_metrics.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/job_metrics.png)
 
 ## 4. 在grafana添加Panel
 
-   ![uid.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/uid.png)
+   ![uid.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/uid.png)
   
   ### 4.1 增删查改面板
 
    grafana里面添加或者减少metrics，需要通过面板（panel）的增删查改来实现。点击页面上方的Add panel即可添加新的面板。一个面板对应一个或者几个有一定联系的metrics。我们在第三步已经得到了job和metrics，接下来通过panel来添加该job下对应的metrics。
    
-   ![panel.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/panel.png)
+   ![panel.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/panel.png)
    
    也可以通过复制粘贴已有的面板，来获得新的面板。如下图，鼠标放置在标题(Panel Title)区域，点击向下的箭头，再在more选项里选择copy即可复制已有面板。
    
-   ![panel_example.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/panel_example.png)
+   ![panel_example.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/panel_example.png)
    
    创建新的面板后，便是修改其配置了。通过点击上图的Edit按钮，进入面板编辑页面。
    
-   ![panel_edit.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/panel_edit.png)
+   ![panel_edit.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/panel_edit.png)
    
    面板一般有三个参数需要设置:
 
@@ -99,14 +99,14 @@ category: 操作指南
    
    在网站首页，点击任务报告，进入报告配置界面。
    
-   ![web_workbench.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/web_workbench.png)
+   ![web_workbench.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/web_workbench.png)
    
    点击报告配置，进入配置信息页面，有新增、扫描和保存配置按钮。
    
    新增按钮可以添加grafana不包含的配置信息，如说明性信息。
    
-   ![web_increase.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/web_increase.png)
+   ![web_increase.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/web_increase.png)
    
    扫描按钮可以获得grafana里面包含的所有配置信息。如下图，uid选择不同的仪表盘；job是选择服务器；而搜索框可以输入查询条件，提高查询速度与精度。我们添加配置时，要先确定我们需要的数据是哪个仪表盘的，通过uid选择确定。然后，确定这一份报告需要用哪几个服务器的数据。注意，一份报告的数据可能会对应多个服务器。在job里选择需要的服务器，即可得到该仪表盘、该服务器下的所有配置信息。点击命名方式为“JOB_Legend”的配置信息，可以同时添加多个，点添加按钮即可添加成功。接下来，通过job选择需要的其他服务器，反复上述操作，直到所需配置信息全部配置成功。最后，点击添加按钮。
    
-   ![scan.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/scan.png)
+   ![scan.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/scan.png)

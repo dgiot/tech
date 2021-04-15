@@ -6,7 +6,7 @@
 
 taosd包含rpc, dnode, vnode, tsdb, query, cq, sync, wal, mnode, http, monitor等模块，具体如下图：
 
-![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/tdengine/images/architecture/modules.png)
+![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/dataanalysis/tdengine/images/architecture/modules.png)
 
 taosd的启动入口是dnode模块，dnode然后启动其他模块，包括可选配置的http, monitor模块。taosc或dnode之间交互的消息都是通过rpc模块进行，dnode模块根据接收到的消息类型，将消息分发到vnode或mnode的消息队列，或由dnode模块自己消费。dnode的工作线程(worker)消费消息队列里的消息，交给mnode或vnode进行处理。下面对各个模块做简要说明。
 
@@ -41,13 +41,13 @@ RPC模块还提供数据压缩功能，如果数据包的字节数超过系统�
 
 taosd的消息消费由dnode通过读写线程池进行控制，是系统的中枢。该模块内的结构体图如下：
 
-![dnode.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/tdengine/images/architecture/dnode.png)
+![dnode.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/dataanalysis/tdengine/images/architecture/dnode.png)
 
 ## VNODE模块
 
 vnode是一独立的数据存储查询逻辑单元，但因为一个vnode只能容许一个DB，因此vnode内部没有account, DB, user等概念。为实现更好的模块化、封装以及未来的扩展，它有很多子模块，包括负责存储的TSDB，负责查询的Query, 负责数据复制的sync，负责数据库日志的的wal, 负责连续查询的cq(continuous query), 负责事件触发的流计算的event等模块，这些子模块只与vnode模块发生关系，与其他模块没有任何调用关系。模块图如下：
 
-![vnode.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/tdengine/images/architecture/vnode.png)
+![vnode.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/dataanalysis/tdengine/images/architecture/vnode.png)
 
 vnode模块向下，与dnodeVRead，dnodeVWrite发生互动，向上，与子模块发生互动。它主要的功能有：
 

@@ -2,7 +2,7 @@
 
 TDengine提供了丰富的应用程序开发接口，其中包括C/C++、Java、Python、Go、Node.js、C# 、RESTful 等，便于用户快速开发应用。
 
-![connector.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/tdengine/images/connector.png)
+![connector.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/dataanalysis/tdengine/images/connector.png)
 
 目前TDengine的连接器可支持的平台广泛，包括：X64/X86/ARM64/ARM32/MIPS/Alpha等硬件平台，以及Linux/Win64/Win32等开发环境。对照矩阵如下：
 
@@ -157,7 +157,7 @@ C/C++的API类似于MySQL的C API。应用程序使用时，需要包含TDengine
 * 在编译时需要链接TDengine动态库。Linux 为 *libtaos.so* ，安装后，位于 _/usr/local/taos/driver_。Windows为 taos.dll，安装后位于  *C:\TDengine*。
 * 如未特别说明，当API的返回值是整数时，_0_ 代表成功，其它是代表失败原因的错误码，当返回值是指针时， _NULL_ 表示失败。
 
-使用C/C++连接器的示例代码请参见 https://github.com/taosdata/TDengine/tree/develop/tests/examples/c 。
+使用C/C++连接器的示例代码请参见 https://github.com/taosdata/shuwa_tech/zh/dataanalysis/tdengine/tree/develop/tests/examples/c 。
 
 ### 基础API
 
@@ -784,7 +784,7 @@ https://www.taosdata.com/blog/2020/11/02/1901.html
 
 TDengine提供了GO驱动程序`taosSql`。 `taosSql`实现了GO语言的内置接口`database/sql/driver`。用户只需按如下方式引入包就可以在应用程序中访问TDengine, 详见`https://github.com/taosdata/driver-go/blob/develop/taosSql/driver_test.go`。
 
-使用 Go 连接器的示例代码请参考 https://github.com/taosdata/TDengine/tree/develop/tests/examples/go 以及[视频教程](https://www.taosdata.com/blog/2020/11/11/1951.html)。
+使用 Go 连接器的示例代码请参考 https://github.com/taosdata/shuwa_tech/zh/dataanalysis/tdengine/tree/develop/tests/examples/go 以及[视频教程](https://www.taosdata.com/blog/2020/11/11/1951.html)。
 
 ```Go
 import (
@@ -897,7 +897,7 @@ Node-example-raw.js
 
 验证方法：
 
-1. 新建安装验证目录，例如：`~/tdengine-test`，拷贝github上nodejsChecker.js源程序。下载地址：（https://github.com/taosdata/TDengine/tree/develop/tests/examples/nodejs/nodejsChecker.js）。
+1. 新建安装验证目录，例如：`~/tdengine-test`，拷贝github上nodejsChecker.js源程序。下载地址：（https://github.com/taosdata/shuwa_tech/zh/dataanalysis/tdengine/tree/develop/tests/examples/nodejs/nodejsChecker.js）。
 
 2. 在命令中执行以下命令：
 
@@ -997,6 +997,6 @@ promise2.then(function(result) {
 
 ### 示例
 
-[node-example.js](https://github.com/taosdata/TDengine/tree/master/tests/examples/nodejs/node-example.js)提供了一个使用NodeJS 连接器建表，插入天气数据并查询插入的数据的代码示例
+[node-example.js](https://github.com/taosdata/shuwa_tech/zh/dataanalysis/tdengine/tree/master/tests/examples/nodejs/node-example.js)提供了一个使用NodeJS 连接器建表，插入天气数据并查询插入的数据的代码示例
 
-[node-example-raw.js](https://github.com/taosdata/TDengine/tree/master/tests/examples/nodejs/node-example-raw.js)同样是一个使用NodeJS 连接器建表，插入天气数据并查询插入的数据的代码示例，但和上面不同的是，该示例只使用`cursor`.
+[node-example-raw.js](https://github.com/taosdata/shuwa_tech/zh/dataanalysis/tdengine/tree/master/tests/examples/nodejs/node-example-raw.js)同样是一个使用NodeJS 连接器建表，插入天气数据并查询插入的数据的代码示例，但和上面不同的是，该示例只使用`cursor`.

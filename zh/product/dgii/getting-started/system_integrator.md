@@ -17,5 +17,5 @@ ref:
 
   工业应用的开发商如何改造的工业应用，就能整合到数字工厂中？参考如下路径。
   
-  ![p84991.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgii/p84991.png)
+  ![p84991.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgii/p84991.png)
   

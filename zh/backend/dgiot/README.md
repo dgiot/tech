@@ -25,13 +25,13 @@ ref:
    - 业务分析平台BAP（Business Analytics Platform）
   
 
-   ![dgiot_func.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/dgiot_func.png)
+  ![IOTARCH.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/IOTARCH.png)
   
    数蛙科技秉持全社会分工合作的理念，开放合作的态度来快速消化全球急剧增长的工业互联需求，通过数据科技共赢生态框架，让广
    大开发者既可以通过实战快速成长，又能消化真实客户的工业互联网需求，同时还能获得比较丰厚的项目收入。
   
  
-  
+  ![dgiot_func.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/dgiot_func.png)
   ![dgiot_busseness.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/dgiot_busseness.png)
    
    精准开源，生态共赢，数蛙一站式物联网平台是完整解决方案，

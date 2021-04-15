@@ -83,7 +83,7 @@ Konva 可以实现高性能动画, 过渡, 节点嵌套, 局部操作, 滤镜, �
 	stage.add(layer);
 
 结果:  
-![Minimal code demo](/assets/overview-circle.png)
+![Minimal code demo](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/frontend/konva/assets/overview-circle.png)
 
 ## Basic shapes
 
@@ -108,7 +108,7 @@ Konva 可以实现高性能动画, 过渡, 节点嵌套, 局部操作, 滤镜, �
 	});
 
 结果:  
-![Custom shape](/assets/overview-custom.png)
+![Custom shape](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/frontend/konva/assets/overview-custom.png)
 ##样式  *Styles*
 每个形状都支持以下的样式属性：  
 
@@ -133,7 +133,7 @@ Konva 可以实现高性能动画, 过渡, 节点嵌套, 局部操作, 滤镜, �
     	opacity : 0.5
     	});
 结果:
-![Styles](/assets/overview-styles.png)
+![Styles](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/frontend/konva/assets/overview-styles.png)
 
 ## Events
 
@@ -169,7 +169,7 @@ See [working example](https://konvajs.github.io/docs/events/Binding_Events.html)
 ##滤镜 *Filters*   
 `Konvajs`有多重滤镜：模糊，反色，杂色等，[Filters API](http://konvajs.github.io/api/Konva.Filters.html)收录了所有的滤镜。   
 示例:  
-![Filter](/assets/overview-filter.png)
+![Filter](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/frontend/konva/assets/overview-filter.png)
 
 ##动画*Animation*  
 你可以使用两种方式创建动画:  

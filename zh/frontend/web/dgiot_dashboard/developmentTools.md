@@ -96,7 +96,7 @@
 webstorm 下载地址[https://www.jetbrains.com/zh-cn/webstorm/download/](https://www.jetbrains.com/zh-cn/webstorm/download/)
 
 ##### eslint 配置
-![6b875553-cccb-a757-9988-839d5baab96e.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/web/6b875553-cccb-a757-9988-839d5baab96e.png)
+![6b875553-cccb-a757-9988-839d5baab96e.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/frontend/web/6b875553-cccb-a757-9988-839d5baab96e.png)
 
 ##### stylelint 配置
-![2bcb071c-0015-30b9-1be8-7211b6d47d93.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/web/2bcb071c-0015-30b9-1be8-7211b6d47d93.png)
+![2bcb071c-0015-30b9-1be8-7211b6d47d93.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/frontend/web/2bcb071c-0015-30b9-1be8-7211b6d47d93.png)

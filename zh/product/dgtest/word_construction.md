@@ -33,7 +33,7 @@ category: 云压测
  　　每一条时间序列由 metric 和 labels 组成，每条时间序列按照时间的先后顺序存储它的样本值。
  　　默认情况下各监控client向外暴露一个HTTP服务，prometheus会通过pull方式获取client的数据，数据格式如下：
 
-  ![Promethus.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/product/dgtest/Promethus.png)
+  ![Promethus.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/Promethus.png)
   
    ```
      #  HELP node_cpu Seconds the cpus spent in each mode.

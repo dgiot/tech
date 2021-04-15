@@ -6,19 +6,19 @@ HTTP 认证/访问控制使用外部自建 HTTP 应用认证数据源，根据 H
 
 打开 [EMQ X Dashboard](http://127.0.0.1:18083/#/modules)，点击左侧的 “模块” 选项卡，选择添加：
 
-![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/modules.png)
+![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/modules.png)
 
 选择 HTTP 认证/访问控制模块
 
-![auth_http2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_http2.png)
+![auth_http2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/auth_http2.png)
 
 配置相关参数
 
-![auth_http3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_http3.png)
+![auth_http3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/auth_http3.png)
 
 点击添加后，模块添加完成
 
-![auth_http4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_http4.png)
+![auth_http4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/auth_http4.png)
 
 
 ## HTTP 认证原理

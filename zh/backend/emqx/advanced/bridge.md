@@ -23,11 +23,11 @@ EMQ X 支持两种桥接方式:
 
 其概念如下图所示:
 
-![bridge.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/bridge/assets/bridge.png)
+![bridge.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/bridge/assets/bridge.png)
 
 发布者可通过桥接将消息发布到远程的 Broker:
 
-![bridges_3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/bridge/assets/bridges_3.png)
+![bridges_3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/bridge/assets/bridges_3.png)
 
 EMQ X 根据不同的 name 来区分不同的 bridge。可在 `etc/plugins/emqx_bridge_mqtt.conf` 中添加 Bridge:
 

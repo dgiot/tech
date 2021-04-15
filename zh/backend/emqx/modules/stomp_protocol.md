@@ -6,27 +6,27 @@ Stomp 协议网关为 EMQ X 提供了 Stomp 协议的接入能力。
 
 打开 [EMQ X Dashboard](http://127.0.0.1:18083/#/modules)，点击左侧的 “模块” 选项卡，选择添加：
 
-![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/modules.png)
+![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/modules.png)
 
 点击 “选择”，然后选择 “CoAP 接入网关”：
 
-![stomp_1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/stomp_1.png)
+![stomp_1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/stomp_1.png)
 
 配置相关基础参数：
 
-![stomp_2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/stomp_2.png)
+![stomp_2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/stomp_2.png)
 
 添加监听端口：
 
-![stomp_3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/stomp_3.png)
+![stomp_3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/stomp_3.png)
 
 配置监听参数：
 
-![stomp_4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/stomp_4.png)
+![stomp_4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/stomp_4.png)
 
 点击 “确定” 完成监听器的配置，然后点击 “添加” 完成模块的创建： 
 
-![stomp_5.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/stomp_5.png)
+![stomp_5.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/stomp_5.png)
 
 ### 配置参数
 

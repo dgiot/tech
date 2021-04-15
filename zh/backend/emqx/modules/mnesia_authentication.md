@@ -12,31 +12,31 @@
 
 打开 [EMQ X Dashboard](http://127.0.0.1:18083/#/modules)，点击左侧的 “模块” 选项卡，选择添加：
 
-![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/modules.png)
+![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/modules.png)
 
 点击"选择",然后选择内置数据库认证模块
 
-![auth_mnesia_1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_mnesia_1.png)
+![auth_mnesia_1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/auth_mnesia_1.png)
 
 配置相关参数
 
-![auth_mnesia_2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_mnesia_2.png)
+![auth_mnesia_2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/auth_mnesia_2.png)
 
 最后点击“添加”按钮模块即可添加成功。
 
-![auth_mnesia_3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_mnesia_3.png)
+![auth_mnesia_3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/auth_mnesia_3.png)
 
 ### 管理数据
 
 内置数据库可以通过 dashboard 管理认证与访问控制数据
 
-![auth_mnesia_4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_mnesia_4.png)
+![auth_mnesia_4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/auth_mnesia_4.png)
 
 #### 认证数据
 
 可以通过 dashboard 对认证数据进行管理
 
-![auth_mnesia_5.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_mnesia_5.png)
+![auth_mnesia_5.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/auth_mnesia_5.png)
 
 当客户端连接 EMQ X 时，内置数据库认证会获取 CONNENT 报文中的 Clientid 与 Username，然后数据库中记录的密码进行匹配，一旦匹配成功则认证成功。
 
@@ -44,7 +44,7 @@
 
 可以通过 dashboard 对访问控制数据进行管理
 
-![auth_mnesia_6.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_mnesia_6.png)
+![auth_mnesia_6.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/auth_mnesia_6.png)
 
 ## HTTP API
 

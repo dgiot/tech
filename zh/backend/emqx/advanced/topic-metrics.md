@@ -21,11 +21,11 @@ EMQ X Broker 提供了主题指标统计功能，可以统计指定主题下的�
 
 Topic Metrics 页面位于 Dashboard 的 Analysis 标签下，由于主题指标统计功能以插件形式实现，且默认关闭，因此首次使用时需要点击 Topic Metrics 页面右上角的 *Enable* 按钮以开启此功能。
 
-![image-20200930095122959.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/advanced/assets/image-20200930095122959.png)
+![image-20200930095122959.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/advanced/assets/image-20200930095122959.png)
 
 主题指标统计功能开启后，你可以点击页面右上角的 *Create* 按钮来创建新的主题指标统计。以下是已经创建了 `a/c` 与 `a/b` 主题指标统计之后的页面，你将可以看到这两个主题下消息流入流出、丢弃的总数和当前速率。
 
-![image-20200930110511638.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/advanced/assets/image-20200930110511638.png)
+![image-20200930110511638.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/advanced/assets/image-20200930110511638.png)
 
 > 出于整体性能考虑，目前主题指标统计功能仅支持主题名，即不支持带有 `+` 或 `#` 通配符的主题过滤器，例如 `a/+` 等。也许将来有一天我们会实现它，如果我们解决了性能问题。
 

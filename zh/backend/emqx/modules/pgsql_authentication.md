@@ -6,7 +6,7 @@ PostgreSQL 认证/访问控制使⽤外部 PostgreSQL 数据库作为数据源�
 
 打开PostgreSQL官网:https://www.postgresql.org/download/, 选择自己需要的版本，这里我们选择PostgreSQL版本为macos-10.13
 
-![auth_pg1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_pg1.png)
+![auth_pg1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/auth_pg1.png)
 
 安装完毕以后启动PostgreSQL。
 
@@ -14,19 +14,19 @@ PostgreSQL 认证/访问控制使⽤外部 PostgreSQL 数据库作为数据源�
 
 打开 [EMQ X Dashboard](http://127.0.0.1:18083/#/modules)，点击左侧的 “模块” 选项卡，选择添加：
 
-![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/modules.png)
+![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/modules.png)
 
 选择PostgreSQL 认证/权限控制模块
 
-![auth_pg1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_pg1.png)
+![auth_pg1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/auth_pg1.png)
 
 需要配置PostgreSQL的地址，用户名，密码（可选）等基本连接参数表
 
-![auth_pg2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_pg2.png)
+![auth_pg2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/auth_pg2.png)
 
 最后点击“添加”按钮，模块即可添加成功
 
-![auth_pg4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_pg4.png)
+![auth_pg4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/auth_pg4.png)
 
 ### 认证表：
 

@@ -23,15 +23,15 @@ $ ./bin/pulsar-admin topics create-partitioned-topic -p 5 testTopic
 
 打开 [EMQ X Dashboard](http://127.0.0.1:18083/#/modules)，点击左侧的 “模块” 选项卡，选择添加：
 
-![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/modules.png)
+![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/modules.png)
 
 选择 Pulsar 消费组模块:
 
-![pulsar_consumer1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/pulsar_consumer1.png)
+![pulsar_consumer1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/pulsar_consumer1.png)
 
 填写相关参数:
 
-![pulsar_consumer3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/pulsar_consumer3.png)
+![pulsar_consumer3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/pulsar_consumer3.png)
 
 1). Pulsar 服务器地址
 
@@ -50,11 +50,11 @@ $ ./bin/pulsar-admin topics create-partitioned-topic -p 5 testTopic
 
 点击添加后，模块添加完成:
 
-![pulsar_consumer4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/pulsar_consumer4.png)
+![pulsar_consumer4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/pulsar_consumer4.png)
 
 资源已经创建完成，现在用Dashboard的websocket工具订阅MQTT的主题 "TestTopic":
 
-![pulsar_consumer5.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/pulsar_consumer5.png)
+![pulsar_consumer5.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/pulsar_consumer5.png)
 
 使用pulsar-cli 生产一条消息:
 
@@ -62,8 +62,8 @@ $ ./bin/pulsar-admin topics create-partitioned-topic -p 5 testTopic
 ./bin/pulsar-client produce TestTopic --messages "hello-pulsar"
 ```
 
-![pulsar_consumer6.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/pulsar_consumer6.png)
+![pulsar_consumer6.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/pulsar_consumer6.png)
 
 Dashboard的websocket工具接收到了pulsar 生产的消息"hello-pulsar":
 
-![pulsar_consumer7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/pulsar_consumer7.png)
+![pulsar_consumer7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/pulsar_consumer7.png)

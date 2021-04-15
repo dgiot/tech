@@ -6,19 +6,19 @@ EMQ X Prometheus Agent 支持将数据推送至 Pushgateway 中，然后再由 P
 
 打开 [EMQ X Dashboard](http://127.0.0.1:18083/#/modules)，点击左侧的 “模块” 选项卡，选择添加：
 
-![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/modules.png)
+![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/modules.png)
 
 选择 EMQ X Prometheus Agent
 
-![prometheus_agent_1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/prometheus_agent_1.png)
+![prometheus_agent_1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/prometheus_agent_1.png)
 
 配置相关参数
 
-![prometheus_agent_2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/prometheus_agent_2.png)
+![prometheus_agent_2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/prometheus_agent_2.png)
 
 点击添加后，模块添加完成
 
-![prometheus_agent_3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/prometheus_agent_3.png)
+![prometheus_agent_3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/prometheus_agent_3.png)
 
 ### Grafana 数据模板
 

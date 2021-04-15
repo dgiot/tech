@@ -6,7 +6,7 @@ MySQL 认证/访问控制使⽤外部 MySQL 数据库作为数据源，可以存
 
 打开MySQL官网:https://dev.MySQL.com/downloads/MySQL/5.7.html#downloads, 选择自己需要的版本，这里我们选择MySQL版本为macos-5.7.31
 
-![auth_mysql1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_mysql1.png)
+![auth_mysql1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/auth_mysql1.png)
 
 安装完毕以后启动MySQL。
 
@@ -14,19 +14,19 @@ MySQL 认证/访问控制使⽤外部 MySQL 数据库作为数据源，可以存
 
 打开 [EMQ X Dashboard](http://127.0.0.1:18083/#/modules)，点击左侧的 “模块” 选项卡，选择添加：
 
-![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/modules.png)
+![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/modules.png)
 
 选择“添加”然后点击“模块”菜单，选择“添加”，然后选择MySQL 认证/权限控制模块
 
-![auth_mysql2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_mysql2.png)
+![auth_mysql2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/auth_mysql2.png)
 
 需要配置MySQL的地址，用户名，密码（可选）等基本连接参数表
 
-![auth_mysql3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_mysql3.png)
+![auth_mysql3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/auth_mysql3.png)
 
 最后点击“添加”按钮，模块即可添加成功
 
-![auth_mysql4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/auth_mysql4.png)
+![auth_mysql4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/auth_mysql4.png)
 
 ### 认证表：
 

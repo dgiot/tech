@@ -216,7 +216,7 @@ acl_cache_ttl = 1m
   - 默认授权为禁止时，禁止客户端通过验证
   
 
-![guide_3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/advanced/assets/guide_3.png)
+![guide_3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/advanced/assets/guide_3.png)
 
 <!-- replace -->
 

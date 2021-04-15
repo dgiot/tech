@@ -67,13 +67,13 @@ CREATE TABLE mqtt_sub (
 SELECT * FROM "$events/client_connected"
 ```
 
-![cass_sub_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/cass_sub_01.png)
+![cass_sub_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/cass_sub_01.png)
 
 关联动作:
 
 在“响应动作”界面选择“添加动作”，然后在“新增动作”下拉框里选择“从 Cassandra 中获取订阅列表”
 
-![cass_sub_02.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/cass_sub_02.png)
+![cass_sub_02.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/cass_sub_02.png)
 
 填写动作参数:
 
@@ -81,11 +81,11 @@ SELECT * FROM "$events/client_connected"
 
 1). 关联资源。现在资源下拉框为空，可以点击右上角的 “新建” 来创建一个 Cassandra 资源：
 
-![cass_sub_03.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/cass_sub_03.png)
+![cass_sub_03.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/cass_sub_03.png)
 
 弹出“创建资源”对话框
 
-![cass_sub_04.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/cass_sub_04.png)
+![cass_sub_04.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/cass_sub_04.png)
 
 填写资源配置:
 
@@ -93,15 +93,15 @@ SELECT * FROM "$events/client_connected"
 
 最后点击 “确定” 按钮。
 
-![cass_sub_05.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/cass_sub_05.png)
+![cass_sub_05.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/cass_sub_05.png)
 
 返回响应动作界面，点击 “确认”。
 
-![cass_sub_06.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/cass_sub_06.png)
+![cass_sub_06.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/cass_sub_06.png)
 
 返回规则创建界面，点击 “创建”。
 
-![cass_sub_07.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/cass_sub_07.png)
+![cass_sub_07.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/cass_sub_07.png)
 
 规则已经创建完成，通过 “cqlsh” 往 Cassandra 插入一条订阅关系:
 
@@ -109,12 +109,12 @@ SELECT * FROM "$events/client_connected"
 insert into mqtt_sub(clientid, topic, qos) values('test', 't1', 1);
 ```
 
-![cass_sub_08.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/cass_sub_08.png)
+![cass_sub_08.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/cass_sub_08.png)
 
 通过 Dashboard 登录 clientid 为 test 的设备:
 
-![cass_sub_09.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/cass_sub_09.png)
+![cass_sub_09.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/cass_sub_09.png)
 
 查看“订阅”列表，可以看到 Broker 从 Cassandra 里面获取到订阅关系，并代理设备订阅:
 
-![cass_sub_10.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/cass_sub_10.png)
+![cass_sub_10.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/cass_sub_10.png)

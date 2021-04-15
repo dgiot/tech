@@ -28,7 +28,7 @@
 
 和 EMQ X 原生的钩子一致，它也支持链式的方式计算和返回：
 
-![chain_of_responsiblity.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/advanced/assets/chain_of_responsiblity.png)
+![chain_of_responsiblity.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/advanced/assets/chain_of_responsiblity.png)
 
 ## 接口设计
 
@@ -119,18 +119,18 @@ service HookProvider {
 
 打开 [EMQ X Dashboard](http://127.0.0.1:18083/#/modules)，点击左侧的 “模块” 选项卡，选择添加：
 
-![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/modules.png)
+![modules.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/modules.png)
 
 选择 “多语言扩展钩子”：
 
-![exhook-add.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/exhook-add.jpg)
+![exhook-add.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/exhook-add.jpg)
 
 配置 `HookProvider` 服务相关参数：
 
-![exhook-conf.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/exhook-conf.jpg)
+![exhook-conf.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/exhook-conf.jpg)
 
 点击添加后，模块添加完成
 
-![exhook-succ.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/modules/assets/exhook-succ.jpg)
+![exhook-succ.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/modules/assets/exhook-succ.jpg)
 
 至此，多语言扩展钩子的配置已经完成。

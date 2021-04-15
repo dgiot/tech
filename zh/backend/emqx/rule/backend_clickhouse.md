@@ -30,7 +30,7 @@ use test;
 create table t_mqtt_msg (msgid Nullable(String), topic Nullable(String), clientid Nullable(String), payload Nullable(String)) engine = Log;
 ```
 
-![mongo_sub_02.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/clickhouse_0.png)
+![mongo_sub_02.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/clickhouse_0.png)
 
 创建规则:
 
@@ -42,13 +42,13 @@ create table t_mqtt_msg (msgid Nullable(String), topic Nullable(String), clienti
 SELECT * FROM "#"
 ```
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/clickhouse_1.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/clickhouse_1.png)
 
 关联动作:
 
 在 “响应动作” 界面选择 “添加”，然后在 “动作” 下拉框里选择 “保存数据到 ClickHouse”。
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/clickhouse_2.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/clickhouse_2.png)
 
 填写动作参数:
 
@@ -56,13 +56,13 @@ SELECT * FROM "#"
 
 1). 关联资源的 ID。现在资源下拉框为空，可以点击右上角的 “新建资源” 来创建一个 ClickHouse 资源:
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/clickhouse_3.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/clickhouse_3.png)
 
 选择 “ClickHouse 资源”。
 
 填写资源配置:
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/clickhouse_4.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/clickhouse_4.png)
 
 点击 “新建” 按钮。
 
@@ -73,15 +73,15 @@ SELECT * FROM "#"
 insert into test.t_mqtt_msg(msgid, clientid, topic, payload) values ('${id}', '${clientid}', '${topic}', '${payload}')
 ```
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/clickhouse_5.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/clickhouse_5.png)
 
 返回响应动作界面，点击 “确认”。
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/clickhouse_6.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/clickhouse_6.png)
 
 在规则列表里，点击 “查看” 按钮或规则 ID 连接，可以预览刚才创建的规则:
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/clickhouse_7.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/clickhouse_7.png)
 
 规则已经创建完成，现在发一条数据:
 
@@ -93,5 +93,5 @@ Payload: "hello"
 
 然后检查 ClickHouse 表，新的 record 是否添加成功:
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/clickhouse_8.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/clickhouse_8.png)
 

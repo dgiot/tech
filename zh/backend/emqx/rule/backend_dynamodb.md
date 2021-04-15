@@ -43,13 +43,13 @@ $ aws dynamodb create-table --cli-input-json file://mqtt_msg.json --endpoint-url
 SELECT id, topic, payload FROM "#"
 ```
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/dynamo-rulesql-0.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/dynamo-rulesql-0.png)
 
 关联动作:
 
 在 “响应动作” 界面选择 “添加”，然后在 “动作” 下拉框里选择 “保存数据到 DynamoDB”。
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/dynamo-action-0.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/dynamo-action-0.png)
 
 填写动作参数:
 
@@ -61,23 +61,23 @@ SELECT id, topic, payload FROM "#"
 
 3). DynamoDB Range Key。由于我们表定义里没有设置 Range Key。这个例子里我们把 Range Key 设置为空。
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/dynamo-action-1.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/dynamo-action-1.png)
 
 4). 关联资源的 ID。现在资源下拉框为空，可以点击右上角的 “新建资源” 来创建一个 DynamoDB 资源:
 
 填写资源配置:
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/dynamo-resource-1.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/dynamo-resource-1.png)
 
 点击 “新建” 按钮。
 
 返回响应动作界面，点击 “确认”。
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/dynamo-action-2.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/dynamo-action-2.png)
 
 返回规则创建界面，点击 “新建”。
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/dynamo-rulesql-1.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/dynamo-rulesql-1.png)
 
 规则已经创建完成，现在发一条数据:
 
@@ -89,9 +89,9 @@ Payload: "hello"
 
 然后检查 DynamoDB 的 mqtt\_msg 表，新的 record 是否添加成功:
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/dynamo-result-0.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/dynamo-result-0.png)
 
 在规则列表里，可以看到刚才创建的规则的命中次数已经增加了 1:
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/dynamo-result-1.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/dynamo-result-1.png)
 

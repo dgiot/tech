@@ -18,7 +18,7 @@ ref:
 
 EMQ X 桥接转发 MQTT 消息到 MQTT Broker，支持桥接至常见 MQTT 云服务:
 
-![bridge_mqtt.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/bridge/assets/bridge_mqtt.png)
+![bridge_mqtt.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/bridge/assets/bridge_mqtt.png)
 
 mqtt bridge 桥接插件配置文件: etc/plugins/emqx_bridge_mqtt.conf。
 
@@ -197,7 +197,7 @@ Del-subscription topic successfully.
 
 EMQ X 桥接转发 MQTT 消息到远程 EMQ X:
 
-![bridge_rpc.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/bridge/assets/bridge_rpc.png)
+![bridge_rpc.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/bridge/assets/bridge_rpc.png)
 
 rpc bridge 桥接插件配置文件: etc/plugins/emqx_bridge_mqtt.conf
 
@@ -232,7 +232,7 @@ sensor1/hello 的消息, 到达远程节点时主题为 bridge/aws/emqx1@192.168
 
 EMQ X 桥接转发 MQTT 消息到 Kafka 集群，Apache Kafka是一个快速、高可扩展、高吞吐的分布式日志系统，配合kafka Stream，在流式数据处理中非常常用。
 
-![bridge_kafka.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/bridge/assets/bridge_kafka.png)
+![bridge_kafka.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/bridge/assets/bridge_kafka.png)
 
 Kafka 桥接插件配置文件: etc/plugins/emqx_bridge_kafka.conf。
 
@@ -499,7 +499,7 @@ payload 数据格式。
 
 EMQ X 桥接转发 MQTT 消息到 RabbitMQ 集群:
 
-![bridge_rabbit.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/bridge/assets/bridge_rabbit.png)
+![bridge_rabbit.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/bridge/assets/bridge_rabbit.png)
 
 RabbitMQ 桥接插件配置文件: etc/plugins/emqx_bridge_rabbit.conf。
 
@@ -632,7 +632,7 @@ channel.start_consuming()
 
 EMQ X 桥接转发 MQTT 消息到 Pulsar 集群:
 
-![bridge_pulsar.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/bridge/assets/bridge_pulsar.png)
+![bridge_pulsar.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/bridge/assets/bridge_pulsar.png)
 
 Pulsar 桥接插件配置文件: etc/plugins/emqx_bridge_pulsar.conf。
 
@@ -903,7 +903,7 @@ pulsar-client consume message_acked  -s "message_acked" -n 1000
 
 EMQ X 桥接转发 MQTT 消息到 RocketMQ 集群:
 
-![bridge_rocket.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/bridge/assets/bridge_rocket.png)
+![bridge_rocket.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/bridge/assets/bridge_rocket.png)
 
 RocketMQ 桥接插件配置文件: etc/plugins/emqx_bridge_rocket.conf。
 

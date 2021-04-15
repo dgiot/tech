@@ -21,7 +21,7 @@ ref:
 
 简单来讲，该机制目的在于增强软件系统的扩展性、方便与其他三方系统的集成、或者改变其系统原有的默认行为。如：
 
-![hooks_in_system.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/advanced/assets/hooks_in_system.png)
+![hooks_in_system.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/advanced/assets/hooks_in_system.png)
 
 当系统中不存在 **钩子 (Hooks)** 机制时，整个事件处理流程 *从 事件 (Event) 的输入，到 处理 (Handler)，再到完成后的返回 结果 (Result)* 对于系统外部而讲，都是不可见、且无法修改的。
 
@@ -78,7 +78,7 @@ ref:
 
 由此，我们可以得到一个链的设计简图：
 
-![chain_of_responsiblity.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/advanced/assets/chain_of_responsiblity.png)
+![chain_of_responsiblity.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/advanced/assets/chain_of_responsiblity.png)
 
 该图的含义是指：
 1. 链的入参为只读的 `Args` 与用于链上的函数修改的参数 `Acc`

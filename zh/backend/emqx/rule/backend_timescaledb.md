@@ -52,13 +52,13 @@ FROM
     "#"
 ```
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/timescaledb-rulesql-0@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/timescaledb-rulesql-0@2x.png)
 
 关联动作:
 
 在 “响应动作” 界面选择 “添加”，然后在 “动作” 下拉框里选择 “保存数据到 TimescaleDB”。
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/timescaledb-action-0@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/timescaledb-action-0@2x.png)
 
 填写动作参数:
 
@@ -75,7 +75,7 @@ insert into conditions(time, location, temperature, humidity) values (NOW(), ${l
 
 2). 关联资源。现在资源下拉框为空，可以点击右上角的 “新建资源” 来创建一个 TimescaleDB 资源:
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/timescaledb-resource-0@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/timescaledb-resource-0@2x.png)
 
 选择 “PostgreSQL 资源”。
 
@@ -85,15 +85,15 @@ insert into conditions(time, location, temperature, humidity) values (NOW(), ${l
 
 最后点击 “新建” 按钮。
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/pgsql-resource-1@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/pgsql-resource-1@2x.png)
 
 返回响应动作界面，点击 “确认”。
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/timescaledb-action-1@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/timescaledb-action-1@2x.png)
 
 返回规则创建界面，点击 “新建”。
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/timescaledb-rulesql-1@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/timescaledb-rulesql-1@2x.png)
 
 规则已经创建完成，现在发一条数据:
 
@@ -116,5 +116,5 @@ tutorial=# SELECT * FROM conditions LIMIT 100;
 
 在规则列表里，可以看到刚才创建的规则的命中次数已经增加了 1:
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/timescaledb-rulelist-0@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/timescaledb-rulelist-0@2x.png)
 

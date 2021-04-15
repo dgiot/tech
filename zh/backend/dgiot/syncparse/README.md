@@ -21,7 +21,7 @@ parse开启livequery<br/>
 编辑
 vim /data/shuwa_parse_server/script/config.json <br/>	
 修改 **app** 下 **liveQuery** 添加需要同步的表 <br/>	
-![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/blog/parse/livequery_config.png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/parse/livequery_config.png)
 
 登录获取SessionToken
 ```

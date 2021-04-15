@@ -31,13 +31,13 @@ $ ./bin/mqbroker -n localhost:9876 -c conf/broker.conf
 SELECT * FROM "t/#"
 ```
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/rule_sql.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/rule_sql.png)
 
 关联动作:
 
 在 “响应动作” 界面选择 “添加”，然后在 “动作” 下拉框里选择 “桥接数据到 RocketMQ”。
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/rocket-action-0@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/rocket-action-0@2x.png)
 
 填写动作参数:
 
@@ -47,7 +47,7 @@ SELECT * FROM "t/#"
 
 2). 关联资源。现在资源下拉框为空，可以点击右上角的 “新建资源” 来创建一个 RocketMQ 资源:
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/rocket-resource-0@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/rocket-resource-0@2x.png)
 
 填写资源配置:
 
@@ -55,15 +55,15 @@ SELECT * FROM "t/#"
 
 最后点击 “新建” 按钮。
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/rocket-resource-2@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/rocket-resource-2@2x.png)
 
 返回响应动作界面，点击 “确认”。
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/rocket-action-1@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/rocket-action-1@2x.png)
 
 返回规则创建界面，点击 “新建”。
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/rocket-rulesql-1@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/rocket-rulesql-1@2x.png)
 
 规则已经创建完成，现在发一条数据:
 
@@ -80,8 +80,8 @@ Payload: "hello"
 $ ./bin/tools.sh org.apache.rocketmq.example.quickstart.Consumer TopicTest
 ```
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/rocket-consumer.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/rocket-consumer.png)
 
 在规则列表里，可以看到刚才创建的规则的命中次数已经增加了 1:
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/rocket-rulelist-0@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/rocket-rulelist-0@2x.png)

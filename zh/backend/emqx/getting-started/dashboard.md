@@ -71,7 +71,7 @@ EMQ X Dashboard 提供了非常丰富的数据监控项目，完整地覆盖了�
 
 `Overview` 作为 Dashboard 的默认展示页面，提供了 EMQ X 当前节点的详细信息和集群其他节点的关键信息，以帮助用户快速掌握每个节点的状态。
 
-![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/dashboard-overview.png)
+![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/assets/dashboard-overview.png)
 
 #### Clients
 
@@ -79,11 +79,11 @@ EMQ X Dashboard 提供了非常丰富的数据监控项目，完整地覆盖了�
 
 `Clients` 页面使用快照的方式来展示客户端列表，因此当客户端状态发生变化时页面并不会自动刷新，需要您手动刷新浏览器来获取最新客户端数据。
 
-![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/dashboard-clients.png)
+![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/assets/dashboard-clients.png)
 
 如果你无法在客户端列表获取到你需要的信息，你可以单击 `Client ID` 来查看客户端的详细信息。
 
-![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/dashboard-clients-basic-info.png)
+![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/assets/dashboard-clients-basic-info.png)
 
 我们将客户端详情中的各个字段分为了 **连接**，**会话** 和 **指标** 三类，以下为各字段的说明：
 
@@ -135,13 +135,13 @@ EMQ X Dashboard 提供了非常丰富的数据监控项目，完整地覆盖了�
 
 在客户端详情的 `Subscriptions` 标签页中，您可以查看当前客户端的订阅信息，以及新建或取消订阅：
 
-![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/dashboard-clients-subscriptions.png)
+![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/assets/dashboard-clients-subscriptions.png)
 
 #### Subscriptions
 
 `Subscriptions` 页面提供了指定节点下的所有订阅信息，并且支持用户通过 `Client ID` 查询指定客户端的所有订阅。
 
-![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/dashboard-subscriptions.png)
+![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/assets/dashboard-subscriptions.png)
 
 ### RULE ENGINE
 
@@ -157,17 +157,17 @@ EMQ X Dashboard 提供了非常丰富的数据监控项目，完整地覆盖了�
 
 `Plugins` 页面列举了 EMQ X 能够发现的所有插件，包括 EMQ X 官方插件与您遵循 EMQ X 官方标准自行开发的插件，您可以在此页面查看插件当前的运行状态以及随时启停插件。
 
-![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/dashboard-plugins.png)
+![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/assets/dashboard-plugins.png)
 
 您可以看到，除了 [emqx-dashboard](https://github.com/emqx/emqx-dashboard) 以外，EMQ X 还将默认启动 [emqx-rule-engine](https://github.com/emqx/emqx-rule-engine) 等 4 个插件：
 
-![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/dashboard-running-plugins.png)
+![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/assets/dashboard-running-plugins.png)
 
 #### Applications
 
 `Applications` 页面列举了当前已创建的应用，您可以在此页面进行诸如创建应用、临时禁用或启动某个应用的访问权限等操作。EMQ X 会创建一个 AppID 为 `admin`，AppSecret 为 `publish` 的默认应用方便用户首次访问：
 
-![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/dashboard-applications.png)
+![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/assets/dashboard-applications.png)
 
 您可以点击 `Application` 页面右上角的 `New App` 按钮来创建一个新的应用，其中 AppID 与 AppSecret 是必选项。创建完成后您可以点击 `View` 按钮来查看应用详情，AppSecret 也会在详情中显示。以下是相关字段的说明：
 
@@ -188,13 +188,13 @@ EMQ X Dashboard 提供了非常丰富的数据监控项目，完整地覆盖了�
 
 `Websocket` 页面为您提供了一个简易但有效的 WebSocket 客户端工具，它包含了连接、订阅和发布功能，同时还能查看自己发送和接收的报文数据，我们期望它可以帮助您快速地完成某些场景或功能的测试验证：
 
-![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/dashboard-websocket.png)
+![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/assets/dashboard-websocket.png)
 
 #### HTTP API
 
 `HTTP API` 页面列举了 EMQ X 目前支持的所有 HTTP API 及其说明：
 
-![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/dashboard-http-api.png)
+![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/assets/dashboard-http-api.png)
 
 ### ADMIN
 
@@ -202,16 +202,16 @@ EMQ X Dashboard 提供了非常丰富的数据监控项目，完整地覆盖了�
 
 您可以在 `Users` 页面查看和管理能够访问和操作 Dashboard 的用户：
 
-![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/dashboard-users.png)
+![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/assets/dashboard-users.png)
 
 #### Settings
 
 目前 EMQ X Dashboard 仅支持修改主题和语言两种设置：
 
-![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/dashboard-settings.png)
+![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/assets/dashboard-settings.png)
 
 #### Help
 
 如果您在使用 EMQ X 的过程中遇到了任何问题，我们在 `Help` 页面为您提供了 FAQ 等文档的链接。如果我们现有的文档依然无法解决您的问题，您可以前往我们在 Github 的开源社区咨询我们的技术人员。
 
-![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/dashboard-help.png)
+![design_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/assets/dashboard-help.png)

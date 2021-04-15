@@ -23,19 +23,19 @@ FROM
     "#"
 ```
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/influxdb-rulesql-0@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/influxdb-rulesql-0@2x.png)
 
 关联动作:
 
 在 “Action” 界面选择 “Add action”，然后在 “Action Type” 下拉框里选择 “Data to InfluxDB”。
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/influxdb-action-0@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/influxdb-action-0@2x.png)
 
 填写动作参数:
 
 “Data to InfluxDB” 动作有以下参数：
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/influxdb-action-1@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/influxdb-action-1@2x.png)
 
 1). Measurement。指定写入到 InfluxDB 的 data point 的 Measurement，支持固定字符串和占位符两种设置方式。
 
@@ -47,13 +47,13 @@ FROM
 
 5). Use of reources。指定动作关联的资源，现在资源下拉框为空，可以点击右上角的 “新建资源” 来创建一个 InfluxDB 资源，目前支持 HTTP/HTTPS 和 UDP 两种资源。
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/influxdb-resource-0@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/influxdb-resource-0@2x.png)
 
 填写资源配置:
 
 InfluxDB HTTP 资源包括以下配置：
 
-   ![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/influxdb-resource-1@2x.png)
+   ![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/influxdb-resource-1@2x.png)
 
    1). Resource Name。资源名称，支持以易读的形式唯一标识资源。
 
@@ -75,7 +75,7 @@ InfluxDB HTTP 资源包括以下配置：
 
 InfluxDB UDP 资源包括以下配置：
 
-   ![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/influxdb-resource-2@2x.png)
+   ![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/influxdb-resource-2@2x.png)
 
    1). Resource Name。资源名称，支持以易读的形式唯一标识资源。
 
@@ -95,7 +95,7 @@ InfluxDB UDP 资源包括以下配置：
 
 最后返回规则创建界面，点击页面底部的 “Create” 按钮，完成规则创建。 
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/influxdb-rulelist-0@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/influxdb-rulelist-0@2x.png)
 
 规则已经创建完成，现在发一条消息:
 
@@ -124,4 +124,4 @@ time                external  from            host    internal location
 
 在规则列表里，可以看到刚才创建的规则的命中次数已经增加了 1:
 
-![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/rule-engine/influxdb-rulelist-1@2x.png)
+![cass_offline_msg_01.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/rule-engine/influxdb-rulelist-1@2x.png)

@@ -18,7 +18,7 @@ Schema Registry 为 Avro 和 Protobuf 等内置编码格式维护 Schema 文本�
 
 下图展示了 Schema Registry 的一个应用案例。多个设备上报不同格式的数据，经过 Schema Registry 解码之后，变为统一的内部格式，然后转发给后台应用。
 
-![schema-registry.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/schema-registry.png)
+![schema-registry.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/schema-registry.png)
 
 
 ### 二进制格式支持
@@ -31,7 +31,7 @@ Schema Registry 为 Avro 和 Protobuf 等内置编码格式维护 Schema 文本�
 
 Schema Registry 既可以解码，也可以编码。编码和解码时需要指定 Schema Name。
 
-![arch.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/arch.png)
+![arch.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/arch.png)
 
 
 编码调用示例：参数为 Schema
@@ -56,7 +56,7 @@ EMQ X 的消息处理层面可分为消息路由(Messaging)、规则引擎(Rule 
 
 EMQ X 的 PUB/SUB 系统将消息路由到指定的主题。规则引擎可以灵活地配置数据的业务规则，按规则匹配消息，然后指定相应动作。数据格式转换发生在规则匹配的过程之前，先将数据转换为可参与规则匹配的 Map 格式，然后进行匹配。
 
-![SchemaAndRuleEngine.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/rule/assets/SchemaAndRuleEngine.png)
+![SchemaAndRuleEngine.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/rule/assets/SchemaAndRuleEngine.png)
 
 
 ### 规则引擎内部数据格式(Map)

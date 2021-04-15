@@ -129,7 +129,7 @@ ref:
 
   最简单的多租户实现方式是为每一个租户创建一个数据库，如下图所示。应用程序为每个租户分配一个租户id，并为每个租户配置相应的数据库连接信息（包括数据库ip、端口等）。应用程序根据租户id连接到为其分配的数据库。
 
-![一租户一数据库.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/tenant/%E4%B8%80%E7%A7%9F%E6%88%B7%E4%B8%80%E6%95%B0%E6%8D%AE%E5%BA%93.png)
+![一租户一数据库.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/tenant/%E4%B8%80%E7%A7%9F%E6%88%B7%E4%B8%80%E6%95%B0%E6%8D%AE%E5%BA%93.png)
 
 这种模型中不同租户的数据物理隔离，安全级别高。如果每个租户的数据库使用不同的硬件和数据库类型，则他们之间的资源使用也是物理隔离的；如果租户的数据库共用同一套硬件，则需要对资源进行合理分配和管理，避免相互影响。由于不同租户使用独立的数据库，灵活性好，容易满足不同租户的特定需求（譬如需要额外的字段）。出现故障时影响面小。缺点是数据库数量大，维护复杂，拥有成本高。适合租户数目比较少的场景。
 
@@ -137,7 +137,7 @@ ref:
 
   多个租户共享同一个数据库，每个租户拥有独立的名字空间（或模式）。应用程序为每个租户分配一个id，并把每个租户的所有操作限制在为其分配的名字空间/模式之中。如下图所示。
 
-![一租户一命名空间.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/tenant/%E4%B8%80%E7%A7%9F%E6%88%B7%E4%B8%80%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4.png)
+![一租户一命名空间.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/tenant/%E4%B8%80%E7%A7%9F%E6%88%B7%E4%B8%80%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4.png)
 
   这种多租户模型下，不同租户的数据逻辑上相互隔离，安全控制相对简单。不同租户有不同的模式，可以简便的满足不同租户的特定需求，灵活性高。对资源管理能力要求高，以避免不同租户竞争资源。可以把不同租户的数据存储在不同的磁盘上，降低了对磁盘IO的竞争。运维和管理较复杂，不易实现大量租户的跨租户分析。适合租户数目适中的场景。
 
@@ -145,7 +145,7 @@ ref:
 
   不同租户共享同一个数据库、同一个名字空间。不同租户的数据在同一组表中共存，通过租户id标记和访问不同租户的数据（应用需要调整访问数据的SQL以包含租户id）。如下图所示。
 
-![全共享方式.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/tenant/%E5%85%A8%E5%85%B1%E4%BA%AB%E6%96%B9%E5%BC%8F.png)
+![全共享方式.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/tenant/%E5%85%A8%E5%85%B1%E4%BA%AB%E6%96%B9%E5%BC%8F.png)
 
 这种多租户模型中，不同租户的数据物理存储在一起，对系统的资源隔离和安全隔离要求很高。运维相对简单。扩展能力好，可以支持较多数量租户。由于租户数据存储在一起，跨租户数据分析和优化非常简单。成本低，可以较低的代价支持更多的租户。
 
@@ -157,7 +157,7 @@ ref:
 
   系统账户层级如下图所示:
 
-![Multitenancy.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/tenant/Multitenancy.png)
+![Multitenancy.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/tenant/Multitenancy.png)
 
 在上图这个系统用户的层级关系中，我们需要四张表:
 
@@ -181,5 +181,5 @@ ref:
 
 UML实体图如下:
 
-![Mlti tenancy UML .png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/tenant/Mlti%20tenancy%20UML%20.png)
+![Mlti tenancy UML .png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/tenant/Mlti%20tenancy%20UML%20.png)
 

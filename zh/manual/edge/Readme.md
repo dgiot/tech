@@ -10,9 +10,6 @@ spend: 9
 
 ![dgiot_cloud_arch.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot_cloud_arch.png)
 
-
-![dgiot_cloud_arch.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot_cloud_arch.png)
-
  秉持精简思想，直指用户需求本质，让用户在半小时内能获得自己想要的效果
 
  - 通过1个压缩包搭建数蛙工业物联网Saas平台开发环境

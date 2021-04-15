@@ -6,7 +6,7 @@ Erlang/OTP 最初是爱立信为开发电信设备系统设计的编程语言平
 
 Erlang/OTP 语言平台的分布式程序，由分布互联的 Erlang 运行系统组成，每个 Erlang 运行系统被称为节点(Node)，节点(Node) 间通过 TCP 互联，消息传递的方式通信:
 
-![cluster_1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/cluster_1.png)
+![cluster_1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/assets/cluster_1.png)
 
 ### 节点(Node)
 
@@ -63,7 +63,7 @@ EMQ X 消息服务器每个集群节点，都保存一份主题树(Topic Trie)�
 
 最终会生成如下主题树(Topic Trie)和路由表(Route Table):
 
-![cluster_2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/cluster_2.png)
+![cluster_2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/assets/cluster_2.png)
 
 
 
@@ -83,7 +83,7 @@ client1 -> node1: Publish[t/a]
         node3 --> client3: Deliver[t/a]
 ```
 
-![design_9.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/design_9.png)
+![design_9.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/assets/design_9.png)
 
 
 

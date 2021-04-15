@@ -33,7 +33,7 @@ EMQ X 提供对接入速度、消息速度的限制：当客户端连接请求�
 ## 速率限制原理
 EMQ X 使⽤[令牌桶 (Token Bucket)](https://en.wikipedia.org/wiki/Token_bucket) 算法来对所有的 Rate Limit 来做控制。 令牌桶算法 的逻辑如下图:
 
-![token-bucket.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/assets/token-bucket.jpg)
+![token-bucket.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/assets/token-bucket.jpg)
 
 - 存在一个可容纳令牌(Token) 的最大值 burst 的桶(Bucket)，最大值 burst 简记为 b 。
 - 存在一个 rate 为每秒向桶添加令牌的速率，简记为 r 。当桶满时则不不再向桶中加⼊入令牌。

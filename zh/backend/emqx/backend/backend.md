@@ -10,7 +10,7 @@
 
 ### 一对一消息存储
 
-![backends_1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/backend/assets/backends_1.png)
+![backends_1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/backend/assets/backends_1.png)
 
 1.  Publish 端发布一条消息；
 2.  Backend 将消息记录数据库中；
@@ -21,7 +21,7 @@
 
 ### 一对多消息存储
 
-![backends_2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/backend/assets/backends_2.png)
+![backends_2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/backend/assets/backends_2.png)
 
 1.  Publish 端发布一条消息；
 2.  Backend 将消息记录在数据库中；

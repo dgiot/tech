@@ -2,7 +2,7 @@
 
 EMQ X 桥接转发 MQTT 消息到 Kafka 集群，Apache Kafka是一个快速、高可扩展、高吞吐的分布式日志系统，配合kafka Stream，在流式数据处理中非常常用。
 
-![bridge_kafka.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/bridge/assets/bridge_kafka.png)
+![bridge_kafka.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/bridge/assets/bridge_kafka.png)
 
 Kafka 桥接插件配置文件: etc/plugins/emqx_bridge_kafka.conf。
 

@@ -2,7 +2,7 @@
 
 EMQ X 桥接转发 MQTT 消息到 RabbitMQ 集群:
 
-![bridge_rabbit.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/develop_png/zh_CN/bridge/assets/bridge_rabbit.png)
+![bridge_rabbit.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/emqx/bridge/assets/bridge_rabbit.png)
 
 RabbitMQ 桥接插件配置文件: etc/plugins/emqx_bridge_rabbit.conf。
 

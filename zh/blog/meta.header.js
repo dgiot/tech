@@ -6,7 +6,22 @@ module.exports = [
     "category": "工业数据云平台"
   },
   {
-    "title": "从0到1学习进阶",
+    "title": "基础知识",
+    "collapsable": true,
+    "children": [
+      {
+        "title": '数字转型',
+        "collapsable": true,
+        "children": [
+          ['meta-data/', '元数据'],
+        ],
+        "category": "工业数据云平台"
+      }
+      ],
+    "category": "工业数据云平台"
+  },
+  {
+    "title": "案例教程",
     "collapsable": true,
     "children": [
       {

@@ -2,9 +2,9 @@
   
   计算、通信和控制三元组
   
-  ![15.webp.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/instruct4.0/15.webp.jpg)
+  ![15.webp.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/knowledge/instruct4.0/15.webp.jpg)
   
-  ![17.webp.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/instruct4.0/17.webp.jpg)
+  ![17.webp.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/knowledge/instruct4.0/17.webp.jpg)
    
    实现数字孪生的技术路径一般通过CPS系统来承载，在DG-IOT平台中体现为三个[通道插件](zh/backend/dgiot/plugin/README.md)
    

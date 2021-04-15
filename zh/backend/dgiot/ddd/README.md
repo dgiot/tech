@@ -54,7 +54,7 @@ ref:
 
 同时在领域驱动设计（DDD）中也采用了**继承分层架构**，高层继承并实现低层接口。我们需要调整一下各层的顺序，并且将**基础设施层**移动到最高层。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/sXiaukvjR0RBqJzaDtlf6p2TWsGYKnmevuGgKcibrs0pLFtO32PFLFO3nu8vNJvIsXFVARguJRAaJcqaE9juicboA/640?wx_fmt=png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/ddd/osi2.png)
 
 注意：继承分层架构依然是单向依赖，这也意味着领域层、应用层、表现层将不能依赖基础设施层，相反基础设施层可以依赖它们。
 
@@ -88,7 +88,7 @@ public class JpaUserRepository implements UserRepository {
 +   ## **三层或四层架构**
     
 
-![](https://mmbiz.qpic.cn/mmbiz_png/sXiaukvjR0RBqJzaDtlf6p2TWsGYKnmevrT8kkKtKte809VH8HSojTJEdlnXgicfW6WWBBRZGU3QWojAiaQbrFAibQ/640?wx_fmt=png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/ddd/osi3.png)
 
 我们应该从混乱到有序的这个历史过程去研究（分析）分层架构，尤其是我们现在处在前后端分离的环境下，应用系统使用分层架构又面临着什么样的划分变化。
 

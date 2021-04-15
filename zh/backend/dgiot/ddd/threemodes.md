@@ -75,11 +75,11 @@ UL（Ubiquitous Language，通用语言）是团队共享的语言，是DDD中�
 
 模式一：四层架构
 
-![](https://mmbiz.qpic.cn/mmbiz_png/b2YlTLuGbKDsbJzupnILVFhPtMaRjmvPKYRqTMjibE9pnd8oiawLVrQbOHQe4wBXkBQkzpKCWPKBqWgOLgwccBug/640?wx_fmt=png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/ddd/1.png)
 
 Eric Evans在《领域驱动设计－软件核心复杂性应对之道》这本书中提出了传统的四层架构模式，如下图所示：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/A1HKVXsfHNmjTdNcDAb3IjXXG9FEHAYGkBzghOu0SA4SKhic47bFdpiaC0icRUbAWHWlHrYbKy5TJy5m8VxH6jSPA/640?wx_fmt=png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/ddd/2.png)
 
 1.  User Interface为用户界面层（或表示层），负责向用户显示信息和解释用户命令。这里指的用户可以是另一个计算机系统，不一定是使用用户界面的人。
     
@@ -107,7 +107,7 @@ Eric Evans在《领域驱动设计－软件核心复杂性应对之道》这本�
 
 模式二：五层架构
 
-![](https://mmbiz.qpic.cn/mmbiz_png/b2YlTLuGbKDsbJzupnILVFhPtMaRjmvPKYRqTMjibE9pnd8oiawLVrQbOHQe4wBXkBQkzpKCWPKBqWgOLgwccBug/640?wx_fmt=png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/ddd/3.png)
 
 James O. Coplien和Trygve Reenskaug在2009年发表了一篇论文《DCI架构：面向对象编程的新构想》，标志着DCI架构模式的诞生。有趣的是James O. Coplien也是MVC架构模式的创造者，这个大叔一辈子就干了两件事，即年轻时创造了MVC和年老时创造了DCI，其他时间都在思考，让我辈望尘莫及。
 
@@ -164,14 +164,14 @@ DCI目前广泛被看作是对DDD的一种发展和补充，用在基于面向�
 
 1.  Domain层只保留了DCI中的Data层和Interaction层，我们在实践中通常将这两层使用目录隔离，即通过两个目录object和role来分离层Data和Interaction。
     
-    ![](https://mmbiz.qpic.cn/mmbiz_png/A1HKVXsfHNmjTdNcDAb3IjXXG9FEHAYGfPq2tK8OqWnZbbFTMKnA0eSGXgibpeAbibh0LFnxJn0AjrJdGgfRC6Lw/640?wx_fmt=png)
+    ![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/ddd/4.png)
     
 2.  DCI中的Context层从Domain层上移变成Context层。
     
 
 因此，DDD分层架构模式就变成了五层，如下图所示：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/A1HKVXsfHNmjTdNcDAb3IjXXG9FEHAYGSMAUqBS5iaw6GzyZRI3lLYQpLYc8ALlDKpNiaOzEg1YfdSmymfNBaFGw/640?wx_fmt=png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/ddd/5.png)
 
 笔者在实践中，将这五层的本地化定义为：
 
@@ -201,7 +201,7 @@ DDD五层架构模式讨论完了吗？故事还没有结束……
 
 因此，在面向控制面或管理面且消息交互比较多的系统中，DDD分层架构模式就变成了六层，如下图所示：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/A1HKVXsfHNmjTdNcDAb3IjXXG9FEHAYG14geLILicNEknhFGJiaKb7q5KZ9kK2UGbAWsAhd4DJiadS4uzkNOVccGQ/640?wx_fmt=png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/ddd/6.png)
 
 笔者在实践中，将这六层的本地化定义为：
 
@@ -224,7 +224,7 @@ DDD五层架构模式讨论完了吗？故事还没有结束……
 
 模式三：六边形架构
 
-![](https://mmbiz.qpic.cn/mmbiz_png/b2YlTLuGbKDsbJzupnILVFhPtMaRjmvPKYRqTMjibE9pnd8oiawLVrQbOHQe4wBXkBQkzpKCWPKBqWgOLgwccBug/640?wx_fmt=png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/ddd/3.png)
 
 有一种方法可以改进分层架构，即依赖倒置原则（Dependency Inversion Principle，DIP），它通过改变不同层之间的依赖关系达到改进目的。
 
@@ -239,7 +239,7 @@ DDD五层架构模式讨论完了吗？故事还没有结束……
 
 六边形架构也称为端口与适配器，如下图所示：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/A1HKVXsfHNmjTdNcDAb3IjXXG9FEHAYGLR0qE7NSZt5Hict1VkW8lCdZBhCDN2GFoQzFib6ShTo75uNSGzdbYkaw/640?wx_fmt=png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/ddd/7.png)
 
 六边形每条不同的边代表了不同类型的端口，端口要么处理输入，要么处理输出。对于每种外界类型，都有一个适配器与之对应，外界通过应用层API与内部进行交互。上图中有3个客户请求均抵达相同的输入端口（适配器A、B和C），另一个客户请求使用了适配器D。假设前3个请求使用了HTTP协议（浏览器、REST和SOAP等），而后一个请求使用了AMQP协议（比如RabbitMQ）。端口并没有明确的定义，它是一个非常灵活的概念。无论采用哪种方式对端口进行划分，当客户请求到达时，都应该有相应的适配器对输入进行转化，然后端口将调用应用程序的某个操作或者向应用程序发送一个事件，控制权由此交给内部区域。
 
@@ -251,7 +251,7 @@ DDD五层架构模式讨论完了吗？故事还没有结束……
 
 六边形架构模式的演变
 
-![](https://mmbiz.qpic.cn/mmbiz_png/b2YlTLuGbKDsbJzupnILVFhPtMaRjmvPKYRqTMjibE9pnd8oiawLVrQbOHQe4wBXkBQkzpKCWPKBqWgOLgwccBug/640?wx_fmt=png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/ddd/3.png)
 
 尽管六边形架构模式已经很好，但是没有最好只有更好，演变没有尽头。在六边形架构模式提出后的这些年，又依次衍生出三种六边形架构模式的变体，感兴趣的读者可以自行学习：
 
@@ -264,7 +264,7 @@ DDD五层架构模式讨论完了吗？故事还没有结束……
 
 小结
 
-![](https://mmbiz.qpic.cn/mmbiz_png/b2YlTLuGbKDsbJzupnILVFhPtMaRjmvPKYRqTMjibE9pnd8oiawLVrQbOHQe4wBXkBQkzpKCWPKBqWgOLgwccBug/640?wx_fmt=png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/ddd/3.png)
 
 本文先和读者一起回顾了DDD和分层架构的相关知识，然后将DDD分层架构中常用的三种模式（四层架构、五层架构和六边形架构）结合实践经验分别进行详细阐述，使得读者深刻理解DDD分层架构模式，以便在微服务的开发实践中根据具体情况选择最合适的DDD分层架构模式，从而交付结构清晰且易维护的软件产品。
 

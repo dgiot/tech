@@ -20,12 +20,11 @@ ref:
   目前DG-IoT开源平台，为国内首家提供轻量级工业物联网的开源平台，与国内众多的公有云物联网平台（阿里、华为、运营商平台），主打一键式快速部署、低成本开发的特点，并能够提供业界独有的物联网全业务模拟云测等特色服务，形成了差异化的竞争优势。
 
 ### DG-IoT开源平台，其功能模块图
-![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/tech_6.png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/tech_6.png)
 - 开源平台的支撑功能，由如下的功能模块组成：
 	- 设备云
 提供了包含物联网连接管理和设备管理的PaaS平台的所有功能；
-	- 多租户
-[多租户功能说明](https://tech.iotn2n.com/zh/backend/dgiot/tenant/#多租户模型 "多租户功能说明")
+	- [多租户](https://tech.iotn2n.com/zh/backend/dgiot/tenant/#多租户模型 "多租户功能说明")
 	- 云组态
 	- 云函数
 	- 云压测

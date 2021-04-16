@@ -1,7 +1,7 @@
 # 数蛙工业数据云平台
 
 
-![dgiot_cloud_arch.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot_cloud_arch.png)
+![](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/tech_6.png)
 
  秉持精简思想，直指用户需求本质，让用户在半小时内能获得自己想要的效果
 
@@ -11,6 +11,7 @@
 
  
 # 开发环境压缩包
+
    [ 数蛙物联网Saas平台开发套件](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/deploy/dgiot_develop_tools.zip)，点击下载，开箱即用，快速代入，商用实战
   - windows下的linux开发调测环境
   - git持续集成环境

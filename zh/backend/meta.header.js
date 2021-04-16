@@ -8,7 +8,9 @@ module.exports = [
             ['dgiot/ddd/threemodes', '三种模式'],
             ['dgiot/tenant/', '多租户'],
             ['dgiot/plugin/', '插件机制'],
+            ['dgiot/proxy/', '反向代理'],
             ['dgiot/erlang/', '编程规范'],
+            ['dgiot/task_scheduling/', '任务调度'],
             ['dgiot/syncparse/', '数据同步']
         ],
         "category": "工业数据云平台"

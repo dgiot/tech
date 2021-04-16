@@ -13,9 +13,11 @@ category:
 ref:
 ---
 
-# ets同步
+# 数据同步
 
-## shuwa_livequery
+## API Hook同步
+
+## Livequery同步
 parse库修改同步到ets缓存 <br/>	
 parse开启livequery<br/>	
 编辑

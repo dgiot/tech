@@ -9,7 +9,7 @@ module.exports = [
             ['dgiot/tenant/', '多租户'],
             ['dgiot/plugin/', '插件机制'],
             ['dgiot/erlang/', '编程规范'],
-            ['dgiot/syncparse/', 'ets同步']
+            ['dgiot/syncparse/', '数据同步']
         ],
         "category": "工业数据云平台"
     },

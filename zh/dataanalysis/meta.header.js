@@ -3,8 +3,9 @@ module.exports = [
         "title": '数据分析',
         "collapsable": true,
         "children": [
-            ['dgiot/dba/', "查询单个设备时序数据"]
-            ],
+            ['dgiot/dba/', "查询单个设备时序数据"],
+            ['dgiot/getDev/', "查询设备parse数据"]
+        ],
         "category": "工业数据云平台"
     },
     {

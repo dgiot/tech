@@ -63,7 +63,7 @@ ref:
 | dgiot_deploy          |  数蛙工业物联网 Saas部署脚本       | [https://github.com/dgiot/dgiot_deploy](https://github.com/dgiot/dgiot_deploy?from=git)                              |
 | dgiot_amazedtu           | 数蛙工业物联网 dtu采集通道       | [https://github.com/dgiot/dgiot_amazedtu](https://github.com/dgiot/dgiot_amazedtu?from=git)                                 |
 | dgiot_server           |      数蛙工业物联网 SaaS平台   | [https://github.com/dgiot/dgiot_server](https://github.com/dgiot/dgiot_server?from=git)                               |
-| dgiot_meter           |      数蛙工业物联网 dgiot_meter   | [https://github.com/dgiot/dgiot_meter](https://github.com/dgiot/dgiot_meter?from=git)
+| dgiot_meter           |      数蛙工业物联网 电力抄表通道   | [https://github.com/dgiot/dgiot_meter](https://github.com/dgiot/dgiot_meter?from=git)
 | dgiot_dtu           |      数蛙工业物联网 模拟dtu   | [https://github.com/dgiot/dgiot_dtu](https://github.com/dgiot/dgiot_dtu?from=git)
 | dgiot_android           |    数蛙工业物联网 android应用| [https://github.com/dgiot/dgiot_android](https://github.com/dgiot/dgiot_android?from=git)
 | dgiot_bp           |     数蛙工业物联网 面向工业物联网的神经网络算法 | [https://github.com/dgiot/dgiot_bp](https://github.com/dgiot/dgiot_bp?from=git)

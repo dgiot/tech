@@ -1,26 +1,19 @@
+---
 # 编写日期
-
-date: 2021-4-22 16:00:32
-
+date: 2021-4-22 16:06:37
 # 作者 Github 名称
-
 author: h7ml
-
 # 关键字
-
-keywords: dgiot_dashboard swagger 相关
-
+keywords:
 # 描述
-
-description: dgiot_dashboard swagger 相关
-
+description:
 # 分类
-
-category: frontend web swagger 相关
+category:
+# 引用
+ref:
+---
 
 # swagger文档地址 [http://prod.iotn2n.com/swagger/](http://prod.iotn2n.com/swagger/)
-
-## ref: dgiot_dashboard swagger 相关
 
  <h1 class="curproject-name"> 1 </h1>
 

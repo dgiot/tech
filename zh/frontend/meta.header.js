@@ -37,7 +37,7 @@ module.exports = [
             "children": [
                 ['web/development', '总览'],
                 ['web/Interface', '接口'],
-                ['wen/api/swagger', 'swagger'],
+                ['web/api/swagger', 'swagger'],
                 ['web/page', '页面'],
                 ['web/term', '术语'],
                 ['web/faq', '答疑']

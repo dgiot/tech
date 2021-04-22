@@ -13,11 +13,6 @@ category:
 ref:
 ---
 
-# swagger文档地址 [http://prod.iotn2n.com/swagger/](http://prod.iotn2n.com/swagger/)
-
- <h1 class="curproject-name"> 1 </h1>
-
-# EXPROTO
 
 ## Python 测试 API
 

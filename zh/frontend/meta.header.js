@@ -28,6 +28,7 @@ module.exports = [
                   ['web/dgiot_dashboard/interface_alignment', '后端接口联调'],
                   ['web/dgiot_dashboard/alert', '注意事项'],
                   ['web/dgiot_dashboard/deploy', '构建发布'],
+                  ['api/swagger', 'swagger'],
               ],
               "category": "一站式物联网平台"
           },

@@ -46,11 +46,6 @@ ref:
 
 - [用户痛点](zh/product/dgiot/README.md)：物联网行业的用户典型困难。
 
-### 数蛙DG-IoT开源物联网平台
-1. dgiot_server：数蛙工业物联网SaaS平台
-2. dgiot_dashboard：数蛙DG-IoT平台行业应用扩展插件
-1. 30分钟一键式获取商用级工业互联网私有云平台
-2. 智能电表集抄实战案例
 
 ### 相关平台账号密码
 
@@ -58,6 +53,32 @@ ref:
 | -------------- | -------------------------------------------------------- | --------------   |  --------------   |--------------   |  --------------   |
 | DG-IoT |  [http://prod.iotn2n.com](http://prod.iotn2n.com/) | dgiot_admin | dgiot_admin | 开发者 |
 | yapi          | [http://yapi.iotn2n.com](http://148.70.107.251:3000/project/17/interface/api)                              | dgiot_admin@iotn2n.com   |  dgiot_admin   |  访客   |
+
+
+### 开源项目一览
+
+| 项目名       | 说明       |地址                                                                                      |
+| -------------- |  -------------- | ----------------------------------------------------------------------------------------- |
+| dgiot_dashboard   | 数蛙工业物联网 后台管理系统       | [https://github.com/dgiot/dgiot_dashboard](https://github.com/dgiot/dgiot_dashboard?from=git)                             |
+| dgiot_deploy          |  数蛙工业物联网 Saas部署脚本       | [https://github.com/dgiot/dgiot_deploy](https://github.com/dgiot/dgiot_deploy?from=git)                              |
+| dgiot_amazedtu           | 数蛙工业物联网 dtu采集通道       | [https://github.com/dgiot/dgiot_amazedtu](https://github.com/dgiot/dgiot_amazedtu?from=git)                                 |
+| dgiot_server           |      数蛙工业物联网 SaaS平台   | [https://github.com/dgiot/dgiot_server](https://github.com/dgiot/dgiot_server?from=git)                               |
+| dgiot_meter           |      数蛙工业物联网 dgiot_meter   | [https://github.com/dgiot/dgiot_meter](https://github.com/dgiot/dgiot_meter?from=git)
+| dgiot_dtu           |      数蛙工业物联网 模拟dtu   | [https://github.com/dgiot/dgiot_dtu](https://github.com/dgiot/dgiot_dtu?from=git)
+| dgiot_android           |    数蛙工业物联网 android应用| [https://github.com/dgiot/dgiot_android](https://github.com/dgiot/dgiot_android?from=git)
+| dgiot_bp           |     数蛙工业物联网 面向工业物联网的神经网络算法 | [https://github.com/dgiot/dgiot_bp](https://github.com/dgiot/dgiot_bp?from=git)
+| dgiot_td_server           |    数蛙工业物联网  千万级设备时序数据实时存储桥接服务 | [https://github.com/dgiot/dgiot_td_server](https://github.com/dgiot/dgiot_td_server?from=git)
+| dgiot_acrel           |    数蛙工业物联网  安科瑞电流互感器接入实战   | [https://github.com/dgiot/dgiot_acrel](https://github.com/dgiot/dgiot_acrel?from=git)
+
+### 轻量级物联网开源平台产品手册
+
+
+<object data="https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/dgiot.pdf" type="application/pdf" width="700px" height="700px"> 
+    <embed src="https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/dgiot.pdf"> 
+     This browser does not support PDFs. Please download the PDF to view it: <a href="https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/dgiot.pdf">Download PDF</a>.</p> 
+    </embed> 
+</object> 
+
 
 ### 关于我们
 
@@ -71,29 +92,5 @@ ref:
 | qq群         | 346566935 |
 | 公众号         | ![qrcode.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/wechat/qrcode.png) |
 
-
-### 开源项目一览
-
-| 项目名       | 说明       |地址                                                                                      |
-| -------------- |  -------------- | ----------------------------------------------------------------------------------------- |
-| dgiot_dashboard   | dgiot 后台管理系统       | [https://github.com/dgiot/dgiot_dashboard](https://github.com/dgiot/dgiot_dashboard?from=git)                             |
-| dgiot_deploy          | Saas部署脚本       | [https://github.com/dgiot/dgiot_deploy](https://github.com/dgiot/dgiot_deploy?from=git)                              |
-| dgiot_amazedtu           | dtu采集通道       | [https://github.com/dgiot/dgiot_amazedtu](https://github.com/dgiot/dgiot_amazedtu?from=git)                                 |
-| dgiot_server           |      dgiot 后端代码   | [https://github.com/dgiot/dgiot_server](https://github.com/dgiot/dgiot_server?from=git)                               |
-| dgiot_meter           |      dgiot_meter   | [https://github.com/dgiot/dgiot_meter](https://github.com/dgiot/dgiot_meter?from=git)
-| dgiot_dtu           |      数蛙模拟dtu   | [https://github.com/dgiot/dgiot_dtu](https://github.com/dgiot/dgiot_dtu?from=git)
-| dgiot_android           |     android 应用| [https://github.com/dgiot/dgiot_android](https://github.com/dgiot/dgiot_android?from=git)
-| dgiot_bp           |      面向工业物联网的神经网络算法 | [https://github.com/dgiot/dgiot_bp](https://github.com/dgiot/dgiot_bp?from=git)
-| dgiot_td_server           |      千万级设备时序数据实时存储桥接服务 | [https://github.com/dgiot/dgiot_td_server](https://github.com/dgiot/dgiot_td_server?from=git)
-| dgiot_acrel           |      安科瑞电流互感器接入实战   | [https://github.com/dgiot/dgiot_acrel](https://github.com/dgiot/dgiot_acrel?from=git)
-
-### 轻量级物联网开源平台产品手册
-
-
-<object data="https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/dgiot.pdf" type="application/pdf" width="700px" height="700px"> 
-    <embed src="https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/dgiot.pdf"> 
-     This browser does not support PDFs. Please download the PDF to view it: <a href="https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/dgiot.pdf">Download PDF</a>.</p> 
-    </embed> 
-</object> 
 
 

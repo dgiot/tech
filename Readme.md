@@ -47,14 +47,27 @@ ref:
 - [用户痛点](zh/product/dgiot/README.md)：物联网行业的用户典型困难。
 
 ### 数蛙DG-IoT开源物联网平台
-####    GitHub链接：https://github.com/dgiot
+####    GitHub链接：	- [https://github.com/dgiot](https://github.com/dgiot) 
 1. dgiot_server：数蛙工业物联网SaaS平台
 2. dgiot_dashboard：数蛙DG-IoT平台行业应用扩展插件
-###    Gitee链接：https://gitee.com/dgiiot
+###    Gitee链接： [https://gitee.com/dgiiot](https://gitee.com/dgiiot)
 1. 30分钟一键式获取商用级工业互联网私有云平台
 2. 智能电表集抄实战案例
-### DG-IoT开发者社区： 
-**tech.iotn2n.com**
+### DG-IoT开发者社区：
+[https://tech.iotn2n.com/](https://tech.iotn2n.com/)
+### 轻量级物联网开源平台产品手册
+
+
+<object data="https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/dgiot.pdf" type="application/pdf" width="700px" height="700px"> 
+    <embed src="https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/dgiot.pdf"> 
+     This browser does not support PDFs. Please download the PDF to view it: <a href="https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/dgiot.pdf">Download PDF</a>.</p> 
+    </embed> 
+</object> 
+
+###  DG-IoT体验平台
+| 地址 | 账号 | 密码 | 权限 |
+| --- | --- | --- | --- |
+| [http://prod.iotn2n.com](http://prod.iotn2n.com/) | dgiot_admin | dgiot_admin | 开发者 |
 ### DG-IoT开源物联网平台技术交流QQ群：
 **346566935**
 

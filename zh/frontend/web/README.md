@@ -32,5 +32,6 @@ dgiot_dashboard 是由[数蛙开源团队](https://github.com/dgiot/)开源的�
 | 地址 | 账号 | 密码 | 权限 |
 | --- | --- | --- | --- |
 | [http://prod.iotn2n.com](http://prod.iotn2n.com) | dgiot_admin | dgiot_admin|开发者|
-
-本项目对应的后端接口地址为[http://prod.iotn2n.com/swagger/](http://prod.iotn2n.com/swagger/)
+| [yapi](http://148.70.107.251:3000/project/17/interface/api) |  dgiot_admin | dgiot_admin|开发者|
+| [swagger](http://prod.iotn2n.com/swagger/) |  - |- |-|
+| [Interface](./api/swagger) |  - | -|-|

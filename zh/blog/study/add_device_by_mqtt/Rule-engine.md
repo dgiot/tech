@@ -18,7 +18,7 @@ tag:
 # 一、创建通道
 #### 1、顶部导航栏选择通道，点击创建通道
 (1)依次选择通道类型，所属应用，填写通道名称等</br>
-![channel_1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/channel_1.png)
+![channel_1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/mqtt/channel_1.png)
 
 # 一、添加规则
 #### 1、顶部导航栏选择规则，点击添加
@@ -37,4 +37,4 @@ SELECT clientid, payload, topic FROM "thing/9cc13a64f7/ammeter_001/post"
 ![image.png](https://i.loli.net/2021/01/28/gemxZlFEnkMJLGz.png)
 下拉添加响应动作，选择相应的通道添加，然后新建</br>
 注：每次添加通道后，需重启对应的通道，即禁用通道后再启用</br>
-![product_5.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/product_5.png)
+![product_5.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/mqtt/product_5.png)

@@ -49,8 +49,9 @@ module.exports = [
         "title": 'OPC-DA设备接入',
         "collapsable": true,
         "children": [
-          ['modbus/', '学习计划'],
-          ['modbus/modbus', 'OPC-DA基础']
+          ['opc/', 'OPC简介'],
+          ['opc/keepserver', 'OPC数据模拟'],
+          ['opc/bridge','OPC数据桥接']
         ],
         "category": "工业数据云平台"
       },

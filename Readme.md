@@ -70,8 +70,8 @@ ref:
 | dgiot_td_server           |    数蛙工业物联网  千万级设备时序数据实时存储桥接服务 | [https://github.com/dgiot/dgiot_td_server](https://github.com/dgiot/dgiot_td_server?from=git)
 | dgiot_acrel           |    数蛙工业物联网  安科瑞电流互感器接入实战   | [https://github.com/dgiot/dgiot_acrel](https://github.com/dgiot/dgiot_acrel?from=git)
 
-### 轻量级物联网开源平台产品手册
 
+### 轻量级物联网开源平台产品手册
 
 <object data="https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/dgiot.pdf" type="application/pdf" width="700px" height="700px"> 
     <embed src="https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/dgiot.pdf"> 

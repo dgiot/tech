@@ -53,12 +53,12 @@ ref:
    5. 先进的分析平台(BMP)：提供复杂的分析工具，包括机器学习技术和流分析功能，以从IoT数据中提取可行的见解。
   
 
-  ![IOTARCH.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/IOTARCH.png)
+  ![IOTARCH.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/IOTARCH.png)
   
    数蛙科技秉持全社会分工合作的理念，开放合作的态度来快速消化全球急剧增长的工业互联需求，通过数据科技共赢生态框架，让广
    大开发者既可以通过实战快速成长，又能消化真实客户的工业互联网需求，同时还能获得比较丰厚的项目收入。
   
-  ![dgiot_busseness.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/dgiot/dgiot_busseness.png)
+  ![dgiot_busseness.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/dgiot_busseness.png)
    
  精准开源，生态共赢，数蛙一站式物联网平台是完整解决方案，
    - CMP集成EMP的服务架构；
@@ -68,6 +68,10 @@ ref:
    - 边缘侧具有桌面版网关和边缘工具集；
    - 协议栈支持主流通讯协议和行业协议；
    
+   
+   ![dgiot_func.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/dgiot_func.png)
+
+
    数蛙团队将逐步开源贴近需求的代码和技术文档，希望帮助广大的初级程序员可以独立承接日益增长的物联网项目，在实战中快速加入物联网工程师队伍。
 
   

@@ -59,11 +59,14 @@ ref:
    
    | Model Name  |  Level1 |Level2|Level3|Level4|
    | ------------ | ------------ | ------------ | ------------ |------------ |
-   | View Model |Stage  |  Layer | Group  |  Shape |
-   | Data Model  |  App | Group  |  Device | Thing|
-   | Device Model  |  App | Group  |  Device | Thing|
+   | View Model | Stage  |  Layer | Group  |  Shape |
+   | Data Model  |  App | Time  |  Device | Thing|
+   | Device Model  |  App | Time  |  Device | Thing|
    
    数蛙云组态将通过如下示例关系建立起数据孪生的可视化消息路由，让物能跃然屏上，活起来，动起来。
+   
+   Stage对用户域的应用(Project),Layer对应时间域,Group对应空间域的Device,Shape对那个数据域的物模型内的指标集
+   Layer有Now和Next两个状态,在消息的渠道下不断刷新Vie内的设备数据
    
    ```
    ---------------------------------------------------------------------------------------------------------
@@ -73,9 +76,9 @@ ref:
    |                |            |                      |           |                     |                 |
    |         +------+------+     |            +------+------+       |              +------+------+          |
    |         |             |     |           |             |        |              |             |          |
-   |       Layer         Layer   |         Group         Device     |            Group         Device       | 
+   | Layer(now)      Layer(next) |         Now           Next       |            Now            Next       | 
    |         |             |     |           |             |        |              |             |          |
-   |   +-----+-----+     Shape   |      +-----+-----+     Thing     |         +-----+-----+     Thing       |
+   |   +-----+-----+     Group   |      +-----+-----+     Device    |         +-----+-----+   Device       |
    |   |           |             |      |           |               |         |           |                 | 
    | Group       Group           |     Device       Device          |      Device       Device              |
    |   |           |             |       |           |              |        |           |                  |
@@ -90,7 +93,10 @@ ref:
    | konva.findone(Id)  <-----> mqtt < -----> parse.get_object(Id) <---> channel <-----> modbus/plc/opc/ip  |
    ----------------------------------------------------------------------------------------------------------
    ```
-   
+  
+  
+  ![dgiot_func.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/dgiot_func.png)
+
 ## 常见问题
 
    （关注比较多的问题、项目中的咨询较多的地方）  

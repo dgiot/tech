@@ -15,42 +15,6 @@ ref:
 
 数蛙云组态是数蛙科技有限公司自主设计、研发的开源web绘图工具，拥有为电力能源、水利、物联网、工业互联网、智慧城市、智慧医疗、智慧农业、IT运维等提供解决方案的可视化平台。Topology具有跨平台、高效、可扩展、实时监控、动态交互、支持自动算法等特点，最大程度减少研发和运维的成本，并致力于普通业务人员0代码开发实现web组态、SCADA等场景。
 
-## Topology是什么
-
-安装（使用 npm 或 yarn 安装、浏览器引入）
-
-5分钟快速上手 （下面每个子文章都包含的小节内容：创建画布、添加节点、添加连线、保存、导入、更多使用方式：参考详细介绍或视频教程）
-   + 浏览器引入
-     
-   + vue中使用
-    
-   + react中使用
-    
-   + angular中使用
-    
-**注意事项**【重要】
-
-## 详细介绍
-
-   + 基础概念
-      理念：数据驱动显示、视图与业务解耦；视图专注视图、业务专注业务，相互通过数据关联；动画层）
-   + 画布
-   +  画笔
-   + 节点
-   + 连线 （箭头）
-   + 点（锚点、控制点）
-   + 区域Rect
-   +  数据绑定与动态显示
-   + 事件绑定（画布消息事件、画笔交互事件）
-   + 与服务器通信（websocket、mqtt）
-   + 动画
-   + 左侧素材库（基本开发流程、使用jpg/png/gif等图片、使用字体文件、详细讲解教学视频）
-   + 右侧属性面板（基本开发流程、详细讲解教学视频）
-   + 自定义图形库
-   + 使用echarts图形库
-   + 封装第三方组件
-   + 排版布局
-   
 ## 设计概要 
 
    [konvajs]( https://konvajs.org/docs/overview.html)
@@ -93,10 +57,147 @@ ref:
    | konva.findone(Id)  <-----> mqtt < -----> parse.get_object(Id) <---> channel <-----> modbus/plc/opc/ip  |
    ----------------------------------------------------------------------------------------------------------
    ```
-  
-  
-  ![dgiot_func.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/dgiot_func.png)
+ 
+## 详细设计
 
+   ![dgiot_func.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/dgiot_func.png)
+
+   [数蛙云组态](https://github.com/dgiot/dgiot_topo)的主要是三个目标:
+   
+   1. 通过UI交互，辅助行业领域的专家建立起设备域中设备指标集与数据域中物模型指标集之间的消息路由关系,生成设备组态库
+   2. 通过前一步建立的消息路由关系，自动将单个设备指标信息实时同步到组态大屏中，实现数字孪生的可视化呈现
+   3. 基于前两步的设备组态库与消息路由关系，添加多设备在工业现场画布中，实现工业现场的实时可视化呈现
+  
+ ### 单设备组态
+ 
+   1. DG-IOT通过数据采集通道自动扫描功能，收集设备域中的指标集，并可视化呈现到组态大屏中，
+   2. 行业专家在组态大屏选择与业务匹配的设备指标创建产品与物模型
+   3. DG-IOT通过mqtt实时传递设备状态数据到组态大屏,同时存储设备数据到时序数据库
+   4. DG-IOT回放时序数据中的设备状态数据到组态大屏，对设备数据信息可视化诊断分析
+   
+   物模型示例:
+   ```
+    {
+      "properties": [
+        {
+          "name": "互感器",
+          "dataForm": {
+            "rate": 1,
+            "offset": 0,
+            "address": "0000",
+            "control": "%s",
+            "slaveid": "1",
+            "protocol": "modbus",
+            "quantity": 3,
+            "strategy": "20",
+            "byteorder": "big",
+            "collection": "%s",
+            "operatetype": "holdingRegister",
+            "originaltype": "int16"
+          },
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "max": 9999,
+              "min": 0,
+              "step": 0,
+              "unit": ""
+            }
+          },
+          "required": true,
+          "accessMode": "r",
+          "identifier": "Acrel"
+        }
+    ]
+    }
+   ```
+
+  组态数据模型示例
+   ```
+    {
+      "konva": {
+         "Stage": {
+          "id": "stage_9c5930e565",
+          "width": 1643,
+          "height": 248
+        },
+        "Layer": {
+          "x": 480,
+          "y": 21,
+          "id": "layer_9c5930e565",
+          "fill": "#e579f2",
+          "text": "16",
+          "fontSize": 26,
+          "fontFamily": "Calibri"
+        },
+        "Group": {
+          "x": 120,
+          "y": 40,
+          "id": "group_9c5930e565",
+          "rotation": 20
+        },
+        "Shape": [
+          {
+            "x": 480,
+            "y": 21,
+            "id": "Acrel",
+            "fill": "#e579f2",
+            "text": "16",
+            "fontSize": 26,
+            "fontFamily": "Calibri"
+          }
+        ]
+      }
+    }
+  ```
+  消息交互示例:
+   topic:  thing/[deviceid]/konva
+   payload:
+   ```
+   {
+       "konva":{
+           "Stage":{
+               "id":"stage_9c5930e565",
+               "width":1643,
+               "height":248
+           },
+           "Layer":{
+               "x":480,
+               "y":21,
+               "id":"layer_9c5930e565",
+               "fill":"#e579f2",
+               "text":"16",
+               "fontSize":26,
+               "fontFamily":"Calibri"
+           },
+           "Group":{
+               "x":120,
+               "y":40,
+               "id":"group_9c5930e565",
+               "rotation":20
+           },
+           "Shape":[
+               {
+                   "x":480,
+                   "y":21,
+                   "id":[shapeid],
+                   "fill":"#e579f2",
+                   "text":"16",
+                   "fontSize":26,
+                   "fontFamily":"Calibri"
+               }
+           ]
+       }
+   }
+  ```
+   deviceid与shapeid可见 DG-IOT唯一标识计算方法,后端与页面之间的数据传递用base64加密传输
+   Shape是消息体必选项，Stage/Layer/Group是可选项
+  
+ ### 多设备组态
+ 
+   多设备组态是单设备组态的聚合
+
+  
 ## 常见问题
 
    （关注比较多的问题、项目中的咨询较多的地方）  

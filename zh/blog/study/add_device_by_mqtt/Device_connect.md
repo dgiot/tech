@@ -26,24 +26,24 @@ tag:
  ```
     SELECT clientid, connected_at FROM "$events/client_connected" WHERE username = 'ammeter'
  ```
-![mqttfx_1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/mqttfx_1.png)
+![mqttfx_1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/mqtt/mqttfx_1.png)
 
  2. 发送消息
  - topic：填写设备发布topic
-![mqttfx_3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/mqttfx_3.png)
+![mqttfx_3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/mqtt/mqttfx_3.png)
  - 发送内容：设备所属产品的物模型 json串
-![mqttfx_4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/mqttfx_4.png)
+![mqttfx_4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/mqtt/mqttfx_4.png)
  - 发送 {"electric_fr":99}
-![mqttfx_2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/mqttfx_2.png)
+![mqttfx_2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/mqtt/mqttfx_2.png)
 
 3. 通道查看日志</br>
 选择产品连接物接入通道，订阅日志</br>
 mqtt连接时打印日志</br>
-![mqttfx_6.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/mqttfx_6.png)
+![mqttfx_6.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/mqtt/mqttfx_6.png)
 mqtt发送消息时打印日志</br>
-![mqttfx_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/mqttfx_7.png)
+![mqttfx_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/mqtt/mqttfx_7.png)
 mqtt断开时时打印日志</br>
-![mqttfx_8.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/mqttfx_8.png)
+![mqttfx_8.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/mqtt/mqttfx_8.png)
 
 
 

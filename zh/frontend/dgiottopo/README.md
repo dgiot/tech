@@ -70,6 +70,8 @@ ref:
   
  ### 单设备组态
  
+   单设备组态针对 nodeype=0,1的设备，对应传感器产品和网关产品
+   
    1. DG-IOT通过数据采集通道自动扫描功能，收集设备域中的指标集，并可视化呈现到组态大屏中，
    2. 行业专家在组态大屏选择与业务匹配的设备指标创建产品与物模型
    3. DG-IOT通过mqtt实时传递设备状态数据到组态大屏,同时存储设备数据到时序数据库
@@ -194,10 +196,76 @@ ref:
    Shape是消息体必选项，Stage/Layer/Group是可选项
   
  ### 多设备组态
- 
-   多设备组态是单设备组态的聚合
 
-  
+   多设备组态是单设备组态的聚合,存储在nodetype=2的产品中，对应DG-IOT平台中group,是设备容器，直接存储最终的组态模型数据
+
+  ```
+     {
+         "attrs": {
+             "width": 1643,
+             "height": 374,
+             "id": "G3$3H"
+         },
+         "className": "Stage",
+         "children": [
+             {
+                 "attrs": {},
+                 "className": "Layer",
+                 "children": [
+                     {
+                         "attrs": {
+                             "id": "opening",
+                             "x": 49,
+                             "y": 374,
+                             "text": "15",
+                             "fontSize": 29,
+                             "fontFamily": "Calibri",
+                             "fill": "#f2ec79"
+                         },
+                         "className": "Text"
+                     },
+                     {
+                         "attrs": {
+                             "x": 120,
+                             "y": 40,
+                             "id": "_index1",
+                             "rotation": 20
+                         },
+                         "className": "Group",
+                         "children": [
+                             {
+                                 "attrs": {
+                                     "width": 100,
+                                     "height": 50,
+                                     "name": "red",
+                                     "fill": "red",
+                                     "stroke": "black",
+                                     "strokeWidth": 4,
+                                     "id": "red"
+                                 },
+                                 "className": "Rect"
+                             },
+                             {
+                                 "attrs": {
+                                     "x": 120,
+                                     "y": 40,
+                                     "width": 100,
+                                     "height": 50,
+                                     "name": "orange",
+                                     "fill": "orange",
+                                     "stroke": "black",
+                                     "strokeWidth": 4,
+                                     "id": "orange"
+                                 },
+                                 "className": "Rect"
+                             }
+                         ]
+                     }
+                 ]
+             }
+         ]
+     }
+  ```
 ## 常见问题
 
    （关注比较多的问题、项目中的咨询较多的地方）  

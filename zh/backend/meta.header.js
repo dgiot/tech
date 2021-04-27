@@ -9,6 +9,7 @@ module.exports = [
             ['dgiot/tenant/', '多租户'],
             ['dgiot/plugin/', '插件机制'],
             ['dgiot/proxy/', '反向代理'],
+            ['dgiot/exproto/', '扩展编程'],
             ['dgiot/erlang/', '编程规范'],
             ['dgiot/task_scheduling/', '任务调度'],
             ['dgiot/syncparse/', '数据同步']

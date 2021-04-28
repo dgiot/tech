@@ -4,8 +4,7 @@ category: 操作指南
 ---
 
 # 整体流程
-
-![zeta_test.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/shuwa_tech/zh/product/dgtest/1.png)
+![1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/1.png)
 
 如上图，四个exporter自身会产生类似于发包数的统计值metrics。然后task_work这个任务以时间顺序将统计值暴露。promethues以一定的时间间隔去读取该统计值，存储为时序数据。Grafana从promethues得到job和metrics数据，并分别以仪表盘(dashboard)与面板(penel)的形式展示。生成报告时，report系统从grafana中以“Job_Legend”和“Job_Panel”形式将值提取出来，形成特定格式的json文件，模板传参分别替换报告模板中的指定文本和图片占位符，生成报告。
 
@@ -107,6 +106,47 @@ category: 操作指南
    
    ![web_increase.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/web_increase.png)
    
-   扫描按钮可以获得grafana里面包含的所有配置信息。如下图，uid选择不同的仪表盘；job是选择服务器；而搜索框可以输入查询条件，提高查询速度与精度。我们添加配置时，要先确定我们需要的数据是哪个仪表盘的，通过uid选择确定。然后，确定这一份报告需要用哪几个服务器的数据。注意，一份报告的数据可能会对应多个服务器。在job里选择需要的服务器，即可得到该仪表盘、该服务器下的所有配置信息。点击命名方式为“JOB_Legend”的配置信息，可以同时添加多个，点添加按钮即可添加成功。接下来，通过job选择需要的其他服务器，反复上述操作，直到所需配置信息全部配置成功。最后，点击添加按钮。
+   扫描按钮可以获得grafana里面包含的所有配置信息。如下图，uid选择不同的仪表盘；job是选择服务器；而搜索框可以输入查询条件，提高查询速度与精度。
+   我们添加配置时，要先确定我们需要的数据是哪个仪表盘的，通过uid选择确定。然后，确定这一份报告需要用哪几个服务器的数据。
+   注意，一份报告的数据可能会对应多个服务器。在job里选择需要的服务器，即可得到该仪表盘、该服务器下的所有配置信息。
+   点击命名方式为“JOB_Legend”的配置信息，可以同时添加多个，点添加按钮即可添加成功。
+   接下来，通过job选择需要的其他服务器，反复上述操作，直到所需配置信息全部配置成功。
+   最后，点击添加按钮。
    
    ![scan.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/scan.png)
+   
+   
+   现版本报告配置流程如下：<br/>
+   1.点击进入报告配置页面，点击“扫描”。
+   ![scan_1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/scan_1.png)
+   
+   2.选择对应指标：（以ZETA負荷試験監視面板里job：master的CPU核数为例） 
+   ![scan_2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/scan_2.png)
+   ![scan_3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/scan_3.png)
+   
+   注：对应的grafana的情况如下：
+   ![scan_4.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/scan_4.png)
+   ![scan_5.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/scan_5.png)
+   
+   3.在报告模板（word）中粘贴上一步中复制的指标：
+   ![scan_6.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/scan_6.png)
+   ![scan_7.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/scan_7.png)
+   
+   功能讲解：
+   1.与原版本主要不同在于不需要扫描后选择指标后添加到网页（配置信息）中，只需配置word模板。（新增功能操作同以前）
+   2.原tag格式例为：{{master_CPU}}
+   - 现tag格式例为：{{master__9CWBz0bik_CPU}}
+   - 即{{JOB名称__对应dashboard的uid_指标名称}}
+   - （注：建议按上述说明直接从页面复制指标tag）
+   - （注：如指标无对应job，可随意选择job，一定要选对dashboard）
+   - 上例中job名称是master，dashboard是ZETA負荷試験監視，对应的uid为9CWBz0bik，指标名称为CPU。（对应的job和dashboard可从grafana得知）
+   3.现版本更新服务器地址或创建新任务等操作时，不需要重新配置指标，只需确保使用的word里的指标能对应目标中的指标。
+   
+   4.新增同步按钮和面板指标页面，可以查看所有面板的指标，根据面板查询该面板指标，每次添加修改grafana里的面板指标，必须同步该面板指标<br/>
+   - name：dashboard的uid_指标名称
+   - type: 类型
+   - data：表达式
+   ![scan_8.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/scan_8.png)
+   
+   
+   

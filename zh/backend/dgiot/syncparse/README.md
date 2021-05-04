@@ -14,10 +14,22 @@ ref:
 ---
 
 # 数据同步
+## API Hook配置同步（数据库->缓存）
+用户调用API修改parse库配置后，通API Hook同步到ets缓存，例如通道中做如下处理
+```
+%% 初始化池子
+handle_init(State) ->
+    shuwa_parse:subscribe(<<"Device">>, post),
+    shuwa_parse:subscribe(<<"Device/*">>, post),
+    {ok, State}.
 
-## API Hook同步
+handle_message({sync_parse, Args}, State) ->
+    %% do something 
+    lager:info("sync_parse ~p", [Args]),
+    {ok, State};
+```
 
-## Livequery同步
+## Livequery同步（数据库->缓存）
 parse库修改同步到ets缓存 <br/>	
 parse开启livequery<br/>	
 编辑
@@ -42,3 +54,7 @@ handle_info({livequery, #{<<"object">> := Object}}, #task{step = login} = State)
 handle_info({livequery, _Other}, State) ->
     {noreply, State};
 ```
+
+## API Hook数据同步（数据库+缓存 ->用户）
+
+用户查询parse库后返回过程中，DG-IOT自动同步ets缓存中的实时状态数据，解决状态不同步问题，

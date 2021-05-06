@@ -5,6 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev",
+    "start": "vuepress dev",
+    "server": "vuepress dev",
+    "decrypt": "encrypt decrypt --source-dir ./ --key-file keys.json --temp .temp-encrypt",
+    "encrypt": "encrypt encrypt --source-dir ./ --key-file keys.json --temp .temp-encrypt",
     "build": "vuepress build"
   },
   "repository": {
@@ -22,6 +26,7 @@
     "@commitlint/config-conventional": "^12.0.1",
     "@mr-hope/vuepress-plugin-copy-code": "^1.12.5",
     "@mr-hope/vuepress-plugin-git": "^1.12.1",
+    "@oak-tree-house/vuepress-plugin-encrypt": "^1.0.1",
     "@vuepress/plugin-google-analytics": "^1.7.1",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^6.3.0",

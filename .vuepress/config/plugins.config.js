@@ -26,6 +26,17 @@ const plugins = [
     "@mr-hope/copy-code",
     {},
   ],
+  ['@oak-tree-house/encrypt', {
+    contentTitle: 'Encrypted Content',
+    unencryptedText: 'The content is shown below. It should be encrypted when published.',
+    encryptedText: 'This part of content is encrypted. To view it, you need to enter the correct key in the input field below.',
+    decryptedText: 'The encrypted content is successfully decrypted and shown below.',
+    decryptButtonText: 'Decrypt',
+    decryptFailText: 'Failed to decrypt!',
+    unencryptedIcon: undefined,
+    encryptedIcon: undefined,
+    decryptedIcon: undefined
+  }],
   ['feed', {}],
   ['flowchart', {}],
   ['vuepress-plugin-mermaidjs', {}],

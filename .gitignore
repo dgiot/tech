@@ -4,3 +4,4 @@ dist
 a.md
 about.md
 .vuepress/dist
+/.temp-encrypt

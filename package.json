@@ -9,7 +9,7 @@
     "server": "vuepress dev",
     "decrypt": "encrypt decrypt --source-dir ./ --key-file keys.json --temp .temp-encrypt",
     "encrypt": "encrypt encrypt --source-dir ./ --key-file keys.json --temp .temp-encrypt",
-    "build": "vuepress build"
+    "build": "yarn encrypt && vuepress build"
   },
   "repository": {
     "type": "git",

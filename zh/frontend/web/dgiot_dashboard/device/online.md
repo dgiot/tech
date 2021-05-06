@@ -19,7 +19,7 @@ ref: 查询设备在线情况
 ::: encrypt encrypted key=key owners=iotn2n
 账号`admin` 密码`public`
 :::
-2. 连接mqtt并订阅 ![](http://doc.iotn2n.com/server/index.php?s=/api/attachment/visitFile/sign/aead7b9b73bbe61949e8316f89bd65a1&showdoc=.jpg)
+2. 连接mqtt并订阅 ![](http://doc.iotn2n.com/Public/Uploads/2020-11-04/5fa21d632ba56.png)
 3. 订阅主题 例如 `ControlParams/20083411` 20083411为任意设备主板编号
-4. 查看相关消息 ![](http://doc.iotn2n.com/server/index.php?s=/api/attachment/visitFile/sign/8a5296edbdcd0ccb6eb126d0ff100be9&showdoc=.jpg)
+4. 查看相关消息 ![](http://doc.iotn2n.com/Public/Uploads/2021-05-06/6093547dad6c2.png)
 

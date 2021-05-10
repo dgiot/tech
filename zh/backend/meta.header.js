@@ -8,7 +8,7 @@ module.exports = [
             ['dgiot/ddd/threemodes', '三种模式'],
             ['dgiot/tenant/', '多租户'],
             ['dgiot/plugin/', '插件机制'],
-            ['dgiot/proxy/', '反向代理'],
+            ['dgiot/proxy/', '网页代理'],
             ['dgiot/exproto/', '扩展编程'],
             ['dgiot/erlang/', '编程规范'],
             ['dgiot/task_scheduling/', '任务调度'],

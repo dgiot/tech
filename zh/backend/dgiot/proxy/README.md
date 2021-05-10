@@ -46,6 +46,10 @@ htlm->tokens功能
 功能类似于 BeautifulSoup 的爬虫功能
 
 ```
+ [{<<"class">>,<<"my-photo">>},{<<"alt">>,<<"loading">>},{<<"style">>,<<"cursor: pointer;">>},{<<"data-src">>,<<"http://132.232.12.21:8012/202158151241/0.jpg">>},{<<"src">>,<<"images/loading.gif">>}]
+```
+
+```
  shuwa_html:find(WordPreview, {<<"img">>, {<<"class">>, <<"my-photo">>}}, <<"data-src">>)
 ```
 

@@ -17,10 +17,26 @@ module.exports = [
         "collapsable": true,
         "children": [
             ['device_cloud/product/', '产品管理'],
-            ['device_cloud/channel/', '通道管理'],
+            {
+                "title": '通道管理',
+                "collapsable": true,
+                "children": [
+                    ['device_cloud/channel/', '什么是通道'],
+                    ['device_cloud/channel/mqtt_channel', 'mqtt通道']
+                ],
+                "category": "一站式物联网平台"
+            },
             ['device_cloud/device/', '设备管理'],
             ['device_cloud/group/', '分组管理'],
-            ['device_cloud/rules/', '规则管理'],
+            {
+                "title": '规则管理',
+                "collapsable": true,
+                "children": [
+                    ['device_cloud/rules/rule-engine', '规则引擎'],
+                    ['device_cloud/rules/rule-create', '创建规则'],
+                    ['device_cloud/rules/rule-example', '检查 (调试)']
+                ]
+            },
             ['device_cloud/dict/', '字典管理']
         ],
         "category": "一站式物联网平台"

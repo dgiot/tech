@@ -2,7 +2,7 @@
 icon: creative
 category: 云压测
 ---
-# 云检测入门
+# 云压测入门
   
  ## Promethus
  

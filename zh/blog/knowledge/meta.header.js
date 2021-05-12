@@ -9,6 +9,7 @@ module.exports = [
         "children": [
           ['master-data/', '主数据'],
           ['meta-data/', '元数据'],
+          ['ddp/', 'DDP'],
         ],
         "category": "工业数据云平台"
       }

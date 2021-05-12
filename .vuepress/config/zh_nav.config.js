@@ -15,7 +15,7 @@ const zh_nav = [{
             {text: '一站式物联网平台', link: '/zh/product/dgiot/'},
             {text: '一站式云压测平台', link: '/zh/product/dgpress/'},
             {text: '一站式云检测平台', link: '/zh/product/dgtest/'},
-            {text: '工业互联网平台', link: '/zh/product/dgii/'}
+            {text: '一站式云工厂平台', link: '/zh/product/dgii/'}
         ]
     },
     {

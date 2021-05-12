@@ -31,5 +31,5 @@ ref:
   3. 构建Grafana可视化面板，实时呈现各项指标在整个压测过程中变化趋势
   4. 构建专业的压测报告，通过专业的AI算法做自动化的技术判定
    
- ![zeta_test.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/zeta_test.png)
+ ![zeta_test.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgtest/test_arch.png)
   

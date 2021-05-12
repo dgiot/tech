@@ -87,8 +87,7 @@ ref:
 | github         | [https://github.com/dgiot](https://github.com/dgiot?from=git)                             |
 | gitee          | [https://gitee.com/dgiot](https://gitee.com/dgiiot?from=git)                              |
 | 官网           | [https://www.iotn2n.com](https://www.iotn2n.com?from=git)                                 |
-| 博客           | [https://tech.iotn2n.com](https://tech.iotn2n.com?from=git)                               |
-| 物联网接入平台 | [https://dgiot.iotn2n.com](https://dgiot.iotn2n.com?from=git)                             |
+| 博客           | [https://tech.iotn2n.com](https://tech.iotn2n.com?from=git)                               |                           |
 | qq群         | 346566935 |
 | 公众号         | ![qrcode.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/wechat/qrcode.png) |
 

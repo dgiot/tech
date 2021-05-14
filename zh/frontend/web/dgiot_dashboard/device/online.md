@@ -13,13 +13,19 @@ category: device
 ref: 查询设备在线情况
 ---
 
-## 查询设备在线情况
+### 登录
 
-1. 打开 [websocket链接工具](http://47.110.83.36:5080/dashboard#/websocket)
-::: encrypt encrypted key=key owners=iotn2n
-账号`admin` 密码`public`
-:::
-2. 连接mqtt并订阅 ![](http://doc.iotn2n.com/Public/Uploads/2020-11-04/5fa21d632ba56.png)
-3. 订阅主题 例如 `ControlParams/20083411` 20083411为任意设备主板编号
-4. 查看相关消息 ![](http://doc.iotn2n.com/Public/Uploads/2021-05-06/6093547dad6c2.png)
+登录[http://ip:18083/#/websocket](http://ip:18083/#/websocket "管理控制中心")
+账号``admin``
+密码``public``
+## 订阅
 
+|  订阅标识 | 订阅内容  | 主板编号  |
+| :------------ | :------------ | :------------ |
+| PeriodicInformation | 周期报文  |  20211310 |
+| BasicInformation  | 登录报文  |20211310   |
+
+![webscroket.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/knowledge/xinmahe/webscroket.png)
+![info.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/knowledge/xinmahe/info.png)
+## 在线情况
+![online.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/knowledge/xinmahe/online.png)

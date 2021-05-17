@@ -21,7 +21,7 @@ ref:
 1.登录具有-多租户管理权限的帐号,然后点击多租户进入角色管理界面.
 
 2.选择需要创建角色的根目录,点击'+'后进入创建界面.
-![多租户1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgiot/tenant/role/%E5%A4%9A%E7%A7%9F%E6%88%B71.png)
+![角色1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgiot/tenant/role/%E8%A7%92%E8%89%B21.png)
 
 3.角色创建完成后,点击右侧区域进行权限和菜单分配.
-![多租户2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgiot/tenant/role/%E5%A4%9A%E7%A7%9F%E6%88%B72.png)
+![角色2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgiot/tenant/role/%E8%A7%92%E8%89%B22.png)

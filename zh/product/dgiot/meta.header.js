@@ -54,14 +54,14 @@ module.exports = [
         ],
         "category": "一站式物联网平台"
     },
-    {
-        "title": '云组态',
-        "collapsable": true,
-        "children": [
-            ['topo/konova/', 'konova']
-        ],
-        "category": "一站式物联网平台"
-    },
+    // {
+    //     "title": '云组态',
+    //     "collapsable": true,
+    //     "children": [
+    //         ['topo/konova/', 'konova']
+    //     ],
+    //     "category": "一站式物联网平台"
+    // },
     {
         "title": '云函数',
         "collapsable": true,
@@ -75,11 +75,11 @@ module.exports = [
         "title": '云系统',
         "collapsable": true,
         "children": [
-            ['system/project/', '工程管理'],
+            // ['system/project/', '工程管理'],
             ['system/cluster/', '集群管理'],
             ['system/deploy/', '部署管理'],
             ['system/plugin/', '插件管理'],
-            ['system/monitor/', '运维管理'],
+            // ['system/monitor/', '运维管理'],
         ],
         "category": "一站式物联网平台"
     },

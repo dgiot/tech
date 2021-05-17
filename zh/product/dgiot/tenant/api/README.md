@@ -13,4 +13,6 @@ category:
 ref:
 ---
 
-待补充
+## 接口管理
+内含丰富的API接口,支持平台流畅运行.
+![接口1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgiot/tenant/api/%E6%8E%A5%E5%8F%A31.png)

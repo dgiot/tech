@@ -9,8 +9,7 @@
   + win7
   用管理员启动cmd窗口
   ```
-   cd D:\meter_v2.7.1\ocx
-   cd D:\meter_v2.7.1\ocx
+   D:\meter_v2.7.1\ocx
    copy Mscomm.srg  C:\Windows\System\
    copy Mscomm32.dep  C:\Windows\System\
    copy Mscomm32.ocx  C:\Windows\System\
@@ -18,7 +17,7 @@
   ```  
   + win10
   ```
-     cd D:\meter_v2.7.1\ocx
+     D:\meter_v2.7.1\ocx
      copy Mscomm.srg  C:\Windows\SysWOW64\
      copy Mscomm32.dep  C:\Windows\SysWOW64\
      copy Mscomm32.ocx  C:\Windows\SysWOW64\

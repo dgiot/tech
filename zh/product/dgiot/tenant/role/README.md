@@ -6,11 +6,22 @@ author: jhonliu
 # 关键字
 keywords:
 # 描述
-description:
+description: 
 # 分类
 category: 
 # 引用
 ref:
 ---
 
-待补充
+
+## 角色管理
+角色管理指用户利用高级权限对新创建的角色进行权限分配,后将角色与用户之间建立关系以实现用户权限的分配任务.
+
+## 创建角色
+1.登录具有-多租户管理权限的帐号,然后点击多租户进入角色管理界面.
+
+2.选择需要创建角色的根目录,点击'+'后进入创建界面.
+![多租户1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgiot/tenant/role/%E5%A4%9A%E7%A7%9F%E6%88%B71.png)
+
+3.角色创建完成后,点击右侧区域进行权限和菜单分配.
+![多租户2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgiot/tenant/role/%E5%A4%9A%E7%A7%9F%E6%88%B72.png)

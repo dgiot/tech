@@ -73,6 +73,14 @@ module.exports = [
           ['modbus/modbus', 'OPC-UA基础']
         ],
         "category": "工业数据云平台"
+      },
+      {
+        "title": '数蛙云压测教程',
+        "collapsable": true,
+        "children": [
+          ['press/', '操作概述']
+        ],
+        "category": "工业数据云平台"
       }
     ],
     "category": "工业数据云平台"

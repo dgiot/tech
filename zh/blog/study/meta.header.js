@@ -4,6 +4,16 @@ module.exports = [
     "collapsable": true,
     "children": [
       {
+        "title": 'PT100传感器接入教程',
+        "collapsable": true,
+        "children": [
+          ['temp/', '教程概述'],
+          ['temp/pro-con', '硬件连接'],
+          ['temp/modify', 'DTU调试'],
+        ],
+        "category": "工业数据云平台"
+      },
+      {
         "title": '电力集抄教程',
         "collapsable": true,
         "children": [

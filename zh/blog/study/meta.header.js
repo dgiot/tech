@@ -75,10 +75,12 @@ module.exports = [
         "category": "工业数据云平台"
       },
       {
-        "title": '数蛙云压测教程',
+        "title": '数蛙千万级压测服务',
         "collapsable": true,
         "children": [
-          ['press/', '操作概述']
+          ['press/', '数蛙压测服务概述'],
+          ['press/report', '海量采集压测报告'],
+          ['press/zeta_report', 'ZETA物流跟踪压测报告']
         ],
         "category": "工业数据云平台"
       }

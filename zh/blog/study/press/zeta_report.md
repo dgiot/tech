@@ -10,7 +10,7 @@
 
 压力测试是软件质量保证的一项基本行为，是每个重要软件测试工作的一部分。软件压力测试是指对系统不断施加压力的情况下，根据系统各项指标的变化情况来判断：1、系统可能存在的瓶颈；2、系统负载能力；3、系统正常运行情况下的运行效率。
 
-![](RackMultipart20210525-4-11p6phz_html_ccbd0cc75f382398.png)
+![业务场景1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/press/%E4%B8%9A%E5%8A%A1%E5%9C%BA%E6%99%AF1.png)
 
 图1-实际业务场景
 
@@ -30,7 +30,7 @@
 
 为了尽量避免网络传输给测试结果带来的影响，应该选取内部局域网作为压力测试的网络环境（但是我们没有专门的局域网，只能用外网测试）。网络框图如下：
 
-![](RackMultipart20210525-4-11p6phz_html_b01e0ca67b978ab2.png)
+![网络结构1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/press/%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%841.png)
 
 图2-网络结构示意图
 
@@ -40,35 +40,25 @@
 
 服务器配置如下：
 
-| 硬件配置 | 服务器类型 | **腾讯云服务器** |
-| --- | --- | --- |
-| 处理器 | 16核心CPU2.0GHz |
-| 内存 | 32G |
-| 硬盘 | 500G |
-| …… |
- |
-| 操作系统 | LINUXcentos7.3 64位 |
-| 其它运行软件 |
- |
- |
+|服务器类型|腾讯云服务器|
+|---|---|
+|处理器|16核心CPU  2.0GHz|
+|内存|32G|
+|硬盘|500G|
+|操作系统|LINUX centos7.3 64位|
+
+
 
 ## 2.3应用服务器
 
 服务器配置如下：
 
-| 硬件配置 | 服务器类型 | **腾讯云服务器** |
-| --- | --- | --- |
-| 处理器 | 2核CPU2.0GHz |
-| 内存 | 4G |
-| 硬盘 | 50G |
-| …… |
- |
-| 操作系统 | LINUXcentos7.3 64位 |
-| 数据库系统 |
- |
-| 其它运行软件 |
- |
- |
+|服务器类型|腾讯云服务器|
+|---|---|
+|处理器|2核心CPU  2.0GHz|
+|内存|4G|
+|硬盘|50G|
+|操作系统|LINUX centos7.3 64位|
 
 ## 2.4测试机
 
@@ -80,17 +70,12 @@
 
 测试机配置(腾讯云服务器)：
 
-| 硬件配置 | 服务器类型 | 腾讯云服务器 |
-| --- | --- | --- |
-| 处理器 | 4核CPU 2.0GHz |
-| 内存 | 8G |
-| 硬盘 | 200G |
-| …… |
- |
-| 操作系统 | LINUXcentos7.3 64位 |
-| 其它运行软件 |
- |
- |
+|服务器类型|腾讯云服务器|
+|---|---|
+|处理器|4核心CPU  2.0GHz|
+|内存|8G|
+|硬盘|200G|
+|操作系统|LINUX centos7.3 64位|
 
 ## 2.5条件与限制
 
@@ -124,7 +109,7 @@ ZETAAP影子设备使用TCP/IP协议，主要思想是使用虚拟设备来模�
 
 ZETAAP、ZETATAG设备消息收发是平台功能模块中实现数据网关功能，同时服务器需要进行复杂运算的查询、计算。但也是系统中基本的模块，操作量相对较大，性能的要求较高，对服务的压力相对较大。
 
-![](RackMultipart20210525-4-11p6phz_html_b4a0dda599ada5c2.png)
+![ZETA物流跟踪业务场景图1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/press/ZETA%E7%89%A9%E6%B5%81%E8%B7%9F%E8%B8%AA%E4%B8%9A%E5%8A%A1%E5%9C%BA%E6%99%AF%E5%9B%BE1.png)
 
 ZETA物流跟踪业务场景图
 
@@ -150,7 +135,7 @@ ZETA TAG：每15分钟上报一次心跳包；
 
 ZETA AP：本次模拟10000台，每条线路上分布500台ZETAAP
 
-ZETA TAG数量：本次模拟在运ZETAG1000万个，ZETAG随运输车辆移动，每隔15分钟的心跳报文被相邻的２－３个ZETAAP接收。
+ZETA TAG数量：本次模拟在运ZETAG1000万个，ZETAG随运输车辆移动，每隔15分钟的心跳报文被相邻的2-3个ZETAAP接收。
 
 服务端业务描述：
 
@@ -205,17 +190,9 @@ F、内存使用量
 
 | **测试环境** | **指标** |
 | --- | --- |
-| 平台指标 | 最大AP在线数 |
-| ZETAG标签并发数 |
-| 最小响应时间 |
-| 最大响应时间 |
-| 平均响应时间 |
-| 被测服务器CPU | 最小 |
-| 平均 |
-| 最大 |
-| 被测服务器内存消耗 | 最小值 |
-| 最大值 |
-| 平均值 |
+| 平台指标 | 最大AP在线数 <br> ZETAG标签并发数 <br>最小响应时间 <br> 最大响应时间 <br> 平均响应时间 |
+| 被测服务器CPU | 最小 <br> 平均 <br> 最大 |
+ 被测服务器内存消耗 | 最小值 <br> 最大值 <br> 平均值 |
 
 # 6测试结果
 
@@ -223,37 +200,37 @@ F、内存使用量
 
 ZETAG标签数据包入库总量（入库超10亿条）：
 
-![](RackMultipart20210525-4-11p6phz_html_59a1be58f1dc614c.png)
+![zeta结果1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/press/zeta%E7%BB%93%E6%9E%9C1.png)
 
 ZETA AP在线数量：
 
-![](RackMultipart20210525-4-11p6phz_html_2b6a41869267ce2c.png)
+![zeta结果1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/press/zeta%E7%BB%93%E6%9E%9C2.png)
 
 ZETAG标签在线数量统计（15分钟最高超过1856万）：
 
-![](RackMultipart20210525-4-11p6phz_html_a53dc38e66369af1.png)
+![zeta结果1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/press/zeta%E7%BB%93%E6%9E%9C3.png)
 
 ZETAG标签解析数量：(两小时内约解析1.5亿条)
 
-![](RackMultipart20210525-4-11p6phz_html_3d26020a464a0c12.png)
+![zeta结果1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/press/zeta%E7%BB%93%E6%9E%9C4.png)
 
 1/5/15分钟CPU负载统计：（负载比较平稳）
 
-![](RackMultipart20210525-4-11p6phz_html_bc946047d2bd3b16.png)
+![zeta结果1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/press/zeta%E7%BB%93%E6%9E%9C5.png)
 
 内存使用量：（客户端最高7.19G，服务端最高29.6G）
 
-![](RackMultipart20210525-4-11p6phz_html_21353612b42f499e.png)
+![zeta结果1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/press/zeta%E7%BB%93%E6%9E%9C6.png)
 
 磁盘读写测试：
 
-![](RackMultipart20210525-4-11p6phz_html_c644b1ab4fc2d8da.png)
+![zeta结果1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/press/zeta%E7%BB%93%E6%9E%9C7.png)
 
-**API**** 压力测试结果：**
+**API** 压力测试结果：
 
-**ZetaEtag**** 接口**
+**ZetaEtag** 接口
 
-/zeta/etag/{tag}
+
 
 超时时间为5秒
 
@@ -273,14 +250,14 @@ tag 生成方式：FF开头后六位随机生成
 \* 返回status code为200（找到目标tag）或404（找不到目标tag）两者都视为调用成功
 
 服务器CPU负载
- ![](RackMultipart20210525-4-11p6phz_html_a5517e7d6096f335.png)
+![zeta结果1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/press/zeta%E7%BB%93%E6%9E%9C8.png)
 服务器内存负载
 
-![](RackMultipart20210525-4-11p6phz_html_d8e48cd02451d53a.png)
+![zeta结果1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/press/zeta%E7%BB%93%E6%9E%9C9.png)
 
-**2.** /zeta/etag/history/{tag}
 
-**ZetaEtagHistory**** 接口**
+
+**ZetaEtagHistory** 接口
 
 超时时间为5秒
 
@@ -300,12 +277,11 @@ tag生成方式：FF开头后六位随机生成
 
 服务器CPU负载
 
-![](RackMultipart20210525-4-11p6phz_html_de5fefcd7e685aac.png)
+![zeta结果1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/press/zeta%E7%BB%93%E6%9E%9C10.png)
 
 服务器内存负载
 
-![](RackMultipart20210525-4-11p6phz_html_10c9931a0d4a663d.png)
-
+![zeta结果1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/press/zeta%E7%BB%93%E6%9E%9C11.png)
 ## 6.2测试结果分析
 
 根据以上测试结果可得出以下结论：
@@ -316,8 +292,8 @@ tag生成方式：FF开头后六位随机生成
 | B、ZETA AP在线率 | 100% |
 | C、在线ZETAG标签数量 | 最大值：18562926 |
 | D、ZETA标签解析包数量 | 合计：1010505054 |
-| E、1/5/15分钟CPU平均负载 | 1分钟 ：0.11-15.85分钟:0.78-13.915分钟:5.8-11.65 |
-| F、内存使用量 | 服务端：12.46G（平均）客户端：2.90G（平均） |
+| E、1/5/15分钟CPU平均负载 | 1分钟 ：0.11-15.8<br>5分钟:0.78-13.9<br>15分钟:5.8-11.65 |
+| F、内存使用量 | 服务端：12.46G（平均）<br>客户端：2.90G（平均） |
 
 经分析可以得出以下结论：
 
@@ -329,4 +305,3 @@ tag生成方式：FF开头后六位随机生成
 
 综上所述，平台可以稳定支撑千万级ZETA TAG同时在运的物流跟踪网络运营与业务应用。通过优化策略与扩容可以支撑更大规模、更多领域的ZETA应用。
 
-- 12 -

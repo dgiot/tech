@@ -4,7 +4,7 @@
  ## 硬件准备
  本次教程我们用到USR-IO424T型号的DTU,TP100热电阻作为主要的接入设备.所用到硬件如下图所示:
 
-(图1)
+![temp-1.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/temp/temp-1.jpg)
 
 (注:若无RS485转USB线,可在接下来的配置中利用部分DTU自带的网络连接来完成.)
 
@@ -23,7 +23,7 @@
 
 在完成以上安装后将产品与下图进行对比,如若无误后接通电源.此时power灯常亮,work灯0.5s闪烁一次.
 
-(图2)
+![temp-2.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/temp/temp-2.jpg)
 
 
 

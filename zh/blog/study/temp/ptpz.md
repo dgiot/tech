@@ -39,7 +39,16 @@
 6.选择'端口'.端口为空闲端口即可.
 
 ---
-**在完成了以上两个通道的创建后,在主页我们会看见两个通道都处于关闭状态,此时请勿启用通道.**
+
+最后再创建一个指令任务通道,是自定义下发命令得到DTU对温度值的反馈.
+
+![temp12.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/temp/temp12.png)
+
+指令通道的创建可以参考之前的两个通道.要注意的地方就是要修改结束时间.图中红线标识处用户更改后理解一下,后按需求更改.
+
+---
+
+**在完成了以上两个通道的创建后,在主页我们会看见三个通道都处于关闭状态,此时请勿启用通道.**
 
  ## 产品管理
 产品管理方面我们会在物模型、物接入和物存储三个方面配置.
@@ -57,7 +66,11 @@
 
 **此处标识符为'temperature'.原因是在存储数据的过程中我们将数据赋值为temperature,一旦标识出错则无法在后续过程中给出实时温度**
 
-![temp-10.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/temp/temp-10.png)
+此外需要注意的是将协议类型为modbus协议,此处的从机地址为我们在DTU的MCU配置时主从机地址.可参考下图:
+
+![temp10.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/temp/temp10.png)
+
+![temp13.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/temp/temp13.png)
 
 2.物接入:指解析DTU上报的设备信息.
 

@@ -84,7 +84,7 @@ module.exports = [
           ['press/zeta_report', 'ZETA物流跟踪压测报告']
         ],
         "category": "工业数据云平台"
-      }
+      },
     ],
     "category": "工业数据云平台"
   }

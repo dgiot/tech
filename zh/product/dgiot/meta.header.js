@@ -7,7 +7,9 @@ module.exports = [
             ['product_presentation/product_functions', '产品功能'],
             ['product_presentation/product_architecture', '产品架构'],
             ['product_presentation/word_construction', '名词解释'],
-            ['product_presentation/product_advantage', '产品优势']
+            ['product_presentation/product_advantage', '产品优势'],
+            ['product_presentation/public', '中性部署'],
+            ['product_presentation/personal', '私人部署'],
         ],
         "category": "一站式物联网平台"
     },

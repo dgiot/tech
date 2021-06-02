@@ -20,7 +20,7 @@ git clone https://hub.fastgit.org/dgiot/dgiot_dashboard.git
 # 进入项目目录
 cd dgiot_dashboard
 # 安装依赖
-npm run clear
+npm run clear:install
 # 本地开发 启动项目
 cnpm run serve
 ```

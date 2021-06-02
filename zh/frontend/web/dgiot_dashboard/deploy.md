@@ -10,7 +10,7 @@ npm -v
 
 ```
 # 项目根目录
-npm run clear
+npm run clear:install
 ```
 
 ### 运行命令
@@ -38,11 +38,11 @@ cnpm -v
 ```bash
 npm install cnpm -g --registry=https://registry.npm.taobao.org
 ```
-### 安装命令[cnpm run clear](https://github.com/dgiot/dgiot_dashboard/blob/master/package.json#L19)
+### 安装命令[cnpm run clear](https://github.com/dgiot/dgiot_dashboard/blob/master/package.json#L22)
 
 ```
 # 项目根目录
-cnpm run clear
+cnpm run clear:install
 ```
 
 ### 运行命令

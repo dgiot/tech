@@ -4,6 +4,17 @@ module.exports = [
     "collapsable": true,
     "children": [
       {
+        "title": 'PT100传感器接入教程',
+        "collapsable": true,
+        "children": [
+          ['temp/', '教程概述'],
+          ['temp/pro-con', '硬件连接'],
+          ['temp/DTUmodify', 'DTU调试'],
+          ['temp/ptpz', '平台配置'],
+        ],
+        "category": "工业数据云平台"
+      },
+      {
         "title": '电力集抄教程',
         "collapsable": true,
         "children": [
@@ -63,7 +74,17 @@ module.exports = [
           ['modbus/modbus', 'OPC-UA基础']
         ],
         "category": "工业数据云平台"
-      }
+      },
+      {
+        "title": '数蛙千万级压测服务',
+        "collapsable": true,
+        "children": [
+          ['press/', '数蛙压测服务概述'],
+          ['press/report', '海量采集压测报告'],
+          ['press/zeta_report', 'ZETA物流跟踪压测报告']
+        ],
+        "category": "工业数据云平台"
+      },
     ],
     "category": "工业数据云平台"
   }

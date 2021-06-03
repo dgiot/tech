@@ -53,17 +53,17 @@ ref:
         +   当设备属于企业版实例，且使用[一型一密](https://help.aliyun.com/document_detail/74006.htm#task-m1l-zqq-wfb "一型一密认证方式下，同一产品下所有设备可以烧录相同固件，包含相同的产品证书（ProductKey和ProductSecret）。设备发送激活请求时，物联网平台进行身份确认，认证通过，下发设备接入所需信息。")免预注册认证方式时，动态注册参数如下：
             
             ```auto
-            mqttClientId: clientId+"|securemode=-2,authType=xxxx,random=xxxx,signmethod=xxxx,instanceId=xxxx|"
+            mqttClientId: clientId+"|securemode=-2,authType=xxxx,random=xxxx,signmethod=xxxx,instanceId=xxxx|"
             mqttUserName: deviceName+"&"+productKey
-            mqttPassword: sign_hmac(productSecret,content) 
+            mqttPassword: sign_hmac(productSecret,content) 
             ```
             
         +   当设备属于公共实例，或使用[一型一密](https://help.aliyun.com/document_detail/74006.htm#task-m1l-zqq-wfb "一型一密认证方式下，同一产品下所有设备可以烧录相同固件，包含相同的产品证书（ProductKey和ProductSecret）。设备发送激活请求时，物联网平台进行身份确认，认证通过，下发设备接入所需信息。")预注册认证方式时，动态注册参数如下：
             
             ```auto
-            mqttClientId: clientId+"|securemode=2,authType=xxxx,random=xxxx,signmethod=xxxx|"
+            mqttClientId: clientId+"|securemode=2,authType=xxxx,random=xxxx,signmethod=xxxx|"
             mqttUserName: deviceName+"&"+productKey
-            mqttPassword: sign_hmac(productSecret,content) 
+            mqttPassword: sign_hmac(productSecret,content) 
             ```
             
         

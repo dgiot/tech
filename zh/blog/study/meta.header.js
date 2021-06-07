@@ -36,7 +36,7 @@ module.exports = [
           ['real-meter/pro-con', '硬件连接'],
           ['real-meter/DTUmodify', 'DTU调试'],
           ['real-meter/dashboard-config', '平台配置'],
-          ['real-meter/mistakes-solve', '常见错误及解决方案'],
+          ['real-meter/mistakes-solve', '常见错误解决和扩展'],
         ],
         "category": "工业数据云平台"
       },

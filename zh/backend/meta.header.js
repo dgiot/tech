@@ -12,7 +12,8 @@ module.exports = [
             ['dgiot/exproto/', '扩展编程'],
             ['dgiot/erlang/', '编程规范'],
             ['dgiot/task_scheduling/', '任务调度'],
-            ['dgiot/syncparse/', '数据同步']
+            ['dgiot/syncparse/', '数据同步'],
+            ['dgiot/debug/', '远程定位']
         ],
         "category": "工业数据云平台"
     }

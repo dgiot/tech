@@ -62,7 +62,9 @@ module.exports = [
         "children": [
           ['opc/', 'OPC简介'],
           ['opc/keepserver', 'OPC数据模拟'],
-          ['opc/bridge','OPC数据桥接']
+          ['opc/bridge','OPC数据桥接'],
+          ['opc/opc_channel', 'OPC通道使用'],
+          ['opc/opc_Topo', 'OPC数据组态']
         ],
         "category": "工业数据云平台"
       },

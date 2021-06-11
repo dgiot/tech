@@ -24,6 +24,7 @@ module.exports = [
                 "collapsable": true,
                 "children": [
                     ['device_cloud/channel/', '什么是通道'],
+                    ['device_cloud/channel/instruct', '指令任务通道'],
                     ['device_cloud/channel/mqtt_channel', 'mqtt通道']
                 ],
                 "category": "一站式物联网平台"

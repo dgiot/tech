@@ -29,6 +29,18 @@ module.exports = [
         "category": "工业数据云平台"
       },
       {
+        "title": 'DDZY1296电表接入教程',
+        "collapsable": true,
+        "children": [
+          ['real-meter/', '教程概述'],
+          ['real-meter/pro-con', '硬件连接'],
+          ['real-meter/DTUmodify', 'DTU调试'],
+          ['real-meter/dashboard-config', '平台配置'],
+          ['real-meter/mistakes-solve', '常见错误解决和扩展'],
+        ],
+        "category": "工业数据云平台"
+      },
+      {
         "title": 'Mqtt设备接入',
         "collapsable": true,
         "children": [

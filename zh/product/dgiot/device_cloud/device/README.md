@@ -33,6 +33,17 @@ ref:
  |安装位置|该设备的安装地址|
  |描述|对该设备的自定义描述|
    
+## 设备管理
+
+为帮助我们了解设备所处环境和位置,平台推出了设备地图这一功能.
+根据我们赋值给各个设备的标识,可以在地图上快速找到该编号的设备所处地理信息.若想对指定设备进行信息查看,直接点击设备即可进入控制界面.
+直接查找某设备的位置,可在设备管理界面点击'位置'按钮,会有标注设备位置的地图弹出.
+
+![设备地图.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgiot/product_presentation/%E8%AE%BE%E5%A4%87%E5%9C%B0%E5%9B%BE.png)
+
+在设备详情界面,新增加的'设备扩展信息'区域可针对用户指令调用数据库内容并实现图形化展现.帮助用户直截了当的展现区间内数据的变化,方便分析得出结论.
+
+![信息扩展.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgiot/product_presentation/%E4%BF%A1%E6%81%AF%E6%89%A9%E5%B1%95.png)
 
 ## 后续操作
 在“设备管理”控制台下，可以进行设备开发，设备管理等操作。

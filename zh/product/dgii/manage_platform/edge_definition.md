@@ -71,7 +71,7 @@ EXEC sys.sp_cdc_enable_db
     log_bin = mysql-bin
     binlog_format = row
     binlog_row_image = full
-    expire_logs_days = 10   
+    expire_logs_days = 10   
 ```
 
 如果数据库是Oracle，配置增量监控请查看[Oracle增量监控设置](https://help.aliyun.com/document_detail/176935.htm#topic-2577423)。

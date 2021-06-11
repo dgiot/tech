@@ -15,6 +15,7 @@ module.exports = [
             ['tdengine/00.index/docs', 'TDengine文档'],
             ['tdengine/01.evaluation/docs', 'TDengine 介绍'],
             ['tdengine/02.getting-started/docs', '立即开始'],
+            ['tdengine/14.arrangement/arrangement', '使用整理'],
             ['tdengine/03.architecture/docs', '数据模型和整体架构'],
             ['tdengine/04.model/docs', '数据建模'],
             ['tdengine/05.insert/docs', '高效写入数据'],
@@ -27,7 +28,7 @@ module.exports = [
             ['tdengine/11.administrator/docs', 'TDengine的运营与维护'],
             ['tdengine/12.taos-sql/docs', 'Sql示例'],
             ['tdengine/12.taos-sql/01.error-code/docs', '错误码'],
-            ['tdengine/13.faq/docs', '常见问题']
+            ['tdengine/13.faq/docs', '常见问题'],
         ],
         "category": "工业数据云平台"
     }

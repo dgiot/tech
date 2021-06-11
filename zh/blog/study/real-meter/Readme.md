@@ -3,7 +3,7 @@
 本次教程我们将对单向费控智能电能表的接入做一个介绍.该电表最终实现的功能为实时的上报电表的数据到平台且一个
 DTU可以对多个电表进行数据报告.该功能的最终呈现效果如下图所示:
 
-<!-- (图1) -->
+![首页效果图.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/real-meter/%E9%A6%96%E9%A1%B5%E6%95%88%E6%9E%9C%E5%9B%BE.png)
 
 ----
 

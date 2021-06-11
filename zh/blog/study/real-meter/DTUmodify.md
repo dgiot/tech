@@ -16,18 +16,22 @@ DTU调试分3个方面.指的是网络配置、MCU配置和服务器信息配置
 1.*网络配置*:此步骤以建立DTU连接网络为目的.点击DTU进行无线网络进行设置.将要连的wifi用户和密码输入到指定位置.
 设置完后若要点确认的因在完成每一次更改后都点一次,否则信息不会保存.
 
-**确保网络配置连接已完成更改后,去模式一栏将AP改为STA模式.即变为静态连接关闭原有的热点模式**
+![DTU-无线.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/real-meter/DTU-%E6%97%A0%E7%BA%BF.png)
 
 2.*MCU配置*:此步骤以建立电表和DTU之间的通讯为目的.我们根据第一部分得到电表485口通讯的信息进行修改.
 并选择设备上报注册包信息为MAC地址,方便设备自动上线后我们的检查.最后确认DTU不会上报有些没必要的信息.
 修改信息如下图所示:
 
- 
+![DTU-串口、注册包.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/real-meter/DTU-%E4%B8%B2%E5%8F%A3%E3%80%81%E6%B3%A8%E5%86%8C%E5%8C%85.png)
 
 3.*服务器信息配置*:此步骤以建立DTU与服务器数据库连接为目的.先将我们的DTU设置为clience模式去连接服务器,
 后将服务器地址和将要接收信息的端口号填入即可.如图示:
 
- 
+![DTU-端口IP.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/real-meter/DTU-%E7%AB%AF%E5%8F%A3IP.png)
+
+**确保网络配置连接已完成更改后,去模式一栏将AP改为STA模式.即变为静态连接关闭原有的热点模式**
+
+![DTU-STA模式.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/real-meter/DTU-STA%E6%A8%A1%E5%BC%8F.png)
 
 完成上述步骤后有把握的可以进入下一步骤,个人而言希望大家可以阅读一下第三部分.
 
@@ -47,5 +51,5 @@ TPC server进行简单设置将DTU连上来,此时我们可以向DTU发生消息
 进入后将服务器地址和端口号换成服务器的值,然后进行下一阶段的操作.
 
 如果上述连接出现了错误,分析一下目前可能会出错的地方:1.MCU配置不正确;2.网络配置出错;3.DTU与电表设备不匹配;
-4.发送的指令格式不对或间隔太短......
+4.发送的指令格式不对或间隔太短.....
 

@@ -7,7 +7,7 @@
    本次操作用到的电表:DDZY1296型单向费控智能电能表,DTU:USR-W610.两者之间的通讯需要利用RS485线来完成.
 由于该型号的DTU利用网络进行调试,所以确保后期电脑与DTU可以在一个网段下进行操作.所需硬件如下图:
 
-
+![所需设备.jpg](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/real-meter/%E6%89%80%E9%9C%80%E8%AE%BE%E5%A4%87.jpg)
 
 -----
 
@@ -19,7 +19,7 @@
  首先我们观察电表盒盖上标注的信息.根据图示初步了解各个数字标记处接口的作用和一些注意事项.如下图所示,我们
  做简单介绍:
 
-
+![电表介绍.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/real-meter/%E7%94%B5%E8%A1%A8%E4%BB%8B%E7%BB%8D.png)
 
 一.*1*和*3*为一对串口.'入'为输入端,即为连接电网的两个端口.主要作用是将电接收做一个控制.
 
@@ -47,6 +47,8 @@ RS232口数据传输,鉴于电表只支持485口协议那此次采用RS485做串
 3.将电表与DTU的485串口连接起来,注意AB接口是否连接正确.
 
 完成接线后参考下图,如若有出处请仔细检查后接电
+
+![连接方式.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/real-meter/%E8%BF%9E%E6%8E%A5%E6%96%B9%E5%BC%8F.png)
 
 ------
 目前连线已经完成,可以尝试通电查看是否正常.若一切正常运行进入下一阶段DTU的配置.

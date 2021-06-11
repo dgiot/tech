@@ -26,7 +26,7 @@ TCP/UDP测试工具:[TCP&UDP test.rar](http://dgiot-1253666439.cos.ap-shanghai-f
 - 1.[硬件连接](pro-con.md)
 - 2.[DTU调试](DTUmodify.md)
 - 3.[平台配置](dashboard-config.md)
-- 4.[常见错误及解决方案](mistakes-solve)
+- 4.[常见错误及解决方案](mistakes-solve.md)
 
 如想要实际动手体验我们的平台服务，可使用数蛙演示平台：[数蛙演示平台](http://prod.iotn2n.com/)
 

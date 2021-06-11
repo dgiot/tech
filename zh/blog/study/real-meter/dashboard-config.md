@@ -26,8 +26,7 @@
 
 ![产品DTU配置.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/real-meter/%E4%BA%A7%E5%93%81DTU%E9%85%8D%E7%BD%AE.png)
 
-电表设备:接收来自DTU上传的电表信息通过解析将获取到的值按一定的规律存储起来,方便后期的数据调用.
-在配置方面,我们要建立一个物模型对采集的数据格式进行一个规范.然后在物接入和物存储处添加上通道即可.
+电表设备:接收来自DTU上传的电表信息通过解析将获取到的值按一定的规律存储起来,方便后期的数据调用.在配置方面,我们要建立一个物模型对采集的数据格式进行一个规范.然后在物接入和物存储处添加上通道即可.
 
 ![创建产品电表.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/real-meter/%E5%88%9B%E5%BB%BA%E4%BA%A7%E5%93%81%E7%94%B5%E8%A1%A8.png)
 
@@ -44,9 +43,7 @@
 ---
 
 ## 设备上线
-就DTU而言,只要连入服务器便会自动创建,名称由其上报的MAC值与我们设定的标识组成.
-对于电表,我们平台拥有扫表的功能,DTU会接收扫表指令对连接的电表进行扫描.鉴于我们接单个设备选择了quick模式,大大缩减了扫表时间.观察DTU的灯,TXD代表发送、RXD代表接收;那么根据实际情况理解为TXD闪烁,
-DTU向连接的设备发送命令,同理RXD闪烁代表电表设备向DTU发送了返回值.
+就DTU而言,只要连入服务器便会自动创建,名称由其上报的MAC值与我们设定的标识组成.对于电表,我们平台拥有扫表的功能,DTU会接收扫表指令对连接的电表进行扫描.鉴于我们接单个设备选择了quick模式,大大缩减了扫表时间.观察DTU的灯,TXD代表发送、RXD代表接收;那么根据实际情况理解为TXD闪烁,DTU向连接的设备发送命令,同理RXD闪烁代表电表设备向DTU发送了返回值.
 
 ![设备上线.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/real-meter/%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BA%BF.png)
 

@@ -32,6 +32,8 @@
 
 ![产品-电表-物模型.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/real-meter/%E4%BA%A7%E5%93%81-%E7%94%B5%E8%A1%A8-%E7%89%A9%E6%A8%A1%E5%9E%8B.png)
 
+**物模型创建时**
+
 ![产品-电表-物接入.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/real-meter/%E4%BA%A7%E5%93%81-%E7%94%B5%E8%A1%A8-%E7%89%A9%E6%8E%A5%E5%85%A5.png)
 
 ![产品-电表-物存储.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/real-meter/%E4%BA%A7%E5%93%81-%E7%94%B5%E8%A1%A8-%E7%89%A9%E5%AD%98%E5%82%A8.png)

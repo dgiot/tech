@@ -21,12 +21,11 @@ opc的准备配置见（使用KepServerEx进行数据模拟）
 输入命令：
 
 ```
-dgiot_opc opcda bridge pump.iotn2n.com
+dgiot_opc opcda bridge prod.iotn2n.com
 ```
+![bridge12.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/opc/bridge12.png)
 
-![bridge3.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/opc/bridge3.png)
-
-登录[http://pump.iotn2n.com:18083](http://pump.iotn2n.com:18083)查看客户端连接情况
+登录[http://prod.iotn2n.com:18083](http://prod.iotn2n.com:18083)查看客户端连接情况(admin:public)
 
 ![bridge4.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/opc/bridge4.png)
 

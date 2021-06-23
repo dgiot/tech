@@ -41,6 +41,17 @@ module.exports = [
         "category": "工业数据云平台"
       },
       {
+        "title": '三合一传感器接入教程',
+        "collapsable": true,
+        "children": [
+          ['threeinone/', '教程概述'],
+          ['threeinone/pro-con', '硬件连接'],
+          ['threeinone/DTUmodify', 'DTU调试'],
+          ['threeinone/dashboard-config', '平台配置'],
+        ],
+        "category": "工业数据云平台"
+      },
+      {
         "title": 'Mqtt设备接入',
         "collapsable": true,
         "children": [

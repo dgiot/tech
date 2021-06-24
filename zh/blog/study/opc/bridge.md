@@ -14,14 +14,28 @@ opc的准备配置见（使用KepServerEx进行数据模拟）
 
 - 使用数蛙OPC桥接服务
 
-在命令行中执行dgiot_opc.exe
+在命令行中执行dgiot_opc.exe，可见出示了提示信息
 
-![bridge2.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/opc/bridge2.png)
+![bridge-2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/opc/bridge-2.png)
+
+|字段|解释|
+|---|---|
+|dgiot_opc|客户端中用户名名字，不能更改|
+|opcda|OPC-DA模式|
+|bridge|桥接服务|
+|server|目标IP地址|
+|Topic|订阅主题的名称，必须和平台通道中的订阅Topic保持一致才开正常使用|
+
+![桥接1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/opc/%E6%A1%A5%E6%8E%A51.png)
+![桥接2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/opc/%E6%A1%A5%E6%8E%A52.png)
+![桥接3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/opc/%E6%A1%A5%E6%8E%A53.png)
+
+------------------
 
 输入命令：
 
 ```
-dgiot_opc opcda bridge prod.iotn2n.com
+dgiot_opc opcda bridge prod.iotn2n.com dgiot_opc_da
 ```
 ![bridge12.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/opc/bridge12.png)
 

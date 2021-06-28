@@ -30,9 +30,17 @@
 
 ![湿度物模型.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/threeinone/%E6%B9%BF%E5%BA%A6%E7%89%A9%E6%A8%A1%E5%9E%8B.png)
 
+湿度物模型
+
 ![温度物模型.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/threeinone/%E6%B8%A9%E5%BA%A6%E7%89%A9%E6%A8%A1%E5%9E%8B.png)
 
+温度物模型
+
 ![一氧化碳物模型.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/threeinone/%E4%B8%80%E6%B0%A7%E5%8C%96%E7%A2%B3%E7%89%A9%E6%A8%A1%E5%9E%8B.png)
+
+一氧化碳物模型
+
+---------------
 
 在配置完物模型后,将我们的各个通道添加进该产品.最终图例如下:
 

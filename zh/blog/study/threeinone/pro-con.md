@@ -4,7 +4,7 @@
  ## 硬件准备
 本次操作用到的电表:一氧化碳温湿度传感器,DTU:USR-W610.两者之间的通讯需要利用RS485线来完成.所需硬件如下图:
 
-<img src="http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/threeinone/%E5%AE%9E%E7%89%A9%E7%B1%BB%E5%9E%8B.jpg" style="transform:rotate(90deg);">
+<img src="http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/threeinone/%E5%AE%9E%E7%89%A9%E7%B1%BB%E5%9E%8B.jpg" style="transform:rotate(270deg);">
 
 DTU:该DTU支持wifi和网线联网.那么这次我们是利用wifi对其进行入网操作.该型号支持RS485和RS232口数据传输,鉴于传感器支持485口协议那此次采用RS485做串联口。
 

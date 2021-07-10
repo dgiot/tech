@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="104cb644-9558-427c-baab-be63aa33ceed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/zh/blog/study/video/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shuwa_tech.iws" beforeDir="false" afterPath="$PROJECT_DIR$/shuwa_tech.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/backend/dgiot/rule-engine/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh/backend/dgiot/rule-engine/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/blog/study/meta.header.js" beforeDir="false" afterPath="$PROJECT_DIR$/zh/blog/study/meta.header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +57,7 @@
       <workItem from="1622837880519" duration="781000" />
       <workItem from="1623209963051" duration="1369000" />
       <workItem from="1625847754416" duration="912000" />
-      <workItem from="1625897526998" duration="358000" />
+      <workItem from="1625897526998" duration="1138000" />
     </task>
     <servers />
   </component>

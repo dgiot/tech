@@ -4,6 +4,14 @@ module.exports = [
     "collapsable": true,
     "children": [
       {
+        "title": 'DGIOT视频教程',
+        "collapsable": true,
+        "children": [
+          ['video/', '视频教程'],
+        ],
+        "category": "工业数据云平台"
+      },
+      {
         "title": 'PT100传感器接入教程',
         "collapsable": true,
         "children": [

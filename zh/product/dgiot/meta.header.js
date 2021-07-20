@@ -57,6 +57,14 @@ module.exports = [
         ],
         "category": "一站式物联网平台"
     },
+        {
+            "title": '云运维',
+            "collapsable": true,
+            "children": [
+                ['Cloudoperation/', '云运维介绍'],
+            ],
+            "category": "一站式物联网平台"
+        },
     // {
     //     "title": '云组态',
     //     "collapsable": true,
@@ -74,6 +82,14 @@ module.exports = [
         ],
         "category": "一站式物联网平台"
     },
+        {
+            "title": '云检测',
+            "collapsable": true,
+            "children": [
+                ['Clouddetection/', '云检测介绍'],
+            ],
+            "category": "一站式物联网平台"
+        },
     {
         "title": '云系统',
         "collapsable": true,

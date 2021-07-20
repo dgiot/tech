@@ -112,6 +112,7 @@ module.exports = [
         "collapsable": true,
         "children": [
             ['tools/websocket/', 'mqtt客户端']
+            ['tools/vadio/', '视频播放']
         ],
         "category": "一站式物联网平台"
     }

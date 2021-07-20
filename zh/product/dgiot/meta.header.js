@@ -87,6 +87,9 @@ module.exports = [
             "collapsable": true,
             "children": [
                 ['Clouddetection/', '云检测介绍'],
+                ['Clouddetection/Qualityinspection', '质检项目'],
+                ['Clouddetection/Detectiontask', '检测任务'],
+                ['Clouddetection/Teststandard', '质检标准'],
             ],
             "category": "一站式物联网平台"
         },

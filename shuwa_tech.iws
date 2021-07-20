@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="104cb644-9558-427c-baab-be63aa33ceed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/zh/backend/dgiot/debug/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/backend/meta.header.js" beforeDir="false" afterPath="$PROJECT_DIR$/zh/backend/meta.header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shuwa_tech.iws" beforeDir="false" afterPath="$PROJECT_DIR$/shuwa_tech.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/blog/study/meta.header.js" beforeDir="false" afterPath="$PROJECT_DIR$/zh/blog/study/meta.header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,12 +33,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/zh/backend/dgiot" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/zh/blog/study/video" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\msys64\home\jonhl\shuwa_tech\zh\blog\study\video" />
+      <recent name="D:\msys64\home\jonhl\shuwa_tech\zh\backend\dgiot\rule-engine" />
       <recent name="D:\msys64\home\jonhl\shuwa_tech\zh\backend\dgiot" />
     </key>
   </component>
@@ -53,7 +55,9 @@
       <option name="presentableId" value="Default" />
       <updated>1622837876124</updated>
       <workItem from="1622837880519" duration="781000" />
-      <workItem from="1623209963051" duration="705000" />
+      <workItem from="1623209963051" duration="1369000" />
+      <workItem from="1625847754416" duration="912000" />
+      <workItem from="1625897526998" duration="1138000" />
     </task>
     <servers />
   </component>

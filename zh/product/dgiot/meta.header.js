@@ -61,7 +61,9 @@ module.exports = [
             "title": '云运维',
             "collapsable": true,
             "children": [
-                ['Cloudoperation/', '云运维介绍'],
+                ['cloudoperation/', '云运维介绍'],
+                ['cloudoperation/alarmmanagement', '告警管理'],
+                ['cloudoperation/workmanagement', '工单管理'],
             ],
             "category": "一站式物联网平台"
         },
@@ -86,10 +88,10 @@ module.exports = [
             "title": '云检测',
             "collapsable": true,
             "children": [
-                ['Clouddetection/', '云检测介绍'],
-                ['Clouddetection/Qualityinspection', '质检项目'],
-                ['Clouddetection/Detectiontask', '检测任务'],
-                ['Clouddetection/Teststandard', '质检标准'],
+                ['clouddetection/', '云检测介绍'],
+                ['clouddetection/Qualityinspection', '质检项目'],
+                ['clouddetection/Detectiontask', '检测任务'],
+                ['clouddetection/Teststandard', '质检标准'],
             ],
             "category": "一站式物联网平台"
         },

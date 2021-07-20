@@ -48,6 +48,7 @@ module.exports = [
           ['threeinone/pro-con', '硬件连接'],
           ['threeinone/DTUmodify', 'DTU调试'],
           ['threeinone/dashboard-config', '平台配置'],
+          ['threeinone/wumoxing', '物模型'],
         ],
         "category": "工业数据云平台"
       },

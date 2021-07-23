@@ -3,7 +3,6 @@ dist
 .vscode
 a.md
 about.md
-.ipr
-.iws
+.ipw
 .vuepress/dist
 /.temp-encrypt

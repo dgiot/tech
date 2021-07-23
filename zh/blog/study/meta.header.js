@@ -4,6 +4,14 @@ module.exports = [
     "collapsable": true,
     "children": [
       {
+        "title": 'DG-IoT物联网项目经理培训',
+        "collapsable": true,
+        "children": [
+          ['train/', 'DG-IoT物联网项目经理培训'],
+        ],
+        "category": "DG-IoT培训"
+      },
+      {
         "title": 'DGIOT视频教程',
         "collapsable": true,
         "children": [

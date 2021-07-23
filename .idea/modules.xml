@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../github/dgiot/f-render/.idea/f-render.iml" filepath="$PROJECT_DIR$/../github/dgiot/f-render/.idea/f-render.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/shuwa_tech.iml" filepath="$PROJECT_DIR$/.idea/shuwa_tech.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../github/dgiot/vue-ele-form/.idea/vue-ele-form.iml" filepath="$PROJECT_DIR$/../github/dgiot/vue-ele-form/.idea/vue-ele-form.iml" />
     </modules>
   </component>
 </project>

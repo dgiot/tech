@@ -13,7 +13,7 @@ category:
 ref:
 ---
 
-数蛙云组态是数蛙科技有限公司自主设计、研发的开源web绘图工具，拥有为电力能源、水利、物联网、工业互联网、智慧城市、智慧医疗、智慧农业、IT运维等提供解决方案的可视化平台。Topology具有跨平台、高效、可扩展、实时监控、动态交互、支持自动算法等特点，最大程度减少研发和运维的成本，并致力于普通业务人员0代码开发实现web组态、SCADA等场景。
+DG-IoT云组态是DG-IoT自主设计、研发的开源web绘图工具，拥有为电力能源、水利、物联网、工业互联网、智慧城市、智慧医疗、智慧农业、IT运维等提供解决方案的可视化平台。Topology具有跨平台、高效、可扩展、实时监控、动态交互、支持自动算法等特点，最大程度减少研发和运维的成本，并致力于普通业务人员0代码开发实现web组态、SCADA等场景。
 
 ## 设计概要 
 
@@ -27,7 +27,7 @@ ref:
    | Data Model  |  App | Time  |  Device | Thing|
    | Device Model  |  App | Time  |  Device | Thing|
    
-   数蛙云组态将通过如下示例关系建立起数据孪生的可视化消息路由，让物能跃然屏上，活起来，动起来。
+   DG-IoT云组态将通过如下示例关系建立起数据孪生的可视化消息路由，让物能跃然屏上，活起来，动起来。
    
    Stage对用户域的应用(Project),Layer对应时间域,Group对应空间域的Device,Shape对那个数据域的物模型内的指标集
    Layer有Now和Next两个状态,在消息的渠道下不断刷新Vie内的设备数据
@@ -62,7 +62,7 @@ ref:
 
    ![dgiot_func.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/dgiot_func.png)
 
-   [数蛙云组态](https://github.com/dgiot/dgiot_topo)的主要是三个目标:
+   [DG-IoT云组态](https://github.com/dgiot/dgiot_topo)的主要是三个目标:
    
    1. 通过UI交互，辅助行业领域的专家建立起设备域中设备指标集与数据域中物模型指标集之间的消息路由关系,生成设备组态库
    2. 通过前一步建立的消息路由关系，自动将单个设备指标信息实时同步到组态大屏中，实现数字孪生的可视化呈现

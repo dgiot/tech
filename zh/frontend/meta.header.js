@@ -36,7 +36,7 @@ module.exports = [
           ["web/development", "总览"],
           ["web/Interface", "接口"],
           ["web/api/swagger", "swagger"],
-          ["web/dynamic_form/", "动态表单"],
+          ["web/api/dynamic_form", "动态表单"],
           ["web/page", "页面"],
           ["web/term", "术语"],
           ["web/faq", "答疑"],

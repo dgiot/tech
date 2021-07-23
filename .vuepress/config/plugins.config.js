@@ -1,16 +1,11 @@
 const plugins = [
-  [
-    'vuepress-plugin-comment',
-    {
-      choosen: 'valine',
-      // options选项中的所有参数，会传给Valine的配置
-      options: {
-        el: '#valine-vuepress-comment',
-        appId: '5jxwjQ8Jwc9TQWHhjkDqj8YH-gzGzoHsz',
-        appKey: 'SPMRtyvp7XIyQsnibvXoesBw'
-      }
-    }
-  ],
+  // [
+  //   'comment',
+  //   {
+  //     type: 'waline',
+  //     serverURL: "https://dgiotwaline.vercel.app/",
+  //   }
+  // ],
   ["add-this", {
     pubid: "ra-60642249a725a5ee"
   }],
@@ -26,17 +21,17 @@ const plugins = [
     "@mr-hope/copy-code",
     {},
   ],
-  ['@oak-tree-house/encrypt', {
-    contentTitle: 'Encrypted Content',
-    unencryptedText: 'The content is shown below. It should be encrypted when published.',
-    encryptedText: 'This part of content is encrypted. To view it, you need to enter the correct key in the input field below.',
-    decryptedText: 'The encrypted content is successfully decrypted and shown below.',
-    decryptButtonText: 'Decrypt',
-    decryptFailText: 'Failed to decrypt!',
-    unencryptedIcon: undefined,
-    encryptedIcon: undefined,
-    decryptedIcon: undefined
-  }],
+  // ['@oak-tree-house/encrypt', {
+  //   contentTitle: 'Encrypted Content',
+  //   unencryptedText: 'The content is shown below. It should be encrypted when published.',
+  //   encryptedText: 'This part of content is encrypted. To view it, you need to enter the correct key in the input field below.',
+  //   decryptedText: 'The encrypted content is successfully decrypted and shown below.',
+  //   decryptButtonText: 'Decrypt',
+  //   decryptFailText: 'Failed to decrypt!',
+  //   unencryptedIcon: undefined,
+  //   encryptedIcon: undefined,
+  //   decryptedIcon: undefined
+  // }],
   ['feed', {}],
   ['flowchart', {}],
   ['vuepress-plugin-mermaidjs', {}],
@@ -75,7 +70,7 @@ const plugins = [
         //   $page.frontmatter.sidebar = 'auto'
         // }
         if (/^\/op\/.+?$/.test($page.path)) {
-          $page.frontmatter.metaTitle = `${$page.title} | 一站式物联网PaaS平台|物联网应用服务|杭州数蛙`
+          $page.frontmatter.metaTitle = `${$page.title} | 一站式物联网PaaS平台|物联网应用服务|杭州DG-IoT`
         }
       }
     }

@@ -1,6 +1,6 @@
 module.exports = [
     {
-        "title": '数蛙云压测',
+        "title": 'DG-IoT云压测',
         "collapsable": true,
         "children": [
             ['user_requery', '云压测'],

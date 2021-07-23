@@ -16,7 +16,7 @@ ref: dgiot_dashboard 接入说明文档
 
 # dgiot_dashboard 项目说明
 
-dgiot_dashboard 是由[数蛙开源团队](https://github.com/dgiot/)开源的权限管理系统
+dgiot_dashboard 是由[DG-IoT开源团队](https://github.com/dgiot/)开源的权限管理系统
 
 # 项目预览
 

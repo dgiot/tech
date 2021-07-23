@@ -1,8 +1,8 @@
 <template>
 <!--  <div class="qr">-->
-<!--    <img src="../qr.jpg" alt="数蛙科技" width="120" height="120" loading="lazy">-->
+<!--    <img src="../qr.jpg" alt="DG-IoT" width="120" height="120" loading="lazy">-->
 <!--    <p class="we-intro">-->
-<!--      欢迎关注数蛙科技<span class="we-highlight"></span>。-->
+<!--      欢迎关注DG-IoT<span class="we-highlight"></span>。-->
 <!--    </p>-->
 <!--  </div>-->
 </template>

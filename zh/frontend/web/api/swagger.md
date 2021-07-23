@@ -9578,7 +9578,7 @@ Returns operation status
 **Method：** GET
 
 **接口描述：**
-数蛙 API 网关
+DG-IoT API 网关
 
 ### 请求参数
 

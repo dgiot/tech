@@ -3,8 +3,8 @@ const locales = {
   // 作为特例，默认语言可以使用 '/' 作为其路径。
   '/': {
     lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
-    title: '数蛙技术团队',
-    description: '数蛙科技是一家致力于提供物联网垂直领域应用使能平台及解决方案的创新型公司。'
+    title: 'DG-IoT技术团队',
+    description: 'DG-IoT是一家致力于提供物联网垂直领域应用使能平台及解决方案的创新型公司。'
   },
   '/en/': {
     lang: 'en-US',

@@ -28,7 +28,7 @@ ref: dgiot_dashboard 接入说明文档
 
 ```javascript
 /**
- * 数蛙全局通用接口方法 查询
+ * DG-IoT全局通用接口方法 查询
  * @param {*} tabclass  表名 必传 不可为空
  * @param {*} params    对应参数 必传  可为{}
  */
@@ -59,7 +59,7 @@ export async function query_object(tabclass, params) {
 
 ```javascript
 /**
- * 数蛙全局通用接口方法 查询单条数据
+ * DG-IoT全局通用接口方法 查询单条数据
  * @param {*} tabclass  表名 必传 不可为空
  * @param {*} ObjectId   对应查询id 必传
  */
@@ -89,7 +89,7 @@ export async function get_object(tabclass, ObjectId) {
 
 ```javascript
 /**
- * 数蛙全局通用接口方法 删除单条数据
+ * DG-IoT全局通用接口方法 删除单条数据
  * @param {*} tabclass  表名 必传 不可为空
  * @param {*} ObjectId   对应查询id 必传
  */
@@ -120,7 +120,7 @@ export async function del_object(tabclass, ObjectId) {
 
 ```javascript
 /**
- * 数蛙全局通用接口方法 更新单条数据
+ * DG-IoT全局通用接口方法 更新单条数据
  * @param {*} tabclass  表名 必传 不可为空
  * @param {*} ObjectId   对应查询id 必传
  * @param {*} data 更新的参数 必传
@@ -148,7 +148,7 @@ export async function update_object(tabclass, ObjectId, data) {
 
 ```javascript
 /**
- * 数蛙全局通用接口方法 创建对象
+ * DG-IoT全局通用接口方法 创建对象
  * @param {*} tabclass  表名 必传 不可为空
  * @param {*} data   创建对象相关参数
  */

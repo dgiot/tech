@@ -5,5 +5,7 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="f-render" />
+    <orderEntry type="module" module-name="vue-ele-form" />
   </component>
 </module>

@@ -202,7 +202,7 @@ var dashboard = new ParseDashboard({
 
 你可以通过添加用户名和密码到配置项中，来为仪表盘添加基本的身份验证：
 
-```js
+```json
 {
   "apps": [{"...": "..."}],
   "users": [
@@ -225,7 +225,7 @@ var dashboard = new ParseDashboard({
 
 如果你为仪表盘配置了多应用管理，你可以基于用户来限制应用的管理。像这样：
 
-```js
+```json
 {
   "apps": [{"...": "..."}],
   "users": [
@@ -280,7 +280,7 @@ var dashboard = new ParseDashboard({
 
 使用`readOnly`将用户标记为只读用户：
 
-```js
+```json
 {
   "apps": [
     {
@@ -322,7 +322,7 @@ user1将只有读操作的权限。
 
 在每个用户的apps配置项中，你可以基于每个应用的给定只读权限：
 
-```js
+```json
 {
   "apps": [
     {

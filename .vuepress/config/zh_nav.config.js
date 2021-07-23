@@ -1,11 +1,11 @@
 const zh_nav = [{
     text: '用户手册',
     items: [{
-        text: '数蛙工业数据云平台',
+        text: 'DG-IoT工业数据云平台',
         link: '/zh/manual/cloud/'
     },
         {
-            text: '数蛙工业边缘网关',
+            text: 'DG-IoT工业边缘网关',
             link: '/zh/manual/edge/'
         },
     ]

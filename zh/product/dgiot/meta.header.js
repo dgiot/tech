@@ -111,8 +111,9 @@ module.exports = [
         "title": '工具集',
         "collapsable": true,
         "children": [
-            ['tools/websocket/', 'mqtt客户端']
-            ['tools/vadio/', '视频播放']
+            ['tools/websocket/', 'mqtt客户端'],
+            ['tools/vadio/', '视频播放'],
+            //修复vadio无法显示等bug
         ],
         "category": "一站式物联网平台"
     }

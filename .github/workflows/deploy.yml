@@ -47,4 +47,4 @@ jobs:
           server: '${{ secrets.SERVER_IP }}'
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           local_path: .vuepress/dist # 对应我们项目build的文件夹路径
-          remote_path: '/var/www/dgiot_tech/'
+          remote_path: '/data/dgiot/lib/dgiot_tech/priv/www'

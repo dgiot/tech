@@ -15,7 +15,7 @@ ref:
 
 通过集成工作台，可以通过创建项目的方式实现数字工厂解决方案的集成实施与交付。
 
-访问[官方网站](https://iot.aliyun.com/partners/siportal?spm=a2c56.12465443.iot-bavBar.112.475523c4Rn15Wi)，如果已经是数蛙云IoT系统集成合作伙伴，可直接单击**集成工作台**进入，如果还没有加入合作伙伴计划，先查看[如何成为系统集成商合作伙伴](https://iot.aliyun.com/partners/siportal?spm=a2c56.12465443.iot-bavBar.112.475523c4Rn15Wi)后，单击**申请入驻**，按照申请流程加入合作伙伴计划，然后再单击进入**集成工作台**。
+访问[官方网站](https://iot.aliyun.com/partners/siportal?spm=a2c56.12465443.iot-bavBar.112.475523c4Rn15Wi)，如果已经是DG-IoT云IoT系统集成合作伙伴，可直接单击**集成工作台**进入，如果还没有加入合作伙伴计划，先查看[如何成为系统集成商合作伙伴](https://iot.aliyun.com/partners/siportal?spm=a2c56.12465443.iot-bavBar.112.475523c4Rn15Wi)后，单击**申请入驻**，按照申请流程加入合作伙伴计划，然后再单击进入**集成工作台**。
 
 ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/3654025851/p51817.png)
 

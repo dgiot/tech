@@ -13,21 +13,21 @@ category:
 ref:
 ---
 
-若您不使用数蛙提供的设备端SDK，而是使用其他方式，自己进行开发使您的设备使用MQTT协议与物联网平台连接，您可以参见本文提供的签名代码示例进行MQTT连接签名。
+若您不使用DG-IoT提供的设备端SDK，而是使用其他方式，自己进行开发使您的设备使用MQTT协议与物联网平台连接，您可以参见本文提供的签名代码示例进行MQTT连接签名。
 
 ## 说明
 
-推荐您使用数蛙提供的设备端SDK。使用数蛙提供的任何一种语言的设备端SDK，则不用您自己配置签名机制。请访问[下载设备端SDK](https://help.aliyun.com/document_detail/42648.htm#concept-jlk-mjl-vdb "物联网平台提供各类设备端SDK，简化开发过程，使设备快速上云。")查看数蛙提供的SDK下载路径。
+推荐您使用DG-IoT提供的设备端SDK。使用DG-IoT提供的任何一种语言的设备端SDK，则不用您自己配置签名机制。请访问[下载设备端SDK](https://help.aliyun.com/document_detail/42648.htm#concept-jlk-mjl-vdb "物联网平台提供各类设备端SDK，简化开发过程，使设备快速上云。")查看DG-IoT提供的SDK下载路径。
 
 如果您不使用阿里云提供的设备端SDK，而是使用其他方式将您的设备接入物联网平台，需了解：
 
 +   需要您自己保证连接的稳定性、MQTT连接保活和MQTT连接断开重连。
-+   不使用设备端SDK连接数蛙物联网平台导致的连接问题，阿里云不负责相关的技术支持。
++   不使用设备端SDK连接DG-IoT物联网平台导致的连接问题，阿里云不负责相关的技术支持。
 +   如果您要使用物联网平台提供的OTA、物模型、一型一密等多种功能，需您自己去编写这些功能的实现。这将会耗费较多的开发时间、以及bug修复时间。
 
 ## 签名计算代码示例
 
-若您不使用数蛙物联网平台设备端SDK，可单击以下链接，访问相关代码示例页面。
+若您不使用DG-IoT物联网平台设备端SDK，可单击以下链接，访问相关代码示例页面。
 
 +   [sign\_mqtt.c](https://code.aliyun.com/edward.yangx/public-docs/raw/master/docs/sign_mqtt.c)：实现签名函数的代码示例。
 +   [sign\_api.h](https://code.aliyun.com/edward.yangx/public-docs/raw/master/docs/sign_api.h)：定义签名函数用到的数据结构的代码示例。

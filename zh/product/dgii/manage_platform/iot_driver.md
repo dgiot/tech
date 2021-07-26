@@ -19,7 +19,7 @@ ref:
 
 在已购驱动列表中将列出企业所有购买的物联网设备驱动，如果需要购买设备驱动单击**选购驱动**：![购买驱动](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/7011947951/p141459.png)
 
-登录数蛙云账号以后，进入数蛙云边缘驱动市场，选择并购买对应的驱动：![驱动市场](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/7011947951/p141462.png)
+登录DG-IoT云账号以后，进入DG-IoT云边缘驱动市场，选择并购买对应的驱动：![驱动市场](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/7011947951/p141462.png)
 
 ## 查看驱动
 

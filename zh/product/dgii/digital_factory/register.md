@@ -12,11 +12,11 @@ category:
 # 引用
 ref:
 ---
-如果您是第一次访问工业互联网企业级平台（数字工厂），登录数蛙云账号以后，访问[入驻申请地址](https://ioc.iot.aliyun.com/signing)进入申请入驻流程。
+如果您是第一次访问工业互联网企业级平台（数字工厂），登录DG-IoT云账号以后，访问[入驻申请地址](https://ioc.iot.aliyun.com/signing)进入申请入驻流程。
 
 ## 实名认证
 
-如果数蛙云账号未完成实名认证，首先要完成企业或者个人的实名认证。
+如果DG-IoT云账号未完成实名认证，首先要完成企业或者个人的实名认证。
 
 ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/5970779851/p53087.png)
 
@@ -24,7 +24,7 @@ ref:
 
 ## 阅读并确认条款
 
-请仔细阅读数蛙云法律声明和隐私权政策以及数字工厂服务协议，然后勾选对应的协议并单击“同意条款并继续”。
+请仔细阅读DG-IoT云法律声明和隐私权政策以及数字工厂服务协议，然后勾选对应的协议并单击“同意条款并继续”。
 
 ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/5970779851/p53088.png)
 

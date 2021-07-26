@@ -31,5 +31,9 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="278" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1627030117422" />
+    <state x="0" y="66" width="1280" height="548" key="find.popup" timestamp="1627263278620">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="0" y="66" width="1280" height="548" key="find.popup/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1627263278620" />
   </component>
 </project>

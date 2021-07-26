@@ -5,7 +5,7 @@ loc: 中国杭州
 spend: 9
 --- 
 
-# 数蛙工业数据边缘网关
+# DG-IoT工业数据边缘网关
 
 
 ![dgiot_cloud_arch.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/backend/dgiot/tech_6.png)

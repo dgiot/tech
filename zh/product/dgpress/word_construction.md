@@ -162,7 +162,7 @@ category: 云压测
 
 | 模块| 名词 | 描述  |
 | ------------ | ------------ |------------ |
-|DGTEST|Task|数蛙科技开发的面向工业物联网的高并发模拟压测程序，有完整的业务流程。|
+|DGTEST|Task|DG-IoT开发的面向工业物联网的高并发模拟压测程序，有完整的业务流程。|
 |DGTEST|Report|用户最终得到的word压测报告文件，包含压测的业务场景、压测过程数据与图表。|
 |DGTEST|Report Label|统计指标或者图标与word报告中标签关系，job_metrics 例如，job为zeta_server，metrics为CPU_max，则实际标签为zeta_server_CPU_max,通过统计标签与word文件动态映射数据|
 |DGTEST|Report templates|用户根据业务需求定制的word模板后,把需要动态替换的图片或者文件替换成DGTEST_LAB后形成的模板文件。|

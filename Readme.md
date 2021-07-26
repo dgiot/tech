@@ -15,7 +15,7 @@ ref:
 
 # DG-IoT开源平台
 ## # 国内首家轻量级工业物联网开源平台
-利用数蛙多年积累的工业互联网的实战经验，提炼出面向初级程序员的降维开源物联网开发者平台。
+利用DG-IoT多年积累的工业互联网的实战经验，提炼出面向初级程序员的降维开源物联网开发者平台。
 以快速消化日益增长的工业互联网项目需求，缩短项目实施周期，降低人力成本，逐步实现技术标准化、产品标准化、运维标准化的多维共赢的生态体系。
   目前DG-IoT开源平台，为国内首家提供轻量级工业物联网的开源平台，与国内众多的公有云物联网平台（阿里、华为、运营商平台），主打一键式快速部署、低成本开发的特点，并能够提供业界独有的物联网全业务模拟云测等特色服务，形成了差异化的竞争优势。
 
@@ -59,16 +59,16 @@ ref:
 
 | 项目名       | 说明       |地址                                                                                      |
 | -------------- |  -------------- | ----------------------------------------------------------------------------------------- |
-| dgiot_dashboard   | 数蛙工业物联网 后台管理系统       | [https://github.com/dgiot/dgiot_dashboard](https://github.com/dgiot/dgiot_dashboard?from=git)                             |
-| dgiot_deploy          |  数蛙工业物联网 Saas部署脚本       | [https://github.com/dgiot/dgiot_deploy](https://github.com/dgiot/dgiot_deploy?from=git)                              |
-| dgiot_amazedtu           | 数蛙工业物联网 dtu采集通道       | [https://github.com/dgiot/dgiot_amazedtu](https://github.com/dgiot/dgiot_amazedtu?from=git)                                 |
-| dgiot_server           |      数蛙工业物联网 SaaS平台   | [https://github.com/dgiot/dgiot_server](https://github.com/dgiot/dgiot_server?from=git)                               |
-| dgiot_meter           |      数蛙工业物联网 电力抄表通道   | [https://github.com/dgiot/dgiot_meter](https://github.com/dgiot/dgiot_meter?from=git)
-| dgiot_dtu           |      数蛙工业物联网 模拟dtu   | [https://github.com/dgiot/dgiot_dtu](https://github.com/dgiot/dgiot_dtu?from=git)
-| dgiot_android           |    数蛙工业物联网 android应用| [https://github.com/dgiot/dgiot_android](https://github.com/dgiot/dgiot_android?from=git)
-| dgiot_bp           |     数蛙工业物联网 面向工业物联网的神经网络算法 | [https://github.com/dgiot/dgiot_bp](https://github.com/dgiot/dgiot_bp?from=git)
-| dgiot_td_server           |    数蛙工业物联网  千万级设备时序数据实时存储桥接服务 | [https://github.com/dgiot/dgiot_td_server](https://github.com/dgiot/dgiot_td_server?from=git)
-| dgiot_acrel           |    数蛙工业物联网  安科瑞电流互感器接入实战   | [https://github.com/dgiot/dgiot_acrel](https://github.com/dgiot/dgiot_acrel?from=git)
+| dgiot_dashboard   | DG-IoT工业物联网 后台管理系统       | [https://github.com/dgiot/dgiot_dashboard](https://github.com/dgiot/dgiot_dashboard?from=git)                             |
+| dgiot_deploy          |  DG-IoT工业物联网 Saas部署脚本       | [https://github.com/dgiot/dgiot_deploy](https://github.com/dgiot/dgiot_deploy?from=git)                              |
+| dgiot_amazedtu           | DG-IoT工业物联网 dtu采集通道       | [https://github.com/dgiot/dgiot_amazedtu](https://github.com/dgiot/dgiot_amazedtu?from=git)                                 |
+| dgiot_server           |      DG-IoT工业物联网 SaaS平台   | [https://github.com/dgiot/dgiot_server](https://github.com/dgiot/dgiot_server?from=git)                               |
+| dgiot_meter           |      DG-IoT工业物联网 电力抄表通道   | [https://github.com/dgiot/dgiot_meter](https://github.com/dgiot/dgiot_meter?from=git)
+| dgiot_dtu           |      DG-IoT工业物联网 模拟dtu   | [https://github.com/dgiot/dgiot_dtu](https://github.com/dgiot/dgiot_dtu?from=git)
+| dgiot_android           |    DG-IoT工业物联网 android应用| [https://github.com/dgiot/dgiot_android](https://github.com/dgiot/dgiot_android?from=git)
+| dgiot_bp           |     DG-IoT工业物联网 面向工业物联网的神经网络算法 | [https://github.com/dgiot/dgiot_bp](https://github.com/dgiot/dgiot_bp?from=git)
+| dgiot_td_server           |    DG-IoT工业物联网  千万级设备时序数据实时存储桥接服务 | [https://github.com/dgiot/dgiot_td_server](https://github.com/dgiot/dgiot_td_server?from=git)
+| dgiot_acrel           |    DG-IoT工业物联网  安科瑞电流互感器接入实战   | [https://github.com/dgiot/dgiot_acrel](https://github.com/dgiot/dgiot_acrel?from=git)
 
 
 ### 轻量级物联网开源平台产品手册

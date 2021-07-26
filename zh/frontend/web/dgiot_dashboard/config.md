@@ -93,7 +93,7 @@ module.exports = {
   // 简写
   abbreviation: 'dgiot_dashboard-pro',
   // pro版本copyright可随意修改
-  copyright: '杭州数蛙科技有限公司',
+  copyright: '杭州DG-IoT',
   // 缓存路由的最大数量
   keepAliveMaxNum: 20,
   // 路由模式，可选值为 history 或 hash
@@ -139,9 +139,9 @@ module.exports = {
   openFirstMenu: true,
   // 代码生成机生成在view下的文件夹名称
   templateFolder: 'project',
-  webpackBarName: '杭州数蛙科技有限公司',
+  webpackBarName: '杭州DG-IoT',
   dateTime: new Date(),
-  webpackBanner: ' build: 杭州数蛙科技有限公司 \n copyright: dgiot_dashboard \n time: ',
+  webpackBanner: ' build: 杭州DG-IoT \n copyright: dgiot_dashboard \n time: ',
 }
 ```
 

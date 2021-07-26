@@ -1,6 +1,6 @@
 
 
- [数蛙OPC桥接服务](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/opc/dgiot_opc.zip) 实现opc转mqtt功能，支持opc指标扫描和读写
+ [DG-IoTOPC桥接服务](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/opc/dgiot_opc.zip) 实现opc转mqtt功能，支持opc指标扫描和读写
 
 ## 使用指南
 
@@ -10,9 +10,9 @@ opc的准备配置见（使用KepServerEx进行数据模拟）
 
 ![bridge1.png](https://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/opc/bridge1.png)
 
-下面将以上例讲解数蛙OPC桥接流程：
+下面将以上例讲解DG-IoTOPC桥接流程：
 
-- 使用数蛙OPC桥接服务
+- 使用DG-IoTOPC桥接服务
 
 在命令行中执行dgiot_opc.exe，可见出示了提示信息
 

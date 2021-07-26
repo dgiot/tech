@@ -2,9 +2,9 @@
 
 ## 前言
 
-数蛙OPC通道提供自动化扫描OPC客户端，自动采集储存点位信息，自动生成时序数据上云，并支持在数蛙平台上的实时组态展示。
-使用数蛙提供的OPC通道，无需任何复杂操作，只需几步操作即可实现全天候、无限制的OPC数据采集、监控。
-使用步骤大体为3步：1.平台，KEPServer端配置完成 2.通过dgiot_opc.exe(数蛙OPC桥接工具)将数据发送给平台 3.在平台上启动通道（可能需要多试几次）。即可在平台上看到OPC数据。
+DG-IoTOPC通道提供自动化扫描OPC客户端，自动采集储存点位信息，自动生成时序数据上云，并支持在DG-IoT平台上的实时组态展示。
+使用DG-IoT提供的OPC通道，无需任何复杂操作，只需几步操作即可实现全天候、无限制的OPC数据采集、监控。
+使用步骤大体为3步：1.平台，KEPServer端配置完成 2.通过dgiot_opc.exe(DG-IoTOPC桥接工具)将数据发送给平台 3.在平台上启动通道（可能需要多试几次）。即可在平台上看到OPC数据。
 
 
 接入流程图：
@@ -12,21 +12,21 @@
 
 ## 使用注意事项
 
-1.数蛙平台上使用opc通道的产品的**产品名称**必须和KEPServer端对应中**通道名称**一致。
+1.DG-IoT平台上使用opc通道的产品的**产品名称**必须和KEPServer端对应中**通道名称**一致。
 
 ![注意事项1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/opc/%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B91.png)
 
-2.数蛙平台上产品下的从属设备的**设备编号**（不是设备名称）必须和KEPServer端中通道下的**设备名称**一致。
+2.DG-IoT平台上产品下的从属设备的**设备编号**（不是设备名称）必须和KEPServer端中通道下的**设备名称**一致。
 
 ![注意事项2.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/opc/%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B92.png)
 
-3.数蛙上每个使用opc通道的产品，在物接入界面添加通道时，记住一个产品配一个通道，不要共用通道。例如：有创建2个产品分别记为产品1，产品2，那么需要建立2个opc通道，记为通道1，通道2，
+3.DG-IoT上每个使用opc通道的产品，在物接入界面添加通道时，记住一个产品配一个通道，不要共用通道。例如：有创建2个产品分别记为产品1，产品2，那么需要建立2个opc通道，记为通道1，通道2，
 产品1->通道1，产品2->通道2。
 
 4.KEPServer端中创建标识时，请务必填写说明，该说明项会用于生成物模型名称。
 ![注意事项3.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/opc/%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B93.png)
 
-**5**. 在数蛙平台创建产品、设备以及配置KepServer的操作过程中，凡是取名时，请尽量使用**小写英语字母**，**绝对不要在命名中使用下划线"_"**。
+**5**. 在DG-IoT平台创建产品、设备以及配置KepServer的操作过程中，凡是取名时，请尽量使用**小写英语字母**，**绝对不要在命名中使用下划线"_"**。
 如：创建产品时产品名称可以是opc01，但不要使用opc_01,其他命名同理。（平台上的产品分组、设备名称，KEPServer端中说明项无需遵守本条，其相当于昵称，可随意）
 
 6. 产品是设备的抽象合集，具体在这里就是产品下的设备的属性必须是一致的，**不要在KEPServer端的同一通道下创建具有不同属性的设备**。
@@ -53,7 +53,7 @@ OPC桥接操作及工具见[OPC数据桥接](bridge.md).
 最后启动OPC quick client
 ![启动OPC客户端.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/opc/%E5%90%AF%E5%8A%A8OPC%E5%AE%A2%E6%88%B7%E7%AB%AF.png)
 
-3.数蛙平台准备
+3.DG-IoT平台准备
 
 先在通道管理-> 创建通道 -> 选择OPC采集通道 -> 点击确定，创建OPC通道
 ![创建opc通道.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/opc/%E5%88%9B%E5%BB%BAopc%E9%80%9A%E9%81%93.png)

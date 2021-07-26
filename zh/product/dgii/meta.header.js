@@ -3,7 +3,7 @@ module.exports = [
         "title": '从这里开始',
         "collapsable": true,
         "children": [
-            ['getting-started/', '什么是数蛙工业互联网平台'],
+            ['getting-started/', '什么是DG-IoT工业互联网平台'],
             ['getting-started/industrial_application', '我是工业应用开发商'],
             ['getting-started/system_integrator', '我是系统集成商'],
             ['getting-started/manufacturing_customers', '我是制造企业用户']
@@ -58,7 +58,7 @@ module.exports = [
             ['manage_platform/project_manager', '项目管理'],
             ['manage_platform/application_management', '应用管理'],
             ['manage_platform/risk_management', '安全风险'],
-            ['manage_platform/dgiot_ecology', '数蛙生态'],
+            ['manage_platform/dgiot_ecology', 'DG-IoT生态'],
             ['manage_platform/application_deployment', '应用部署'],
             ['manage_platform/integrated_service', '服务集成'],
             ['manage_platform/edge_community', '边缘集群管理'],

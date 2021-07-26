@@ -13,7 +13,7 @@ category:
 ref:
 ---
 
-通过镜像管理把自己的docker镜像上传到数蛙云的集群中去，如图所示：
+通过镜像管理把自己的docker镜像上传到DG-IoT云的集群中去，如图所示：
 
 ![镜像管理](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/6125509951/p135840.png)
 

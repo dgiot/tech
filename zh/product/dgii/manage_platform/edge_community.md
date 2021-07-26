@@ -29,7 +29,7 @@ ref:
 
 以开通日志服务为例，点击日志服务（SLS）：![日志](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/6690947951/p141366.png)
 
-登录数蛙云以后，选择日志服务服务协议然后单击立即开通：![日志服务开通](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/6690947951/p141332.png)
+登录DG-IoT云以后，选择日志服务服务协议然后单击立即开通：![日志服务开通](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/6690947951/p141332.png)
 
 开通对应边缘集群的服务以后，可以创建第一个边缘集群，首先输入集群的名称，选择类型为EdgeBox集群，以及边缘集群在局域网的网段，网段输入格式为：192.168.1.0/24，多个IP段之间以“,”分隔，也可以单击下方**获取节点IP段**复制脚本到边缘服务器中执行获得。
 
@@ -39,11 +39,11 @@ ref:
 
 最后选择是否需要开启日志服务，日志服务是需要单独收费，产品定价请[参看文档](https://help.aliyun.com/document_detail/107745.html)，如果边缘集群不需要使用日志功能请单击取消：![日志服务](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/6690947951/p141347.png)
 
-边缘集群也可以直接在数蛙云工作台进行管理，操作文档参看[集群管理](https://help.aliyun.com/document_detail/114829.html)。
+边缘集群也可以直接在DG-IoT云工作台进行管理，操作文档参看[集群管理](https://help.aliyun.com/document_detail/114829.html)。
 
 集群创建好以后可以单击**管理**。![管理](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/6690947951/p132353.png)
 
-登录数蛙云工作台后可创建集群下的通用节点。
+登录DG-IoT云工作台后可创建集群下的通用节点。
 
 ![节点](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/6690947951/p93132.png)
 
@@ -51,9 +51,9 @@ ref:
 
 边缘集群和节点配置好以后，集群状态将变成**运行中**，应用状态为**应用未安装**，单击**应用安装**：![应用安装](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/6690947951/p132354.png)
 
-将列出所有可以安装在边缘集群上的所有的组件，如果需要完成边缘系统与数蛙云数字工厂的数据集成和服务集成，可以选择工业八爪鱼进行安装：![八爪鱼安装](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/6690947951/p141414.png)
+将列出所有可以安装在边缘集群上的所有的组件，如果需要完成边缘系统与DG-IoT云数字工厂的数据集成和服务集成，可以选择工业八爪鱼进行安装：![八爪鱼安装](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/6690947951/p141414.png)
 
-把数蛙云工业边缘官方组件**八爪鱼**下载到边缘集群中运行，从下载到安装完成大概需要10分钟。
+把DG-IoT云工业边缘官方组件**八爪鱼**下载到边缘集群中运行，从下载到安装完成大概需要10分钟。
 
 应用安装成功后将显示应用状态为**数据集成中**。![数据集成中](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/6690947951/p132399.png)
 

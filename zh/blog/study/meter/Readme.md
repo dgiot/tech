@@ -1,9 +1,9 @@
 
 # 教程概述
 
-  本教程首先通过全链路虚拟环境讲述如何用数蛙开源工业物联网平台完成电力集抄项目,在掌握基础概念和业务流程之后，通过真实的电表和DTU来进行实战演练。
+  本教程首先通过全链路虚拟环境讲述如何用DG-IoT开源工业物联网平台完成电力集抄项目,在掌握基础概念和业务流程之后，通过真实的电表和DTU来进行实战演练。
   
-  ![数蛙电力集抄教程.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/%E6%95%B0%E8%9B%99%E7%94%B5%E5%8A%9B%E9%9B%86%E6%8A%84%E6%95%99%E7%A8%8B.png)
+  ![DG-IoT电力集抄教程.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/meter/%E6%95%B0%E8%9B%99%E7%94%B5%E5%8A%9B%E9%9B%86%E6%8A%84%E6%95%99%E7%A8%8B.png)
  
  **操作步骤**：
  

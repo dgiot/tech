@@ -55,7 +55,7 @@
 
 ![temp-8.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/temp/temp-8.png)
 
-首先进入产品管理,点击创建产品后对产品信息进行配置.所属分类需选择为'数蛙工业网关'.接入的为单个设备所以直接选为设备即可.
+首先进入产品管理,点击创建产品后对产品信息进行配置.所属分类需选择为'DG-IoT工业网关'.接入的为单个设备所以直接选为设备即可.
 在完成产品创建后,点击'配置'对产品进行设置.
 
 ![temp-9.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/temp/temp-9.png)

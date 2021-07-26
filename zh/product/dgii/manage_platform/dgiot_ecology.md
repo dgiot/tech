@@ -13,7 +13,7 @@ category:
 ref:
 ---
 
-数字工厂支持用户的数蛙云账号与外部系统账号打通，实现两个系统之间的信息传输，现在已经支持与“淘宝1688”、“天天工厂”、“淘宝心选”以及“钉钉”的账号关联。关联数字工厂账号与1688账号和淘宝/天猫账号后可实现电商的订单数据和工厂的生产数据的集成；关联“钉钉”企业账号，可同步组织和账号信息，实现钉钉消息和通知集成。![阿里生态 ](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7018359951/p104659.png)
+数字工厂支持用户的DG-IoT云账号与外部系统账号打通，实现两个系统之间的信息传输，现在已经支持与“淘宝1688”、“天天工厂”、“淘宝心选”以及“钉钉”的账号关联。关联数字工厂账号与1688账号和淘宝/天猫账号后可实现电商的订单数据和工厂的生产数据的集成；关联“钉钉”企业账号，可同步组织和账号信息，实现钉钉消息和通知集成。![阿里生态 ](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7018359951/p104659.png)
 
 ## 淘宝1688对接
 
@@ -25,7 +25,7 @@ ref:
 
 ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7018359951/p74613.png)
 
-然后勾选同意“数蛙开放平台用户应用授权提醒”，可同意让授权访问会员信息。
+然后勾选同意“DG-IoT开放平台用户应用授权提醒”，可同意让授权访问会员信息。
 
 ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7018359951/p74529.png)
 
@@ -53,7 +53,7 @@ ref:
 
 ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7018359951/p74617.png)
 
-然后勾选同意“数蛙开放平台用户应用授权提醒”，可同意让授权访问会员信息。
+然后勾选同意“DG-IoT开放平台用户应用授权提醒”，可同意让授权访问会员信息。
 
 ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8018359951/p74534.png)
 
@@ -81,7 +81,7 @@ ref:
 
 ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8018359951/p74623.png)
 
-然后勾选同意“数蛙开放平台用户应用授权提醒”，可同意让授权访问会员信息。
+然后勾选同意“DG-IoT开放平台用户应用授权提醒”，可同意让授权访问会员信息。
 
 ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8018359951/p74552.png)
 
@@ -135,7 +135,7 @@ ref:
 
 ## 区块链服务对接
 
-数字工厂提供基于数蛙云物联网区块链记录和追溯生产过程数据，单击区块链服务对接的**配置**功能：![区块链记录](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/9018359951/p104660.png)
+数字工厂提供基于DG-IoT云物联网区块链记录和追溯生产过程数据，单击区块链服务对接的**配置**功能：![区块链记录](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/9018359951/p104660.png)
 
 **新建区块链服务**
 
@@ -185,12 +185,12 @@ ref:
 
 ## 查看阿里云信息
 
-入驻数字工厂以后，可以在数蛙云对接中查看数蛙云账号的详细信息：
+入驻数字工厂以后，可以在DG-IoT云对接中查看DG-IoT云账号的详细信息：
 
 ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0118359951/p74633.png)
 
-单击**查看账号详情**，将可以看到数蛙云账号的基本信息。
+单击**查看账号详情**，将可以看到DG-IoT云账号的基本信息。
 
-单击**查看授权**，将显示数蛙云账号ID，以及本数蛙云账号下数字工厂分配的AK和AS。
+单击**查看授权**，将显示DG-IoT云账号ID，以及本DG-IoT云账号下数字工厂分配的AK和AS。
 
 ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0118359951/p74593.png)

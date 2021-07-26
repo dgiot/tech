@@ -25,9 +25,9 @@
 
 ![组态展示1.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/blog/study/opc/%E7%BB%84%E6%80%81%E5%B1%95%E7%A4%BA1.png)
 
-## 如何在数蛙平台完善OPC数据
+## 如何在DG-IoT平台完善OPC数据
 
-可在数蛙平台中为OPC各项数据添加单位等属性，具体操作见物模型操作。
+可在DG-IoT平台中为OPC各项数据添加单位等属性，具体操作见物模型操作。
 
 添加单位后，设备运行状态和组态界面都会显示单位。
 

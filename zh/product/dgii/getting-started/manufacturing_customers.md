@@ -15,7 +15,7 @@ ref:
 
 # 我是制造企业用户
 
-  制造企业用户如何使用数蛙工业互联网企业平台（数字工厂）？参考如下路径
+  制造企业用户如何使用DG-IoT工业互联网企业平台（数字工厂）？参考如下路径
   
   ![p81871.png](http://dgiot-1253666439.cos.ap-shanghai-fsi.myqcloud.com/shuwa_tech/zh/product/dgii/p81871.png)
   

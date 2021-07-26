@@ -13,7 +13,7 @@ category:
 ref:
 ---
 
-在数蛙云物联网市场中提供了满足工业企业需求的丰富的应用，数字工厂也提供了由数蛙云开发默认提供的应用，可以在应用管理去管理这些应用。
+在DG-IoT云物联网市场中提供了满足工业企业需求的丰富的应用，数字工厂也提供了由DG-IoT云开发默认提供的应用，可以在应用管理去管理这些应用。
 
 ## 我的推荐
 
@@ -31,9 +31,9 @@ ref:
 
 ## 物联网市场选购应用
 
-在数蛙云物联网市场也有大量第三方合作伙伴提供的优秀官方应用，如果需要试用或者购买，请单击“市场选购”：![市场选购](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/1018359951/p99611.png)
+在DG-IoT云物联网市场也有大量第三方合作伙伴提供的优秀官方应用，如果需要试用或者购买，请单击“市场选购”：![市场选购](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/1018359951/p99611.png)
 
-将列出[数蛙云物联网市场](https://linkmarket.aliyun.com/)上适合工业应用，可以选购适合本企业的应用，也可以单击商品详情查看应用的详细介绍：![商品详情](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/1018359951/p99613.png)
+将列出[DG-IoT云物联网市场](https://linkmarket.aliyun.com/)上适合工业应用，可以选购适合本企业的应用，也可以单击商品详情查看应用的详细介绍：![商品详情](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/1018359951/p99613.png)
 
 选择商品后下一步选择对应的商品规格，填写联系人信息，同意协议后，完成商品下单：![商品下单](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/1018359951/p99616.png)
 
@@ -45,7 +45,7 @@ ref:
 
 ## 物联网开发应用集成
 
-如果购买数字工厂的版本为专业版以上，还可以开通和集成使用[数蛙云物联网开发服务](https://help.aliyun.com/product/123205.html?spm=a2c4g.750001.list.250.59f37b13fLLPnf)
+如果购买数字工厂的版本为专业版以上，还可以开通和集成使用[DG-IoT云物联网开发服务](https://help.aliyun.com/product/123205.html?spm=a2c4g.750001.list.250.59f37b13fLLPnf)
 
 用户使用IoT Studio开发并发布物联网应用以后，在数字工厂我的应用管理中可以单击应用管理中的“添加IoT Studio应用”：![IOTStduio](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/2018359951/p99641.png)
 

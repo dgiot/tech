@@ -1,6 +1,6 @@
 module.exports = [
     {
-        "title": '数蛙云检测',
+        "title": 'DG-IoT云检测',
         "collapsable": true,
         "children": [
 

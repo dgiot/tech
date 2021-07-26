@@ -26,6 +26,7 @@ ref:
 提供了包含物联网连接管理和设备管理的PaaS平台的所有功能；
 	- [多租户](https://tech.iotn2n.com/zh/backend/dgiot/tenant/#多租户模型 "多租户功能说明")
 	- [云组态](https://tech.iotn2n.com/zh/frontend/dgiottopo/)
+	- 动态表单
 	- 云函数
 	- 云压测
 包含如下的核心功能：
@@ -48,11 +49,10 @@ ref:
 
 
 ### 相关平台账号密码
-
-| 平台       | 地址                                                                                      |  账号   |  密码   | 权限 |
-| -------------- | -------------------------------------------------------- | --------------   |  --------------   |--------------   |  --------------   |
-| DG-IoT |  [http://prod.iotn2n.com](http://prod.iotn2n.com/) | dgiot_admin | dgiot_admin | 开发者 |
-| yapi          | [http://yapi.iotn2n.com](http://148.70.107.251:3000/project/17/interface/api)                              | dgiot_admin@iotn2n.com   |  dgiot_admin   |  访客   |
+| 平台       | 地址       |账号|  密码|   权限|   
+| -----------| -----------| --- | ----|------|
+| DG-IoT   | [http://prod.iotn2n.com](http://prod.iotn2n.com/)       | dgiot_admin|   dgiot_admin  |开发者|
+| yapi          | [http://yapi.iotn2n.com](http://148.70.107.251:3000/project/17/interface/api)    |                          
 
 
 ### 开源项目一览

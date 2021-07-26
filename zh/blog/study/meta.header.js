@@ -4,10 +4,10 @@ module.exports = [
     "collapsable": true,
     "children": [
       {
-        "title": 'DG-IoT物联网项目经理培训',
+        "title": 'DG-IoT本地培训',
         "collapsable": true,
         "children": [
-          ['train/', 'DG-IoT物联网项目经理培训'],
+          ['train/', 'DG-IoT本地培训'],
         ],
         "category": "DG-IoT培训"
       },

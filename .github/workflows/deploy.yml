@@ -18,7 +18,7 @@ jobs:
       - name: Use Node ☊
         uses: actions/setup-node@v1
         with:
-          node-version: "10.x"
+          node-version: "12.x"
       - name: Use yarn 🧶
         run: npm install -g yarn
       - name: install 🔥

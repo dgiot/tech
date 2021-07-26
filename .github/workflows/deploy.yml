@@ -39,12 +39,11 @@ jobs:
           secretKey: ${{ secrets.SECRET_KEY }}
           envId: ${{ secrets.ENV_ID }}
           staticSrcPath: .vuepress/dist
-      # 利用action把build好的文件上传到服务器/var/www/react-app路径下,需要确认此目录已在服务端创建
       - name: deploy file to server
         uses: wlixcc/SFTP-Deploy-Action@v1.2.1
         with:
           username: 'root'
           server: '${{ secrets.SERVER_IP }}'
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          local_path: .vuepress/dist # 对应我们项目build的文件夹路径
+          local_path: .vuepress/dist/* # 本地项目目录文件夹
           remote_path: '/data/dgiot/lib/dgiot_tech/priv/www'

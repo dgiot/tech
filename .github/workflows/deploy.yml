@@ -9,7 +9,7 @@ on:
 
 jobs:
 
-  Cloudbase: 
+  Cloudbase:
     runs-on: ubuntu-20.04
 
     steps:
@@ -23,7 +23,7 @@ jobs:
         run: npm install -g yarn
       - name: install 🔥
         run: yarn
-      - name: build 🔧 
+      - name: build 🔧
         run: yarn build
       - name: Deploy static to github pagese 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
@@ -39,3 +39,12 @@ jobs:
           secretKey: ${{ secrets.SECRET_KEY }}
           envId: ${{ secrets.ENV_ID }}
           staticSrcPath: .vuepress/dist
+      # 利用action把build好的文件上传到服务器/var/www/react-app路径下,需要确认此目录已在服务端创建
+      - name: deploy file to server
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.1
+        with:
+          username: 'root'
+          server: '${{ secrets.SERVER_IP }}'
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          local_path: .vuepress/dist # 对应我们项目build的文件夹路径
+          remote_path: '/var/www/dgiot_tech/'

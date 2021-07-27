@@ -1,11 +1,11 @@
 const plugins = [
-  // [
-  //   'comment',
-  //   {
-  //     type: 'waline',
-  //     serverURL: "https://dgiotwaline.vercel.app/",
-  //   }
-  // ],
+  [
+    'comment',
+    {
+      type: 'waline',
+      serverURL: "https://dgiotwaline.vercel.app/",
+    }
+  ],
   ["add-this", {
     pubid: "ra-60642249a725a5ee"
   }],

@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9696fe60-ca23-486f-9ef3-980ca4d32031" name="Default Changelist" comment="" />
+    <list default="true" id="9696fe60-ca23-486f-9ef3-980ca4d32031" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/zh/blog/study/train/OpenTrain.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shuwa_tech.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/shuwa_tech.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shuwa_tech.iws" beforeDir="false" afterPath="$PROJECT_DIR$/shuwa_tech.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/blog/study/meta.header.js" beforeDir="false" afterPath="$PROJECT_DIR$/zh/blog/study/meta.header.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +17,25 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1vsRiFYtojt96y3zFGRPOq8Cwtr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="flattenModules" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/zh/blog/study/train" />
   </component>
   <component name="RecentsManager">
@@ -24,7 +47,18 @@
     <configuration />
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9696fe60-ca23-486f-9ef3-980ca4d32031" name="Default Changelist" comment="" />
+      <created>1627348935125</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627348935125</updated>
+      <workItem from="1627348937659" duration="1080000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2660" y="278" key="FileChooserDialogImpl" timestamp="1627030117422">

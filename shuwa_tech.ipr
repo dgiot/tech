@@ -20,7 +20,18 @@
     </profile>
     <version value="1.0" />
   </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/shuwa_tech.ipr/.idea/shuwa_tech.ipr.iml" filepath="$PROJECT_DIR$/shuwa_tech.ipr/.idea/shuwa_tech.ipr.iml" />
+    </modules>
+  </component>
   <component name="ProjectRootManager">
     <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
 </project>

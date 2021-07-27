@@ -8,6 +8,7 @@ module.exports = [
         "collapsable": true,
         "children": [
           ['train/', 'DG-IoT本地培训'],
+          ['train/OpenTrain', '开源项目职业教育'],
         ],
         "category": "DG-IoT培训"
       },

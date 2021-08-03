@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9696fe60-ca23-486f-9ef3-980ca4d32031" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/zh/blog/study/train/OpenTrain.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shuwa_tech.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/shuwa_tech.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shuwa_tech.iws" beforeDir="false" afterPath="$PROJECT_DIR$/shuwa_tech.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/blog/study/meta.header.js" beforeDir="false" afterPath="$PROJECT_DIR$/zh/blog/study/meta.header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/product/dgiot/meta.header.js" beforeDir="false" afterPath="$PROJECT_DIR$/zh/product/dgiot/meta.header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +51,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627348935125</updated>
-      <workItem from="1627348937659" duration="1080000" />
+      <workItem from="1627348937659" duration="1681000" />
+      <workItem from="1627365452647" duration="3683000" />
+      <workItem from="1627962503122" duration="104000" />
     </task>
     <servers />
   </component>

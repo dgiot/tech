@@ -3,7 +3,7 @@ module.exports = [
         "title": '产品简介',
         "collapsable": true,
         "children": [
-            ['product_presentation/', 'DG-IoT物联网平台介绍'],
+            ['product_presentation/', 'DG-IoT介绍'],
             ['product_presentation/product_functions', '产品功能'],
             ['product_presentation/product_architecture', '产品架构'],
             ['product_presentation/word_construction', '名词解释'],

@@ -57,6 +57,14 @@ module.exports = [
         ],
         "category": "工业数据云平台"
       },
+
+        "title": '基于Modbus协议多设备共连',
+        "collapsable": true,
+        "children": [
+          ['mustread/', 'Modbus'],
+        ],
+        "category": "工业数据云平台"
+      },
       {
         "title": '三合一传感器接入教程',
         "collapsable": true,

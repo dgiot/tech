@@ -2,8 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9696fe60-ca23-486f-9ef3-980ca4d32031" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/shuwa_tech.iws" beforeDir="false" afterPath="$PROJECT_DIR$/shuwa_tech.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/product/dgiot/meta.header.js" beforeDir="false" afterPath="$PROJECT_DIR$/zh/product/dgiot/meta.header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/blog/add_device_by_mqtt/git.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/en/blog/add_device_by_mqtt/git.exe.stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/manual/cloud/git.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/en/manual/cloud/git.exe.stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/product/git.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/en/product/git.exe.stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/blog/study/opc/git.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/zh/blog/study/opc/git.exe.stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/blog/study/press/git.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/zh/blog/study/press/git.exe.stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/blog/study/pump/git.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/zh/blog/study/pump/git.exe.stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/blog/study/temp/git.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/zh/blog/study/temp/git.exe.stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/blog/study/threeinone/git.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/zh/blog/study/threeinone/git.exe.stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/frontend/konva/git.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/zh/frontend/konva/git.exe.stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/frontend/web/api/git.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/zh/frontend/web/api/git.exe.stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/frontend/web/detail/git.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/zh/frontend/web/detail/git.exe.stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/frontend/web/git.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/zh/frontend/web/git.exe.stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/product/dgii/config/git.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/zh/product/dgii/config/git.exe.stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/product/dgii/manage_platform/git.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/zh/product/dgii/manage_platform/git.exe.stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/product/dgiot/clouddetection/git.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/zh/product/dgiot/clouddetection/git.exe.stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/product/dgiot/device_cloud/channel/git.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/zh/product/dgiot/device_cloud/channel/git.exe.stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/product/dgiot/device_cloud/rules/git.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/zh/product/dgiot/device_cloud/rules/git.exe.stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/product/dgiot/git.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/zh/product/dgiot/git.exe.stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/product/dgpress/git.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/zh/product/dgpress/git.exe.stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/product/dgtest/git.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/zh/product/dgtest/git.exe.stackdump" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +71,7 @@
       <updated>1627348935125</updated>
       <workItem from="1627348937659" duration="1681000" />
       <workItem from="1627365452647" duration="3683000" />
-      <workItem from="1627962503122" duration="104000" />
+      <workItem from="1627962503122" duration="704000" />
     </task>
     <servers />
   </component>

@@ -57,7 +57,7 @@ module.exports = [
         ],
         "category": "工业数据云平台"
       },
-
+      {
         "title": '基于Modbus协议多设备共连',
         "collapsable": true,
         "children": [

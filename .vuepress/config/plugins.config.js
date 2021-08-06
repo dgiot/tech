@@ -2,13 +2,8 @@ const plugins = [
   [
     'vuepress-plugin-comment',
     {
-      choosen: 'valine',
-      // options选项中的所有参数，会传给Valine的配置
-      options: {
-        el: '#valine-vuepress-comment',
-        appId: '5jxwjQ8Jwc9TQWHhjkDqj8YH-gzGzoHsz',
-        appKey: 'SPMRtyvp7XIyQsnibvXoesBw'
-      }
+      type: 'waline',
+      serverURL: "https://dgiotwaline.vercel.app/",
     }
   ],
   ["add-this", {
